@@ -1,0 +1,116 @@
+{
+  "deadCells:BleedingSpread": {
+    "NAME": "血花四溅",
+    "DESCRIPTION": "流血 会扩散给其他敌人。 NL 当你给予 流血 时，额外给与 !M! 层。"
+  },
+  "deadCells:BloodSword": {
+    "NAME": "血之刃",
+    "DESCRIPTION": "造成 !D! 点伤害， 给予 !M! 点 流血 。"
+  },
+  "deadCells:MagicMissiles": {
+    "NAME": "魔法飞弹",
+    "DESCRIPTION": "造成 !D! 点伤害 !M! 次。 NL 随机分配到敌人上 。"
+  },
+  "deadCells:SpeedDown": {
+    "NAME": "减速",
+    "DESCRIPTION": "抽一张牌。 NL 消耗 。"
+  },
+  "deadCells:StrategyStagnated":{
+    "NAME": "战略停滞",
+    "DESCRIPTION": "获得 [E] [E] 。 NL 在抽牌堆中加入一张 *减速 。",
+    "UPGRADE_DESCRIPTION": "获得 [E] [E] [E] 。 NL 在抽牌堆中加入一张 *减速 。"
+  },
+  "deadCells:ScytheClawII": {
+    "NAME": "巨镰右爪",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 如果至少造成 !M! 未被格挡的伤害 则敌人被击晕。 NL 洗入 *巨镰左爪。 NL 消耗 。"
+  },
+  "deadCells:ScytheClaw": {
+    "NAME": "巨镰左爪",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 给予所有敌人 !M! 层 易伤 。 NL 洗入 *巨镰右爪。 NL 消耗 。"
+  },
+  "deadCells:IceShield": {
+    "NAME": "冰霜盾",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 你每受到一次攻击 NL 会使所有敌人临时失去 !M! 点 力量 。"
+  },
+  "deadCells:Rampart": {
+    "NAME": "壁垒",
+    "DESCRIPTION": "直到下一回合,你无法受到任何攻击伤害。 NL 丢弃掉手牌中所有的技能牌。"
+  },
+  "deadCells:BalancedBlade": {
+    "NAME":"均衡之刃",
+    "DESCRIPTION":"造成 !D! 点伤害。 NL 该牌每打出一次伤害增加 !M! 点 NL 增长的数值会增加1点。"
+  },
+  "deadCells:StunGrenade": {
+    "NAME": "闪光弹",
+    "DESCRIPTION": "使一名敌人眩晕。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 使一名敌人眩晕。 NL 消耗 。"
+  },
+  "deadCells:ReflectionSpeedUp": {
+    "NAME": "思考加速",
+    "DESCRIPTION": "回合开始根据战斗情况 NL 将 !M! 张 合适的牌 置入你的手中。",
+    "UPGRADE_DESCRIPTION": "固有 。 NL 回合开始根据战斗情况 NL 将 !M! 张 合适的牌 置入你的手中。"
+  },
+  "deadCells:DepravedForm": {
+    "NAME": "堕落形态",
+    "DESCRIPTION": "获得5点 力量 NL 你的攻击会造成 !M! 次你伤害25%的额外伤害。"
+  },
+  "deadCells:Grenade": {
+    "NAME": "步兵手雷",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 对其他敌人造成一半伤害。"
+  },
+  "deadCells:Speed": {
+    "NAME": "极速",
+    "DESCRIPTION": "你的之后使用的 !M! 张牌都会额外抽一张牌并获得 1 点 格挡 。"
+  },
+  "deadCells:RoundingKnife": {
+    "NAME": "圆舞飞刀",
+    "DESCRIPTION": "给予所有敌人 !M! 层 虚弱 。 NL 给予敌人3层 流血 。"
+  },
+  "deadCells:CrowFeathers": {
+    "NAME":"乌鸦之翼",
+    "DESCRIPTION": "获得 !M! 层临时飞行。 NL 你在本回合每受到一次攻击,对攻击者造成 !D! 点伤害。 NL (受攻击加成的影响)"
+  },
+  "deadCells:AlchemyCarbine": {
+    "NAME": "炼金卡宾枪",
+    "DESCRIPTION": "给予 !M! 层 中毒 随机分配到敌人上 。 NL 抽2张牌。",
+    "UPGRADE_DESCRIPTION": "给予 !M! 层 中毒 随机分配到敌人上 。 NL 抽3张牌。"
+  },
+  "deadCells:Piano": {
+    "NAME": "节奏布祖基琴",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 将一张节奏布祖基琴II置入手牌。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 将一张节奏布祖基琴II置入手牌。"
+  },
+  "deadCells:PianoII": {
+    "NAME": "节奏布祖基琴II",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果你打出的上一张牌为节奏布祖基琴,则造成双倍点伤害。 NL 将一张节奏布祖基琴III置入手牌。 NL 消耗 。"
+  },
+  "deadCells:PianoIII": {
+    "NAME": "节奏布祖基琴III",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 如果你打出的上一张牌为节奏布祖基琴II,则造成双倍点伤害。 NL 消耗 。 "
+  },
+  "deadCells:Roll": {
+    "NAME": "翻滚",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 抽取3张牌,丢弃掉其中的攻击牌"
+  },
+  "deadCells:Saucepan": {
+    "NAME": "平底锅",
+    "DESCRIPTION":"造成 !D! 点伤害。 NL 如果敌人的意图是攻击 NL 再造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害。 NL 如果敌人的意图是攻击。 NL 再造成 !D! 点伤害。 NL 给予1层 虚弱 。 NL 给予1层 易伤 。"
+  },
+  "deadCells:EmergencyDoor": {
+    "NAME": "紧急逃生门",
+    "DESCRIPTION":"获得 !B! 点 格挡 。 NL 获得2层 缓冲 。 NL 获得2层 虚弱 。 NL 消耗 。"
+  },
+  "king:Strike": {
+    "NAME": "打击",
+    "DESCRIPTION": "造成 !D! 点伤害。"
+  },
+  "king:Defend": {
+    "NAME": "防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。"
+  },
+  "deadCells:SymmetricalSpear":{
+    "NAME": "对称长枪",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害 !M! 次。 NL 如果第一段击中至少两 NL 名敌人则后续造成两倍 NL 伤害。"
+  }
+}

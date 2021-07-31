@@ -1,0 +1,70 @@
+{
+  "deadCells:BleedingSpreadPower": {
+    "NAME": "血花四溅",
+    "DESCRIPTIONS": [
+      "你的 流血 会漫延给其他敌人，当你给予流血时额外给予 #b",
+      " 层"
+    ]
+  },
+  "deadCells:IceShieldPower": {
+    "NAME": "冰寒刺骨",
+    "DESCRIPTIONS": [
+      "受到攻击时使所有敌人在下一回合失去 #b",
+      " 点 #y力量 "
+    ]
+  },
+  "deadCells:RampartPower": {
+    "NAME": "立场",
+    "DESCRIPTIONS": [
+      "无法受到任何攻击伤害，持续 #b",
+      " 回合"
+    ]
+  },
+  "deadCells:ReflectionSpeedUpPower": {
+    "NAME": "思考加速",
+    "DESCRIPTIONS": [
+      "在你的回合开始时,将 #b",
+      " 张 #y合适的卡牌 置入你的手牌"
+    ]
+  },
+  "deadCells:NocturneAttackedPower": {
+    "NAME": "夜歌标记",
+    "DESCRIPTIONS": [
+      "这名角色在下 #b",
+      " 次被攻击时受到 #y",
+      " 倍伤害"
+    ]
+  },
+  "deadCells:DepravedPower": {
+    "NAME": "堕落形态",
+    "DESCRIPTIONS": [
+      "在你造成伤害后额外造成 #b25% 点伤害 #b",
+      " 次"
+    ]
+  },
+  "deadCells:SpeedPower": {
+    "NAME": "极速",
+    "DESCRIPTIONS": [
+      "你每打出 #b",
+      " 张牌，抽 #b",
+      " 张牌，获得 #b",
+      " 点 格挡 。层数减 #b"
+    ]
+  },
+  "deadCells:BleedingPower":{
+    "NAME": "流血",
+    "DESCRIPTIONS": [
+      "每有 #b",
+      " 张牌被使用，受到 #y",
+      " 点伤害，层数减少 #y"
+    ]
+  },
+  "deadCells:NextTurnLoseFlightPower": {
+    "NAME": "魔力耗尽",
+    "DESCRIPTIONS": [
+      "下 #b",
+      " 个回合开始时失去 #b",
+      " 层 #y飞行 。"
+    ]
+  }
+}

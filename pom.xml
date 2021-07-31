@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<modelVersion>4.0.0</modelVersion>
+
+<groupId>infinite</groupId>
+<artifactId>dead-cells-mod</artifactId>
+<version>1.0.5</version>
+
+<properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <mod.name>deadCellsMod</mod.name>
+</properties>
+
+<dependencies>
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.11</version>
+        <scope>test</scope>
+    </dependency>
+
+    <dependency>
+        <groupId>basemod</groupId>
+        <artifactId>BaseMod</artifactId>
+        <version>5.33.1</version>
+        <scope>system</scope>
+        <!--../${basedir}/src/main/resources/libs/BaseMod.jar-->
+        <systemPath>${basedir}/../libs/BaseMod.jar</systemPath>
+    </dependency>
+
+    <dependency>
+        <groupId>desktop</groupId>
+        <artifactId>desktop</artifactId>
+        <version>1.0</version>
+        <scope>system</scope>
+        <systemPath>${basedir}/../libs/desktop-1.0.jar</systemPath>
+    </dependency>
+
+    <dependency>
+        <groupId>mod-uploader</groupId>
+        <artifactId>mod-uploader</artifactId>
+        <version>1.0</version>
+        <scope>system</scope>
+        <systemPath>${basedir}/../libs/mod-uploader.jar</systemPath>
+    </dependency>
+
+    <dependency>
+        <groupId>ModTheSpire</groupId>
+        <artifactId>ModTheSpire</artifactId>
+        <version>3.16.0</version>
+        <scope>system</scope>
+        <systemPath>${basedir}/../libs/ModTheSpire.jar</systemPath>
+    </dependency>
+
+    <dependency>
+        <groupId>StSLib</groupId>
+        <artifactId>StSLib</artifactId>
+        <version>1.23.0</version>
+        <scope>system</scope>
+        <systemPath>${basedir}/../libs/StSLib.jar</systemPath>
+    </dependency>
+
+    <dependency>
+        <groupId>mts-launcher</groupId>
+        <artifactId>mts-launcher</artifactId>
+        <version>1.0</version>
+        <scope>system</scope>
+        <systemPath>${basedir}/../libs/mts-launcher.jar</systemPath>
+    </dependency>
+</dependencies>
+
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
+</project>

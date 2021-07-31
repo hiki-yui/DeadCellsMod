@@ -1,0 +1,10 @@
+{
+  "modid": "DeadCells",
+  "name": "DeadCells",
+  "author_list": ["me"],
+  "description": "theModIsBuilding",
+  "version": "1.0.5",
+  "sts_version": "12-22-2020",
+  "mts_version": "3.16.0",
+  "dependencies": ["basemod","stslib"]
+}
