@@ -19,7 +19,8 @@ public class Rampart extends DeadCellsCard{
     private static final String IMG = "img/card/Rampart.png";
 
     public Rampart(){
-        super(BASE_ID,STRINGS.NAME,IMG,3,STRINGS.DESCRIPTION,CardType.POWER, AbstractCardEnum.DEAD_CELLS,CardRarity.RARE,CardTarget.SELF);
+        super(BASE_ID,STRINGS.NAME,IMG,3,STRINGS.DESCRIPTION,CardType.SKILL, AbstractCardEnum.DEAD_CELLS,CardRarity.RARE,CardTarget.SELF);
+        this.exhaust = true;
     }
 
     @Override

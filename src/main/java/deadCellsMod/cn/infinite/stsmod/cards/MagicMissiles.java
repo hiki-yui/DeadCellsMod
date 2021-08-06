@@ -18,11 +18,12 @@ public class MagicMissiles extends DeadCellsCard{
     private static final String IMG = "img/card/MagicMissiles.png";
 
     public MagicMissiles(){
-        super(BASE_ID,STRINGS.NAME,IMG,1,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractCardEnum.DEAD_CELLS,CardRarity.COMMON,CardTarget.ALL_ENEMY);
+        super(BASE_ID,STRINGS.NAME,IMG,1,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractCardEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.ALL_ENEMY);
 
         this.magicNumber = this.baseMagicNumber = 7;
         this.baseDamage = 1;
         this.damageType = DamageInfo.DamageType.NORMAL;
+        this.exhaust = true;
     }
 
     @Override

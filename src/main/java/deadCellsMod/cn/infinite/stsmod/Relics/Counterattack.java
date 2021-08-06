@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.powers.watcher.VigorPower;
 
+//反击
 public class Counterattack extends CustomRelic {
 
     public static final String BASE_ID = "deadCells:Counterattack";

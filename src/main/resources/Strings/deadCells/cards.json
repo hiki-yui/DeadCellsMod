@@ -1,4 +1,55 @@
 {
+  "deadCells:Backtrack": {
+    "NAME": "返回",
+    "DESCRIPTION": "将你的其他手牌放入 *抽排堆 。 NL 从你的 *弃牌堆 中抽取等量卡牌。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "将你的其他手牌放入 *抽排堆 。 NL 从你的 *弃牌堆 中抽取等量卡牌。"
+  },
+  "deadCells:MagneticGrenade": {
+    "NAME": "磁力手雷",
+    "DESCRIPTION": "造成 !D! 点伤害2次。 NL 本回合中，每有一个敌人受到伤害 NL 你获得 !M! 点 格挡 。"
+  },
+  "deadCells:FireGrenade": {
+    "NAME": "火焰手雷",
+    "DESCRIPTION": "给予所有敌人 !M! 层 烧伤 。"
+  },
+  "deadCells:RootGrenade": {
+    "NAME": "藤蔓手雷",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害 并给予 !M! 层 藤蔓缠绕 。 NL 获得 !B! 点 格挡 。"
+  },
+  "deadCells:FillInGrenade": {
+    "NAME": "填充手雷",
+    "DESCRIPTION": "随机将 !M! 张 *手雷 置入你的手牌。 NL 消耗 。"
+  },
+  "deadCells:IceGrenade": {
+    "NAME": "冰冻手雷",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害 NL 并给予 !M! 层 冻伤 。"
+  },
+  "deadCells:InASimilar": {
+    "NAME": "故技重施",
+    "DESCRIPTION": " *打出 NL 你上一张牌的复制。",
+    "UPGRADE_DESCRIPTION":" *打出 NL 你上两张牌的复制。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (打出 *",
+      " 和 *",
+      " )"
+    ]
+  },
+  "UnKnowCard": {
+    "NAME": "@来自境界的少女",
+    "DESCRIPTION": "???"
+  },
+  "deadCells:ThrowingKnife": {
+    "NAME": "飞刀",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 给予 !M! 层 流血 。 NL 消耗 。"
+  },
+  "deadCells:AttackDefend": {
+    "NAME": "攻防一体",
+    "DESCRIPTION": "每当你交替使用 *技能牌 和 *攻击牌 时 NL 将 !M! 张 *飞刀 置入你的手牌。"
+  },
+  "deadCells:BloodthirstyShield": {
+    "NAME": "渴血盾",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 下个回合当你完全格挡 *攻击 伤害后，给予所有敌人 !M! 点 流血 。"
+  },
   "deadCells:BleedingSpread": {
     "NAME": "血花四溅",
     "DESCRIPTION": "流血 会扩散给其他敌人。 NL 当你给予 流血 时，额外给与 !M! 层。"
@@ -9,7 +60,7 @@
   },
   "deadCells:MagicMissiles": {
     "NAME": "魔法飞弹",
-    "DESCRIPTION": "造成 !D! 点伤害 !M! 次。 NL 随机分配到敌人上 。"
+    "DESCRIPTION": "造成 !D! 点伤害 !M! 次。 NL 随机分配到敌人上 。 NL 消耗 。"
   },
   "deadCells:SpeedDown": {
     "NAME": "减速",
@@ -30,11 +81,11 @@
   },
   "deadCells:IceShield": {
     "NAME": "冰霜盾",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 你每受到一次攻击 NL 会使所有敌人临时失去 !M! 点 力量 。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 你每受到一次 *攻击 NL 会使所有敌人临时失去 !M! 点 力量 。"
   },
   "deadCells:Rampart": {
     "NAME": "壁垒",
-    "DESCRIPTION": "直到下一回合,你无法受到任何攻击伤害。 NL 丢弃掉手牌中所有的技能牌。"
+    "DESCRIPTION": "直到下一回合,你无法受到任何 *攻击 伤害。 NL 丢弃掉手牌中所有的技能牌。 消耗 。"
   },
   "deadCells:BalancedBlade": {
     "NAME":"均衡之刃",
@@ -52,7 +103,7 @@
   },
   "deadCells:DepravedForm": {
     "NAME": "堕落形态",
-    "DESCRIPTION": "获得5点 力量 NL 你的攻击会造成 !M! 次你伤害25%的额外伤害。"
+    "DESCRIPTION": "获得5点 力量 。 NL 你的 *攻击 会造成 !M! 次你伤害25%的额外伤害。"
   },
   "deadCells:Grenade": {
     "NAME": "步兵手雷",
@@ -68,7 +119,7 @@
   },
   "deadCells:CrowFeathers": {
     "NAME":"乌鸦之翼",
-    "DESCRIPTION": "获得 !M! 层临时飞行。 NL 你在本回合每受到一次攻击,对攻击者造成 !D! 点伤害。 NL (受攻击加成的影响)"
+    "DESCRIPTION": "获得 !M! 层临时飞行。 NL 你在本回合每受到一次 *攻击 ,对攻击者造成 !D! 点伤害。 NL (受攻击加成的影响)"
   },
   "deadCells:AlchemyCarbine": {
     "NAME": "炼金卡宾枪",
@@ -90,16 +141,16 @@
   },
   "deadCells:Roll": {
     "NAME": "翻滚",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 抽取3张牌,丢弃掉其中的攻击牌"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 抽取3张牌,丢弃掉其中的 *攻击牌 。"
   },
   "deadCells:Saucepan": {
     "NAME": "平底锅",
-    "DESCRIPTION":"造成 !D! 点伤害。 NL 如果敌人的意图是攻击 NL 再造成 !D! 点伤害。",
-    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害。 NL 如果敌人的意图是攻击。 NL 再造成 !D! 点伤害。 NL 给予1层 虚弱 。 NL 给予1层 易伤 。"
+    "DESCRIPTION":"造成 !D! 点伤害。 NL 如果敌人的意图是 *攻击 。 NL 再造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害。 NL 如果敌人的意图是 *攻击 。 NL 再造成 !D! 点伤害。 NL 给予1层 虚弱 。 NL 给予1层 易伤 。"
   },
   "deadCells:EmergencyDoor": {
     "NAME": "紧急逃生门",
-    "DESCRIPTION":"获得 !B! 点 格挡 。 NL 获得2层 缓冲 。 NL 获得2层 虚弱 。 NL 消耗 。"
+    "DESCRIPTION":"获得 !B! 点 格挡 。 NL 获得2层 *缓冲 。 NL 获得2层 虚弱 。 NL 消耗 。"
   },
   "king:Strike": {
     "NAME": "打击",

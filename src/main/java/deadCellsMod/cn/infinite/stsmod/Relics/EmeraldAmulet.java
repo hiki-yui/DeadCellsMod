@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import deadCellsMod.cn.infinite.stsmod.action.AddCardToHandAction;
 import deadCellsMod.cn.infinite.stsmod.cards.Roll;
 
+//绿宝石护符
 public class EmeraldAmulet extends CustomRelic {
     public static final String ID = "deadCells:EmeraldAmulet";
     private static final RelicStrings strings = CardCrawlGame.languagePack.getRelicStrings(ID);

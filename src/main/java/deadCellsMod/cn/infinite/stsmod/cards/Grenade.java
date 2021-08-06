@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsTags;
 
-public class Grenade extends DeadCellsCard {
+public class Grenade extends GrenadeCard {
 
     public static final String BASE_ID = "deadCells:Grenade";
     private static final CardStrings STRINGS = CardCrawlGame.languagePack.getCardStrings(BASE_ID);

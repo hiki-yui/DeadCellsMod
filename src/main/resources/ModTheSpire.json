@@ -1,9 +1,9 @@
 {
   "modid": "DeadCells",
   "name": "DeadCells",
-  "author_list": ["me"],
-  "description": "theModIsBuilding",
-  "version": "1.0.5",
+  "author_list": ["hiki","Mamlot","胞胞不行"],
+  "description": "死亡细胞的mod正在搭建中... \n 感谢Mamlot和胞胞提供的美术资源",
+  "version": "1.0.6",
   "sts_version": "12-22-2020",
   "mts_version": "3.16.0",
   "dependencies": ["basemod","stslib"]

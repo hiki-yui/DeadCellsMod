@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 import java.util.ArrayList;
 
+//杀戮节奏
 public class SpirePace extends CustomRelic {
     public static final String BASE_ID = "deadCells:SpirePace";
     private static final String IMG = "img/relics/spirePace.png";
@@ -27,7 +28,7 @@ public class SpirePace extends CustomRelic {
         ArrayList<AbstractCard> cardHistory = AbstractDungeon.actionManager.cardsPlayedThisTurn;
         if (cardHistory.size()>=1){
             //获取上一张卡
-            //遗物先结算,卡组使用历史在遗物结算完后增加(卡被打出后只有被所有遗物结算完后才会被加入cardHistory,即真正被使用)
+            //卡组使用历史在onplayCard方法调用完后增加(卡被打出后只有被所有遗物结算完后才会被加入cardHistory,即真正被使用)
             AbstractCard lastCard = cardHistory.get(cardHistory.size()-1);
             if (lastCard.type != c.type){
                 addToBot(new RelicAboveCreatureAction(AbstractDungeon.player,this));

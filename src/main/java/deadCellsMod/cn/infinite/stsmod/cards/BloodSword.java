@@ -20,15 +20,15 @@ public class BloodSword extends DeadCellsCard{
     public BloodSword(){
         super(BASE_ID,STRINGS.NAME,IMG,1,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractCardEnum.DEAD_CELLS,CardRarity.COMMON,CardTarget.ENEMY);
 
-        this.baseDamage = 7;
+        this.baseDamage = 6;
         this.magicNumber = this.baseMagicNumber = this.baseDamage;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded){
-            this.upgradeDamage(4);
-            this.upgradeMagicNumber(4);
+            this.upgradeDamage(3);
+            this.upgradeMagicNumber(3);
             this.upgradeName();
         }
     }

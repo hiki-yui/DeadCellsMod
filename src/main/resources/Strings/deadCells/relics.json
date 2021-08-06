@@ -1,4 +1,55 @@
 {
+  "deadCells:OpenWounds": {
+    "NAME": "开放性伤口",
+    "FLAVOR": "你的每次攻击都会变得异常锋利。",
+    "DESCRIPTIONS":[
+      "当你造成未被格挡的伤害时，给予 #b",
+      " 层 #y流血 。"
+    ]
+  },
+  "deadCells:Tactical": {
+    "NAME": "战术卷轴",
+    "FLAVOR": "谋略制胜。",
+    "DESCRIPTIONS": [
+      "#p拾取时删除一张牌。"
+    ]
+  },
+  "deadCells:Alive": {
+    "NAME": "生存卷轴",
+    "FLAVOR": "只要能到达那个地方...",
+    "DESCRIPTIONS": [
+      "拾取时获得 #b",
+      " 最大生命。 #g战斗开始时恢复",
+      "点生命"
+    ]
+  },
+  "deadCells:Oppressive": {
+    "NAME": "暴虐卷轴",
+    "FLAVOR": "踏踏开!",
+    "DESCRIPTIONS": [
+      "拾取时升级 #b",
+      " 张牌。  #r战斗开始时获得",
+      "点力量 。"
+    ]
+  },
+  "deadCells:PowerOfScroll": {
+    "NAME":"威力卷轴",
+    "FLAVOR": "这个卷轴会吸收你一定的生命力，力量总是要付出代价的。",
+    "DESCRIPTIONS": [
+      "#r失去",
+      "点最大生命， NL 在三个种类的 #y卷轴 里选取 #b",
+      " 次"
+    ]
+  },
+  "deadCells:SealsRecipe": {
+    "NAME": "被封印的秘籍",
+    "FLAVOR": "当你费力打开它后，你发现你的行动更佳敏捷有力了",
+    "DESCRIPTIONS": [
+      "战斗开始时，获得 #b",
+      " 点 #y敏捷 和 #b",
+      " 点 #y力量"
+    ]
+  },
   "deadCells:Counterattack": {
     "NAME": "反击",
     "FLAVOR": "人不犯我我不犯人",

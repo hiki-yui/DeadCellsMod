@@ -21,6 +21,7 @@ public class Nocturne extends CustomRelic {
     public static final String BASE_ID = "deadCells:Nocturne";
     private static final RelicStrings STRINGS = CardCrawlGame.languagePack.getRelicStrings(BASE_ID);
     private static final String IMG = "img/relics/nocturne.png";
+    private static final int NEED_USE_CARD = 4;
 
     public Nocturne(){
         super(BASE_ID,new Texture(IMG),RelicTier.RARE,LandingSound.CLINK);
@@ -30,7 +31,7 @@ public class Nocturne extends CustomRelic {
 
     @Override
     public String getUpdatedDescription() {
-        return STRINGS.DESCRIPTIONS[0] + 5 +//cardNum
+        return STRINGS.DESCRIPTIONS[0] + 4 +//cardNum
                 STRINGS.DESCRIPTIONS[1] + 1 +
                 STRINGS.DESCRIPTIONS[2] + 5 +//damage
                 STRINGS.DESCRIPTIONS[3] + 1 +
@@ -49,8 +50,7 @@ public class Nocturne extends CustomRelic {
     public void onPlayCard(AbstractCard c, AbstractMonster m) {
         if (c.type== AbstractCard.CardType.SKILL){
             this.counter++;
-            int num = 5;
-            if (counter == num){
+            if (counter == NEED_USE_CARD){
                 this.flash();
                 AbstractCreature player = AbstractDungeon.player;
                 AbstractMonster monster = AbstractDungeon.getRandomMonster();

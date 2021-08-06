@@ -6,27 +6,32 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import deadCellsMod.cn.infinite.stsmod.cards.Roll;
 import deadCellsMod.cn.infinite.stsmod.cards.Roll_ButNot;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import sun.security.util.Resources;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Objects;
 import java.util.Random;
 
 public class Test {
-    public static String attack_bgURL;
-    public static String power_bkURL;
-    public static String skill_bkURL;
-    public static String energy_orbUrl;
-    public static String energy_smallUrl;
-    public static String attack_bgURL1024;
-    public static String power_bkURL1024;
-    public static String skill_bkURL1024;
-    public static String energy_orbUrl1024;
 
     public static void main(String[] args) {
-        Random random = new Random();
-        System.out.println(random.nextInt(0));
+      /*  File file = new File(Objects.requireNonNull(Thread.currentThread().getContextClassLoader()
+                .getResource("deadCellsMod/cn/infinite/stsmod/cards/")).getFile());
+        for (File f : Objects.requireNonNull(file.listFiles())){
+            try {
+                Class c = Class.forName(f.getName().substring(0,f.getName().length()-6));
+                addCard((AbstractCard)c.newInstance());
+            } catch (ClassNotFoundException | IllegalAccessException | InstantiationException e) {
+                e.printStackTrace();
+            }
+        }*/
     }
 }
+
+/*BaseMod.addCard(new UnKnowCard());*/

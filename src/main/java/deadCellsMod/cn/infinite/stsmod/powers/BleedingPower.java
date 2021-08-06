@@ -30,13 +30,13 @@ public class BleedingPower extends AbstractPower implements CloneablePowerInterf
     @Override
     public void updateDescription() {
         int needUseCard = 1;
-        this.description = strings.DESCRIPTIONS[0]+ needUseCard +strings.DESCRIPTIONS[1]+(this.amount==1?1:this.amount/2)+strings.DESCRIPTIONS[2]+(this.amount==1?1:this.amount/2);
+        this.description = strings.DESCRIPTIONS[0]+ needUseCard +strings.DESCRIPTIONS[1]+(this.amount==1?1:this.amount/2)+strings.DESCRIPTIONS[2]+(this.amount==1?1:this.amount/2)+strings.DESCRIPTIONS[3];
     }
 
     @Override
     public void onPlayCard(AbstractCard card, AbstractMonster m) {
-        /*this.flash();*/
-        addToBot(new LoseHPAction(this.owner,this.owner,this.amount==1?1:this.amount/2));
+        this.flash();
+        addToBot(new LoseHPAction(this.owner,null,this.amount==1?1:this.amount/2));
         addToBot(new ReducePowerAction(owner,owner,ID,this.amount==1?1:this.amount/2));
     }
 

@@ -16,18 +16,19 @@ public class IceShield extends DeadCellsCard{
     private static final String IMG = "img/card/IceShield.png";
 
     public IceShield(){
-        super(BASE_ID,STRINGS.NAME,IMG,2,STRINGS.DESCRIPTION,CardType.SKILL, AbstractCardEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.SELF);
+        super(BASE_ID,STRINGS.NAME,IMG,1,STRINGS.DESCRIPTION,CardType.SKILL, AbstractCardEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.SELF);
 
 
-        this.baseBlock = 12;
+        this.baseBlock = 6;
         this.magicNumber = this.baseMagicNumber = 3;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded){
-            this.upgradeBlock(4);
+            this.upgradeBlock(3);
             this.upgradeMagicNumber(1);
+            this.upgradeName();
         }
     }
 

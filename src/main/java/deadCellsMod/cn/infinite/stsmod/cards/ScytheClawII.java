@@ -46,6 +46,7 @@ public class ScytheClawII extends DeadCellsCard {
         if (!this.upgraded){
             this.upgradeDamage(6);
             this.upgradeMagicNumber(9);
+            this.upgradeName();
         }
     }
 

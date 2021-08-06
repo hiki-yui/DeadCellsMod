@@ -19,8 +19,8 @@ public class NocturneAttackedPower extends AbstractPower {
     private static final float ATTACK_MULTIPLE = 2F;
     private static boolean ownerTurn;
     /*private boolean justApply;*/
-    private int usedCardNum = 0;
-    private int needUsedCard = 1;
+    private static int usedCardNum = 0;
+    private static int needUsedCard = 1;
 
     @Override
     public void atStartOfTurn() {
@@ -62,25 +62,30 @@ public class NocturneAttackedPower extends AbstractPower {
 
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        usedCardNum++;
+        if (card.type == AbstractCard.CardType.ATTACK) {
+            usedCardNum++;
+        }
         super.onUseCard(card, action);
     }
 
     /* @Override
-        public void wasHPLost(DamageInfo info, int damageAmount) {
-            if (info.type == DamageInfo.DamageType.NORMAL &&!(info.owner instanceof DepravedCase)){
-                if (!this.justApply){
-                    this.flash();
-                    addToBot(new ReducePowerAction(this.owner, this.owner, BASE_ID, 1));
-                    return;
+            public void wasHPLost(DamageInfo info, int damageAmount) {
+                if (info.type == DamageInfo.DamageType.NORMAL &&!(info.owner instanceof DepravedCase)){
+                    if (!this.justApply){
+                        this.flash();
+                        addToBot(new ReducePowerAction(this.owner, this.owner, BASE_ID, 1));
+                        return;
+                    }
+                    if (info.owner instanceof AbstractPlayer){
+                        this.justApply = false;
+                    }
                 }
-                if (info.owner instanceof AbstractPlayer){
-                    this.justApply = false;
-                }
-            }
-        }*/
+            }*/
     @Override
     public int onAttacked(DamageInfo info, int damageAmount) {
+        /*System.out.println(ownerTurn);
+        System.out.print(usedCardNum  +'\n');
+        System.out.println(needUsedCard);*/
         if (!(info.type == DamageInfo.DamageType.HP_LOSS)
                 && info.owner != null
                 && !(info.owner instanceof DepravedCase)

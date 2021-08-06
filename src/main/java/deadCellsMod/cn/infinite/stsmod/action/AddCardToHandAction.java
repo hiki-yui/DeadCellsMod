@@ -21,6 +21,7 @@ public class AddCardToHandAction extends AbstractGameAction {
         if (card!=null){
             if (AbstractDungeon.player.hand.group.size()<10){
                 AbstractDungeon.player.hand.addToHand(card);
+                card.initializeDescription();
             }else {
                 card.moveToDiscardPile();
                 AbstractDungeon.effectList.add(new ShowCardAndAddToDiscardEffect(card));

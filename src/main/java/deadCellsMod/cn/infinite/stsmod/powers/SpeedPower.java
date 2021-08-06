@@ -45,6 +45,7 @@ public class SpeedPower extends AbstractPower {
         this.description = STRINGS.DESCRIPTIONS[0]+1+//你每打出 1
                 STRINGS.DESCRIPTIONS[1]+1+// 张牌，抽 1
                 STRINGS.DESCRIPTIONS[2]+1+// 张牌，获得 1
-                STRINGS.DESCRIPTIONS[3]+"1 。";// 点 格挡 。层数减 #b
+                STRINGS.DESCRIPTIONS[3]+1+// 点 格挡 。层数减 #b
+                STRINGS.DESCRIPTIONS[4];
     }
 }

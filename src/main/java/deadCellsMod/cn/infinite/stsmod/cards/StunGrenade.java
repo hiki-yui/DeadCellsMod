@@ -12,7 +12,7 @@ import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsTags;
 
 import javax.print.DocFlavor;
 
-public class StunGrenade extends DeadCellsCard {
+public class StunGrenade extends GrenadeCard {
 
     public static final String BASE_ID = "deadCells:StunGrenade";
     private static final CardStrings STRINGS = CardCrawlGame.languagePack.getCardStrings(BASE_ID);

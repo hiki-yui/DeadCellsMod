@@ -18,8 +18,12 @@ public class GainBleedingPowerAction extends AbstractGameAction {
 
     @Override
     public void update() {
-        AbstractPower bleedingSpread = source.getPower("deadCells:BleedingSpreadPower");
+        AbstractPower bleedingSpread = null;
+        if (source != null) {
+            bleedingSpread = source.getPower("deadCells:BleedingSpreadPower");
+        }
         if (bleedingSpread!=null){
+            bleedingSpread.flash();
             for (AbstractMonster monster : AbstractDungeon.getMonsters().monsters) {
                 if (!monster.isDead) {
                     addToBot(new ApplyPowerAction(monster, this.source, new BleedingPower(monster, (amount+bleedingSpread.amount)), (amount+bleedingSpread.amount), true));
