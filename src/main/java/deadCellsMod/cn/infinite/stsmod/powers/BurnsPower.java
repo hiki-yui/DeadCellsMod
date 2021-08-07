@@ -37,11 +37,10 @@ public class BurnsPower extends AbstractPower {
             public void update() {
                 for (int i = 0;i<powerAmount;i++) {
                     addToBot(new DamageAction(powerTarget,
-                            new DamageInfo(powerTarget,1,
-                                    DamageInfo.DamageType.HP_LOSS),
+                            new DamageInfo(powerTarget,1),
                             AbstractGameAction.AttackEffect.FIRE,true));
-                    addToBot(new ReducePowerAction(powerTarget,powerTarget,BASE_ID,1));
                 }
+                addToBot(new ReducePowerAction(powerTarget,powerTarget,BASE_ID,powerAmount));
                 this.isDone = true;
             }
         });
@@ -50,14 +49,14 @@ public class BurnsPower extends AbstractPower {
     @Override
     public void updateDescription() {
         this.description = STRINGS.DESCRIPTIONS[0] + ((int)(DMA_MULTI*100))  +
-                STRINGS.DESCRIPTIONS[1] + (this.amount/2) +STRINGS.DESCRIPTIONS[2] +
+                STRINGS.DESCRIPTIONS[1] + (this.amount/3) +STRINGS.DESCRIPTIONS[2] +
                 amount + STRINGS.DESCRIPTIONS[3];
     }
 
     @Override
     public float atDamageFinalReceive(float damage, DamageInfo.DamageType type) {
         if (type == DamageInfo.DamageType.NORMAL) {
-            damage = damage+(damage * DMA_MULTI + (float) (this.amount / 2));
+            damage = damage+(damage * DMA_MULTI + (float) (this.amount / 3));
         }
         return super.atDamageFinalReceive(damage, type);
     }

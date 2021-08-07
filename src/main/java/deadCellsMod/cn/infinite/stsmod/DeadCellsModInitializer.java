@@ -20,6 +20,7 @@ import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsCharacterEnum;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsTags;
 import deadCellsMod.cn.infinite.stsmod.monster.Zombie;
+import deadCellsMod.cn.infinite.variables.BurnsVariable;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -111,6 +112,7 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
     }
     @Override
     public void receiveEditCards() {
+        BaseMod.addDynamicVariable(new BurnsVariable());
         addCard(new SymmetricalSpear());
         addCard(new Strike_king());
         addCard(new Defend_king());
@@ -149,6 +151,9 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
         addCard(new FireGrenade());
         addCard(new MagneticGrenade());
         addCard(new Backtrack());
+        addCard(new SadistStiletto());
+        addCard(new Torch());
+        addCard(new Firebrands());
     }
 
     @Override
@@ -203,7 +208,7 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
         BaseMod.addKeyword(new String[]{"夜歌标记"},"受到的下一次伤害 #y翻倍");
         BaseMod.addKeyword(new String[]{"合适的牌"},"#r只适用于当前回合 的牌，因为很适合所以 #b费用会减少一");
         BaseMod.addKeyword(new String[]{"冻伤"},"造成的伤害减少 #b15% ，在此基础上再减少对应层数的伤害，回合结束时层数减一");
-        BaseMod.addKeyword(new String[]{"烧伤"},"受到的伤害增加 #b15% ，在此基础上再增加对应层数/2的伤害，回合结束时受到对应层数的伤害，失去所有烧伤");
+        BaseMod.addKeyword(new String[]{"烧伤"},"受到的伤害增加 #b15% ，在此基础上再增加对应层数/3的伤害，回合结束时受到对应层数的伤害，失去所有烧伤");
         BaseMod.addKeyword(new String[]{"藤蔓缠绕"},"回合开始时受到对应层数的伤害");
     }
 

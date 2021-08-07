@@ -1,4 +1,4 @@
-package deadCellsMod.cn.infinite.stsmod;
+package deadCellsMod.cn.infinite.stsmod.patch;
 
 import com.evacipated.cardcrawl.modthespire.lib.SpireInsertPatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;

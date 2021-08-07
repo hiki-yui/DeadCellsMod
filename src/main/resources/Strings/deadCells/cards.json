@@ -1,8 +1,20 @@
 {
+  "deadCells:Firebrands": {
+    "NAME": "投掷火把",
+    "DESCRIPTION": "随机给予 !Burns! 层 烧伤 !M! 次。"
+  },
+  "deadCells:Torch": {
+    "NAME": "火把",
+    "DESCRIPTION": "造成 !D! 点伤害，给予 !M! 层 烧伤 。 NL 如果目标已有 烧伤 额外给予 !Burns! 层"
+  },
+  "deadCells:SadistStiletto": {
+    "NAME": "施虐者的匕首",
+    "DESCRIPTION": "造成 !D! 点伤害 !M! 次。 NL 目标每有种 *减益 便增加一点伤害和段数。"
+  },
   "deadCells:Backtrack": {
     "NAME": "返回",
-    "DESCRIPTION": "将你的其他手牌放入 *抽排堆 。 NL 从你的 *弃牌堆 中抽取等量卡牌。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "将你的其他手牌放入 *抽排堆 。 NL 从你的 *弃牌堆 中抽取等量卡牌。"
+    "DESCRIPTION": "将你的其他手牌弃入 *抽牌堆 。 NL 从你的 *弃牌堆 中抽取等量卡牌。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "将你的其他手牌弃入 *抽牌堆 。 NL 从你的 *弃牌堆 中抽取等量卡牌。"
   },
   "deadCells:MagneticGrenade": {
     "NAME": "磁力手雷",

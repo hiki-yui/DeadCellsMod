@@ -26,7 +26,7 @@ public class RoundingKnife extends CustomCard {
         super(ID,strings.NAME,IMG,0,strings.DESCRIPTION,CardType.SKILL, AbstractCardEnum.DEAD_CELLS,CardRarity.BASIC,CardTarget.ALL_ENEMY);
 
 
-        this.baseMagicNumber = 1;
+        this.magicNumber = this.baseMagicNumber = 1;
     }
 
 
