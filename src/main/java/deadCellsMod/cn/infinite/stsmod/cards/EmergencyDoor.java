@@ -30,7 +30,7 @@ public class EmergencyDoor extends DeadCellsCard {
 
 
     public EmergencyDoor(){
-        super(ID,NAME,IMG,BASE_COST,DESCRIPTION,CardType.SKILL,
+        super(ID,NAME,IMG,BASE_COST,DESCRIPTION,CardType.POWER,
                 AbstractCardEnum.DEAD_CELLS,CardRarity.RARE,CardTarget.SELF);
 
 

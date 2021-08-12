@@ -6,4 +6,6 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 public class DeadCellsTags {
     @SpireEnum
     public static AbstractCard.CardTags GRENADE;
+    @SpireEnum
+    public static AbstractCard.CardTags SHIELD;
 }

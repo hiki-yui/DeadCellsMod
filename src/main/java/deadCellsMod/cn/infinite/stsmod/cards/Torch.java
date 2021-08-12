@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import deadCellsMod.cn.infinite.stsmod.action.GainBurnsPowerAction;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
 import deadCellsMod.cn.infinite.stsmod.powers.BurnsPower;
 
@@ -38,13 +39,9 @@ public class Torch extends DeadCellsCard{
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot(new DamageAction(abstractMonster,new DamageInfo(abstractPlayer,this.damage), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         if (abstractMonster.hasPower("deadCells:BurnsPower")){
-            addToBot(new ApplyPowerAction(abstractMonster,abstractPlayer,
-                    new BurnsPower(abstractMonster,this.magicNumber+this.burnNumber),
-                    this.magicNumber+this.burnNumber));
+            addToBot(new GainBurnsPowerAction(abstractMonster,abstractPlayer,this.magicNumber+this.burnNumber));
         }else{
-            addToBot(new ApplyPowerAction(abstractMonster,abstractPlayer,
-                    new BurnsPower(abstractMonster,this.magicNumber),
-                    this.magicNumber));
+            addToBot(new GainBurnsPowerAction(abstractMonster,abstractPlayer,this.magicNumber));
         }
     }
 }

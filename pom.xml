@@ -5,7 +5,7 @@
 
 <groupId>infinite</groupId>
 <artifactId>dead-cells-mod</artifactId>
-<version>1.0.5</version>
+<version>1.0.6</version>
 
 <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -15,6 +15,19 @@
 </properties>
 
 <dependencies>
+
+    <dependency>
+        <groupId>com.sun.xml.bind</groupId>
+        <artifactId>jaxb-impl</artifactId>
+        <version>2.3.2</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.jetbrains</groupId>
+        <artifactId>annotations</artifactId>
+        <version>13.0</version>
+    </dependency>
+
     <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>

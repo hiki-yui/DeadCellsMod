@@ -26,6 +26,7 @@ public class UseTheSameCardAgainAction extends AbstractGameAction {
         willUseCard.target_x = Settings.WIDTH / 2.0F - 300.0F * Settings.scale;
         willUseCard.target_y = Settings.HEIGHT / 2.0F;
         willUseCard.purgeOnUse = true;
+        willUseCard.freeToPlayOnce = true;
         AbstractDungeon.actionManager.addCardQueueItem(
                 new CardQueueItem(willUseCard,(AbstractMonster) ((this.target != null) ? this.target : AbstractDungeon.getRandomMonster()),
                         card.energyOnUse, true, true), false);

@@ -21,6 +21,16 @@ import java.util.Random;
 public class Test {
 
     public static void main(String[] args) {
+        ArrayList<String> attacks = new ArrayList<>();
+        attacks.add("123");
+        attacks.add("124");
+        for (String s:attacks){
+            System.out.println(s);
+        }
+        attacks.remove(1);
+        for (String s:attacks){
+            System.out.println(s);
+        }
       /*  File file = new File(Objects.requireNonNull(Thread.currentThread().getContextClassLoader()
                 .getResource("deadCellsMod/cn/infinite/stsmod/cards/")).getFile());
         for (File f : Objects.requireNonNull(file.listFiles())){
@@ -31,6 +41,7 @@ public class Test {
                 e.printStackTrace();
             }
         }*/
+
     }
 }
 

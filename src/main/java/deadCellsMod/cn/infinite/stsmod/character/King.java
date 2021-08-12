@@ -34,7 +34,7 @@ public class King extends CustomPlayer {
     private static final CharacterStrings characterStrings =
             CardCrawlGame.languagePack.getCharacterString(characterId);
     private static final String NAME = characterStrings.NAMES[0];
-    private static final int ENERGY_REP_TURN = 999;//初始能量,每回合刷新的能量数
+    private static final int ENERGY_REP_TURN = 3;//初始能量,每回合刷新的能量数
     private static final String[] ORB_IMG = {"img/char_portraits/orb/layer1.png",
             "img/char_portraits/orb/layer2.png", "img/char_portraits/orb/layer3.png",
             "img/char_portraits/orb/layer4.png", "img/char_portraits/orb/layer5.png",
@@ -95,8 +95,8 @@ public class King extends CustomPlayer {
         deck.add("deadCells:BloodSword");
         deck.add("deadCells:BloodthirstyShield");
         deck.add("deadCells:AttackDefend");*/
-        deck.add("deadCells:InASimilar");
-        deck.add("deadCells:IceGrenade");
+       /* deck.add("deadCells:InASimilar");
+        deck.add("deadCells:IceGrenade");*/
         return deck;
     }
 
@@ -112,7 +112,7 @@ public class King extends CustomPlayer {
     public CharSelectInfo getLoadout() {
 
         return new CharSelectInfo(this.getLocalizedCharacterName(),
-                characterStrings.TEXT[0], 79, 75, 20, 99, 5, this,
+                characterStrings.TEXT[0], 75, 75, 0, 99, 5, this,
                 getStartingRelics(), getStartingDeck(), false);
     }
 

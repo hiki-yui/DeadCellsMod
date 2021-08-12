@@ -52,23 +52,14 @@ public abstract class GrenadeCard extends DeadCellsCard {
         addToBot(new AbstractGameAction() {
             @Override
             public void update() {
-                for (AbstractCard card : AbstractDungeon.player.drawPile.group) {
-                    if (thisCard.equals(card)) {
-                        System.out.println("removeCardFormDrawPile");
-                        /*AbstractDungeon.player.drawPile.group.remove(thisCard);*/
-                        if (thisCard.exhaust) {
-                            AbstractDungeon.player.drawPile.removeCard(thisCard);
-                        }else{
-                            AbstractDungeon.player.drawPile.moveToDiscardPile(thisCard);
-                        }
-                        return;
-                    }
-                }
                 for (AbstractCard card : AbstractDungeon.player.discardPile.group) {
                     if (thisCard.equals(card)) {
-                        System.out.println("removeCardFromDisCardPile");
-                        /*AbstractDungeon.player.discardPile.group.remove(thisCard);*/
-                        AbstractDungeon.player.discardPile.removeCard(thisCard);
+                        if (thisCard.exhaust) {
+                            System.out.println("removeCardFromDisCardPile");
+                            /*AbstractDungeon.player.discardPile.group.remove(thisCard);*/
+                            AbstractDungeon.player.discardPile.removeCard(thisCard);
+                        }
+                        isDone = true;
                         return;
                     }
                 }
@@ -81,6 +72,20 @@ public abstract class GrenadeCard extends DeadCellsCard {
                         }else{
                             AbstractDungeon.player.hand.moveToDiscardPile(thisCard);
                         }
+                        isDone = true;
+                        return;
+                    }
+                }
+                for (AbstractCard card : AbstractDungeon.player.drawPile.group) {
+                    if (thisCard.equals(card)) {
+                        System.out.println("removeCardFormDrawPile");
+                        /*AbstractDungeon.player.drawPile.group.remove(thisCard);*/
+                        if (thisCard.exhaust) {
+                            AbstractDungeon.player.drawPile.removeCard(thisCard);
+                        }else{
+                            AbstractDungeon.player.drawPile.moveToDiscardPile(thisCard);
+                        }
+                        isDone = true;
                         return;
                     }
                 }

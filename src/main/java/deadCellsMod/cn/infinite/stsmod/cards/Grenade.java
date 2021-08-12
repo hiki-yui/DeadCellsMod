@@ -48,21 +48,25 @@ public class Grenade extends GrenadeCard {
         }
     }
 
-   /* //对其他敌人造成伤害一半的伤害,需要先计算出原伤害/2后的修正的伤害
+    //对其他敌人造成伤害一半的伤害,需要先计算出原伤害/2后的修正的伤害
     @Override
     public void applyPowers() {
         //applyPowers用于修正伤害值,计入易伤等...
-        super.applyPowers();
+        super.superApplyPowers();
         //将/2并修正后的伤害赋值给MagicNumber
-        this.baseMagicNumber = this.damage/2;
-    }*/
+        this.magicNumber = this.damage/2;
+        super.superApplyPowers();
+    }
 
-   /* @Override
-    public float calculateModifiedCardDamage(AbstractPlayer player, float tmp) {
-        return super.calculateModifiedCardDamage(player, tmp);
-    }*/
+    @Override
+    public void calculateCardDamage(AbstractMonster mo) {
+        super.calculateCardDamage(mo);
+        this.magicNumber = this.damage/2;
+        super.calculateCardDamage(mo);
+        this.isMagicNumberModified = this.baseMagicNumber != this.magicNumber;
+    }
 
-   /* @Override
+  /* @Override
     public AbstractCard makeCopy() {
         AbstractCard card = new Grenade();
         if (this.upgraded) {

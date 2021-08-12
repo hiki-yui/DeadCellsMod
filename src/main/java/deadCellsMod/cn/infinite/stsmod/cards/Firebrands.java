@@ -3,8 +3,10 @@ package deadCellsMod.cn.infinite.stsmod.cards;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerToRandomEnemyAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import deadCellsMod.cn.infinite.stsmod.action.GainBurnsPowerAction;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
 import deadCellsMod.cn.infinite.stsmod.powers.BurnsPower;
 
@@ -33,7 +35,8 @@ public class Firebrands extends DeadCellsCard {
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         for (int i = 0;i<this.magicNumber;i++) {
-            addToBot(new ApplyPowerToRandomEnemyAction(abstractPlayer,new BurnsPower(null,this.burnNumber),this.burnNumber));
+            abstractMonster = AbstractDungeon.getRandomMonster();
+            addToBot(new GainBurnsPowerAction(abstractMonster,abstractPlayer,this.burnNumber));
         }
     }
 }

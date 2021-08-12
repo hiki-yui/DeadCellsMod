@@ -52,7 +52,7 @@ public class DepravedPower extends AbstractPower implements CloneablePowerInterf
                     addToBot(new AbstractGameAction() {
                         @Override
                         public void update() {
-                            if (!attackTarget.isDead) {
+                            if (!attackTarget.isDying) {
                                 addToTop(new DamageAction(attackTarget, new DamageInfo(DP_PLAYER, damage), AbstractGameAction.AttackEffect.NONE,true));
                                 addToTop(new VFXAction(ownerSource, new LightningEffect(attackTarget.drawX, attackTarget.drawY), 0.0F));
                                 addToTop(new SFXAction("ORB_LIGHTNING_EVOKE"));

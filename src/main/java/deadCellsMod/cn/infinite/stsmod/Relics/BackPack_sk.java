@@ -90,18 +90,18 @@ public class BackPack_sk extends CustomRelic {
 
     public static void useExhaustCard(AbstractCard card, AbstractCreature player) {
         if (card != null) {
-            AbstractCard theUseCard = card.makeCopy();
+            AbstractCard theUseCard = card.makeSameInstanceOf();
             if (card.upgraded) {
                 theUseCard.upgrade();
             }
-            theUseCard.baseDamage = card.baseDamage;
+            /*theUseCard.baseDamage = card.baseDamage;
             theUseCard.baseBlock = card.baseBlock;
             theUseCard.baseMagicNumber = card.baseMagicNumber;
             theUseCard.magicNumber = card.magicNumber;
             theUseCard.baseDiscard = card.baseDiscard;
             theUseCard.baseDraw = card.baseDraw;
-            theUseCard.baseHeal = card.heal;
-            /*card.freeToPlayOnce=true;*/
+            theUseCard.baseHeal = card.heal;*/
+            theUseCard.freeToPlayOnce=true;
             theUseCard.exhaust = true;
             theUseCard.rawDescription += " NL 消耗 。";
             theUseCard.isSeen = true;

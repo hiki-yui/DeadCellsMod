@@ -1,14 +1,13 @@
 package deadCellsMod.cn.infinite.stsmod.cards;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsTags;
 
 public class Defend_king extends DeadCellsCard {
     public static final String ID = "king:Defend";
@@ -26,6 +25,7 @@ public class Defend_king extends DeadCellsCard {
         this.baseBlock = 5;
         /*this.baseBlock = 996;*/
         this.tags.add(CardTags.STARTER_DEFEND);
+        this.tags.add(DeadCellsTags.SHIELD);
     }
 
     @Override

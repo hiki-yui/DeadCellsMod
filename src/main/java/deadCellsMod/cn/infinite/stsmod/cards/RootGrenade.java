@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import deadCellsMod.cn.infinite.stsmod.utils.CardUtils;
 import deadCellsMod.cn.infinite.stsmod.utils.ImgUtils;
 
 public class RootGrenade extends GrenadeCard {
@@ -36,12 +37,13 @@ public class RootGrenade extends GrenadeCard {
             this.upgradeMagicNumber(1);
             this.upgradeBlock(2);
             this.upgradeDamage(1);
+            this.upgradeName();
         }
     }
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot(new DamageAllEnemiesAction(abstractPlayer,this.baseDamage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+        addToBot(new DamageAllEnemiesAction(abstractPlayer, CardUtils.forDamageAllEnemies(this.damage), DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.BLUNT_LIGHT));
         addToBot(new GainBlockAction(abstractPlayer,abstractPlayer,this.block));
         for (AbstractMonster monster: AbstractDungeon.getMonsters().monsters){
             addToBot(new ApplyPowerAction(monster,abstractPlayer,new ConstrictedPower(monster,abstractPlayer,this.magicNumber)));

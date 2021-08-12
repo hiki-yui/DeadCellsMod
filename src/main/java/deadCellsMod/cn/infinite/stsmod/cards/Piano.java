@@ -81,8 +81,9 @@ public class Piano extends DeadCellsCard {
 
 
     class RhythmPower extends DoubleDamagePower {
-        private AbstractCard card;
-        private boolean justApply;
+        AbstractCard card;
+        boolean justApply;
+
         RhythmPower(AbstractCreature owner, AbstractCard forCard){
             this(owner,forCard, "节奏","deadCells:RhythmPower");
         }

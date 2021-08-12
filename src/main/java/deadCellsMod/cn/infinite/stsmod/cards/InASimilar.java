@@ -38,6 +38,9 @@ public class InASimilar extends DeadCellsCard {
         if (cards.size()>=2) {
             //由于这张牌打出后会立即打出下一张牌,所以这张卡打出前的上一张卡绝不可能是同类型的卡
             AbstractCard card = cards.get(cards.size() - 2);
+            if (card instanceof InASimilar && cards.size() == 2){
+                card = new Strike_king();
+            }
             if (this.upgraded) {
                 if (cards.size() >= 3) {
                     int index = cards.size() - 3;
@@ -82,8 +85,12 @@ public class InASimilar extends DeadCellsCard {
         ArrayList<AbstractCard> cards = AbstractDungeon.actionManager.cardsPlayedThisCombat;
         this.rawDescription = this.upgraded?STRINGS.UPGRADE_DESCRIPTION:STRINGS.DESCRIPTION;
         if (cards.size()>=1) {
+            AbstractCard card = cards.get(cards.size() - 1);
+            if (card instanceof InASimilar && cards.size() == 1){
+                card = new Strike_king();
+            }
             this.rawDescription += STRINGS.EXTENDED_DESCRIPTION[0] +
-                    cards.get(cards.size() - 1).name;
+                    card.name;
             if (this.upgraded) {
                 if (cards.size() >= 2) {
                     int index = cards.size() - 2;
@@ -93,6 +100,9 @@ public class InASimilar extends DeadCellsCard {
                         if (index < 0) {
                             //以防万一
                             secondCard = cards.get(cards.size() - 1);
+                            if (secondCard instanceof InASimilar){
+                                secondCard = new Strike_king();
+                            }
                         } else {
                             secondCard = cards.get(index);
                         }

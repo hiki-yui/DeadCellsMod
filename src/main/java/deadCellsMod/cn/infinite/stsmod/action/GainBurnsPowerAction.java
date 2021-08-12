@@ -16,7 +16,12 @@ public class GainBurnsPowerAction extends AbstractGameAction {
 
     @Override
     public void update() {
-        addToTop(new ApplyPowerAction(this.target,this.source,new BurnsPower(this.target,this.amount),this.amount));
+        if (this.target!=null) {
+            if (this.target.hasPower("deadCells:OilPower")){
+                this.amount *= 2;
+            }
+            addToTop(new ApplyPowerAction(this.target, this.source, new BurnsPower(this.target, this.amount), this.amount,AttackEffect.FIRE));
+        }
         isDone = true;
     }
 }

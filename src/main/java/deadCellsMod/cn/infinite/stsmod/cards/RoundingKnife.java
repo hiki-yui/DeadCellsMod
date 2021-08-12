@@ -42,12 +42,18 @@ public class RoundingKnife extends CustomCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot(new SFXAction("deadCells:ROUNDING_KNIFE"));
         addToBot(new WaitAction(0.5F));
+        //以下给予流血的操作以有GainAllEnemyBleedingPowerAction可以替代
         for (AbstractMonster monster : AbstractDungeon.getMonsters().monsters){
-            if (monster!=null){
+            if (monster!=null && !monster.isDying){
                 addToBot(new ApplyPowerAction(monster,abstractPlayer,new WeakPower(monster,
                         this.magicNumber,false),this.magicNumber,true));
-                addToBot(new GainBleedingPowerAction(abstractPlayer,monster,3));
+                if (!abstractPlayer.hasPower("deadCells:BleedingSpreadPower")) {
+                    addToBot(new GainBleedingPowerAction(abstractPlayer, monster, 3));
+                }
             }
+        }
+        if (abstractPlayer.hasPower("deadCells:BleedingSpreadPower")) {
+            new GainBleedingPowerAction(abstractPlayer, abstractMonster, 3).update();
         }
     }
 

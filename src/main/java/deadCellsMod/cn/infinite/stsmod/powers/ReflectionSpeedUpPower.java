@@ -32,6 +32,7 @@ public class ReflectionSpeedUpPower extends AbstractPower {
     private static final TreeSet<String> IS_SKILL_BUT_ATTACK = new TreeSet<>();
     private static boolean canGiveCard = false;
     private static int drawCardCounter= 0;
+    private int canNotUseCard = 0;
     static{
         CAN_NOT_APPEAR.add("Hello World");
         CAN_NOT_APPEAR.add("White Noise");
@@ -61,6 +62,9 @@ public class ReflectionSpeedUpPower extends AbstractPower {
         CAN_NOT_APPEAR.add("Limit Break");
         CAN_NOT_APPEAR.add("Barrage");
         CAN_NOT_APPEAR.add("Fission");
+        CAN_NOT_APPEAR.add("deadCells:NightLight");
+        CAN_NOT_APPEAR.add("deadCells:Rob");
+
 
 
         IS_SKILL_BUT_ATTACK.add("Tempest");
@@ -77,6 +81,12 @@ public class ReflectionSpeedUpPower extends AbstractPower {
         IS_SKILL_BUT_ATTACK.add("ForeignInfluence");
         IS_SKILL_BUT_ATTACK.add("Crescendo");
         IS_SKILL_BUT_ATTACK.add("Judgement");
+        IS_SKILL_BUT_ATTACK.add("deadCells:FillInGrenade");
+        IS_SKILL_BUT_ATTACK.add("deadCells:Pyrotechnics");
+        IS_SKILL_BUT_ATTACK.add("deadCells:FerrymanSLantern");
+        IS_SKILL_BUT_ATTACK.add("deadCells:APlan");
+        IS_SKILL_BUT_ATTACK.add("deadCells:Toothpick");
+        IS_SKILL_BUT_ATTACK.add("deadCells:Reckless");
 
     }
 
@@ -102,6 +112,228 @@ public class ReflectionSpeedUpPower extends AbstractPower {
         super.atStartOfTurn();
     }
 
+    //算比分的方法
+    public Map<String,Integer> think(){
+        HashMap<String, Integer> map = new HashMap<>();
+        map.put("attack", 0);
+        map.put("buff", 0);
+        map.put("defend", 0);
+        int skillCardNum = 0;
+        int attackCardNum = 0;
+        int powerCard = 0;
+        int powerNum = 0;
+
+        for (AbstractPower power : AbstractDungeon.player.powers) {
+            if (power.type == PowerType.BUFF) {
+                powerNum++;
+            } else {
+                powerNum--;
+            }
+        }
+        if (powerNum < 4) {
+            System.out.println("buff数量小于4");//sout
+            increase(map, "buff", 1);
+        } /*else if (AbstractDungeon.player.powers.size() > 4 && powerNum < 7) {
+            System.out.println("buff数量小于7但大于4");//sout
+            increase(map, "buff");
+        }*/ else if (powerNum > 7) {
+            System.out.println("能力过多,比重减小");
+            increase(map, "buff", -1);
+        }
+
+        addToBot(new WaitAction(0.5F));
+        for (AbstractCard card : AbstractDungeon.player.hand.group) {
+            System.out.println(card);
+            if (card.type == AbstractCard.CardType.SKILL) {
+                skillCardNum++;
+            } else if (card.type == AbstractCard.CardType.ATTACK) {
+                attackCardNum++;
+                if ("Grand Finale".equals(card.cardID)) {
+                    CAN_NOT_APPEAR.remove("Setup");
+                } else {
+                    if (!CAN_NOT_APPEAR.contains("Setup")) {
+                        CAN_NOT_APPEAR.add("Setup");
+                    }
+                }
+            } else if (card.type == AbstractCard.CardType.STATUS || card.type == AbstractCard.CardType.CURSE) {
+                canNotUseCard++;
+            } else {
+                powerCard++;
+            }
+        }
+
+        if (skillCardNum < 1) {
+            System.out.println("没有技能牌");//sout
+            increase(map, "defend", 2);
+        } else if (skillCardNum <= 2) {
+            System.out.println("技能牌数量少");//sout
+            increase(map, "defend");
+        }
+
+        if (attackCardNum < 1) {
+            System.out.println("没有攻击牌");//sout
+            increase(map, "attack", 2);
+        } else if (attackCardNum <= 2) {
+            System.out.println("攻击牌数量少");//sout
+            increase(map, "attack");
+        }
+
+        if (powerCard < 1) {
+            System.out.println("没有能力牌");//sout
+            increase(map, "buff");
+        }
+
+        int aliveMonster = 0;
+        for (AbstractMonster monster : AbstractDungeon.getMonsters().monsters) {
+            if (!monster.isDying) {
+                aliveMonster++;
+                if (monster.currentHealth <= 15 && monster.intent == AbstractMonster.Intent.STRONG_DEBUFF || (monster.getPower("Split") != null && monster.currentHealth <= monster.maxHealth * 0.60F)) {
+                    System.out.println("快速斩杀强力deBuff给与者");//sout
+                    increase(map, "attack", 9);
+                } else if (monster.intent == AbstractMonster.Intent.ESCAPE || monster.getPower("Mode Shift") != null || monster.currentHealth <= 15) {
+                    System.out.println(monster.name + "已到斩杀线或处于攻击姿态");//sout
+                    increase(map, "attack", 4);
+                } else if (monster.getPower("Anger") != null) {
+                    System.out.println("蹋蹋开！");//sout
+                    increase(map, "attack", 9);
+                } else {
+                    if (monster.intent == AbstractMonster.Intent.ATTACK) {
+                        increase(map, "defend", 2);
+                    } else if (monster.intent == AbstractMonster.Intent.ATTACK_DEFEND) {
+                        increase(map, "defend");
+                        increase(map, "attack");
+                    } else if (monster.intent == AbstractMonster.Intent.ATTACK_BUFF) {
+                        increase(map, "defend");
+                        increase(map, "buff");
+                    } else if (monster.intent == AbstractMonster.Intent.ATTACK_DEBUFF) {
+                        increase(map, "defend");
+                        increase(map, "buff");
+                    } else if (monster.intent == AbstractMonster.Intent.DEFEND) {
+                        increase(map, "attack", 2);
+                        increase(map, "buff");
+                    } else if (monster.intent == AbstractMonster.Intent.DEFEND_BUFF) {
+                        increase(map, "attack");
+                        increase(map, "buff", 2);
+                    } else if (monster.intent == AbstractMonster.Intent.DEFEND_DEBUFF) {
+                        increase(map, "attack");
+                        increase(map, "buff", 2);
+                    } else if (monster.intent == AbstractMonster.Intent.DEBUFF || monster.intent == AbstractMonster.Intent.STUN || monster.intent == AbstractMonster.Intent.BUFF) {
+                        increase(map, "buff", 2);
+                    } else if (monster.intent == AbstractMonster.Intent.SLEEP) {
+                        increase(map, "buff", 4);
+                    } else if (monster.intent == AbstractMonster.Intent.STRONG_DEBUFF) {
+                        increase(map, "buff", 3);
+                    }
+                }
+            }
+        }
+        AbstractPlayer player = AbstractDungeon.player;
+        int frostNum = 0;
+        int orbNum = 0;
+        if (player.getPower("Focus") != null && player.getPower("Focus").amount > 0) {
+            if (CAN_NOT_APPEAR.contains("Reprogram")) {
+                CAN_NOT_APPEAR.add("Reprogram");
+            }
+        } else {
+            CAN_NOT_APPEAR.remove("Reprogram");
+        }
+
+        if (player.orbs != null && player.orbs.size() != 0) {
+            orbNum = player.orbs.size();
+            for (AbstractOrb orb : player.orbs) {
+                if ("Frost".equals(orb.ID)) {
+                    frostNum++;
+                }
+            }
+        }
+
+        if (orbNum >= 4) {
+            CAN_NOT_APPEAR.remove("Fission");
+            CAN_NOT_APPEAR.remove("Barrage");
+        } else {
+            if (!CAN_NOT_APPEAR.contains("Fission")) {
+                CAN_NOT_APPEAR.add("Fission");
+            }
+            if (!CAN_NOT_APPEAR.contains("Barrage")) {
+                CAN_NOT_APPEAR.add("Barrage");
+            }
+        }
+
+        if (aliveMonster > 1) {
+            CAN_NOT_APPEAR.remove("Chill");
+        } else {
+            if (!CAN_NOT_APPEAR.contains("Chill")) {
+                CAN_NOT_APPEAR.add("Chill");
+            }
+        }
+
+        if (player.energy.energyMaster < 4) {
+            if (!CAN_NOT_APPEAR.contains("Meteor Strike")) {
+                //删除陨石打击
+                CAN_NOT_APPEAR.add("Meteor Strike");
+            }
+        }
+
+        AbstractPower focus = player.getPower("Focus");
+        int focusAmount = 0;
+        if (focus != null){
+            focusAmount = focus.amount;
+        }
+        if (player.currentBlock != 0) {
+            if (!CAN_NOT_APPEAR.contains("Auto Shields")) {
+                CAN_NOT_APPEAR.add("Auto Shields");
+            }
+            if (player.currentBlock >= 30 || (frostNum * focusAmount) >= 30) {
+                System.out.println("已有30格挡,防御比重较大下降");//sout
+                increase(map, "defend", -2);
+            } else if (player.currentBlock >= 15 || (frostNum * focusAmount) >= 15) {
+                System.out.println("已有15格挡,防御比重下降");//sout
+                increase(map, "defend", -1);
+            }
+        }
+
+
+        if (player.getPower("Mantra") == null) {
+            CAN_NOT_APPEAR.add("Prostrate");
+            CAN_NOT_APPEAR.add("Pray");
+            CAN_NOT_APPEAR.add("Worship");
+        }
+
+        int strike = 0;
+        for (AbstractCard card : player.masterDeck.group) {
+            if (card.hasTag(AbstractCard.CardTags.STRIKE)) {
+                strike++;
+            }
+        }
+        if (strike < 6) {
+            CAN_NOT_APPEAR.add("Perfected Strike");
+        }
+        return map;
+    }
+
+    //根据比分给卡的方法
+    public void giveCard(Map<String,Integer> map){
+        boolean needSecondWind = true;
+        for (int i = 0; i < amount; i++) {
+            String howToDo = chooseCardType(map);
+            if (canNotUseCard >= 3 && needSecondWind) {
+                AbstractCard card = new SecondWind();
+                addOnlyThisTurnCardToHand(card);
+                needSecondWind = false;
+            } else if ("attack".equals(howToDo)) {
+                addRandomCardToHand(AbstractCard.CardType.ATTACK, map);
+                increase(map, "attack", -1);
+            } else if ("defend".equals(howToDo)) {
+                addRandomCardToHand(AbstractCard.CardType.SKILL, map);
+                increase(map, "defend", -1);
+            } else if ("buff".equals(howToDo)) {
+                addRandomCardToHand(AbstractCard.CardType.POWER, map);
+                increase(map, "buff", -1);
+            }
+        }
+        canNotUseCard = 0;
+    }
+
     @Override
     public void onCardDraw(AbstractCard theUseCard) {
         if (canGiveCard) {
@@ -111,219 +343,9 @@ public class ReflectionSpeedUpPower extends AbstractPower {
                 drawDown = AbstractDungeon.player.getPower("Draw Down").amount;
             }
             if (drawCardCounter == (AbstractDungeon.player.gameHandSize-drawDown) || AbstractDungeon.player.hand.group.size() >= 10) {
-                HashMap<String, Integer> map = new HashMap<>();
-                map.put("attack", 0);
-                map.put("buff", 0);
-                map.put("defend", 0);
-                int skillCardNum = 0;
-                int attackCardNum = 0;
-                int canNotUseCard = 0;
-                int powerCard = 0;
-                int powerNum = 0;
-
-                for (AbstractPower power : AbstractDungeon.player.powers) {
-                    if (power.type == PowerType.BUFF) {
-                        powerNum++;
-                    } else {
-                        powerNum--;
-                    }
-                }
-                if (powerNum < 4) {
-                    System.out.println("buff数量小于5");//sout
-                    increase(map, "buff", 2);
-                } else if (AbstractDungeon.player.powers.size() > 4 && powerNum < 8) {
-                    System.out.println("buff数量小于10但大于5");//sout
-                    increase(map, "buff");
-                } else if (powerNum > 8) {
-                    System.out.println("能力过多,比重减小");
-                    increase(map, "buff", -1);
-                }
-
-                addToBot(new WaitAction(0.5F));
-                for (AbstractCard card : AbstractDungeon.player.hand.group) {
-                    System.out.println(card);
-                    if (card.type == AbstractCard.CardType.SKILL) {
-                        skillCardNum++;
-                    } else if (card.type == AbstractCard.CardType.ATTACK) {
-                        attackCardNum++;
-                        if ("Grand Finale".equals(card.cardID)) {
-                            CAN_NOT_APPEAR.remove("Setup");
-                        } else {
-                            if (!CAN_NOT_APPEAR.contains("Setup")) {
-                                CAN_NOT_APPEAR.add("Setup");
-                            }
-                        }
-                    } else if (card.type == AbstractCard.CardType.STATUS || card.type == AbstractCard.CardType.CURSE) {
-                        canNotUseCard++;
-                    } else {
-                        powerCard++;
-                    }
-                }
-
-                if (skillCardNum < 1) {
-                    System.out.println("没有技能牌");//sout
-                    increase(map, "defend", 2);
-                } else if (skillCardNum <= 2) {
-                    System.out.println("技能牌数量少");//sout
-                    increase(map, "defend");
-                }
-
-                if (attackCardNum < 1) {
-                    System.out.println("没有攻击牌");//sout
-                    increase(map, "attack", 2);
-                } else if (attackCardNum <= 2) {
-                    System.out.println("攻击牌数量少");//sout
-                    increase(map, "attack");
-                }
-
-                if (powerCard < 1) {
-                    System.out.println("没有能力牌");//sout
-                    increase(map, "buff");
-                }
-
-                int aliveMonster = 0;
-                for (AbstractMonster monster : AbstractDungeon.getMonsters().monsters) {
-                    if (!monster.isDead) {
-                        aliveMonster++;
-                        if (monster.currentHealth <= 15 && monster.intent == AbstractMonster.Intent.STRONG_DEBUFF || (monster.getPower("Split") != null && monster.currentHealth <= monster.maxHealth * 0.60F)) {
-                            System.out.println("快速斩杀强力deBuff给与者");//sout
-                            increase(map, "attack", 9);
-                        } else if (monster.intent == AbstractMonster.Intent.ESCAPE || monster.getPower("Mode Shift") != null || monster.currentHealth <= 15) {
-                            System.out.println(monster.name + "已到斩杀线或处于攻击姿态");//sout
-                            increase(map, "attack", 3);
-                        } else if (monster.getPower("Anger") != null) {
-                            System.out.println("蹋蹋开！");//sout
-                            increase(map, "attack", 9);
-                        } else {
-                            if (monster.intent == AbstractMonster.Intent.ATTACK) {
-                                increase(map, "defend", 2);
-                            } else if (monster.intent == AbstractMonster.Intent.ATTACK_DEFEND) {
-                                increase(map, "defend");
-                                increase(map, "attack");
-                            } else if (monster.intent == AbstractMonster.Intent.ATTACK_BUFF) {
-                                increase(map, "defend");
-                                increase(map, "buff");
-                            } else if (monster.intent == AbstractMonster.Intent.ATTACK_DEBUFF) {
-                                increase(map, "defend");
-                                increase(map, "buff");
-                            } else if (monster.intent == AbstractMonster.Intent.DEFEND) {
-                                increase(map, "attack", 2);
-                                increase(map, "buff");
-                            } else if (monster.intent == AbstractMonster.Intent.DEFEND_BUFF) {
-                                increase(map, "attack");
-                                increase(map, "buff", 2);
-                            } else if (monster.intent == AbstractMonster.Intent.DEFEND_DEBUFF) {
-                                increase(map, "attack");
-                                increase(map, "buff", 3);
-                            } else if (monster.intent == AbstractMonster.Intent.DEBUFF || monster.intent == AbstractMonster.Intent.STUN || monster.intent == AbstractMonster.Intent.BUFF) {
-                                increase(map, "buff", 2);
-                            } else if (monster.intent == AbstractMonster.Intent.SLEEP) {
-                                increase(map, "buff", 4);
-                            } else if (monster.intent == AbstractMonster.Intent.STRONG_DEBUFF) {
-                                increase(map, "buff", 3);
-                            }
-                        }
-                    }
-                }
-                AbstractPlayer player = AbstractDungeon.player;
-                int frostNum = 0;
-                int orbNum = 0;
-                if (player.getPower("Focus") != null && player.getPower("Focus").amount > 0) {
-                    if (CAN_NOT_APPEAR.contains("Reprogram")) {
-                        CAN_NOT_APPEAR.add("Reprogram");
-                    }
-                } else {
-                    CAN_NOT_APPEAR.remove("Reprogram");
-                }
-
-                if (player.orbs != null && player.orbs.size() != 0) {
-                    orbNum = player.orbs.size();
-                    for (AbstractOrb orb : player.orbs) {
-                        if ("Frost".equals(orb.ID)) {
-                            frostNum++;
-                        }
-                    }
-                }
-
-                if (orbNum >= 4) {
-                    CAN_NOT_APPEAR.remove("Fission");
-                    CAN_NOT_APPEAR.remove("Barrage");
-                } else {
-                    if (!CAN_NOT_APPEAR.contains("Fission")) {
-                        CAN_NOT_APPEAR.add("Fission");
-                    }
-                    if (!CAN_NOT_APPEAR.contains("Barrage")) {
-                        CAN_NOT_APPEAR.add("Barrage");
-                    }
-                }
-
-                if (aliveMonster > 1) {
-                    CAN_NOT_APPEAR.remove("Chill");
-                } else {
-                    if (!CAN_NOT_APPEAR.contains("Chill")) {
-                        CAN_NOT_APPEAR.add("Chill");
-                    }
-                }
-
-                if (player.energy.energyMaster < 4) {
-                    if (!CAN_NOT_APPEAR.contains("Meteor Strike")) {
-                        //删除陨石打击
-                        CAN_NOT_APPEAR.add("Meteor Strike");
-                    }
-                }
-
-                AbstractPower focus = player.getPower("Focus");
-                int focusAmount = 0;
-                if (focus != null){
-                    focusAmount = focus.amount;
-                }
-                if (player.currentBlock != 0) {
-                    if (!CAN_NOT_APPEAR.contains("Auto Shields")) {
-                        CAN_NOT_APPEAR.add("Auto Shields");
-                    }
-                    if (player.currentBlock >= 30 || (frostNum * focusAmount) >= 30) {
-                        System.out.println("已有30格挡,防御比重较大下降");//sout
-                        increase(map, "defend", -2);
-                    } else if (player.currentBlock >= 15 || (frostNum * focusAmount) >= 15) {
-                        System.out.println("已有15格挡,防御比重下降");//sout
-                        increase(map, "defend", -1);
-                    }
-                }
-
-
-                if (player.getPower("Mantra") == null) {
-                    CAN_NOT_APPEAR.add("Prostrate");
-                    CAN_NOT_APPEAR.add("Pray");
-                    CAN_NOT_APPEAR.add("Worship");
-                }
-
-                int strike = 0;
-                for (AbstractCard card : player.masterDeck.group) {
-                    if (card.hasTag(AbstractCard.CardTags.STRIKE)) {
-                        strike++;
-                    }
-                }
-                if (strike < 6) {
-                    CAN_NOT_APPEAR.add("Perfected Strike");
-                }
-                boolean needSecondWind = true;
-                for (int i = 0; i < amount; i++) {
-                    String howToDo = chooseCardType(map);
-                    if (canNotUseCard >= 3 && needSecondWind) {
-                        AbstractCard card = new SecondWind();
-                        addOnlyThisTurnCardToHand(card);
-                        needSecondWind = false;
-                    } else if ("attack".equals(howToDo)) {
-                        addRandomCardToHand(AbstractCard.CardType.ATTACK, map);
-                        increase(map, "attack", -1);
-                    } else if ("defend".equals(howToDo)) {
-                        addRandomCardToHand(AbstractCard.CardType.SKILL, map);
-                        increase(map, "defend", -1);
-                    } else if ("buff".equals(howToDo)) {
-                        addRandomCardToHand(AbstractCard.CardType.POWER, map);
-                        increase(map, "buff", -1);
-                    }
-                }
+                Map<String,Integer> map = think();
+                giveCard(map);
+                canNotUseCard = 0;
                 canGiveCard = false;
                 drawCardCounter = 0;
             }

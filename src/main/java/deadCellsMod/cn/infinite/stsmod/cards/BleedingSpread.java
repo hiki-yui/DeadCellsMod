@@ -25,6 +25,7 @@ public class BleedingSpread extends DeadCellsCard {
     public void upgrade() {
         if (!this.upgraded){
             this.upgradeMagicNumber(2);
+            this.upgradeName();
         }
     }
 

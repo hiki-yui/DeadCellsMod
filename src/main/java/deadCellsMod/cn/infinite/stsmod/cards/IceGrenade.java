@@ -13,6 +13,7 @@ import deadCellsMod.cn.infinite.stsmod.action.UseTheSameCardAgainAction;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsTags;
 import deadCellsMod.cn.infinite.stsmod.powers.FrostbitePower;
+import deadCellsMod.cn.infinite.stsmod.utils.CardUtils;
 
 //冰冻手雷
 public class IceGrenade extends GrenadeCard{
@@ -25,7 +26,8 @@ public class IceGrenade extends GrenadeCard{
         super(BASE_ID,STRINGS.NAME,IMG,1,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractCardEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.ALL_ENEMY);
 
         this.baseDamage = 3;
-        this.magicNumber = this.baseMagicNumber = 2;
+        this.magicNumber = this.baseMagicNumber = 3;
+        this.exhaust = true;
         this.tags.add(DeadCellsTags.GRENADE);
     }
 
@@ -40,7 +42,7 @@ public class IceGrenade extends GrenadeCard{
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot(new DamageAllEnemiesAction(abstractPlayer,this.baseDamage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        addToBot(new DamageAllEnemiesAction(abstractPlayer, CardUtils.forDamageAllEnemies(this.damage), DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         for (AbstractMonster monster : AbstractDungeon.getMonsters().monsters){
             addToBot(new ApplyPowerAction(monster,abstractPlayer,new FrostbitePower(monster,abstractPlayer,this.magicNumber),this.magicNumber));
         }

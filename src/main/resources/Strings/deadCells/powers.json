@@ -1,4 +1,89 @@
 {
+  "deadCells:RobPower": {
+    "NAME": "掠夺",
+    "DESCRIPTIONS": [
+      "战斗结束时额外获得 #b",
+      " 枚 #y金币 ."
+    ]
+  },
+  "deadCells:NightLightPower": {
+    "NAME": "夜光",
+    "DESCRIPTIONS": [
+      "战斗结束时额外获得 #b",
+      " 张 #y卡牌奖励 ."
+    ]
+  },
+  "deadCells:InTimePower": {
+    "NAME": "及时反应",
+    "DESCRIPTIONS": [
+      "回合开始时敌人要攻击你则随机打出 #b",
+      " 张 #y盾 ."
+    ]
+  },
+  "deadCells:CocoonPower": {
+    "NAME": "结茧",
+    "DESCRIPTIONS": [
+      "当你获得 #b格挡 时额外获得 #b",
+      " 点 #b格挡"
+    ]
+  },
+  "deadCells:FireworksTechnicianPower": {
+    "NAME": "燃爆大师",
+    "DESCRIPTIONS": [
+      "你的 #y手雷 伤害提高 #b",
+      " 点"
+    ]
+  },
+  "deadCells:IronStaffPower": {
+    "NAME": "钢管反击",
+    "DESCRIPTIONS": [
+      "在你的回合开始时造成你当前格挡的伤害 #b",
+      " 次"
+    ]
+  },
+  "deadCells:SmokeBombPower": {
+    "NAME": "隐匿",
+    "DESCRIPTIONS": [
+      "受到的伤害减少 #b",
+      "%"
+    ]
+  },
+  "deadCells:LaceratingAuraPower": {
+    "NAME": "撕裂光环",
+    "DESCRIPTIONS": [
+      "当你造成 #y未被格挡的伤害 时，给予 #b",
+      " 层 #r流血 。"
+    ]
+  },
+  "deadCells:CorrosiveCloudPower": {
+    "NAME": "腐蚀毒云",
+    "DESCRIPTIONS": [
+      "每当你给予3层以上的 #r流血 时，每3层流血额外给予 #b",
+      " 层 #g中毒 。"
+    ]
+  },
+  "deadCells:RuthlessPower": {
+    "NAME": "无情",
+    "DESCRIPTIONS": [
+      "当你给予 #b",
+      " 次负面状态时，抽 #b",
+      " 张牌。"
+    ]
+  },
+  "deadCells:RegularSkillPower": {
+    "NAME": "常备技巧",
+    "DESCRIPTIONS":[
+      "回合开始时将 #b",
+      " 张会 #y保留 ， #y消耗 的 #y翻滚 置入你的手牌。"
+    ]
+  },
+  "deadCells:OilPower": {
+    "NAME": "油",
+    "DESCRIPTIONS": [
+      "该目标受到的 #y燃烧 翻倍，持续 #b",
+      " 回合。"
+    ]
+  },
   "deadCells:MagneticPower": {
     "NAME": "磁场",
     "DESCRIPTIONS": [
@@ -7,7 +92,7 @@
     ]
   },
   "deadCells:BurnsPower": {
-    "NAME": "烧伤",
+    "NAME": "燃烧",
     "DESCRIPTIONS": [
       "受到的伤害提高 #r",
       "% 在此基础提高 #r",

@@ -32,7 +32,7 @@ public class Roll extends CustomCard {
     private static final String IMG = "img/card/roll.png";
     private static final int COST = 1;
     private static final int BASE_DRAW_CARD = 3;
-    private static final int BASE_DEFEND = 8;
+    private static final int BASE_DEFEND = 6;
     private static final int UPGRADE_DEFEND = 3;
 
     public Roll(){

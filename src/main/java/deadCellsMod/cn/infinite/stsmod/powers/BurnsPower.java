@@ -22,7 +22,7 @@ public class BurnsPower extends AbstractPower {
         this.ID = BASE_ID;
         this.amount = amount;
         this.owner = owner;
-        this.type = PowerType.BUFF;
+        this.type = PowerType.DEBUFF;
         this.isTurnBased = true;
         ImgUtils.setPowerImg(this);
         this.updateDescription();
@@ -37,7 +37,7 @@ public class BurnsPower extends AbstractPower {
             public void update() {
                 for (int i = 0;i<powerAmount;i++) {
                     addToBot(new DamageAction(powerTarget,
-                            new DamageInfo(powerTarget,1),
+                            new DamageInfo(powerTarget,1, DamageInfo.DamageType.THORNS),
                             AbstractGameAction.AttackEffect.FIRE,true));
                 }
                 addToBot(new ReducePowerAction(powerTarget,powerTarget,BASE_ID,powerAmount));

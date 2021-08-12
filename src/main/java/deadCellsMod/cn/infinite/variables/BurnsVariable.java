@@ -13,12 +13,12 @@ public class BurnsVariable extends DynamicVariable {
 
     @Override
     public boolean isModified(AbstractCard abstractCard) {
-        return ((DeadCellsCard)abstractCard).baseBurnNumber!=((DeadCellsCard)abstractCard).burnNumber;
+        return ((DeadCellsCard)abstractCard).baseBurnNumber != ((DeadCellsCard)abstractCard).burnNumber;
     }
 
     @Override
     public int value(AbstractCard abstractCard) {
-        if (((DeadCellsCard)abstractCard).burnNumber != 0) {
+        if (((DeadCellsCard)abstractCard).burnNumber > 0) {
             return ((DeadCellsCard) abstractCard).burnNumber;
         }else{
             return ((DeadCellsCard) abstractCard).baseBurnNumber;
@@ -32,6 +32,6 @@ public class BurnsVariable extends DynamicVariable {
 
     @Override
     public boolean upgraded(AbstractCard abstractCard) {
-        return ((DeadCellsCard)abstractCard).burnUpGraed;
+        return ((DeadCellsCard)abstractCard).burnUpGraded;
     }
 }

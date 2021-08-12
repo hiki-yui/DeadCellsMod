@@ -5,14 +5,20 @@ import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
+import com.megacrit.cardcrawl.actions.unique.AddCardToDeckAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.dungeons.Exordium;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.monsters.MonsterInfo;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import com.megacrit.cardcrawl.rewards.RewardItem;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
+import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
+import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToDrawPileEffect;
 import deadCellsMod.cn.infinite.stsmod.Relics.*;
 import deadCellsMod.cn.infinite.stsmod.cards.*;
 import deadCellsMod.cn.infinite.stsmod.character.King;
@@ -20,11 +26,13 @@ import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsCharacterEnum;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsTags;
 import deadCellsMod.cn.infinite.stsmod.monster.Zombie;
+import deadCellsMod.cn.infinite.variables.AmmunitionVariables;
 import deadCellsMod.cn.infinite.variables.BurnsVariable;
+import deadCellsMod.cn.infinite.variables.ChangeNumVariables;
+import deadCellsMod.cn.infinite.variables.HeavyDamageVariables;
 
-import java.io.File;
 import java.util.ArrayList;
-import java.util.Objects;
+
 
 import static basemod.DevConsole.logger;
 
@@ -33,7 +41,7 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
         EditCharactersSubscriber, EditStringsSubscriber,
         EditRelicsSubscriber, EditKeywordsSubscriber, PostExhaustSubscriber,
         PostBattleSubscriber, PostDungeonInitializeSubscriber,AddAudioSubscriber,
-        PostPowerApplySubscriber,OnPowersModifiedSubscriber,PostInitializeSubscriber{
+        PostPowerApplySubscriber,OnPowersModifiedSubscriber,PostInitializeSubscriber,OnStartBattleSubscriber{
 
 
     public DeadCellsModInitializer() {
@@ -61,6 +69,18 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
     }
 
     @Override
+    public void receiveOnBattleStart(AbstractRoom abstractRoom) {
+        for (AbstractCard card : AbstractDungeon.player.masterDeck.group){
+            if (card instanceof CursedSword){
+                for (int i = 0;i<card.baseMagicNumber;i++){
+                    AbstractCard curse = AbstractDungeon.curseCardPool.group.get(AbstractDungeon.cardRng.random(AbstractDungeon.curseCardPool.group.size()-1));
+                    AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDrawPileAction(curse,1,true,true,false));/*new ShowCardAndAddToDrawPileEffect(curse,true,false));*/
+                }
+            }
+        }
+    }
+
+    @Override
     public void receiveAddAudio() {
         logger.info("开始载入DeadCellsMod_audio");
         //addAudio方法是将音频文件放到自身jar包的缓存区,想要使用文件还需要将缓存区中的内容发布到游戏的音频储存区才行
@@ -83,7 +103,14 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
 
     @Override
     public void receivePostBattle(AbstractRoom abstractRoom) {
-
+        if (AbstractDungeon.player.hasPower("deadCells:NightLightPower")) {
+            for (int i = 0;i<AbstractDungeon.player.getPower("deadCells:NightLightPower").amount;i++) {
+                abstractRoom.addCardReward(new RewardItem());
+            }
+        }
+        if (AbstractDungeon.player.hasPower("deadCells:RobPower")) {
+           abstractRoom.addGoldToRewards(AbstractDungeon.player.getPower("deadCells:RobPower").amount);
+        }
     }
 
     @Override
@@ -103,16 +130,24 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
     }
 
     public static final ArrayList<AbstractCard> GRENADE_POOL = new ArrayList<>();
+    public static final ArrayList<AbstractCard> SHIELD_POOL = new ArrayList<>();
 
     private void addCard(AbstractCard card){
         BaseMod.addCard(card);
         if (card.tags.contains(DeadCellsTags.GRENADE)){
             GRENADE_POOL.add(card);
         }
+        if (card.tags.contains(DeadCellsTags.SHIELD)){
+            SHIELD_POOL.add(card);
+        }
     }
     @Override
     public void receiveEditCards() {
         BaseMod.addDynamicVariable(new BurnsVariable());
+        BaseMod.addDynamicVariable(new AmmunitionVariables());
+        BaseMod.addDynamicVariable(new HeavyDamageVariables());
+        BaseMod.addDynamicVariable(new ChangeNumVariables());
+        BaseMod.addDynamicVariable(new AmmunitionVariables.MaxAmmunitionVariables());
         addCard(new SymmetricalSpear());
         addCard(new Strike_king());
         addCard(new Defend_king());
@@ -154,6 +189,59 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
         addCard(new SadistStiletto());
         addCard(new Torch());
         addCard(new Firebrands());
+        addCard(new Pyrotechnics());
+        addCard(new Pyrotechnics.PyrotechnicsII());
+        addCard(new Pyrotechnics.PyrotechnicsIII());
+        addCard(new Pyrotechnics.PyrotechnicsIIII());
+        addCard(new InsightInto());
+        addCard(new IceArmor());
+        addCard(new IceCrossbow());
+        addCard(new IceCrossbow.IceCrossbowII());
+        addCard(new IceCrossbow.IceCrossbowIII());
+        addCard(new IceCrossbow.IceCrossbowIIII());
+        addCard(new OilGrenade());
+        addCard(new OiledSword());
+        addCard(new SwiftSword());
+        addCard(new Toothpick());
+        addCard(new Toothpick.ToothpickII());
+        addCard(new Toothpick.ToothpickIII());
+        addCard(new Toothpick.ToothpickIIII());
+        addCard(new APlan());
+        addCard(new FireBlast());
+        addCard(new FrostBlast());
+        addCard(new RegularSkill());
+        addCard(new Calm());
+        addCard(new FerrymanSLantern());
+        addCard(new FerrymanSLantern.FerrymanSLanternII());
+        addCard(new FerrymanSLantern.FerrymanSLanternIII());
+        addCard(new HattoriSKatana());
+        addCard(new SOTF());
+        addCard(new SOTF.StrengthPowerII());
+        addCard(new SOTF.DexterityPowerII());
+        addCard(new Hemorrhage());
+        addCard(new FrontLineShield());
+        addCard(new Ruthless());
+        addCard(new KnockBackShield());
+        addCard(new CorrosiveCloud());
+        addCard(new Reckless());
+        addCard(new LaceratingAura());
+        addCard(new SmokeBomb());
+        addCard(new ClusterGrenade());
+        addCard(new SnakeFangs());
+        addCard(new IronStaff());
+        addCard(new CursedSword());
+        addCard(new FireworksTechnician());
+        addCard(new HayabusaBoots());
+        addCard(new Cocoon());
+        addCard(new Vampirism());
+        addCard(new FranticSword());
+        addCard(new HayabusaGauntlets());
+        addCard(new Punishment());
+        addCard(new ThunderShield());
+        addCard(new InTime());
+        addCard(new Giantkiller());
+        addCard(new NightLight());
+        addCard(new Rob());
     }
 
     @Override
@@ -186,6 +274,7 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
     private void addRelics(AbstractRelic relic){
         BaseMod.addRelicToCustomPool(relic,AbstractCardEnum.DEAD_CELLS);
     }
+
     @Override
     public void receivePowersModified() {
         /*BaseMod.addPower(NextTurnLoseFlightPower.class,"deadCells:NextTurnLoseFlightPower");*/
@@ -208,8 +297,14 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
         BaseMod.addKeyword(new String[]{"夜歌标记"},"受到的下一次伤害 #y翻倍");
         BaseMod.addKeyword(new String[]{"合适的牌"},"#r只适用于当前回合 的牌，因为很适合所以 #b费用会减少一");
         BaseMod.addKeyword(new String[]{"冻伤"},"造成的伤害减少 #b15% ，在此基础上再减少对应层数的伤害，回合结束时层数减一");
-        BaseMod.addKeyword(new String[]{"烧伤"},"受到的伤害增加 #b15% ，在此基础上再增加对应层数/3的伤害，回合结束时受到对应层数的伤害，失去所有烧伤");
+        BaseMod.addKeyword(new String[]{"燃烧"},"受到的伤害增加 #b15% ，在此基础上再增加对应层数/3的伤害，回合结束时受到对应层数的伤害，失去所有燃烧");
         BaseMod.addKeyword(new String[]{"藤蔓缠绕"},"回合开始时受到对应层数的伤害");
+        BaseMod.addKeyword(new String[]{"选择加入手牌"},"将这张卡的另一形态加入手牌");
+        BaseMod.addKeyword(new String[]{"弹药"},"打出某些牌时需要消耗一定的弹药");
+        BaseMod.addKeyword(new String[]{"未蓄力"},"消耗为一的形态");
+        BaseMod.addKeyword(new String[]{"蓄力"},"消耗为二的形态");
+        BaseMod.addKeyword(new String[]{"油"},"带有油的单位受到的燃烧翻倍");
+        BaseMod.addKeyword(new String[]{"隐匿"},"受到的伤害减少 #b20% 。");
     }
 
     @Override

@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.StrengthPower;
+import com.megacrit.cardcrawl.powers.VulnerablePower;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
 import deadCellsMod.cn.infinite.stsmod.powers.DepravedPower;
 
@@ -41,7 +42,8 @@ public class DepravedForm extends DeadCellsCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction("deadCells:DEPRAVED_FORM"));
         addToBot(new ApplyPowerAction(p,p,new DepravedPower(p,this.baseMagicNumber),this.baseMagicNumber));
-        addToBot(new ApplyPowerAction(p,p,new StrengthPower(p,5),5));
+        addToBot(new ApplyPowerAction(p,p,new StrengthPower(p,8),8));
+        addToBot(new ApplyPowerAction(p,p,new VulnerablePower(p,1,false),1));
     }
 
     /*@Override

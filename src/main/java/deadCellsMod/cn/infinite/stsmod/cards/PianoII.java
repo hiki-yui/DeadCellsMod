@@ -69,7 +69,7 @@ public class PianoII extends Piano {
         return card;
     }*/
 
-    class RhythmPower extends Piano.RhythmPower{
+    public class RhythmPower extends Piano.RhythmPower{
         public RhythmPower(AbstractCreature owner, AbstractCard forCard){
             super(owner,forCard,"节奏II","deadCells:RhythmPowerII");
         }
