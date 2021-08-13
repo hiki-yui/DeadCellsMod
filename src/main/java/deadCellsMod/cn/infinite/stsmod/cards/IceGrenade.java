@@ -9,8 +9,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import deadCellsMod.cn.infinite.stsmod.action.UseTheSameCardAgainAction;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsTags;
 import deadCellsMod.cn.infinite.stsmod.powers.FrostbitePower;
 import deadCellsMod.cn.infinite.stsmod.utils.CardUtils;
@@ -23,7 +22,7 @@ public class IceGrenade extends GrenadeCard{
     private static final String IMG = "img/card/IceGrenade.png";
 
     public IceGrenade(){
-        super(BASE_ID,STRINGS.NAME,IMG,1,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractCardEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.ALL_ENEMY);
+        super(BASE_ID,STRINGS.NAME,IMG,1,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.ALL_ENEMY);
 
         this.baseDamage = 3;
         this.magicNumber = this.baseMagicNumber = 3;

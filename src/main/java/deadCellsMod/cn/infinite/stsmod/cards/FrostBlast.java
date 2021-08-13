@@ -5,7 +5,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import deadCellsMod.cn.infinite.stsmod.action.FrostBlastAction;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 //冰霜爆破
 public class FrostBlast extends DeadCellsCard{
@@ -14,7 +14,7 @@ public class FrostBlast extends DeadCellsCard{
     private static final String IMG = "img/card/FrostBlast.png";
 
     public FrostBlast(){
-        super(BASE_ID,STRINGS.NAME,IMG,-1,STRINGS.DESCRIPTION,CardType.SKILL, AbstractCardEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.ALL_ENEMY);
+        super(BASE_ID,STRINGS.NAME,IMG,-1,STRINGS.DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.ALL_ENEMY);
 
         this.baseBlock = 5;
         this.magicNumber = this.baseMagicNumber = 1;

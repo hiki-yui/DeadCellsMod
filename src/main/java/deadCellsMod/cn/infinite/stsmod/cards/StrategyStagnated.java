@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 //战略停滞
 public class StrategyStagnated extends DeadCellsCard{
@@ -15,7 +15,7 @@ public class StrategyStagnated extends DeadCellsCard{
     private static final String IMG = "img/card/StrategyStagnated.png";
 
     public StrategyStagnated(){
-        super(BASE_ID,STRINGS.NAME,IMG,0,STRINGS.DESCRIPTION,CardType.SKILL, AbstractCardEnum.DEAD_CELLS,CardRarity.COMMON,CardTarget.SELF);
+        super(BASE_ID,STRINGS.NAME,IMG,0,STRINGS.DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.COMMON,CardTarget.SELF);
 
         this.magicNumber = this.baseMagicNumber = 2;
         this.cardsToPreview = new SpeedDown();

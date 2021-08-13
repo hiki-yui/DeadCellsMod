@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 //魔法飞弹
 public class MagicMissiles extends DeadCellsCard{
@@ -18,7 +18,7 @@ public class MagicMissiles extends DeadCellsCard{
     private static final String IMG = "img/card/MagicMissiles.png";
 
     public MagicMissiles(){
-        super(BASE_ID,STRINGS.NAME,IMG,1,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractCardEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.ALL_ENEMY);
+        super(BASE_ID,STRINGS.NAME,IMG,1,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.ALL_ENEMY);
 
         this.magicNumber = this.baseMagicNumber = 7;
         this.baseDamage = 1;

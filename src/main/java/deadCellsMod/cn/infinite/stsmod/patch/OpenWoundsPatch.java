@@ -31,7 +31,7 @@ public class OpenWoundsPatch {
                         AbstractDungeon.player.equals(info.owner) &&
                         info.type == DamageInfo.DamageType.NORMAL){
                     AbstractDungeon.actionManager.addToBottom(
-                            new GainBleedingPowerAction(null,__instance,((OpenWounds)relic).getAmount()));
+                            new GainBleedingPowerAction(AbstractDungeon.player,__instance,((OpenWounds)relic).getAmount()));
                 }
             }
         }

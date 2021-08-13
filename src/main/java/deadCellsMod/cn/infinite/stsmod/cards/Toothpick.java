@@ -15,7 +15,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.ThoughtBubble;
 import com.megacrit.cardcrawl.vfx.combat.WeightyImpactEffect;
 import deadCellsMod.cn.infinite.stsmod.action.AddCardToHandAction;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 import java.util.ArrayList;
 
@@ -27,7 +27,7 @@ public class Toothpick extends DeadCellsCard{
     private static final String IMG = "img/card/Toothpick.png";
 
     public Toothpick(){
-        this(BASE_ID,STRINGS.NAME,IMG,0,STRINGS.DESCRIPTION,CardType.SKILL, AbstractCardEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.ENEMY);
+        this(BASE_ID,STRINGS.NAME,IMG,0,STRINGS.DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.ENEMY);
 
         this.heavyDamage = this.baseHeavyDamage = 34;
         this.baseDamage = 9;

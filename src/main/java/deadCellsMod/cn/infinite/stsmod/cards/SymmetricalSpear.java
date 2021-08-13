@@ -5,8 +5,6 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
-import com.megacrit.cardcrawl.actions.utility.WaitAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -15,7 +13,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 public class SymmetricalSpear extends CustomCard {
     public static final String ID = "deadCells:SymmetricalSpear";
@@ -33,7 +31,7 @@ public class SymmetricalSpear extends CustomCard {
 
 
     public SymmetricalSpear(){
-        super(ID,NAME,imgUrl,COST,DESCRIPTION,CardType.ATTACK,AbstractCardEnum.DEAD_CELLS
+        super(ID,NAME,imgUrl,COST,DESCRIPTION,CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS
         ,CardRarity.COMMON,CardTarget.ALL_ENEMY);
 
 

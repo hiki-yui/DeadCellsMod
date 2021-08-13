@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 public class Giantkiller extends DeadCellsCard {
 
@@ -17,9 +17,10 @@ public class Giantkiller extends DeadCellsCard {
 
     private int realBaseDamage = 5;
     private int realBaseChangNum = 3;
+    private int count = 0;
 
     public Giantkiller(){
-        super(BASE_ID,STRINGS.NAME,"img/card/Giantkiller.png",1,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractCardEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.ENEMY);
+        super(BASE_ID,STRINGS.NAME,"img/card/Giantkiller.png",1,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.ENEMY);
 
         this.baseDamage = 5;
         this.heavyDamage = this.baseHeavyDamage = 18;
@@ -44,7 +45,7 @@ public class Giantkiller extends DeadCellsCard {
     @Override
     public float calculateModifiedCardDamage(AbstractPlayer player, AbstractMonster mo, float tmp) {
         if (mo!=null) {
-            if (mo.type == AbstractMonster.EnemyType.ELITE) {
+            if (mo.type == AbstractMonster.EnemyType.ELITE || mo.type == AbstractMonster.EnemyType.BOSS) {
                 tmp += this.changeNum;
             }
         }
@@ -60,15 +61,27 @@ public class Giantkiller extends DeadCellsCard {
         if (this.willChange){
             this.upgradeDamage(this.heavyDamage - this.baseDamage);
             this.upgradeMagicNumber(-1);
-            this.upgradeBaseCost(2);
+            /*this.upgradeBaseCost(1);*/
             this.upgradeChangeNum(realBaseChangNum);
+
             willChange = false;
         }else{
             this.baseDamage = this.realBaseDamage;
             this.upgradeMagicNumber(1);
             this.upgradeChangeNum(-realBaseChangNum);
-            this.upgradeBaseCost(1);
+            /*this.upgradeBaseCost(2);*/
             willChange = true;
         }
+        this.count++;
+    }
+
+    @Override
+    public void onMoveToDiscard() {
+        if ((count/2)!=0){
+            this.upgradeBaseCost(2);
+        }else{
+            this.upgradeBaseCost(1);
+        }
+        super.onMoveToDiscard();
     }
 }

@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsTags;
 
 public class Defend_king extends DeadCellsCard {
@@ -19,7 +19,7 @@ public class Defend_king extends DeadCellsCard {
     private static final int UPGRADE_BLOCK = 3;
     public Defend_king(){
         super(ID,NAME,IMG,COST,DESCRIPTION,CardType.SKILL,
-               /* CardColor.BLUE*/AbstractCardEnum.DEAD_CELLS,CardRarity.BASIC/*CardRarity.COMMON*/,CardTarget.SELF);
+               /* CardColor.BLUE*/AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.BASIC/*CardRarity.COMMON*/,CardTarget.SELF);
 
 
         this.baseBlock = 5;

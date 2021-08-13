@@ -1,7 +1,6 @@
 package deadCellsMod.cn.infinite.stsmod.cards;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -9,8 +8,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import deadCellsMod.cn.infinite.stsmod.action.GainBurnsPowerAction;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
-import deadCellsMod.cn.infinite.stsmod.powers.BurnsPower;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 //火把
 public class Torch extends DeadCellsCard{
@@ -20,7 +18,7 @@ public class Torch extends DeadCellsCard{
     private static final String IMG = "img/card/Torch.png";
 
     public Torch(){
-        super(BASE_ID,STRINGS.NAME,IMG,1,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractCardEnum.DEAD_CELLS,CardRarity.COMMON,CardTarget.ENEMY);
+        super(BASE_ID,STRINGS.NAME,IMG,1,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.COMMON,CardTarget.ENEMY);
 
         this.baseDamage = 5;
         this.magicNumber = this.baseMagicNumber = 6;

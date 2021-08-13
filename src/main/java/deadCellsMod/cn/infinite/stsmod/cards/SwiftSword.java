@@ -1,16 +1,17 @@
 package deadCellsMod.cn.infinite.stsmod.cards;
 
-import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.GameActionManager;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 
 public class SwiftSword extends DeadCellsCard {
@@ -21,7 +22,7 @@ public class SwiftSword extends DeadCellsCard {
     private int turnCounter = 0;
 
     public SwiftSword(){
-        super(BASE_ID,STRINGS.NAME,IMG,1,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractCardEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.SELF_AND_ENEMY);
+        super(BASE_ID,STRINGS.NAME,IMG,1,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.SELF_AND_ENEMY);
 
 
         this.baseDamage = 8;
@@ -42,20 +43,20 @@ public class SwiftSword extends DeadCellsCard {
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot(new DamageAction(abstractMonster,new DamageInfo(abstractPlayer,this.damage), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        if(turnCounter<=changeNum){
+        if(GameActionManager.turn<=changeNum){
             addToBot(new DrawCardAction(this.magicNumber));
         }
     }
 
     @Override
     public void atTurnStart() {
-        turnCounter++;
+        /*turnCounter++;*/
         super.atTurnStart();
     }
 
     @Override
     public void triggerOnGlowCheck() {
-        this.glowColor = this.turnCounter<=this.changeNum? AbstractCard.GOLD_BORDER_GLOW_COLOR : AbstractCard.BLUE_BORDER_GLOW_COLOR;
+        this.glowColor = GameActionManager.turn <=this.changeNum? AbstractCard.GOLD_BORDER_GLOW_COLOR : AbstractCard.BLUE_BORDER_GLOW_COLOR;
     }
 
 }

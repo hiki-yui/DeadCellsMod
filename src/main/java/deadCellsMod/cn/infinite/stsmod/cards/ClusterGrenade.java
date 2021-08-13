@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsTags;
 
 
@@ -19,7 +19,7 @@ public class ClusterGrenade extends GrenadeCard {
     private static final CardStrings STRINGS = CardCrawlGame.languagePack.getCardStrings(BASE_ID);
 
     public ClusterGrenade(){
-        super(BASE_ID,STRINGS.NAME,"img/card/ClusterGrenade.png",2,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractCardEnum.DEAD_CELLS,CardRarity.RARE,CardTarget.ENEMY);
+        super(BASE_ID,STRINGS.NAME,"img/card/ClusterGrenade.png",2,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.RARE,CardTarget.ENEMY);
 
         this.baseDamage = 10;
         this.magicNumber = this.baseMagicNumber = 5;

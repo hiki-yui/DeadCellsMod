@@ -21,7 +21,7 @@ import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import deadCellsMod.cn.infinite.stsmod.cards.RoundingKnife;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsCharacterEnum;
 
 import java.util.ArrayList;
@@ -123,7 +123,7 @@ public class King extends CustomPlayer {
 
     @Override
     public AbstractCard.CardColor getCardColor() {
-        return AbstractCardEnum.DEAD_CELLS;
+        return AbstractDeadCellsEnum.DEAD_CELLS;
     }
 
     @Override

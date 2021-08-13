@@ -1,16 +1,13 @@
 package deadCellsMod.cn.infinite.stsmod.cards;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import deadCellsMod.cn.infinite.stsmod.action.HayabusaGauntletsAction;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 public class HayabusaGauntlets extends DeadCellsCard {
     public static final String BASE_ID = "deadCells:HayabusaGauntlets";
@@ -18,7 +15,7 @@ public class HayabusaGauntlets extends DeadCellsCard {
     private boolean canMove = true;
 
     public HayabusaGauntlets(){
-        super(BASE_ID,STRINGS.NAME,"img/card/HayabusaGauntlets.png",1,STRINGS.DESCRIPTION, AbstractCard.CardType.ATTACK, AbstractCardEnum.DEAD_CELLS, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY);
+        super(BASE_ID,STRINGS.NAME,"img/card/HayabusaGauntlets.png",1,STRINGS.DESCRIPTION, AbstractCard.CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY);
 
         this.baseDamage = 4;
         this.heavyDamage = this.baseHeavyDamage = 7;
@@ -30,6 +27,7 @@ public class HayabusaGauntlets extends DeadCellsCard {
         if (!this.upgraded){
             this.upgradeDamage(2);
             this.upgradeHeavyDamage(4);
+            this.upgradeName();
         }
     }
 

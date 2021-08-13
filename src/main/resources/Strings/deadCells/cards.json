@@ -5,7 +5,7 @@
   },
   "deadCells:NightLight": {
     "NAME": "夜光",
-    "DESCRIPTION": "战斗结束时额外获得 !M! 张卡牌奖励."
+    "DESCRIPTION": "战斗结束时额外获得 !M! 次卡牌奖励."
   },
   "deadCells:Giantkiller": {
     "NAME": "巨人杀手",
@@ -26,7 +26,7 @@
   },
   "deadCells:HayabusaGauntlets": {
     "NAME": "隼之拳套",
-    "DESCRIPTION": "造成 !D! 点伤害 !M! 次. NL 如果目标的生命 NL 小于等于40% NL 则额外造成 !HD! 点伤害 !M! 次.  NL *无法通过使用弃入弃牌堆."
+    "DESCRIPTION": "造成 !D! 点伤害 !M! 次. NL 如果目标的生命 NL 小于等于40%则额 NL 外造成 !HD! 点伤害 !M! 次.  NL *无法通过使用弃入弃牌堆."
   },
   "deadCells:FranticSword": {
     "NAME": "狂暴之刃",
@@ -236,7 +236,7 @@
   },
   "deadCells:IceGrenade": {
     "NAME": "冰冻手雷",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害 NL 并给予 !M! 层 冻伤 ."
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害 NL 并给予 !M! 层 冻伤 . NL 消耗 ."
   },
   "deadCells:InASimilar": {
     "NAME": "故技重施",
@@ -325,7 +325,7 @@
   },
   "deadCells:DepravedForm": {
     "NAME": "堕落形态",
-    "DESCRIPTION": "获得8点 力量 . NL 你的 *攻击 会造成 !M! 次你伤害25%的额外伤害. NL 获得1层 易伤 ."
+    "DESCRIPTION": "获得6点 力量 . NL 你的 *攻击 会造成 !M! 次你伤害25%的额外伤害. NL 获得1层 易伤 ."
   },
   "deadCells:Grenade": {
     "NAME": "步兵手雷",

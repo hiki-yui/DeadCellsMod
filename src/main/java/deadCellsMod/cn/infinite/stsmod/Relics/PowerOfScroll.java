@@ -108,10 +108,10 @@ public class PowerOfScroll extends CustomRelic {
         return new PowerOfScroll();
     }
 
-    @Override
+    /*@Override
     public boolean canSpawn() {
         return AbstractDungeon.getCurrRoom() instanceof TreasureRoomBoss;
-    }
+    }*/
 
     public boolean openRedSelectScreen(int upgradeCardNum){
         System.out.println("要升级" +upgradeCardNum+ "张牌");

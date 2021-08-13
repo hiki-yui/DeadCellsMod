@@ -13,14 +13,14 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.PoisonPower;
 import com.megacrit.cardcrawl.vfx.combat.ClawEffect;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 public class SnakeFangs extends DeadCellsCard{
     public static final String BASE_ID = "deadCells:SnakeFangs";
     private static final CardStrings STRINGS = CardCrawlGame.languagePack.getCardStrings(BASE_ID);
 
     public SnakeFangs(){
-        super(BASE_ID,STRINGS.NAME,"img/card/SnakeFangs.png",1,STRINGS.DESCRIPTION, AbstractCard.CardType.ATTACK, AbstractCardEnum.DEAD_CELLS, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY);
+        super(BASE_ID,STRINGS.NAME,"img/card/SnakeFangs.png",1,STRINGS.DESCRIPTION, AbstractCard.CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY);
 
         this.baseDamage = 5;
         this.magicNumber = this.baseMagicNumber = 4;

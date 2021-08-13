@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.action.AddCardToHandAction;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 public class FillInGrenade extends DeadCellsCard {
     public static final String BASE_ID = "deadCells:FillInGrenade";
@@ -16,7 +16,7 @@ public class FillInGrenade extends DeadCellsCard {
     private static final String IMG = "img/card/FillInGrenade.png";
 
     public FillInGrenade(){
-        super(BASE_ID,STRINGS.NAME,IMG,0,STRINGS.DESCRIPTION,CardType.SKILL, AbstractCardEnum.DEAD_CELLS,CardRarity.COMMON,CardTarget.SELF);
+        super(BASE_ID,STRINGS.NAME,IMG,0,STRINGS.DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.COMMON,CardTarget.SELF);
 
         this.magicNumber = this.baseMagicNumber =1;
         this.exhaust = true;

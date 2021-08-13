@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import deadCellsMod.cn.infinite.stsmod.action.AddCardToHandAction;
 import deadCellsMod.cn.infinite.stsmod.action.GainBurnsPowerAction;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 import java.util.ArrayList;
 
@@ -42,7 +42,7 @@ public class Pyrotechnics extends DeadCellsCard{
     }
 
     public Pyrotechnics(){
-        this(BASE_ID,STRINGS.NAME,0,STRINGS.DESCRIPTION,CardType.SKILL,AbstractCardEnum.DEAD_CELLS,CardRarity.COMMON);
+        this(BASE_ID,STRINGS.NAME,0,STRINGS.DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.COMMON);
     }
 
     public boolean childCanUse(AbstractPlayer p, AbstractMonster m) {

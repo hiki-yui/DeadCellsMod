@@ -5,7 +5,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.powers.CorrosiveCloudPower;
 
 public class CorrosiveCloud extends DeadCellsCard {
@@ -14,7 +14,7 @@ public class CorrosiveCloud extends DeadCellsCard {
     private static final CardStrings STRINGS = CardCrawlGame.languagePack.getCardStrings(BASE_ID);
 
     public CorrosiveCloud(){
-        super(BASE_ID,STRINGS.NAME,"img/card/CorrosiveCloud.png",1,STRINGS.DESCRIPTION,CardType.POWER, AbstractCardEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.SELF);
+        super(BASE_ID,STRINGS.NAME,"img/card/CorrosiveCloud.png",1,STRINGS.DESCRIPTION,CardType.POWER, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.SELF);
 
         this.magicNumber = this.baseMagicNumber =1;
     }

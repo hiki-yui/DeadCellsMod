@@ -2,15 +2,12 @@ package deadCellsMod.cn.infinite.stsmod.cards;
 
 
 import com.evacipated.cardcrawl.mod.stslib.actions.common.StunMonsterAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsTags;
-
-import javax.print.DocFlavor;
 
 public class StunGrenade extends GrenadeCard {
 
@@ -19,7 +16,7 @@ public class StunGrenade extends GrenadeCard {
     private static final String IMG = "img/card/StunGrenade.png";
 
     public StunGrenade(){
-        super(BASE_ID,STRINGS.NAME,IMG,2,STRINGS.DESCRIPTION,CardType.SKILL, AbstractCardEnum.DEAD_CELLS,CardRarity.RARE,CardTarget.ENEMY);
+        super(BASE_ID,STRINGS.NAME,IMG,2,STRINGS.DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.RARE,CardTarget.ENEMY);
 
         this.tags.add(DeadCellsTags.GRENADE);
         this.exhaust = true;

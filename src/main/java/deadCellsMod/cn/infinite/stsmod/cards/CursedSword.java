@@ -1,24 +1,20 @@
 package deadCellsMod.cn.infinite.stsmod.cards;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.watcher.PressEndTurnButtonAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 public class CursedSword extends DeadCellsCard {
     public static final String BASE_ID = "deadCells:CursedSword";
     private static final CardStrings STRINGS = CardCrawlGame.languagePack.getCardStrings(BASE_ID);
 
     public CursedSword(){
-        super(BASE_ID,STRINGS.NAME,"img/card/CursedSword.png",1,STRINGS.DESCRIPTION, CardType.ATTACK, AbstractCardEnum.DEAD_CELLS, CardRarity.RARE, CardTarget.ENEMY);
+        super(BASE_ID,STRINGS.NAME,"img/card/CursedSword.png",1,STRINGS.DESCRIPTION, CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS, CardRarity.RARE, CardTarget.ENEMY);
 
         this.baseDamage = 24;
         this.magicNumber = this.baseMagicNumber = 1 ;

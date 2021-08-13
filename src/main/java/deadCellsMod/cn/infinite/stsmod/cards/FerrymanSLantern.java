@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.BloodShotEffect;
 import deadCellsMod.cn.infinite.stsmod.action.AddCardToHandAction;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 import java.util.ArrayList;
 
@@ -23,7 +23,7 @@ public class FerrymanSLantern extends DeadCellsCard {
     private static final CardStrings STRINGS = CardCrawlGame.languagePack.getCardStrings(BASE_ID);
 
     public FerrymanSLantern(){
-        this(BASE_ID,STRINGS.NAME,"img/card/FerrymanSLantern.png",0,STRINGS.DESCRIPTION,CardType.SKILL, AbstractCardEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.ENEMY);
+        this(BASE_ID,STRINGS.NAME,"img/card/FerrymanSLantern.png",0,STRINGS.DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.ENEMY);
 
         this.baseDamage = 8;
         this.heavyDamage = this.baseHeavyDamage= 20;

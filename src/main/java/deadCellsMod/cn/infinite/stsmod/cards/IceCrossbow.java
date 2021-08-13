@@ -12,9 +12,8 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.vfx.ThoughtBubble;
 import deadCellsMod.cn.infinite.stsmod.action.AddCardToHandAction;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.powers.FrostbitePower;
 
 import java.util.ArrayList;
@@ -28,7 +27,7 @@ public class IceCrossbow extends DeadCellsCard {
 
 
     public IceCrossbow(){
-        this(BASE_ID,STRINGS.NAME,IMG,0,STRINGS.DESCRIPTION,CardType.SKILL,AbstractCardEnum.DEAD_CELLS,CardRarity.COMMON,CardTarget.ENEMY);
+        this(BASE_ID,STRINGS.NAME,IMG,0,STRINGS.DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.COMMON,CardTarget.ENEMY);
         this.baseDamage = 5;
         this.magicNumber = this.baseMagicNumber = 3;
         this.heavyDamage = this.baseHeavyDamage= 12;
@@ -250,7 +249,7 @@ public class IceCrossbow extends DeadCellsCard {
         private static final CardStrings STRINGS = CardCrawlGame.languagePack.getCardStrings(BASE_ID);
 
         public IceCrossbowIIII(DeadCellsCard father){
-            super(BASE_ID,STRINGS.NAME,IMG,0,STRINGS.DESCRIPTION,CardType.ATTACK,CardColor.COLORLESS,CardRarity.SPECIAL,CardTarget.ENEMY);
+            super(BASE_ID,STRINGS.NAME,IMG,0,STRINGS.DESCRIPTION,CardType.ATTACK,CardColor.COLORLESS,CardRarity.SPECIAL,CardTarget.SELF);
 
             this.father = father;
             this.ammunitionNumber = 5;

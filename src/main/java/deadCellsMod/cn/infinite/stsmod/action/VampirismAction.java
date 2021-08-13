@@ -24,16 +24,18 @@ public class VampirismAction extends AbstractGameAction {
         addToBot(new WaitAction(0.5F));
         int healNum = 0;
         for (AbstractMonster m : AbstractDungeon.getMonsters().monsters){
-            if (m.hasPower("deadCells:BleedingPower")) {
-                for (int i = 0; i < m.getPower("deadCells:BleedingPower").amount && i<20;i++){
+            if (!m.isDying) {
+                if (m.hasPower("deadCells:BleedingPower")) {
+                    for (int i = 0; i < m.getPower("deadCells:BleedingPower").amount && i < 20; i++) {
+                        addToBot(new VFXAction(new FlyingOrbEffect(m.hb.cX, m.hb.cY)));
+                    }
+                    healNum += m.getPower("deadCells:BleedingPower").amount;
+                }
+                for (int i = 0; i < startNum; i++) {
                     addToBot(new VFXAction(new FlyingOrbEffect(m.hb.cX, m.hb.cY)));
                 }
-                healNum += m.getPower("deadCells:BleedingPower").amount;
+                healNum += startNum;
             }
-            for (int i = 0;i<startNum;i++){
-                addToBot(new VFXAction(new FlyingOrbEffect(m.hb.cX, m.hb.cY)));
-            }
-            healNum += startNum;
         }
         addToBot(new HealAction(owner,owner,healNum));
         isDone = true;

@@ -1,21 +1,16 @@
 package deadCellsMod.cn.infinite.stsmod.cards;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerToRandomEnemyAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.PoisonPower;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
-
-import java.util.Random;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 public class AlchemyCarbine extends DeadCellsCard {
 
@@ -28,7 +23,7 @@ public class AlchemyCarbine extends DeadCellsCard {
     private static final int UPGRADE_DRAM = 1;
 
     public AlchemyCarbine(){
-        super(ID,NAME,IMG,1,DESCRIPTION,CardType.SKILL, AbstractCardEnum.DEAD_CELLS,
+        super(ID,NAME,IMG,1,DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,
         CardRarity.COMMON,CardTarget.SELF);
 
 

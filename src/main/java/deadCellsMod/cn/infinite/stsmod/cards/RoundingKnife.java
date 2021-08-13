@@ -4,7 +4,6 @@ import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.actions.utility.WaitAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -12,8 +11,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import deadCellsMod.cn.infinite.stsmod.action.GainBleedingPowerAction;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
-import deadCellsMod.cn.infinite.stsmod.powers.BleedingPower;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 //圆舞飞刀
 public class RoundingKnife extends CustomCard {
@@ -23,7 +21,7 @@ public class RoundingKnife extends CustomCard {
 
 
     public RoundingKnife(){
-        super(ID,strings.NAME,IMG,0,strings.DESCRIPTION,CardType.SKILL, AbstractCardEnum.DEAD_CELLS,CardRarity.BASIC,CardTarget.ALL_ENEMY);
+        super(ID,strings.NAME,IMG,0,strings.DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.BASIC,CardTarget.ALL_ENEMY);
 
 
         this.magicNumber = this.baseMagicNumber = 1;

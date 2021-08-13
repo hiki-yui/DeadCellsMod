@@ -19,7 +19,7 @@ public class InTimePower extends DeadCellsPower {
     }
 
     @Override
-    public void atStartOfTurn() {
+    public void atStartOfTurnPostDraw() {
         boolean canGive = false;
         for (AbstractMonster m : AbstractDungeon.getMonsters().monsters){
             if (m.intent == AbstractMonster.Intent.ATTACK || m.intent == AbstractMonster.Intent.ATTACK_DEBUFF ||
@@ -31,9 +31,11 @@ public class InTimePower extends DeadCellsPower {
             for (int i = 0; i < this.amount; i++) {
                 AbstractCard card = DeadCellsModInitializer.SHIELD_POOL.
                         get(AbstractDungeon.cardRng.random(DeadCellsModInitializer.SHIELD_POOL.size() - 1)).makeCopy();
+                card.exhaust = true;
                 addToBot(new NewQueueCardAction(card, true, true, true));
             }
         }
+
         super.atStartOfTurn();
     }
 

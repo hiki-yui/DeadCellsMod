@@ -1,14 +1,12 @@
 package deadCellsMod.cn.infinite.stsmod.cards;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerToRandomEnemyAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import deadCellsMod.cn.infinite.stsmod.action.GainBurnsPowerAction;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
-import deadCellsMod.cn.infinite.stsmod.powers.BurnsPower;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 //投掷火把
 public class Firebrands extends DeadCellsCard {
@@ -18,7 +16,7 @@ public class Firebrands extends DeadCellsCard {
     private static final String IMG = "img/card/Firebrands.png";
 
     public Firebrands(){
-        super(BASE_ID,STRINGS.NAME,IMG,2,STRINGS.DESCRIPTION,CardType.SKILL, AbstractCardEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.ALL_ENEMY);
+        super(BASE_ID,STRINGS.NAME,IMG,2,STRINGS.DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.ALL_ENEMY);
 
         this.burnNumber = this.baseBurnNumber = 5;
         this.magicNumber = this.baseMagicNumber = 3;

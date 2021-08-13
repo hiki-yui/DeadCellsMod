@@ -1,13 +1,12 @@
 package deadCellsMod.cn.infinite.stsmod.cards;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.powers.RobPower;
 
 public class Rob extends DeadCellsCard {
@@ -16,7 +15,7 @@ public class Rob extends DeadCellsCard {
     private static final CardStrings STRINGS = CardCrawlGame.languagePack.getCardStrings(BASE_ID);
 
     public Rob(){
-        super(BASE_ID,STRINGS.NAME,"img/card/Rob.png",1,STRINGS.DESCRIPTION,CardType.POWER, AbstractCardEnum.DEAD_CELLS,CardRarity.RARE,CardTarget.SELF);
+        super(BASE_ID,STRINGS.NAME,"img/card/Rob.png",1,STRINGS.DESCRIPTION,CardType.POWER, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.RARE,CardTarget.SELF);
 
         this.magicNumber = this.baseMagicNumber = 12;
         this.changeNum = this.baseChangeNum = 2;

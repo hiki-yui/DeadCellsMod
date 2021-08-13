@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsTags;
 
 public class Punishment extends DeadCellsCard{
@@ -18,7 +18,7 @@ public class Punishment extends DeadCellsCard{
     private static final String IMG = "img/card/Punishment.png";
 
     public Punishment(){
-        super(BASE_ID,STRINGS.NAME,IMG,2,STRINGS.DESCRIPTION, AbstractCard.CardType.SKILL, AbstractCardEnum.DEAD_CELLS, AbstractCard.CardRarity.UNCOMMON, CardTarget.SELF);
+        super(BASE_ID,STRINGS.NAME,IMG,2,STRINGS.DESCRIPTION, AbstractCard.CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS, AbstractCard.CardRarity.UNCOMMON, CardTarget.SELF);
 
         this.baseBlock = 12;
         this.magicNumber = this.baseMagicNumber = 1;

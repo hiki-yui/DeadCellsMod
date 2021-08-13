@@ -5,7 +5,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.powers.InTimePower;
 
 public class InTime extends DeadCellsCard {
@@ -14,7 +14,7 @@ public class InTime extends DeadCellsCard {
     private static final CardStrings STRINGS = CardCrawlGame.languagePack.getCardStrings(BASE_ID);
 
     public InTime(){
-        super(BASE_ID,STRINGS.NAME,"img/card/InTime.png",2,STRINGS.DESCRIPTION,CardType.POWER, AbstractCardEnum.DEAD_CELLS,CardRarity.RARE,CardTarget.SELF);
+        super(BASE_ID,STRINGS.NAME,"img/card/InTime.png",3,STRINGS.DESCRIPTION,CardType.POWER, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.RARE,CardTarget.SELF);
 
         this.magicNumber = this.baseMagicNumber = 1;
     }
@@ -22,9 +22,10 @@ public class InTime extends DeadCellsCard {
     @Override
     public void upgrade() {
         if (!this.upgraded){
-            this.rawDescription = STRINGS.UPGRADE_DESCRIPTION;
-            this.initializeDescription();
-            this.isInnate = true;
+            this.upgradeBaseCost(2);
+            /*this.rawDescription = STRINGS.UPGRADE_DESCRIPTION;*/
+            /*this.initializeDescription();*/
+            /*this.isInnate = true;*/
             this.upgradeName();
         }
     }

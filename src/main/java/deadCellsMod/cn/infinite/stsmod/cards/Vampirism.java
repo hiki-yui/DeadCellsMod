@@ -1,15 +1,12 @@
 package deadCellsMod.cn.infinite.stsmod.cards;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import deadCellsMod.cn.infinite.stsmod.action.GainAllEnemyBleedingPowerAction;
-import deadCellsMod.cn.infinite.stsmod.action.GainBleedingPowerAction;
 import deadCellsMod.cn.infinite.stsmod.action.VampirismAction;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 public class Vampirism extends DeadCellsCard {
 
@@ -17,7 +14,7 @@ public class Vampirism extends DeadCellsCard {
     private static final CardStrings STRINGS = CardCrawlGame.languagePack.getCardStrings(BASE_ID);
 
     public Vampirism(){
-        super(BASE_ID,STRINGS.NAME,"img/card/Vampirism.png",2,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractCardEnum.DEAD_CELLS,CardRarity.RARE,CardTarget.ALL_ENEMY);
+        super(BASE_ID,STRINGS.NAME,"img/card/Vampirism.png",2,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.RARE,CardTarget.ALL_ENEMY);
 
         this.magicNumber = this.baseMagicNumber = 4;
         this.exhaust = true;
@@ -34,7 +31,8 @@ public class Vampirism extends DeadCellsCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot(new VampirismAction(abstractPlayer,magicNumber));
         addToTop(new GainAllEnemyBleedingPowerAction(abstractPlayer, magicNumber));
+        addToBot(new VampirismAction(abstractPlayer,magicNumber));
+
     }
 }

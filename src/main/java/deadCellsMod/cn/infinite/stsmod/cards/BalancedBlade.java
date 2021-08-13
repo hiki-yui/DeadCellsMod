@@ -1,6 +1,5 @@
 package deadCellsMod.cn.infinite.stsmod.cards;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.ModifyDamageAction;
@@ -9,7 +8,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 //均衡之刃
 public class BalancedBlade extends DeadCellsCard {
@@ -20,7 +19,7 @@ public class BalancedBlade extends DeadCellsCard {
     private static final int MAGIC_NUM_UP_NUM = 1;
 
     public BalancedBlade(){
-        super(BASE_ID,STRINGS.NAME,IMG,1,STRINGS.DESCRIPTION, CardType.ATTACK,AbstractCardEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.ENEMY);
+        super(BASE_ID,STRINGS.NAME,IMG,1,STRINGS.DESCRIPTION, CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.ENEMY);
 
         this.magicNumber = this.baseMagicNumber = 3;
         this.baseDamage = 9;

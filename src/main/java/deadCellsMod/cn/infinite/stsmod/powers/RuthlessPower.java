@@ -30,6 +30,6 @@ public class RuthlessPower extends DeadCellsPower {
 
     @Override
     public void updateDescription() {
-        this.description = STRINGS.DESCRIPTIONS[0] + needDebuff +STRINGS.DESCRIPTIONS[1] +this.amount + STRINGS.DESCRIPTIONS[2];
+        this.description = STRINGS.DESCRIPTIONS[0] + 2 +STRINGS.DESCRIPTIONS[1] +this.amount + STRINGS.DESCRIPTIONS[2];
     }
 }

@@ -6,7 +6,6 @@ import basemod.interfaces.*;
 import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
-import com.megacrit.cardcrawl.actions.unique.AddCardToDeckAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -17,12 +16,10 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rewards.RewardItem;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
-import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
-import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToDrawPileEffect;
 import deadCellsMod.cn.infinite.stsmod.Relics.*;
 import deadCellsMod.cn.infinite.stsmod.cards.*;
 import deadCellsMod.cn.infinite.stsmod.character.King;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsCharacterEnum;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsTags;
 import deadCellsMod.cn.infinite.stsmod.monster.Zombie;
@@ -41,7 +38,8 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
         EditCharactersSubscriber, EditStringsSubscriber,
         EditRelicsSubscriber, EditKeywordsSubscriber, PostExhaustSubscriber,
         PostBattleSubscriber, PostDungeonInitializeSubscriber,AddAudioSubscriber,
-        PostPowerApplySubscriber,OnPowersModifiedSubscriber,PostInitializeSubscriber,OnStartBattleSubscriber{
+        PostPowerApplySubscriber,OnPowersModifiedSubscriber,PostInitializeSubscriber,OnStartBattleSubscriber
+        /*BaseMod.SaveCustomReward*/ {
 
 
     public DeadCellsModInitializer() {
@@ -57,7 +55,7 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
         String skill_bgURL1024 = "img/card_bg/1024/skill_bg.png";
         String energy_orbUrl1024 = "img/card_bg/1024/energy_orb.png";
         logger.info("完成");
-        BaseMod.addColor(AbstractCardEnum.DEAD_CELLS, Color.MAGENTA,attack_bgURL,skill_bgURL,power_bgURL,
+        BaseMod.addColor(AbstractDeadCellsEnum.DEAD_CELLS, Color.MAGENTA,attack_bgURL,skill_bgURL,power_bgURL,
                 energy_orbUrl,attack_bgURL1024,skill_bgURL1024,power_bgURL1024,"img/card_bg/1024/energy_orb.png",energy_smallUrl);
         /*//将音频发布到游戏的音频储存区
         BaseMod.publishAddAudio(CardCrawlGame.sound);*/
@@ -79,6 +77,13 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
             }
         }
     }
+
+    /*@Override
+    public RewardSave onSave(CustomReward customReward) {
+*//*
+        return new RewardSave("CARD",Abstract);
+*//*
+    }*/
 
     @Override
     public void receiveAddAudio() {
@@ -105,7 +110,10 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
     public void receivePostBattle(AbstractRoom abstractRoom) {
         if (AbstractDungeon.player.hasPower("deadCells:NightLightPower")) {
             for (int i = 0;i<AbstractDungeon.player.getPower("deadCells:NightLightPower").amount;i++) {
-                abstractRoom.addCardReward(new RewardItem());
+                RewardItem item = new RewardItem();
+                abstractRoom.addCardReward(item);
+                /*AbstractDungeon.combatRewardScreen.rewards.add(item);*/
+                /*CardCrawlGame.saveFile.combat_rewards.add(new RewardSave("CARD","deadCells:NightLight"));*/
             }
         }
         if (AbstractDungeon.player.hasPower("deadCells:RobPower")) {
@@ -113,15 +121,16 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
         }
     }
 
+
     @Override
     public void receivePostDungeonInitialize() {
-
+        /*BaseMod.registerCustomReward(RewardItem.RewardType.CARD,);*/
     }
 
     @Override
     public void receivePostInitialize() {
         BaseMod.addMonster( "deadCells:Zombie",() -> new Zombie(0.0F, 0.0F));
-        BaseMod.addStrongMonsterEncounter(Exordium.ID,new MonsterInfo("deadCells:Zombie",10));
+        BaseMod.addStrongMonsterEncounter(Exordium.ID,new MonsterInfo("deadCells:Zombie",7));
     }
 
     @Override
@@ -141,6 +150,7 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
             SHIELD_POOL.add(card);
         }
     }
+
     @Override
     public void receiveEditCards() {
         BaseMod.addDynamicVariable(new BurnsVariable());
@@ -259,6 +269,7 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
         addRelics(new BackPack_at());
         addRelics(new SpirePace());
         addRelics(new OpenWounds());
+        BaseMod.addRelic(new Predator(),RelicType.SHARED);
         /*BaseMod.addRelic(new BackPack_sk(),RelicType.SHARED);
         BaseMod.addRelic(new BackPack_at(),RelicType.SHARED);*/
         BaseMod.addRelic(new Nocturne(), RelicType.SHARED);
@@ -269,10 +280,11 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
         BaseMod.addRelic(new Oppressive(),RelicType.SHARED);
         BaseMod.addRelic(new Tactical(),RelicType.SHARED);
         BaseMod.addRelic(new PowerOfScroll(),RelicType.SHARED);
+        BaseMod.addRelic(new CorruptedArtifact(),RelicType.SHARED);
     }
 
     private void addRelics(AbstractRelic relic){
-        BaseMod.addRelicToCustomPool(relic,AbstractCardEnum.DEAD_CELLS);
+        BaseMod.addRelicToCustomPool(relic, AbstractDeadCellsEnum.DEAD_CELLS);
     }
 
     @Override

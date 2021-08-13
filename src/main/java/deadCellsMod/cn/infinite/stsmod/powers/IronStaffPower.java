@@ -9,41 +9,44 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import deadCellsMod.cn.infinite.stsmod.utils.CardUtils;
 
 public class IronStaffPower extends DeadCellsPower {
 
     public static final String BASE_ID = "deadCells:IronStaffPower";
     private static final PowerStrings STRINGS = CardCrawlGame.languagePack.getPowerStrings(BASE_ID);
+    private int damage;
 
     public IronStaffPower(AbstractCreature owner, int amount) {
         super(BASE_ID,STRINGS,owner,amount,PowerType.BUFF,true);
+        this.damage = owner.currentBlock;
     }
 
     @Override
     public void atStartOfTurn() {
-        addToBot(new AbstractGameAction() {
-            @Override
-            public void update() {
-                int num = 0;
-                for (AbstractMonster monster: AbstractDungeon.getMonsters().monsters){
-                    if (!monster.isDying){
-                        num++;
-                    }
-                }
-                int[] i = new int[num];
-                for (int n = 0;n<i.length;n++){
-                    i[n] = owner.currentBlock;
-                }
-                for (int c = 0;c<this.amount;c++) {
-                    flash();
-                    addToBot(new DamageAllEnemiesAction(owner, i, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.BLUNT_HEAVY, true));
-                }
-                isDone = true;
-            }
-        });
-
-        addToBot(new ReducePowerAction(this.owner,this.owner,this,this.amount));
+        System.out.println(this.owner.currentBlock);
+        this.damage = this.owner.currentBlock;
+        /*int thisAmount = this.amount;*/
+        AbstractCreature thisOwner = this.owner;
+        int[] i = CardUtils.forDamageAllEnemies(damage);
+        for (int c = 0; c < this.amount; c++) {
+            flash();
+            addToBot(new DamageAllEnemiesAction(thisOwner, i, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.BLUNT_HEAVY, true));
+        }
+        addToBot(new ReducePowerAction(thisOwner, thisOwner, "deadCells:IronStaffPower", this.amount));
     }
+
+
+    /*@Override
+    public void update(int slot) {
+        super.update(slot);
+        this.damage = owner.currentBlock;
+    }*/
+
+    /*@Override
+    public int onAttackedToChangeDamage(DamageInfo info, int damageAmount) {
+        return super.onAttackedToChangeDamage(info, damageAmount);
+    }*/
 
     @Override
     public void updateDescription() {

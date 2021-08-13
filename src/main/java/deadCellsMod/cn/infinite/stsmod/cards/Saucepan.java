@@ -5,7 +5,6 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.utility.WaitAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -14,7 +13,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 public class Saucepan extends CustomCard {
 
@@ -26,7 +25,7 @@ public class Saucepan extends CustomCard {
 
     public Saucepan(){
         super(ID,NAME,IMG,1,DESCRIPTION,CardType.ATTACK,
-                AbstractCardEnum.DEAD_CELLS,CardRarity.BASIC,CardTarget.ENEMY);
+                AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.BASIC,CardTarget.ENEMY);
 
         this.baseDamage = 8;
         this.baseMagicNumber = 1;

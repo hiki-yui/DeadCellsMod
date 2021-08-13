@@ -1,7 +1,5 @@
 package deadCellsMod.cn.infinite.stsmod.cards;
 
-import basemod.DevConsole;
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
@@ -18,7 +16,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DoubleDamagePower;
 import com.megacrit.cardcrawl.vfx.ThoughtBubble;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.utils.ImgUtils;
 
 public class Piano extends DeadCellsCard {
@@ -41,7 +39,7 @@ public class Piano extends DeadCellsCard {
     }
 
     public Piano() {
-        super(ID, NAME, IMG, BASE_COST, DESCRIPTION, CardType.ATTACK, AbstractCardEnum.DEAD_CELLS, CardRarity.RARE, CardTarget.ENEMY);
+        super(ID, NAME, IMG, BASE_COST, DESCRIPTION, CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS, CardRarity.RARE, CardTarget.ENEMY);
         this.baseDamage = BASE_DAMAGE;
         this.cardsToPreview = new PianoII();
         this.exhaust = true;

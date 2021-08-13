@@ -45,7 +45,7 @@
     "NAME": "隐匿",
     "DESCRIPTIONS": [
       "受到的伤害减少 #b",
-      "%"
+      "%，回合开始时层数减一"
     ]
   },
   "deadCells:LaceratingAuraPower": {

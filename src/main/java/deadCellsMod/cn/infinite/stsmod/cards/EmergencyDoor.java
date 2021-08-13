@@ -1,9 +1,7 @@
 package deadCellsMod.cn.infinite.stsmod.cards;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -11,7 +9,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.BufferPower;
 import com.megacrit.cardcrawl.powers.WeakPower;
-import deadCellsMod.cn.infinite.stsmod.enums.AbstractCardEnum;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 
 public class EmergencyDoor extends DeadCellsCard {
@@ -31,7 +29,7 @@ public class EmergencyDoor extends DeadCellsCard {
 
     public EmergencyDoor(){
         super(ID,NAME,IMG,BASE_COST,DESCRIPTION,CardType.POWER,
-                AbstractCardEnum.DEAD_CELLS,CardRarity.RARE,CardTarget.SELF);
+                AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.RARE,CardTarget.SELF);
 
 
         this.exhaust=true;
