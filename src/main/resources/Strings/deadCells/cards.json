@@ -26,7 +26,7 @@
   },
   "deadCells:HayabusaGauntlets": {
     "NAME": "隼之拳套",
-    "DESCRIPTION": "造成 !D! 点伤害 !M! 次. NL 如果目标的生命 NL 小于等于40%则额 NL 外造成 !HD! 点伤害 !M! 次.  NL *无法通过使用弃入弃牌堆."
+    "DESCRIPTION": "造成 !D! 点伤害 !M! 次. NL 如果目标的生命小于等于40%. NL 额外造成 !HD! 点伤害 !M! 次.  NL 如果该牌费用不为0则 *无法通过使用弃入弃牌堆."
   },
   "deadCells:FranticSword": {
     "NAME": "狂暴之刃",
@@ -34,7 +34,7 @@
   },
   "deadCells:Vampirism": {
     "NAME": "吸血",
-    "DESCRIPTION": "所有敌人获得 !M! 层 流血 . NL 回复敌人 流血 层数总和的生命."
+    "DESCRIPTION": "所有敌人获得 !M! 层 流血 . NL 回复敌人 流血 层数总和的生命. NL 消耗 ."
   },
   "deadCells:Cocoon": {
     "NAME": "结茧",
@@ -92,7 +92,7 @@
   },
   "deadCells:HattoriSKatana": {
     "NAME": "服部武士刀",
-    "DESCRIPTION": "造成 !D! 点伤害 !M! 次. NL 这张牌每打出一次伤害段数加一.如果该牌至少打出三段则获得 !CN! 点 敏捷 和 力量 . NL *无法通过使用弃入弃牌堆 ."
+    "DESCRIPTION": "造成 !D! 点伤害 !M! 次. NL 每打出一次伤害段数加一最多五段. NL 如果该牌至少打出三段则获得 !CN! 点 敏捷 和 力量 . NL 如果该牌费用不为0则 *无法通过使用弃入弃牌堆 ."
   },
   "deadCells:FerrymanSLanternIII": {
     "NAME": "灵魂冲击",
@@ -236,7 +236,7 @@
   },
   "deadCells:IceGrenade": {
     "NAME": "冰冻手雷",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害 NL 并给予 !M! 层 冻伤 . NL 消耗 ."
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害 NL 并给予 !M! 层 冻伤 ."
   },
   "deadCells:InASimilar": {
     "NAME": "故技重施",

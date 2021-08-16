@@ -33,7 +33,9 @@ public class HayabusaGauntlets extends DeadCellsCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        this.canMove = false;
+        if (this.cost>0) {
+            this.canMove = false;
+        }
         for (int i = 0; i < magicNumber; i++) {
             addToBot(new HayabusaGauntletsAction(abstractPlayer,abstractMonster,
                     this.damage,this.heavyDamage,((i + 1) == this.magicNumber),this.magicNumber));

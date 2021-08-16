@@ -104,6 +104,7 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
         BaseMod.addAudio("deadCells:SCYTHE_CLAW","audio/sound/ScytheClaw.ogg");
         BaseMod.addAudio("deadCells:SCYTHE_CLAW_II","audio/sound/ScytheClawII.ogg");
         BaseMod.addAudio("deadCells:MAGIC_MISSILES","audio/sound/MagicMissiles.ogg");
+        BaseMod.addAudio("deadCells:THROWING_KNIFE","audio/sound/ThrowingKnife.ogg");
     }
 
     @Override

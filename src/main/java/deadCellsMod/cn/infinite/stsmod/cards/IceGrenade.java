@@ -26,7 +26,7 @@ public class IceGrenade extends GrenadeCard{
 
         this.baseDamage = 3;
         this.magicNumber = this.baseMagicNumber = 3;
-        this.exhaust = true;
+        /*this.exhaust = true;*/
         this.tags.add(DeadCellsTags.GRENADE);
     }
 

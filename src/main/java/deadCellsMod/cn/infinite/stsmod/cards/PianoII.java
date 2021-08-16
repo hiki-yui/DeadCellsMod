@@ -47,7 +47,7 @@ public class PianoII extends Piano {
         Piano card = new PianoIII();
         AbstractDungeon.actionManager.addToBottom(new SFXAction("deadCells:PIANO_II"));
         pianoFallowAction(paramAbstractPlayer,paramAbstractMonster,card);
-        addToBot(new ApplyPowerAction(paramAbstractPlayer,paramAbstractPlayer,new RhythmPower(paramAbstractPlayer,card)));
+        addToBot(new ApplyPowerAction(paramAbstractPlayer,paramAbstractPlayer,new RhythmPower(paramAbstractPlayer,card,this)));
 
 
 
@@ -70,8 +70,8 @@ public class PianoII extends Piano {
     }*/
 
     public class RhythmPower extends Piano.RhythmPower{
-        public RhythmPower(AbstractCreature owner, AbstractCard forCard){
-            super(owner,forCard,"节奏II","deadCells:RhythmPowerII");
+        public RhythmPower(AbstractCreature owner, AbstractCard forCard,AbstractCard maker){
+            super(owner,forCard,maker,"节奏II","deadCells:RhythmPowerII");
         }
 
         @Override
@@ -84,4 +84,6 @@ public class PianoII extends Piano {
             this.description = "节奏III";
         }
     }
+
+
 }

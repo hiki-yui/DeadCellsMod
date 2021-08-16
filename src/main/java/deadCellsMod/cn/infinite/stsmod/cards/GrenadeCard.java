@@ -11,6 +11,8 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import deadCellsMod.cn.infinite.stsmod.action.UseTheSameCardAgainAction;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsTags;
 
+import java.util.ArrayList;
+
 public abstract class GrenadeCard extends DeadCellsCard {
 
     public GrenadeCard(String id, String name, String img, int cost, String rawDescription, CardType type, CardColor color, CardRarity rarity, CardTarget target) {
@@ -52,23 +54,28 @@ public abstract class GrenadeCard extends DeadCellsCard {
         addToBot(new AbstractGameAction() {
             @Override
             public void update() {
-                for (AbstractCard card : AbstractDungeon.player.discardPile.group) {
+                ArrayList<AbstractCard> list = new ArrayList<>(AbstractDungeon.player.discardPile.group);
+                for (AbstractCard card : list) {
                     if (thisCard.equals(card)) {
                         if (thisCard.exhaust) {
                             System.out.println("removeCardFromDisCardPile");
                             /*AbstractDungeon.player.discardPile.group.remove(thisCard);*/
-                            AbstractDungeon.player.discardPile.removeCard(thisCard);
+                            AbstractDungeon.player.discardPile.moveToExhaustPile(thisCard);
                         }
                         isDone = true;
                         return;
                     }
                 }
-                for (AbstractCard card : AbstractDungeon.player.hand.group) {
+
+                list.clear();
+                list.addAll(AbstractDungeon.player.hand.group);
+
+                for (AbstractCard card : list) {
                     if (thisCard.equals(card)) {
                         System.out.println("removeCardFromHand");
                         /*AbstractDungeon.player.hand.group.remove(thisCard);*/
                         if (thisCard.exhaust) {
-                            AbstractDungeon.player.hand.removeCard(thisCard);
+                            AbstractDungeon.player.hand.moveToExhaustPile(thisCard);
                         }else{
                             AbstractDungeon.player.hand.moveToDiscardPile(thisCard);
                         }
@@ -76,12 +83,16 @@ public abstract class GrenadeCard extends DeadCellsCard {
                         return;
                     }
                 }
-                for (AbstractCard card : AbstractDungeon.player.drawPile.group) {
+
+                list.clear();
+                list.addAll(AbstractDungeon.player.drawPile.group);
+
+                for (AbstractCard card : list ) {
                     if (thisCard.equals(card)) {
                         System.out.println("removeCardFormDrawPile");
                         /*AbstractDungeon.player.drawPile.group.remove(thisCard);*/
                         if (thisCard.exhaust) {
-                            AbstractDungeon.player.drawPile.removeCard(thisCard);
+                            AbstractDungeon.player.drawPile.moveToExhaustPile(thisCard);
                         }else{
                             AbstractDungeon.player.drawPile.moveToDiscardPile(thisCard);
                         }

@@ -45,7 +45,7 @@
     "NAME": "隐匿",
     "DESCRIPTIONS": [
       "受到的伤害减少 #b",
-      "%，回合开始时层数减一"
+      "%, 回合开始时层数减一"
     ]
   },
   "deadCells:LaceratingAuraPower": {
@@ -112,7 +112,7 @@
     "DESCRIPTIONS": [
       "造成的伤害减少 #b",
       "% ，在此基础上再减少 #b",
-      " 点伤害，回合结束时层数减一。"
+      " 点伤害，回合结束时层数减二。"
     ]
   },
   "UnKnowPower": {

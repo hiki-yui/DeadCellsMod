@@ -249,7 +249,7 @@ public class IceCrossbow extends DeadCellsCard {
         private static final CardStrings STRINGS = CardCrawlGame.languagePack.getCardStrings(BASE_ID);
 
         public IceCrossbowIIII(DeadCellsCard father){
-            super(BASE_ID,STRINGS.NAME,IMG,0,STRINGS.DESCRIPTION,CardType.ATTACK,CardColor.COLORLESS,CardRarity.SPECIAL,CardTarget.SELF);
+            super(BASE_ID,STRINGS.NAME,IMG,0,STRINGS.DESCRIPTION,CardType.SKILL,CardColor.COLORLESS,CardRarity.SPECIAL,CardTarget.SELF);
 
             this.father = father;
             this.ammunitionNumber = 5;

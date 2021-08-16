@@ -31,10 +31,12 @@ public class VampirismAction extends AbstractGameAction {
                     }
                     healNum += m.getPower("deadCells:BleedingPower").amount;
                 }
-                for (int i = 0; i < startNum; i++) {
-                    addToBot(new VFXAction(new FlyingOrbEffect(m.hb.cX, m.hb.cY)));
+                if(!m.hasPower("Artifact")) {
+                    for (int i = 0; i < startNum; i++) {
+                        addToBot(new VFXAction(new FlyingOrbEffect(m.hb.cX, m.hb.cY)));
+                    }
+                    healNum += startNum;
                 }
-                healNum += startNum;
             }
         }
         addToBot(new HealAction(owner,owner,healNum));

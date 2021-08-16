@@ -52,10 +52,8 @@ public class SnakeFangs extends DeadCellsCard{
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         if (abstractMonster != null) {
             addToBot(new VFXAction( new ClawEffect(abstractMonster.hb.cX, abstractMonster.hb.cY, Color.MAGENTA, Color.PINK), 0.2F));
-            if (abstractMonster.hasPower("Poison")) {
-                if (abstractMonster.getPower("Poison").amount >= this.changeNum) {
-                    addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.heavyDamage), AbstractGameAction.AttackEffect.NONE));
-                }
+            if (abstractMonster.hasPower("Poison") && abstractMonster.getPower("Poison").amount >= this.changeNum) {
+                addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.heavyDamage), AbstractGameAction.AttackEffect.NONE));
             } else {
                 addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage), AbstractGameAction.AttackEffect.NONE));
             }

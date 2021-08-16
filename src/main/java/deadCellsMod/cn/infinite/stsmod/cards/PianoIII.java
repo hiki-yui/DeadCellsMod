@@ -48,7 +48,7 @@ public class PianoIII extends PianoII {
         AbstractDungeon.actionManager.addToBottom(new SFXAction("deadCells:PIANO_III"));
         AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(paramAbstractPlayer,
                 this.baseDamage,this.damageType, AbstractGameAction.AttackEffect.NONE));
-        addToBot(new ApplyPowerAction(paramAbstractPlayer,paramAbstractPlayer,new RhythmPower(paramAbstractPlayer,this.makeCopy())));
+        addToBot(new ApplyPowerAction(paramAbstractPlayer,paramAbstractPlayer,new RhythmPower(paramAbstractPlayer,this.makeCopy(),this)));
     }
 
 
@@ -61,8 +61,8 @@ public class PianoIII extends PianoII {
         return card;
     }*/
     public class RhythmPower extends Piano.RhythmPower{
-        public RhythmPower(AbstractCreature owner, AbstractCard forCard){
-            super(owner,forCard,"节奏III","deadCells:RhythmPowerIII");
+        public RhythmPower(AbstractCreature owner, AbstractCard forCard,AbstractCard maker){
+            super(owner,forCard,maker,"节奏III","deadCells:RhythmPowerIII");
         }
 
         @Override
@@ -75,19 +75,5 @@ public class PianoIII extends PianoII {
             this.description = "节奏IIII";
         }
 
-        @Override
-        public void onAfterUseCard(AbstractCard card, UseCardAction action) {
-            if (!justApply) {
-                if (card.getClass() != this.card.getClass()){
-                    AbstractPlayer player = AbstractDungeon.player;
-                    AbstractDungeon.effectList.add(new ThoughtBubble(player.dialogX, player.dialogY, 3.0F,"节奏 被 #r打断", true));
-                }
-                if (!(card instanceof PianoIII)) {
-                    addToTop(new RemoveSpecificPowerAction(owner, owner, this));
-                }
-            }else{
-                justApply = false;
-            }
-        }
     }
 }

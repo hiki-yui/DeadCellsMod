@@ -21,15 +21,16 @@ public class HattoriSKatana extends DeadCellsCard {
     public HattoriSKatana(){
         super(BASE_ID,STRINGS.NAME,"img/card/HattoriSKatana.png",1,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.RARE,CardTarget.ENEMY);
 
-        this.baseDamage = 5;
+        this.baseDamage = 4;
         this.magicNumber = this.baseMagicNumber = 1;
         this.changeNum = this.baseChangeNum = 1;
+        /*this.burnNumber = this.baseBurnNumber = 5;*/
     }
 
     @Override
     public void upgrade() {
         if(!this.upgraded){
-            this.upgradeDamage(3);
+            this.upgradeDamage(2);
             this.upgradeName();
         }
     }
@@ -42,7 +43,9 @@ public class HattoriSKatana extends DeadCellsCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        this.canMove = false;
+        if(this.cost >0) {
+            this.canMove = false;
+        }
         if (this.magicNumber>=3){
             addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new StrengthPower(abstractPlayer,this.changeNum),this.changeNum));
             addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new DexterityPower(abstractPlayer,this.changeNum),this.changeNum));
@@ -69,7 +72,9 @@ public class HattoriSKatana extends DeadCellsCard {
             }
             addToBot(new DamageAction(abstractMonster,new DamageInfo(abstractPlayer,this.damage),effect,true));
         }
-        this.upgradeMagicNumber(1);
+        if (this.magicNumber<5) {
+            this.upgradeMagicNumber(1);
+        }
     }
 
     @Override

@@ -54,6 +54,7 @@ public class Giantkiller extends DeadCellsCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
+        this.count++;
         for (int i = 0;i<this.magicNumber;i++){
             AbstractGameAction.AttackEffect effect = willChange?AbstractGameAction.AttackEffect.SLASH_VERTICAL: AbstractGameAction.AttackEffect.SLASH_HORIZONTAL;
             addToBot(new DamageAction(abstractMonster,new DamageInfo(abstractPlayer,this.damage),effect));
@@ -72,12 +73,12 @@ public class Giantkiller extends DeadCellsCard {
             /*this.upgradeBaseCost(2);*/
             willChange = true;
         }
-        this.count++;
+
     }
 
     @Override
     public void onMoveToDiscard() {
-        if ((count/2)!=0){
+        if ((this.count%2)!=0){
             this.upgradeBaseCost(2);
         }else{
             this.upgradeBaseCost(1);

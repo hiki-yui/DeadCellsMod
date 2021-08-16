@@ -1,12 +1,16 @@
 package deadCellsMod.cn.infinite.stsmod.cards;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
+import com.megacrit.cardcrawl.vfx.combat.ThrowDaggerEffect;
 import deadCellsMod.cn.infinite.stsmod.action.GainBleedingPowerAction;
 
 public class ThrowingKnife extends DeadCellsCard {
@@ -35,7 +39,11 @@ public class ThrowingKnife extends DeadCellsCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot(new DamageAction(abstractMonster,new DamageInfo(abstractPlayer,this.damage,this.damageType), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        if(abstractMonster!=null){
+            addToBot(new VFXAction(new ThrowDaggerEffect(abstractMonster.hb.cX, abstractMonster.hb.cY)));
+        }
+        addToBot(new SFXAction("deadCells:THROWING_KNIFE"));
+        addToBot(new DamageAction(abstractMonster,new DamageInfo(abstractPlayer,this.damage,this.damageType), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         addToBot(new GainBleedingPowerAction(abstractPlayer,abstractMonster,this.magicNumber));
     }
 }

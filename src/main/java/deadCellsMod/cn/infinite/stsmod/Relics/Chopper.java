@@ -6,6 +6,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.InstantKillAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -59,6 +60,7 @@ public class Chopper extends CustomRelic {
                     this.addToBot(new VFXAction(new ViolentAttackEffect(monster.hb.cX, monster.hb.cY, Color.MAGENTA), 0.2F));
                     this.addToBot(new VFXAction(new StarBounceEffect(monster.hb.cX, monster.hb.cY)));
                     addToBot(new DamageAction(monster,new DamageInfo(AbstractDungeon.player,(int)(monster.maxHealth*0.15), DamageInfo.DamageType.HP_LOSS), AbstractGameAction.AttackEffect.BLUNT_HEAVY,true));
+                    addToBot(new InstantKillAction(monster));
                 }
             }
         }

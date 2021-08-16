@@ -61,7 +61,7 @@ public class Piano extends DeadCellsCard {
         Piano card = new PianoII();
         AbstractDungeon.actionManager.addToBottom(new SFXAction("deadCells:PIANO"));
         pianoFallowAction(paramAbstractPlayer,paramAbstractMonster,card);
-        addToBot(new ApplyPowerAction(paramAbstractPlayer,paramAbstractPlayer,new RhythmPower(paramAbstractPlayer,card)));
+        addToBot(new ApplyPowerAction(paramAbstractPlayer,paramAbstractPlayer,new RhythmPower(paramAbstractPlayer,card,this)));
     }
     /*@Override
     public AbstractCard makeCopy(){
@@ -81,15 +81,17 @@ public class Piano extends DeadCellsCard {
     class RhythmPower extends DoubleDamagePower {
         AbstractCard card;
         boolean justApply;
+        AbstractCard maker;
 
-        RhythmPower(AbstractCreature owner, AbstractCard forCard){
-            this(owner,forCard, "节奏","deadCells:RhythmPower");
+        RhythmPower(AbstractCreature owner, AbstractCard forCard,AbstractCard maker){
+            this(owner,forCard, maker,"节奏","deadCells:RhythmPower");
         }
 
-        RhythmPower(AbstractCreature owner, AbstractCard forCard,String name,String id){
+        RhythmPower(AbstractCreature owner, AbstractCard forCard,AbstractCard maker,String name,String id){
             super(owner,-1,false);
             this.ID = id;
             this.card = forCard;
+            this.maker = maker;
             this.name = name;
             this.justApply = true;
             this.updateDescription();
@@ -112,14 +114,18 @@ public class Piano extends DeadCellsCard {
 
         @Override
         public void onAfterUseCard(AbstractCard card, UseCardAction action) {
-            if (!justApply) {
-                if (card.getClass() != this.card.getClass()){
-                    AbstractPlayer player = AbstractDungeon.player;
-                    AbstractDungeon.effectList.add(new ThoughtBubble(player.dialogX, player.dialogY, 3.0F,"节奏 被 #r打断", true));
+            if (card!=null) {
+                if (!justApply) {
+                    if (card.getClass() != this.card.getClass()) {
+                        AbstractPlayer player = AbstractDungeon.player;
+                        AbstractDungeon.effectList.add(new ThoughtBubble(player.dialogX, player.dialogY, 3.0F, "节奏 被 #r打断", true));
+                    }
+                    if (card.getClass() != this.maker.getClass()) {
+                        addToTop(new RemoveSpecificPowerAction(owner, owner, this));
+                    }
+                } else {
+                    justApply = false;
                 }
-                addToTop(new RemoveSpecificPowerAction(owner, owner, this));
-            }else{
-                justApply = false;
             }
         }
 

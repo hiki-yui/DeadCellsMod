@@ -14,7 +14,7 @@ public class FrostbitePower extends AbstractPower {
     private static final PowerStrings STRINGS = CardCrawlGame.languagePack .getPowerStrings(BASE_ID);
     private AbstractCreature source;
     private static float damageLose = 0.15F;
-    private static int powerLose = 1;
+    private static int powerLose = 2;
     private boolean justApply = true;
 
     public FrostbitePower(AbstractCreature owner,AbstractCreature source, int amount){
