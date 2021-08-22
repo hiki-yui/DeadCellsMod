@@ -90,7 +90,7 @@ public class BackPack_sk extends CustomRelic {
 
     public static void useExhaustCard(AbstractCard card, AbstractCreature player) {
         if (card != null) {
-            AbstractCard theUseCard = card.makeSameInstanceOf();
+            AbstractCard theUseCard = card.makeStatEquivalentCopy();
             if (card.upgraded) {
                 theUseCard.upgrade();
             }
@@ -103,6 +103,9 @@ public class BackPack_sk extends CustomRelic {
             theUseCard.baseHeal = card.heal;*/
             theUseCard.freeToPlayOnce=true;
             theUseCard.exhaust = true;
+            if (theUseCard.cost==-1){
+                theUseCard.energyOnUse = AbstractDungeon.player.energy.energy;
+            }
             theUseCard.rawDescription += " NL 消耗 。";
             theUseCard.isSeen = true;
             theUseCard.initializeDescription();

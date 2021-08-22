@@ -19,7 +19,7 @@ public class UseTheSameCardAgainAction extends AbstractGameAction {
 
     @Override
     public void update() {
-        AbstractCard willUseCard = card.makeSameInstanceOf();
+        AbstractCard willUseCard = card.makeStatEquivalentCopy();
         AbstractDungeon.player.limbo.addToBottom(willUseCard);
         willUseCard.current_x = card.current_x;
         willUseCard.current_y = card.current_y;

@@ -25,6 +25,7 @@ public class Backtrack extends DeadCellsCard {
     @Override
     public void upgrade() {
         if (!this.upgraded){
+            this.exhaust = false;
             this.rawDescription = STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
             this.upgradeName();

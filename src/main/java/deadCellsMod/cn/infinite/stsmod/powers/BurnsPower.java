@@ -35,13 +35,16 @@ public class BurnsPower extends AbstractPower {
         addToBot(new AbstractGameAction() {
             @Override
             public void update() {
-                for (int i = 0;i<powerAmount;i++) {
-                    addToBot(new DamageAction(powerTarget,
-                            new DamageInfo(powerTarget,1, DamageInfo.DamageType.THORNS),
-                            AbstractGameAction.AttackEffect.FIRE,true));
+                if (!powerTarget.isDying) {
+
+                    for (int i = 0; i < powerAmount; i++) {
+                        addToBot(new DamageAction(powerTarget,
+                                new DamageInfo(powerTarget, 1, DamageInfo.DamageType.THORNS),
+                                AbstractGameAction.AttackEffect.FIRE, true));
+                    }
+                    addToBot(new ReducePowerAction(powerTarget, powerTarget, BASE_ID, powerAmount));
+                    this.isDone = true;
                 }
-                addToBot(new ReducePowerAction(powerTarget,powerTarget,BASE_ID,powerAmount));
-                this.isDone = true;
             }
         });
     }

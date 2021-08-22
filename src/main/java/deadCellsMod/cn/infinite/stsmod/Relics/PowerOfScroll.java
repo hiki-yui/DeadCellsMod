@@ -62,11 +62,13 @@ public class PowerOfScroll extends CustomRelic {
         super.update();
         if (isGame &&  AbstractDungeon.player.relics.get(AbstractDungeon.player.relics.size()-1).isDone) {
             //获取遗物
-            if (canIn && !AbstractDungeon.isScreenUp && (!first || !second || !third) &&
-                    AbstractDungeon.getCurrRoom() instanceof TreasureRoomBoss) {
+            if (canIn && !AbstractDungeon.isScreenUp && (!first || !second || !third) /*&&*/
+                  /*  AbstractDungeon.getCurrRoom() instanceof TreasureRoomBoss*/) {
                 System.out.println("开始选");
-                TreasureRoomBoss roomBoss = (TreasureRoomBoss) AbstractDungeon.getCurrRoom();
-                BossChest bossChest = (BossChest) roomBoss.chest;
+                TreasureRoomBoss roomBoss;
+                BossChest bossChest;
+                roomBoss = (TreasureRoomBoss) AbstractDungeon.getCurrRoom();
+                bossChest = (BossChest) roomBoss.chest;
                 bossChest.relics.clear();
                 bossChest.relics.add(new Alive().makeCopy());
                 bossChest.relics.add(new Tactical().makeCopy());
@@ -108,10 +110,10 @@ public class PowerOfScroll extends CustomRelic {
         return new PowerOfScroll();
     }
 
-    /*@Override
+    @Override
     public boolean canSpawn() {
         return AbstractDungeon.getCurrRoom() instanceof TreasureRoomBoss;
-    }*/
+    }
 
     public boolean openRedSelectScreen(int upgradeCardNum){
         System.out.println("要升级" +upgradeCardNum+ "张牌");

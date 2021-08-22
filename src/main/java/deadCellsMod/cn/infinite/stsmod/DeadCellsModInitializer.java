@@ -27,10 +27,15 @@ import deadCellsMod.cn.infinite.variables.AmmunitionVariables;
 import deadCellsMod.cn.infinite.variables.BurnsVariable;
 import deadCellsMod.cn.infinite.variables.ChangeNumVariables;
 import deadCellsMod.cn.infinite.variables.HeavyDamageVariables;
+import org.springframework.core.io.ClassPathResource;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Objects;
 
 
+import static basemod.BaseMod.addCard;
 import static basemod.DevConsole.logger;
 
 @SpireInitializer
@@ -253,6 +258,25 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
         addCard(new Giantkiller());
         addCard(new NightLight());
         addCard(new Rob());
+       /* File file = new File(Objects.requireNonNull(Thread.currentThread().getContextClassLoader()
+                .getResource("deadCellsMod/cn/infinite/stsmod/cards/")).getFile());*/
+        /*try {
+            String jarPath = Test.class.getProtectionDomain()
+                    .getCodeSource().getLocation().getPath();
+            File file = new File(jarPath.substring(0,jarPath.length()-4)+"/deadCellsMod/cn/infinite/stsmod/cards/");
+            System.out.println(file);
+           *//* int firstIndex = jarPath.lastIndexOf(System.getProperty("path.separator")) + 1;
+            int lastIndex = jarPath.lastIndexOf(File.separator) + 1;
+            jarPath = jarPath.substring(firstIndex, lastIndex);*//*
+            for (File f : Objects.requireNonNull(file.listFiles())){
+                    Class c = Class.forName("deadCellsMod.cn.infinite.stsmod.cards."+f.getName().substring(0,f.getName().length()-6));
+                    System.out.println(c.newInstance().toString());
+                    addCard((AbstractCard)c.newInstance());
+                }
+        } catch ( ClassNotFoundException | IllegalAccessException | InstantiationException e) {
+            e.printStackTrace();
+        }
+*/
     }
 
     @Override

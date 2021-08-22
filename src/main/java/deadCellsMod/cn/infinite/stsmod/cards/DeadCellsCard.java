@@ -85,8 +85,9 @@ public abstract class DeadCellsCard extends CustomCard {
     }
 
     @Override
-    public AbstractCard makeSameInstanceOf() {
-        DeadCellsCard card = (DeadCellsCard) super.makeSameInstanceOf();
+    public AbstractCard makeStatEquivalentCopy() {
+        DeadCellsCard card = (DeadCellsCard) super.makeStatEquivalentCopy();
+        card.magicNumber = this.magicNumber;
         card.ammunitionNumber = this.ammunitionNumber;
         card.maxAmmunitionNumber = this.maxAmmunitionNumber;
         card.ammunitionUpgraded = this.ammunitionUpgraded;

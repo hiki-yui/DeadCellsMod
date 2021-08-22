@@ -29,7 +29,7 @@ public class Roll extends CustomCard {
     private static final int UPGRADE_DEFEND = 3;
 
     public Roll(){
-        this(ID,NAME,CardRarity.COMMON, AbstractDeadCellsEnum.DEAD_CELLS);
+        this(ID,NAME,CardRarity.UNCOMMON, AbstractDeadCellsEnum.DEAD_CELLS);
     }
 
     Roll(String id,String name,CardRarity rarity,CardColor cardColor){

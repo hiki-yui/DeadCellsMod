@@ -162,13 +162,13 @@ public class King extends CustomPlayer {
 
     @Override
     public void doCharSelectScreenSelectEffect() {
-        CardCrawlGame.sound.playA("choose", 0.0F);
+        CardCrawlGame.sound.playA("deadCells:DEPRAVED_FORM", 0.0F);
         CardCrawlGame.screenShake.shake(ScreenShake.ShakeIntensity.HIGH, ScreenShake.ShakeDur.SHORT, false);
     }
 
     @Override
     public String getCustomModeCharacterButtonSoundKey() {
-        return "AUTOMATON_ORB_SPAWN";
+        return "deadCells:DEPRAVED_FORM";
     }
 
     @Override

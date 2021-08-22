@@ -75,7 +75,7 @@
   },
   "deadCells:Reckless": {
     "NAME": "莽撞",
-    "DESCRIPTION": "随机打出 !M! 张你抽牌堆中的攻击牌并使其 消耗 ."
+    "DESCRIPTION": "随机打出 !M! 张你抽牌堆中的攻击牌并使其 消耗 . NL 消耗 ."
   },
   "deadCells:CorrosiveCloud": {
     "NAME": "腐蚀毒云",
@@ -372,7 +372,7 @@
   },
   "deadCells:EmergencyDoor": {
     "NAME": "紧急逃生门",
-    "DESCRIPTION":"获得 !B! 点 格挡 . NL 获得2层 *缓冲 . NL 获得2层 虚弱 . NL 消耗 ."
+    "DESCRIPTION":"获得 !B! 点 格挡 . NL 获得2层 *缓冲 . NL 获得2层 虚弱 ."
   },
   "king:Strike": {
     "NAME": "打击",

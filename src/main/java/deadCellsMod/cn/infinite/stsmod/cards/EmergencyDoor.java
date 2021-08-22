@@ -32,7 +32,7 @@ public class EmergencyDoor extends DeadCellsCard {
                 AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.RARE,CardTarget.SELF);
 
 
-        this.exhaust=true;
+        /*this.exhaust=true;*/
         this.baseMagicNumber = BASE_MAGIC_NUMBER;
         this.baseBlock = BASE_BLOCK;
 
@@ -40,7 +40,7 @@ public class EmergencyDoor extends DeadCellsCard {
     @Override
     public void upgrade() {
         if (!this.upgraded) {
-            this.upgradeBlock(UPGRADE_BLOCK);
+            /*this.upgradeBlock(UPGRADE_BLOCK);*/
             this.upgradeBaseCost(this.cost - UPGRADE_COST);
             this.upgradeName();
         }

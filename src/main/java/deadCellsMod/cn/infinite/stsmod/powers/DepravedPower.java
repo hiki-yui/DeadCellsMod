@@ -43,7 +43,7 @@ public class DepravedPower extends AbstractPower implements CloneablePowerInterf
     @Override
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature attackTarget) {
         //比较内存地址,更快捷,如果有bug再改equals
-        if (!(DP_PLAYER == info.owner)) {
+        if (!(DP_PLAYER == info.owner) && info.type == DamageInfo.DamageType.NORMAL) {
             int damage = info.base / 4;
             if (damage >= 1) {
                 this.flash();
@@ -53,7 +53,7 @@ public class DepravedPower extends AbstractPower implements CloneablePowerInterf
                         @Override
                         public void update() {
                             if (!attackTarget.isDying) {
-                                addToTop(new DamageAction(attackTarget, new DamageInfo(DP_PLAYER, damage), AbstractGameAction.AttackEffect.NONE,true));
+                                addToTop(new DamageAction(attackTarget, new DamageInfo(DP_PLAYER, damage, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.NONE,true));
                                 addToTop(new VFXAction(ownerSource, new LightningEffect(attackTarget.drawX, attackTarget.drawY), 0.0F));
                                 addToTop(new SFXAction("ORB_LIGHTNING_EVOKE"));
                             }

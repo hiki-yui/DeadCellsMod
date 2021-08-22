@@ -31,7 +31,7 @@ public class Nocturne extends CustomRelic {
 
     @Override
     public String getUpdatedDescription() {
-        return STRINGS.DESCRIPTIONS[0] + 4 +//cardNum
+        return STRINGS.DESCRIPTIONS[0] + 5 +//cardNum
                 STRINGS.DESCRIPTIONS[1] + 1 +
                 STRINGS.DESCRIPTIONS[2] + 5 +//damage
                 STRINGS.DESCRIPTIONS[3] + 1 +

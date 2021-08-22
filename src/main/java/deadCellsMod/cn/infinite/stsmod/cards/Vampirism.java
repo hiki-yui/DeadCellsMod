@@ -32,7 +32,11 @@ public class Vampirism extends DeadCellsCard {
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToTop(new GainAllEnemyBleedingPowerAction(abstractPlayer, magicNumber));
-        addToBot(new VampirismAction(abstractPlayer,magicNumber));
+        int thisMagicNumber = this.magicNumber;
+        if (abstractPlayer.hasPower("deadCells:BleedingSpreadPower")){
+            thisMagicNumber += abstractPlayer.getPower("deadCells:BleedingSpreadPower").amount;
+        }
+        addToBot(new VampirismAction(abstractPlayer,thisMagicNumber));
 
     }
 }
