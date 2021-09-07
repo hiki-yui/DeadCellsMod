@@ -3,11 +3,15 @@ package deadCellsMod.cn.infinite.stsmod;
 import basemod.BaseMod;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
+import com.google.gson.Gson;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.dungeons.Exordium;
 import com.megacrit.cardcrawl.localization.*;
@@ -23,19 +27,18 @@ import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsCharacterEnum;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsTags;
 import deadCellsMod.cn.infinite.stsmod.monster.Zombie;
+import deadCellsMod.cn.infinite.stsmod.utils.Keywords;
 import deadCellsMod.cn.infinite.variables.AmmunitionVariables;
 import deadCellsMod.cn.infinite.variables.BurnsVariable;
 import deadCellsMod.cn.infinite.variables.ChangeNumVariables;
 import deadCellsMod.cn.infinite.variables.HeavyDamageVariables;
-import org.springframework.core.io.ClassPathResource;
 
-import java.io.File;
-import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.Objects;
+import java.util.HashMap;
+import java.util.List;
 
 
-import static basemod.BaseMod.addCard;
 import static basemod.DevConsole.logger;
 
 @SpireInitializer
@@ -319,18 +322,20 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
 
     @Override
     public void receiveEditStrings() {
-        BaseMod.loadCustomStringsFile(CardStrings.class,"Strings/deadCells/cards.json");
-        BaseMod.loadCustomStringsFile(CharacterStrings.class,"Strings/deadCells/character.json");
-        BaseMod.loadCustomStringsFile(RelicStrings.class,"Strings/deadCells/relics.json");
-        BaseMod.loadCustomStringsFile(PowerStrings.class,"Strings/deadCells/powers.json");
-        /*BaseMod.loadCustomStringsFile(KeywordStrings.class,"Strings/deadCells/keywords.json");*/
-        BaseMod.loadCustomStringsFile(MonsterStrings.class,"Strings/deadCells/monsters.json");
+
+        String lang = checkLanguage();
+        BaseMod.loadCustomStringsFile(CardStrings.class, "Strings/deadCells/"+lang+"/cards.json");
+        BaseMod.loadCustomStringsFile(CharacterStrings.class, "Strings/deadCells/"+lang+"/character.json");
+        BaseMod.loadCustomStringsFile(RelicStrings.class, "Strings/deadCells/"+lang+"/relics.json");
+        BaseMod.loadCustomStringsFile(PowerStrings.class, "Strings/deadCells/"+lang+"/powers.json");
+        BaseMod.loadCustomStringsFile(MonsterStrings.class, "Strings/deadCells/"+lang+"/monsters.json");
+
     }
 
     @Override
     public void receiveEditKeywords() {
         //以后再改
-        BaseMod.addKeyword(new String[]{"流血"},"在一张牌被使用后受到 #y层数一半的伤害 ， 层数 #r减少对应的伤害值");
+       /* BaseMod.addKeyword(new String[]{"流血"},"在一张牌被使用后受到 #y层数一半的伤害 ， 层数 #r减少对应的伤害值");
         BaseMod.addKeyword(new String[]{"夜歌标记"},"受到的下一次伤害 #y翻倍");
         BaseMod.addKeyword(new String[]{"合适的牌"},"#r只适用于当前回合 的牌，因为很适合所以 #b费用会减少一");
         BaseMod.addKeyword(new String[]{"冻伤"},"造成的伤害减少 #b15% ，在此基础上再减少对应层数的伤害，回合结束时层数减一");
@@ -341,7 +346,18 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
         BaseMod.addKeyword(new String[]{"未蓄力"},"消耗为一的形态");
         BaseMod.addKeyword(new String[]{"蓄力"},"消耗为二的形态");
         BaseMod.addKeyword(new String[]{"油"},"带有油的单位受到的燃烧翻倍");
-        BaseMod.addKeyword(new String[]{"隐匿"},"受到的伤害减少 #b20% 。");
+        BaseMod.addKeyword(new String[]{"隐匿"},"受到的伤害减少 #b20% ");*/
+        String lang = checkLanguage();
+        FileHandle h = Gdx.files.internal("Strings/deadCells/"+lang+"/keywords.json");
+        String s = h.readString(StandardCharsets.UTF_8.toString());
+        Gson gson = new Gson();
+        Keywords keywords = gson.fromJson(s, Keywords.class);
+        System.out.println("——————————————————addKeyword——————————————————————");
+        System.out.println(keywords);
+        for (Keyword keyword : keywords.keywords){
+            BaseMod.addKeyword(keyword.NAMES,keyword.DESCRIPTION);
+        }
+        System.out.println("——————————————————addKeywordFinish——————————————————————");
     }
 
     @Override
@@ -350,5 +366,11 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
     }
 
 
-
+    public static String checkLanguage(){
+        String lang = Settings.language.toString();
+        if(!"ZHS".equals(lang)&&!"ENG".equals(lang)){
+            lang="ENG";
+        }
+        return lang.toLowerCase();
+    }
 }

@@ -17,10 +17,10 @@ public class NocturneAttackedPower extends AbstractPower {
     public static final String BASE_ID = "deadCells:NocturneAttackedPower";
     private static final PowerStrings STRINGS = CardCrawlGame.languagePack.getPowerStrings(BASE_ID);
     private static final float ATTACK_MULTIPLE = 2F;
-    private static boolean ownerTurn;
+    private static boolean ownerTurn = false;
     /*private boolean justApply;*/
-    private static int usedCardNum = 0;
-    private static int needUsedCard = 1;
+    private int usedCardNum = 0;
+    private int needUsedCard = 1;
 
     @Override
     public void atStartOfTurn() {
@@ -86,11 +86,11 @@ public class NocturneAttackedPower extends AbstractPower {
         /*System.out.println(ownerTurn);
         System.out.print(usedCardNum  +'\n');
         System.out.println(needUsedCard);*/
-        if (!(info.type == DamageInfo.DamageType.HP_LOSS)
-                && info.owner != null
+        if (info.type == DamageInfo.DamageType.NORMAL
+                && info.owner!=null
                 && !(info.owner instanceof DepravedCase)
                 && !ownerTurn
-                && usedCardNum == needUsedCard) {
+                && usedCardNum >= needUsedCard) {
             this.flash();
             needUsedCard++;
             addToBot(new ReducePowerAction(this.owner, this.owner, BASE_ID, 1));

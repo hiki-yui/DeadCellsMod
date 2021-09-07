@@ -1,0 +1,132 @@
+{
+  "deadCells:CorruptedArtifact": {
+    "NAME": "被诅咒的文物",
+    "FLAVOR": "这件文物浑身散发着危险的气息。",
+    "DESCRIPTIONS": [
+      "拾取时获得",
+      " 枚 #y金币， 你的下一场战斗受到的任何伤害将翻倍。",
+      " #r诅咒 以解除。"
+    ]
+  },
+  "deadCells:Predator": {
+    "NAME": "猎杀者",
+    "FLAVOR": "好像是特工一样。",
+    "DESCRIPTIONS":[
+      "当你杀死一名敌人时获得 #b",
+      " 层 [#c1bdbd]隐匿 。"
+    ]
+  },
+  "deadCells:OpenWounds": {
+    "NAME": "开放性伤口",
+    "FLAVOR": "你的每次攻击都会变得异常锋利。",
+    "DESCRIPTIONS":[
+      "当你造成未被格挡的伤害时，给予 #b",
+      " 层 #y流血 。"
+    ]
+  },
+  "deadCells:Tactical": {
+    "NAME": "战术卷轴",
+    "FLAVOR": "谋略制胜。",
+    "DESCRIPTIONS": [
+      "#p拾取时删除一张牌。"
+    ]
+  },
+  "deadCells:Alive": {
+    "NAME": "生存卷轴",
+    "FLAVOR": "只要能到达那个地方...",
+    "DESCRIPTIONS": [
+      "拾取时获得 #b",
+      " 最大生命。 #g战斗开始时恢复",
+      "点生命"
+    ]
+  },
+  "deadCells:Oppressive": {
+    "NAME": "暴虐卷轴",
+    "FLAVOR": "踏踏开!",
+    "DESCRIPTIONS": [
+      "拾取时升级 #b",
+      " 张牌。  #r战斗开始时获得",
+      "点力量 。"
+    ]
+  },
+  "deadCells:PowerOfScroll": {
+    "NAME":"威力卷轴",
+    "FLAVOR": "这个卷轴会吸收你一定的生命力，力量总是要付出代价的。",
+    "DESCRIPTIONS": [
+      "#r失去",
+      "点最大生命， NL 在三个种类的 #y卷轴 里选取 #b",
+      " 次"
+    ]
+  },
+  "deadCells:SealsRecipe": {
+    "NAME": "被封印的秘籍",
+    "FLAVOR": "当你费力打开它后，你发现你的行动更佳敏捷有力了",
+    "DESCRIPTIONS": [
+      "战斗开始时，获得 #b",
+      " 点 #y敏捷 和 #b",
+      " 点 #y力量"
+    ]
+  },
+  "deadCells:Counterattack": {
+    "NAME": "反击",
+    "FLAVOR": "人不犯我我不犯人",
+    "DESCRIPTIONS": [
+      "在你完全格挡伤害后，你下一攻击额外增加 #b",
+      "  点伤害。"
+    ]
+  },
+  "deadCells:Chopper": {
+    "NAME": "斩杀者",
+    "FLAVOR": "大难不死必有补刀",
+    "DESCRIPTIONS": [
+      "你的回合结束时,斩杀所有生命值低于 #b",
+      "% 的敌人"
+    ]
+  },
+  "deadCells:Nocturne": {
+    "NAME": "夜歌",
+    "FLAVOR": "一把被封印的魔剑，拥有自己独立的意识",
+    "DESCRIPTIONS": [
+      "你每打出 #b",
+      " 技能牌，随机对 #b",
+      " 名敌人造成 #y",
+      " 点伤害，并给予该敌人 #b",
+      " 层 夜歌标记 "
+    ]
+  },
+  "deadCells:SpirePace": {
+    "NAME": "杀戮节奏",
+    "FLAVOR":"你甚至不需要过多的思考就能想出下一步的对策。",
+    "DESCRIPTIONS": [
+      "你每打出一张牌，如果该牌的类型不同于你的上一张牌，抽 #b",
+      " 张牌"
+    ]
+  },
+
+  "deadCells:EmeraldAmulet": {
+    "NAME": "绿宝石护符",
+    "FLAVOR":"国王的护符，会在附近有危险时闪闪发亮",
+    "DESCRIPTIONS": [
+      "每场战斗开始时，将 #b",
+      " 张 #y翻滚 置入你的手牌,使其获得 #y消耗 和 #y保留 。"
+    ]
+  },
+  "deadCells:BackPack_at": {
+    "NAME": "刺猬背包",
+    "FLAVOR": "一个老旧的背包，你可以存放更多的武器了",
+    "DESCRIPTIONS": [
+      "拾取时最多将你卡组中的 #b",
+      " 张 #y防御 替换为 #y翻滚 , 你每打出一张 #y翻滚 随机使用你抽排堆的一张 #y攻击牌 的复制",
+      "滚滚滚！！！"
+    ]
+  },
+  "deadCells:BackPack_sk": {
+    "NAME": "杂技背包",
+    "FLAVOR": "一个布满机关的背包，你似乎可以用该背包做出更多高难度动作",
+    "DESCRIPTIONS": [
+      "拾取时最多将你卡组中的 #b",
+      " 张 #y打击 替换为 #y翻滚 , 你每打出一张 #y翻滚 随机使用你抽排堆的一张 #y技能牌 的复制 NL (翻滚的复制不会触发效果)",
+      "翻滚的欲望增加了！？"
+    ]
+  }
+}

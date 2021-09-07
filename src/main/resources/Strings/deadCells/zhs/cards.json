@@ -1,0 +1,392 @@
+{
+  "deadCells:GrenadeCard": {
+    "DESCRIPTION": " NL *被丢弃时自动打出."
+  },
+  "deadCells:Rob": {
+    "NAME": "掠夺",
+    "DESCRIPTION": "获得 !CN! 点 敏捷 . NL 战斗结束时额外获得 !M! 枚 *金币 ."
+  },
+  "deadCells:NightLight": {
+    "NAME": "夜光",
+    "DESCRIPTION": "战斗结束时额外获得 !M! 次卡牌奖励."
+  },
+  "deadCells:Giantkiller": {
+    "NAME": "巨人杀手",
+    "DESCRIPTION": "造成 !D! 点伤害 !M! 次. NL 每次使用都会改变效果. NL 对精英和boss额外造成 !CN! 点伤害."
+  },
+  "deadCells:InTime": {
+    "NAME": "及时",
+    "DESCRIPTION": "在你的回合开始时,如果敌人的意图是攻击随机打出 !M! 张 *盾.",
+    "UPGRADE_DESCRIPTION": " 固有 . NL 在你的回合开始时,如果敌人的意图是攻击随机打出 !M! 张 *盾."
+  },
+  "deadCells:ThunderShield": {
+    "NAME": "雷之盾",
+    "DESCRIPTION": "获得 !B! 点 格挡 . NL 获得 !M! 点临时 力量 ."
+  },
+  "deadCells:Punishment": {
+    "NAME": "惩罚之盾",
+    "DESCRIPTION": "获得 !B! 点 格挡 . NL 随机打出 !M! 张 *攻击牌 ."
+  },
+  "deadCells:HayabusaGauntlets": {
+    "NAME": "隼之拳套",
+    "DESCRIPTION": "造成 !D! 点伤害 !M! 次. NL 如果目标的生命小于等于40%. NL 额外造成 !HD! 点伤害 !M! 次.  NL 如果该牌费用不为0则 *使用后会返回手牌."
+  },
+  "deadCells:FranticSword": {
+    "NAME": "狂暴之刃",
+    "DESCRIPTION": "造成 !D! 点伤害,如果你的生命小于一半,改为造成 !HD! 点伤害."
+  },
+  "deadCells:Vampirism": {
+    "NAME": "吸血",
+    "DESCRIPTION": "所有敌人获得 !M! 层 流血 . NL 回复敌人 流血 层数总和的生命. NL 消耗 ."
+  },
+  "deadCells:Cocoon": {
+    "NAME": "结茧",
+    "DESCRIPTION": "在你获得 格挡 时额外获得 !M! 点 格挡 .",
+    "UPGRADE_DESCRIPTION": " 固有 . NL 在你获得 格挡 时额外获得 !M! 点 格挡 ."
+  },
+  "deadCells:HayabusaBoots": {
+    "NAME": "隼之靴",
+    "DESCRIPTION": "造成 !D! 点伤害 !M! 次 NL 最后一段伤害会伤害所有敌人."
+  },
+  "deadCells:FireworksTechnician": {
+    "NAME": "燃爆大师",
+    "DESCRIPTION": "你的 *手雷 伤害提高 !M! 点。"
+  },
+  "deadCells:CursedSword": {
+    "NAME": "诅咒之刃",
+    "DESCRIPTION": "造成 !D! 点伤害. NL 战斗开始时将 !M! 张 诅咒 置入你的抽牌堆中."
+  },
+  "deadCells:IronStaff": {
+    "NAME": "钢管",
+    "DESCRIPTION": "获得 !B! 点 格挡 . 在你的下一个回合开始时对所有敌人造成你剩余格挡的伤害. NL 结束你的回合."
+  },
+  "deadCells:SnakeFangs": {
+    "NAME": "蛇牙",
+    "DESCRIPTION": "造成 !D! 点伤害给予 !M! 层 中毒 . 如果目标至少有 !CN! 层 中毒 改为造成 !HD! 点伤害. NL 将这张牌放入你的抽牌堆."
+  },
+  "deadCells:ClusterGrenade": {
+    "NAME": "集束手雷",
+    "DESCRIPTION": "造成 !D! 点伤害. NL 随机对敌人造成 !CN! 点固定伤害 !M! 次. NL 消耗 ."
+  },
+  "deadCells:SmokeBomb": {
+    "NAME": "烟雾弹",
+    "DESCRIPTION": "获得 !CN! 层 隐匿 . NL 你的下一张攻击牌伤害增加 !M! 点. NL 消耗 ."
+  },
+  "deadCells:LaceratingAura": {
+    "NAME": "撕裂光环",
+    "DESCRIPTION": "每当你造成未被格挡的伤害时给予 !M! 层 流血 ."
+  },
+  "deadCells:Reckless": {
+    "NAME": "莽撞",
+    "DESCRIPTION": "随机打出 !M! 张你抽牌堆中的攻击牌并使其 消耗 . NL 消耗 ."
+  },
+  "deadCells:CorrosiveCloud": {
+    "NAME": "腐蚀毒云",
+    "DESCRIPTION": "每当你给予三层以上的 流血 时,每三层额外给予 !M! 层 中毒 .",
+    "UPGRADE_DESCRIPTION": " 固有 . NL 每当你给予三层以上的 流血 时,每三层额外给予 !M! 层 中毒 ."
+  },
+  "deadCells:FrontLineShield": {
+    "NAME": "前线盾",
+    "DESCRIPTION": "获得 !B! 点 格挡 . NL 将 !M! 张 *攻击牌 置入你的手牌 NL 使其获得 虚无 与 消耗 ."
+  },
+  "deadCells:Hemorrhage": {
+    "NAME": "放血之斧",
+    "DESCRIPTION": "造成 !D! 点伤害. NL 如果敌人有 流血 改为造成 !HD! 点伤害. NL 给予 !M! 层 流血 ."
+  },
+  "deadCells:HattoriSKatana": {
+    "NAME": "服部武士刀",
+    "DESCRIPTION": "造成 !D! 点伤害 !M! 次. NL 每打出一次伤害段数加一最多五段. NL 如果该牌至少打出三段则获得 !CN! 点 敏捷 和 力量 . NL 如果该牌费用不为0则 *使用后会返回手牌 ."
+  },
+  "deadCells:FerrymanSLanternIII": {
+    "NAME": "灵魂冲击",
+    "DESCRIPTION": "消耗所有 弹药 , NL 每枚 弹药 造成 !D! 点伤害. NL 消耗 ."
+  },
+  "deadCells:FerrymanSLanternII": {
+    "NAME": "深渊汲取",
+    "DESCRIPTION": "造成 !D! 点伤害, NL 获得 !AM! 枚 弹药 . NL 消耗 ."
+  },
+  "deadCells:FerrymanSLantern": {
+    "NAME": "冥河提灯",
+    "DESCRIPTION": " 选择加入手牌 . NL 未蓄力 :造成 !D! 点伤害,获得 !CN! 枚 弹药 . NL 蓄力 :消耗所有 弹药 ,每枚 弹药 造成 !HD! 点伤害. NL 已有 !AM! 枚 弹药 ."
+  },
+  "deadCells:Calm": {
+    "NAME": "冷静",
+    "DESCRIPTION": "获得 [E] [E] .随机丢弃 !M! 张 *攻击牌 ."
+  },
+  "deadCells:RegularSkill": {
+    "NAME": "常备技巧",
+    "DESCRIPTION": "在你的回合开始时,将一张 *翻滚 置入你的手牌,使其获得 保留 与 消耗 .",
+    "UPGRADE_DESCRIPTION": " 固有 . NL 在你的回合开始时,将一张 *翻滚 置入你的手牌,使其获得 保留 与 消耗 ."
+  },
+  "deadCells:FrostBlast": {
+    "NAME": "冰霜爆破",
+    "DESCRIPTION": "获得 !B! 点格挡 NL 给予所有敌人 !M! 层 冻伤 x次."
+  },
+  "deadCells:FireBlast": {
+    "NAME": "火焰喷射",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害并给予 !M! 层 燃烧 X次."
+  },
+  "deadCells:APlan": {
+    "NAME":"A计划",
+    "DESCRIPTION": "丢弃掉手中的技能牌,从抽牌堆中抽取等量攻击牌,获得 [E] . NL 消耗 .",
+    "UPGRADE_DESCRIPTION": "丢弃掉手中的技能牌,从抽牌堆中抽取等量攻击牌,获得 [E] ."
+  },
+  "deadCells:ToothpickIIII": {
+    "NAME": "修补",
+    "DESCRIPTION": "将 弹药 填充至最大值. NL 获得 !B! 点格挡"
+  },
+  "deadCells:ToothpickIII": {
+    "NAME": "蓄意重锤",
+    "DESCRIPTION": "需要消耗 !AM! 枚弹药 造成 !D! 点伤害."
+  },
+  "deadCells:ToothpickII": {
+    "NAME": "轻锤",
+    "DESCRIPTION": "造成 !D! 点伤害."
+  },
+  "deadCells:Toothpick": {
+    "NAME": "牙签",
+    "DESCRIPTION": " 选择加入手牌 . NL 未蓄力 : 造成 !D! 点伤害. NL 蓄力 :消耗 !AM! 枚 弹药 NL 造成 !HD! 点伤害. NL 修补:将 弹药 填充至最大值 NL 获得 !B! 点 格挡 . NL ( !AM! / !MAM! )"
+  },
+  "deadCells:SwiftSword": {
+    "NAME":"迅捷之剑",
+    "DESCRIPTION": "造成 !D! 点伤害,在对战开始的前 !CN! 回合会额外抽 !M! 张牌"
+  },
+  "deadCells:OiledSword": {
+    "NAME": "油腻之剑",
+    "DESCRIPTION": "造成 !D! 点伤害. NL 如果目标有 燃烧 改为造成 !HD! 点伤害 . NL 给予 !M! 层 油 ."
+  },
+  "deadCells:OilGrenade": {
+    "NAME": "油腻手雷",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害 NL 给予 !M! 层 油 . NL 消耗 ."
+  },
+  "deadCells:IceCrossbowIIII": {
+    "NAME": "填弹",
+    "DESCRIPTION": "装填 弹药 至最大值. NL 获得 !B! 点格挡 NL 消耗 ."
+  },
+  "deadCells:IceCrossbowIII": {
+    "NAME": "冰霜冲击",
+    "DESCRIPTION": "造成 !D! 点伤害, NL 目标每有2层冻伤伤害增加 !M! 点. NL 消耗. NL 消耗 !AM! 枚 弹药 ."
+  },
+  "deadCells:IceCrossbowII":{
+    "NAME": "冰冻之箭",
+    "DESCRIPTION": "造成 !D! 点伤害给予 !M! 层 冻伤 . NL 消耗 . NL 消耗 !AM! 枚 弹药 ."
+  },
+  "deadCells:IceCrossbow": {
+    "NAME": "冰霜弩",
+    "DESCRIPTION": " 选择加入手牌 . NL 未蓄力 :造成 !D! 点伤害给予 !M! 层 冻伤 . NL 蓄力 :造成 !HD! 点伤害,目标每有2层冻伤伤害+ !HD! 点. NL 填装:填充 弹药 至最大值,获得 !B! 点 格挡 . NL ( !AM! / !MAM! )"
+  },
+  "deadCells:InsightInto": {
+    "NAME":"洞察",
+    "DESCRIPTION": "获得一张 合适的牌 ."
+  },
+  "deadCells:IceArmor": {
+    "NAME": "冰川护甲",
+    "DESCRIPTION": "获得 !B! 点 格挡 . NL 如果你没有 格挡 改为获得 !CN! 点 格挡 . NL 给予所有敌人 !M! 层 冻伤 ."
+  },
+  "deadCells:PyrotechnicsIIII": {
+    "NAME": "魔力恢复",
+    "DESCRIPTION": "装填 !M! 点 弹药 . NL 获得 !B! 点格挡 NL 消耗 ."
+  },
+  "deadCells:PyrotechnicsIII": {
+    "NAME":"大火球",
+    "DESCRIPTION": "失去 1 枚 弹药 造成 !D! 点伤害. NL 给予 !Burns! 层 燃烧 ."
+  },
+  "deadCells:PyrotechnicsII": {
+    "NAME": "散射",
+    "DESCRIPTION": "至多消耗 !M! 枚 弹药 NL 每枚 弹药 造成 !D! 点伤害. NL 消耗 ."
+  },
+  "deadCells:Pyrotechnics": {
+    "NAME": "火焰制造者",
+    "DESCRIPTION": " 选择加入手牌 . NL 未蓄力 : 至多消耗 !M! 枚 弹药 每枚 弹药 造成 !D! 点伤害. NL 蓄力 :造成 !HD! 点伤害给予 !Burns! 层 燃烧 消耗1枚 弹药 . NL 恢复:填充弹药 至最大值获得 !B! 点 格挡 . NL 弹药 ( !AM! / !MAM! )"
+  },
+  "deadCells:SOTF": {
+    "NAME": "适者生存",
+    "DESCRIPTION": "获得 !M! 点 力量 和 敏捷 .",
+    "UPGRADE_DESCRIPTION": "获得 !M! 点 力量 和 敏捷 . NL *选择 :获得 !CN! 点 力量 或 !CN! 点 敏捷 ."
+  },
+  "deadCells:Firebrands": {
+    "NAME": "投掷火把",
+    "DESCRIPTION": "随机给予 !Burns! 层 燃烧 !M! 次."
+  },
+  "deadCells:Torch": {
+    "NAME": "火把",
+    "DESCRIPTION": "造成 !D! 点伤害,给予 !M! 层 燃烧 . NL 如果目标已有 燃烧 额外给予 !Burns! 层"
+  },
+  "deadCells:SadistStiletto": {
+    "NAME": "施虐者的匕首",
+    "DESCRIPTION": "造成 !D! 点伤害 !M! 次. NL 目标每有种 *减益 便增加一点伤害和段数."
+  },
+  "deadCells:Backtrack": {
+    "NAME": "返回",
+    "DESCRIPTION": "将你的其他手牌弃入 *抽牌堆 . NL 从你的 *弃牌堆 中抽取等量卡牌. NL 消耗 .",
+    "UPGRADE_DESCRIPTION": "将你的其他手牌弃入 *抽牌堆 . NL 从你的 *弃牌堆 中抽取等量卡牌."
+  },
+  "deadCells:MagneticGrenade": {
+    "NAME": "磁力手雷",
+    "DESCRIPTION": "造成 !D! 点伤害2次. NL 本回合中,每有一个敌人受到伤害 NL 你获得 !M! 点 格挡 ."
+  },
+  "deadCells:FireGrenade": {
+    "NAME": "火焰手雷",
+    "DESCRIPTION": "给予所有敌人 !M! 层 燃烧 并造成 !D! 点伤害 ."
+  },
+  "deadCells:RootGrenade": {
+    "NAME": "藤蔓手雷",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害 并给予 !M! 层 藤蔓缠绕 . NL 获得 !B! 点 格挡 ."
+  },
+  "deadCells:FillInGrenade": {
+    "NAME": "填充手雷",
+    "DESCRIPTION": "随机将 !M! 张 *手雷 置入你的手牌. NL 消耗 ."
+  },
+  "deadCells:IceGrenade": {
+    "NAME": "冰冻手雷",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害 NL 并给予 !M! 层 冻伤 ."
+  },
+  "deadCells:InASimilar": {
+    "NAME": "故技重施",
+    "DESCRIPTION": " *打出 . NL 你上一张牌的复制. NL (不会打出 *故技重施 )",
+    "UPGRADE_DESCRIPTION":" *打出 . NL 你上两张牌的复制. NL (不会打出 *故技重施 )",
+    "EXTENDED_DESCRIPTION": [
+      " NL (打出 *",
+      " 和 *",
+      " )"
+    ]
+  },
+  "UnKnowCard": {
+    "NAME": "@来自境界的少女",
+    "DESCRIPTION": "???"
+  },
+  "deadCells:ThrowingKnife": {
+    "NAME": "飞刀",
+    "DESCRIPTION": "造成 !D! 点伤害. NL 给予 !M! 层 流血 . NL 消耗 ."
+  },
+  "deadCells:AttackDefend": {
+    "NAME": "攻防一体",
+    "DESCRIPTION": "每当你交替一次使用 *技能牌 和 *攻击牌 时 NL 将 !M! 张 *飞刀 置入你的手牌."
+  },
+  "deadCells:BloodthirstyShield": {
+    "NAME": "渴血盾",
+    "DESCRIPTION": "获得 !B! 点 格挡 . NL 下个回合当你完全格挡 *攻击 伤害后,给予所有敌人 !M! 点 流血 ."
+  },
+  "deadCells:BleedingSpread": {
+    "NAME": "血花四溅",
+    "DESCRIPTION": "流血 会扩散给其他敌人. NL 当你给予 流血 时,额外给与 !M! 层."
+  },
+  "deadCells:KnockBackShield":{
+    "NAME": "猛推盾",
+    "DESCRIPTION": "获得 !B! 点 格挡 . NL 下个回合额外抽 !M! 张牌."
+  },
+  "deadCells:BloodSword": {
+    "NAME": "血之刃",
+    "DESCRIPTION": "造成 !D! 点伤害, 给予 !M! 点 流血 ."
+  },
+  "deadCells:MagicMissiles": {
+    "NAME": "魔法飞弹",
+    "DESCRIPTION": "造成 !D! 点伤害 !M! 次. NL 随机分配到敌人上 . NL 消耗 ."
+  },
+  "deadCells:SpeedDown": {
+    "NAME": "减速",
+    "DESCRIPTION": "抽一张牌. NL 消耗 ."
+  },
+  "deadCells:StrategyStagnated":{
+    "NAME": "战略停滞",
+    "DESCRIPTION": "获得 [E] [E] . NL 在抽牌堆中加入一张 *减速 .",
+    "UPGRADE_DESCRIPTION": "获得 [E] [E] [E] . NL 在抽牌堆中加入一张 *减速 ."
+  },
+  "deadCells:ScytheClawII": {
+    "NAME": "巨镰右爪",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害. NL 如果至少造成 !M! 未被格挡的伤害 则敌人被击晕. NL 洗入 *巨镰左爪. NL 消耗 ."
+  },
+  "deadCells:ScytheClaw": {
+    "NAME": "巨镰左爪",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害. NL 给予所有敌人 !M! 层 易伤 . NL 洗入 *巨镰右爪. NL 消耗 ."
+  },
+  "deadCells:IceShield": {
+    "NAME": "冰霜盾",
+    "DESCRIPTION": "获得 !B! 点 格挡 . NL 你每受到一次 *攻击 NL 会使所有敌人临时失去 !M! 点 力量 ."
+  },
+  "deadCells:Ruthless": {
+    "NAME": "无情",
+    "DESCRIPTION": "当你给予敌人2次负面状态时抽 !M! 张牌."
+  },
+  "deadCells:Rampart": {
+    "NAME": "壁垒",
+    "DESCRIPTION": "直到下一回合,你无法受到任何 *攻击 伤害. NL 丢弃掉手牌中所有的技能牌. 消耗 ."
+  },
+  "deadCells:BalancedBlade": {
+    "NAME":"均衡之刃",
+    "DESCRIPTION":"造成 !D! 点伤害. NL 该牌每打出一次伤害增加 !M! 点 NL 增长的数值会增加1点."
+  },
+  "deadCells:StunGrenade": {
+    "NAME": "闪光弹",
+    "DESCRIPTION": "使一名敌人眩晕. NL 消耗 .",
+    "UPGRADE_DESCRIPTION": "保留 . NL 使一名敌人眩晕. NL 消耗 . NL *被丢弃时自动打出."
+  },
+  "deadCells:ReflectionSpeedUp": {
+    "NAME": "思考加速",
+    "DESCRIPTION": "回合开始根据战斗情况 NL 将 !M! 张 合适的牌 置入你的手中.",
+    "UPGRADE_DESCRIPTION": "固有 . NL 回合开始根据战斗情况 NL 将 !M! 张 合适的牌 置入你的手中."
+  },
+  "deadCells:DepravedForm": {
+    "NAME": "堕落形态",
+    "DESCRIPTION": "获得6点 力量 . NL 你的 *攻击 会造成 !M! 次你伤害25%的额外伤害. NL 获得1层 易伤 ."
+  },
+  "deadCells:Grenade": {
+    "NAME": "步兵手雷",
+    "DESCRIPTION": "造成 !D! 点伤害. NL 对其他敌人造成 !M! 点伤害."
+  },
+  "deadCells:Speed": {
+    "NAME": "极速",
+    "DESCRIPTION": "你的之后使用的 !M! 张牌都会额外抽一张牌并获得 1 点 格挡 ."
+  },
+  "deadCells:RoundingKnife": {
+    "NAME": "圆舞飞刀",
+    "DESCRIPTION": "给予所有敌人 !M! 层 虚弱 . NL 给予敌人3层 流血 ."
+  },
+  "deadCells:CrowFeathers": {
+    "NAME":"乌鸦之翼",
+    "DESCRIPTION": "获得 !M! 层临时飞行. NL 你在本回合每受到一次 *攻击 ,对攻击者造成 !D! 点伤害. NL (受攻击加成的影响)"
+  },
+  "deadCells:AlchemyCarbine": {
+    "NAME": "炼金卡宾枪",
+    "DESCRIPTION": "给予 !M! 层 中毒 随机分配到敌人上 . NL 抽2张牌.",
+    "UPGRADE_DESCRIPTION": "给予 !M! 层 中毒 随机分配到敌人上 . NL 抽3张牌."
+  },
+  "deadCells:Piano": {
+    "NAME": "节奏布祖基琴",
+    "DESCRIPTION": "造成 !D! 点伤害. NL 将一张节奏布祖基琴II置入手牌. NL 消耗 .",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害. NL 将一张节奏布祖基琴II置入手牌."
+  },
+  "deadCells:PianoII": {
+    "NAME": "节奏布祖基琴II",
+    "DESCRIPTION": "造成 !D! 点伤害. NL 如果你打出的上一张牌为节奏布祖基琴,则造成双倍点伤害. NL 将一张节奏布祖基琴III置入手牌. NL 消耗 ."
+  },
+  "deadCells:PianoIII": {
+    "NAME": "节奏布祖基琴III",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害. NL 如果你打出的上一张牌为 *节奏布祖基琴II 或 *节奏布祖基琴III ,则造成双倍点伤害. NL 消耗 . "
+  },
+  "deadCells:Roll": {
+    "NAME": "翻滚",
+    "DESCRIPTION": "获得 !B! 点 格挡 . NL 抽取3张牌,丢弃掉其中的 *攻击牌 ."
+  },
+  "deadCells:Saucepan": {
+    "NAME": "平底锅",
+    "DESCRIPTION":"造成 !D! 点伤害. NL 如果敌人的意图是 *攻击 . NL 再造成 !D! 点伤害.",
+    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害. NL 如果敌人的意图是 *攻击 . NL 再造成 !D! 点伤害. NL 给予1层 虚弱 . NL 给予1层 易伤 ."
+  },
+  "deadCells:EmergencyDoor": {
+    "NAME": "紧急逃生门",
+    "DESCRIPTION":"获得 !B! 点 格挡 . NL 获得2层 *缓冲 . NL 获得2层 虚弱 ."
+  },
+  "king:Strike": {
+    "NAME": "打击",
+    "DESCRIPTION": "造成 !D! 点伤害."
+  },
+  "king:Defend": {
+    "NAME": "防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 ."
+  },
+  "deadCells:SymmetricalSpear":{
+    "NAME": "对称长枪",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害 !M! 次. NL 如果第一段击中至少两 NL 名敌人则后续造成两倍 NL 伤害."
+  }
+}

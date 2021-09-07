@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -42,12 +43,20 @@ public class FrontLineShield extends DeadCellsCard {
                     AbstractCard card = AbstractDungeon.returnTrulyRandomCardInCombat(CardType.ATTACK);
                     card = card.makeCopy();
                     if (!card.exhaust){
-                        card.rawDescription += " NL 消耗 。";
+                        if ("ZHS".equals(Settings.language.toString())){
+                            card.rawDescription += " NL 消耗 .";
+                        }else {
+                            card.rawDescription += " NL Exhaust .";
+                        }
                         card.exhaust = true;
                     }
 
                     if (!card.isEthereal){
-                        card.rawDescription += " NL 虚无 。";
+                        if ("ZHS".equals(Settings.language.toString())){
+                            card.rawDescription += " NL 虚无 .";
+                        }else {
+                            card.rawDescription += " NL Ethereal .";
+                        }
                         card.isEthereal = true;
                     }
 

@@ -1,0 +1,1358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="deadCellsMod:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="00662a60-fefe-49d9-afeb-5b823dd0ad22" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/utils/Keywords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/zhs/cards.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/zhs/character.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/zhs/event.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/zhs/keywords.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/zhs/monsters.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/zhs/powers.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/zhs/relics.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_3_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_14_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_14_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_14_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_14_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_13_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_13_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_32.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_32.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_31.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_31.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_5_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_5_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_5_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_5_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_5_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_5_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_5_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_5_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_28.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_28.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/DeadCellsModInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/DeadCellsModInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/BackPack_sk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/BackPack_sk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/FrontLineShield.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/FrontLineShield.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/GrenadeCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/GrenadeCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Roll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Roll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Ruthless.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Ruthless.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/powers/NocturneAttackedPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/powers/NocturneAttackedPower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/cards.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/cards.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/character.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/character.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/event.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/event.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/keywords.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/keywords.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/monsters.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/monsters.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/powers.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/powers.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/relics.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/relics.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="deadCellsMod" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>current</find>
+      <find>壁垒</find>
+      <find>calculate</find>
+      <find>calculateModifiedCardDamage</find>
+      <find>冻伤</find>
+      <find>canuse</find>
+      <find>填充手雷</find>
+      <find>烧伤</find>
+      <find>步兵</find>
+      <find>消耗</find>
+      <find>藤蔓手雷</find>
+      <find>闪光弹</find>
+      <find>powe</find>
+      <find>power</find>
+      <find>。</find>
+      <find>pre</find>
+      <find>火焰制造者</find>
+      <find>撕裂</find>
+      <find>钢管</find>
+      <find>无情</find>
+      <find>盾</find>
+      <find>post</find>
+      <find>game</find>
+      <find>Post</find>
+      <find>Pre</find>
+      <find>堕落</find>
+      <find>迅捷</find>
+      <find>冰冻</find>
+      <find>莽撞</find>
+      <find>Innate</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>card_bg</replace>
+      <replace>lastCard</replace>
+      <replace>燃烧</replace>
+      <replace>.</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/CardReward.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/DepravedForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/patch/OpenWoundsPatch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/ScytheClaw.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/powers/InTimePower.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/InTime.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/RegularSkill.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/powers/IronStaffPower.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/powers/Predator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/Predator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/SwiftSword.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/Strings/deadCells/relics.json" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/CorruptedArtifact.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/HayabusaGauntlets.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/PianoII.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/PianoIII.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Piano.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/HattoriSKatana.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/SnakeFangs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/powers/FrostbitePower.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/IceGrenade.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/Strings/deadCells/powers.json" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Giantkiller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/GrenadeCard.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/Chopper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/IceCrossbow.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/ThrowingKnife.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/EmergencyDoor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/character/King.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/powers/RampartPower.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/ReflectionSpeedUp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/Nocturne.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Backtrack.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/BackPack_sk.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/action/UseTheSameCardAgainAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/powers/BurnsPower.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/DeadCellsCard.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/action/VampirismAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Vampirism.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/powers/DepravedPower.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/Strings/deadCells/cards.json" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/PowerOfScroll.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Roll.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/cards.json" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/DeadCellsModInitializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/powers/NocturneAttackedPower.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Reckless.java" />
+        <option value="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Ruthless.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/Strings/deadCells/zhs/cards.json" />
+      </list>
+    </option>
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../myself/ManveResource/FinishMaven/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="E:\myself\ManveResource\FinishMaven\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="dead-cells-mod" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="dead-cells-mod" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="dead-cells-mod" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="15" />
+    <option name="vmOptions" value="-DarchetypeCatalog=internal" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="430" />
+    <option name="y" value="120" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectId" id="1xftpScUT5q5K1eFgDM99P6e9Ik" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="deadCellsMod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deadCellsMod" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deadCellsMod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deadCellsMod" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deadCellsMod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deadCellsMod" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deadCellsMod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deadCellsMod" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deadCellsMod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deadCellsMod" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="deadCellsMod" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deadCellsMod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deadCellsMod" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="deadCellsMod" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deadCellsMod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deadCellsMod" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="deadCellsMod" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="infinite" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deadCellsMod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deadCellsMod" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="deadCellsMod" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="infinite" type="462c0819:PsiDirectoryNode" />
+              <item name="stsmod" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deadCellsMod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deadCellsMod" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="deadCellsMod" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="infinite" type="462c0819:PsiDirectoryNode" />
+              <item name="stsmod" type="462c0819:PsiDirectoryNode" />
+              <item name="cards" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deadCellsMod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deadCellsMod" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="deadCellsMod" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="infinite" type="462c0819:PsiDirectoryNode" />
+              <item name="stsmod" type="462c0819:PsiDirectoryNode" />
+              <item name="powers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deadCellsMod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deadCellsMod" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="deadCellsMod" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="infinite" type="462c0819:PsiDirectoryNode" />
+              <item name="stsmod" type="462c0819:PsiDirectoryNode" />
+              <item name="Relics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deadCellsMod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deadCellsMod" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deadCellsMod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deadCellsMod" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Strings" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deadCellsMod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deadCellsMod" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Strings" type="462c0819:PsiDirectoryNode" />
+              <item name="deadCells" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deadCellsMod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deadCellsMod" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Strings" type="462c0819:PsiDirectoryNode" />
+              <item name="deadCells" type="462c0819:PsiDirectoryNode" />
+              <item name="eng" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deadCellsMod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deadCellsMod" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Strings" type="462c0819:PsiDirectoryNode" />
+              <item name="deadCells" type="462c0819:PsiDirectoryNode" />
+              <item name="zhs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deadCellsMod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deadCellsMod" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deadCellsMod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1630556852158" />
+    <property name="extract.method.default.visibility" value="public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="deadCellsMod.cn.infinite.stsmod.powers" />
+      <recent name="deadCellsMod.cn.infinite.stsmod.cards" />
+      <recent name="deadCellsMod.cn.infinite.stsmod.action" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\game\deadCellsMod\src\main\resources\Strings\deadCells\eng" />
+      <recent name="E:\game\deadCellsMod\src\main\resources\audio\sound" />
+      <recent name="E:\game\deadCellsMod\src\main\resources\libs" />
+      <recent name="E:\game\deadCellsMod\src\main\resources\img\char_portraits" />
+      <recent name="E:\game\deadCellsMod\src\main\resources\img\card" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\game\deadCellsMod\src\main\resources\Strings\deadCells\zhs" />
+      <recent name="E:\game\deadCellsMod\src\main\resources\audio\sound" />
+      <recent name="E:\game\deadCellsMod\src\main\resources" />
+      <recent name="E:\game\deadCellsMod\src" />
+      <recent name="E:\game\deadCellsMod\src\main\resources\img\relics" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Test (2)">
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cn.infinite.stsmod.Test" />
+      <module name="deadCellsMod" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cn.infinite.stsmod.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="deadCellsMod.cn.infinite.stsmod.Test" />
+      <module name="deadCellsMod" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="deadCellsMod.cn.infinite.stsmod.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.infinite.stsmod.Test" />
+      <module name="deadcellsmod" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.infinite.stsmod.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="deadCellsMod.cn.infinite.stsmod.Test" />
+      <module name="deadCellsMod" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="deadCellsMod.cn.infinite.stsmod.patch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="deadCellsMod.cn.infinite.stsmod.Test" />
+      <module name="deadCellsMod" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="deadCellsMod.cn.infinite.stsmod.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BaseMod .jar" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/src/lib/BaseMod .jar" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <method v="2" />
+    </configuration>
+    <configuration name="BaseMod.jar" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/src/main/resources/lib/BaseMod.jar" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ModTheSpire.jar" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/src/lib/ModTheSpire.jar" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <method v="2" />
+    </configuration>
+    <configuration name="desktop-1.0.jar" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/src/lib/desktop-1.0.jar" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mod-uploader.jar" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/src/lib/mod-uploader.jar" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mts-launcher.jar" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/src/main/resources/lib/mts-launcher.jar" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Test (2)" />
+        <item itemvalue="Application.Test (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="00662a60-fefe-49d9-afeb-5b823dd0ad22" name="Default Changelist" comment="" />
+      <created>1625204802934</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1625204802934</updated>
+      <workItem from="1625204807534" duration="25770000" />
+      <workItem from="1625279581180" duration="12939000" />
+      <workItem from="1625294645425" duration="11997000" />
+      <workItem from="1625325987812" duration="2045000" />
+      <workItem from="1625361895463" duration="32522000" />
+      <workItem from="1625447067877" duration="20145000" />
+      <workItem from="1625533007804" duration="16627000" />
+      <workItem from="1625567975393" duration="1177000" />
+      <workItem from="1625624100168" duration="653000" />
+      <workItem from="1625647642771" duration="15400000" />
+      <workItem from="1625707228912" duration="308000" />
+      <workItem from="1625707958987" duration="22810000" />
+      <workItem from="1625792498762" duration="17383000" />
+      <workItem from="1625827983496" duration="5590000" />
+      <workItem from="1625834688268" duration="6700000" />
+      <workItem from="1625879487825" duration="12334000" />
+      <workItem from="1625928806847" duration="1419000" />
+      <workItem from="1625968283435" duration="2116000" />
+      <workItem from="1625988331098" duration="17058000" />
+      <workItem from="1626014881518" duration="17000" />
+      <workItem from="1626051686784" duration="5783000" />
+      <workItem from="1626098744849" duration="3016000" />
+      <workItem from="1626227798113" duration="29447000" />
+      <workItem from="1626313844534" duration="20483000" />
+      <workItem from="1626345145431" duration="8318000" />
+      <workItem from="1626398849308" duration="18418000" />
+      <workItem from="1626434980801" duration="4799000" />
+      <workItem from="1626439879469" duration="10494000" />
+      <workItem from="1626486288403" duration="26334000" />
+      <workItem from="1626586880174" duration="4879000" />
+      <workItem from="1626658302337" duration="28640000" />
+      <workItem from="1626705155748" duration="673000" />
+      <workItem from="1626750630130" duration="34132000" />
+      <workItem from="1626831961684" duration="25473000" />
+      <workItem from="1626927264890" duration="18980000" />
+      <workItem from="1626963806844" duration="2735000" />
+      <workItem from="1626966690256" duration="3347000" />
+      <workItem from="1627000574845" duration="24940000" />
+      <workItem from="1627124713168" duration="594000" />
+      <workItem from="1627177180496" duration="10614000" />
+      <workItem from="1627265884951" duration="29765000" />
+      <workItem from="1627347071412" duration="23068000" />
+      <workItem from="1627381815689" duration="6683000" />
+      <workItem from="1627397979456" duration="1874000" />
+      <workItem from="1627437925756" duration="11492000" />
+      <workItem from="1627473479302" duration="12947000" />
+      <workItem from="1627518612032" duration="714000" />
+      <workItem from="1627537172958" duration="20141000" />
+      <workItem from="1627619058522" duration="1329000" />
+      <workItem from="1627696221832" duration="9142000" />
+      <workItem from="1627712953940" duration="4100000" />
+      <workItem from="1627717126410" duration="21210000" />
+      <workItem from="1627779365205" duration="10067000" />
+      <workItem from="1627815064269" duration="8597000" />
+      <workItem from="1627869561402" duration="4065000" />
+      <workItem from="1627893568337" duration="2738000" />
+      <workItem from="1627903454218" duration="125000" />
+      <workItem from="1627903621984" duration="206000" />
+      <workItem from="1627903869040" duration="3263000" />
+      <workItem from="1627956887942" duration="38026000" />
+      <workItem from="1628043431624" duration="2724000" />
+      <workItem from="1628049433738" duration="3311000" />
+      <workItem from="1628063322097" duration="17958000" />
+      <workItem from="1628086625511" duration="2535000" />
+      <workItem from="1628128522434" duration="32030000" />
+      <workItem from="1628214716111" duration="43500000" />
+      <workItem from="1628305237499" duration="9448000" />
+      <workItem from="1628387551492" duration="41349000" />
+      <workItem from="1628473774596" duration="40744000" />
+      <workItem from="1628559912492" duration="40797000" />
+      <workItem from="1628647017251" duration="15871000" />
+      <workItem from="1628666344939" duration="23473000" />
+      <workItem from="1628732926156" duration="19084000" />
+      <workItem from="1628770702332" duration="8510000" />
+      <workItem from="1628817331439" duration="21053000" />
+      <workItem from="1628867083542" duration="2701000" />
+      <workItem from="1628906467873" duration="258000" />
+      <workItem from="1628906807738" duration="4649000" />
+      <workItem from="1628951301980" duration="1420000" />
+      <workItem from="1628994083524" duration="1795000" />
+      <workItem from="1629080604859" duration="2000000" />
+      <workItem from="1629111848595" duration="1239000" />
+      <workItem from="1629126577186" duration="1284000" />
+      <workItem from="1629162955893" duration="1227000" />
+      <workItem from="1629178189689" duration="1802000" />
+      <workItem from="1629202446942" duration="2675000" />
+      <workItem from="1629252087154" duration="5867000" />
+      <workItem from="1629333906696" duration="1461000" />
+      <workItem from="1629362309436" duration="1070000" />
+      <workItem from="1629363798051" duration="639000" />
+      <workItem from="1629425850569" duration="1095000" />
+      <workItem from="1629507401498" duration="5261000" />
+      <workItem from="1629543540071" duration="4402000" />
+      <workItem from="1629599736163" duration="9407000" />
+      <workItem from="1629709013504" duration="819000" />
+      <workItem from="1629798704776" duration="12000" />
+      <workItem from="1630547737280" duration="7597000" />
+      <workItem from="1630661167535" duration="2975000" />
+      <workItem from="1630664933384" duration="1231000" />
+      <workItem from="1630758159217" duration="1157000" />
+      <workItem from="1630839811892" duration="320000" />
+      <workItem from="1630840372444" duration="80000" />
+      <workItem from="1630925448125" duration="1606000" />
+      <workItem from="1630990041014" duration="612000" />
+      <workItem from="1630990710331" duration="5565000" />
+    </task>
+    <task id="LOCAL-00001" summary="DeadCellsMod">
+      <created>1627711209999</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1627711210000</updated>
+    </task>
+    <task id="LOCAL-00002" summary="DeadCellsMod">
+      <created>1627711714978</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1627711714978</updated>
+    </task>
+    <task id="LOCAL-00003" summary="DeadCellsMod">
+      <created>1627712265056</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1627712265057</updated>
+    </task>
+    <task id="LOCAL-00004" summary="DeadCellsMod">
+      <created>1627713196923</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1627713196923</updated>
+    </task>
+    <task id="LOCAL-00005" summary="DeadCellsMod">
+      <created>1627713812656</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1627713812656</updated>
+    </task>
+    <task id="LOCAL-00006" summary="DeadCellsMod">
+      <created>1627714961297</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1627714961298</updated>
+    </task>
+    <task id="LOCAL-00007" summary="DeadCellsMod&#10;version:1.0.5">
+      <created>1627717210192</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1627717210192</updated>
+    </task>
+    <task id="LOCAL-00008" summary="DeadCellsMod&#10;version:1.0.5">
+      <created>1627718422749</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1627718422749</updated>
+    </task>
+    <task id="LOCAL-00009" summary="DeadCellsMod&#10;version:1.0.5">
+      <created>1627719714040</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1627719714040</updated>
+    </task>
+    <task id="LOCAL-00010" summary="DeadCellsMod&#10;version:1.0.5">
+      <created>1627720991888</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1627720991888</updated>
+    </task>
+    <task id="LOCAL-00011" summary="DeadCellsMod&#10;version:1.0.5">
+      <created>1627721396892</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1627721396892</updated>
+    </task>
+    <task id="LOCAL-00012" summary="DeadCellsMod&#10;version:1.0.6">
+      <created>1628252967466</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1628252967466</updated>
+    </task>
+    <task id="LOCAL-00013" summary="DeadCellsMod&#10;version:1.0.6&#10;new two card">
+      <created>1628338756481</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1628338756481</updated>
+    </task>
+    <task id="LOCAL-00014" summary="mod职责以完成,待后续填充更多遗物,怪物种类,以及攻击音效动画等">
+      <created>1628750510229</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1628750510229</updated>
+    </task>
+    <task id="LOCAL-00015" summary="新增加了两个遗物，修复了部分bug">
+      <created>1628849308616</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1628849308616</updated>
+    </task>
+    <task id="LOCAL-00016" summary="不知道更新了什么">
+      <created>1629127251004</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1629127251004</updated>
+    </task>
+    <task id="LOCAL-00017" summary="不知道更新了什么">
+      <created>1629623288560</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1629623288560</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1101934000" />
+  </component>
+  <component name="TodoView" selected-index="3">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="1" />
+      <window_info id="JRebel" order="2" side_tool="true" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.50141644" side_tool="true" weight="0.22386059" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.49858356" visible="true" weight="0.28954422" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49731904" weight="0.388102" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.398017" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286119" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.49932975" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.3286119" />
+      <window_info anchor="bottom" id="JRebel Executor" order="12" sideWeight="0.49932975" weight="0.32956153" />
+      <window_info anchor="bottom" id="JRebel Console" order="13" sideWeight="0.5013405" side_tool="true" weight="0.38613862" />
+      <window_info anchor="bottom" id="Duplicate detector" order="14" weight="0.47733712" />
+      <window_info anchor="bottom" id="Problems" order="15" />
+      <window_info anchor="bottom" id="Event Log" order="16" sideWeight="0.50268096" side_tool="true" weight="0.39093485" />
+      <window_info anchor="bottom" id="Spring" order="17" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3297587" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Word Book" order="6" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Maven" order="9" sideWeight="0.49858356" weight="0.288874" />
+      <window_info anchor="right" id="Translate" order="10" weight="0.32908848" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="1" />
+      <window_info id="JRebel" order="2" side_tool="true" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.50141644" side_tool="true" weight="0.22386059" />
+      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.49858356" visible="true" weight="0.26340482" />
+      <window_info anchor="bottom" id="Spring" order="0" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32956153" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49731904" weight="0.388102" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.398017" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3286119" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49932975" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.3286119" />
+      <window_info anchor="bottom" id="JRebel Executor" order="13" sideWeight="0.49932975" weight="0.32956153" />
+      <window_info anchor="bottom" id="JRebel Console" order="14" sideWeight="0.5013405" side_tool="true" weight="0.38613862" />
+      <window_info anchor="bottom" id="Duplicate detector" order="15" weight="0.47733712" />
+      <window_info anchor="bottom" id="Problems" order="16" />
+      <window_info anchor="bottom" id="Event Log" order="17" sideWeight="0.50268096" side_tool="true" weight="0.39093485" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3297587" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Word Book" order="6" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Maven" order="9" sideWeight="0.49858356" weight="0.288874" />
+      <window_info anchor="right" id="Translate" order="10" weight="0.32908848" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="DeadCellsMod" />
+    <MESSAGE value="DeadCellsMod&#10;version:1.0.5" />
+    <MESSAGE value="DeadCellsMod&#10;version:1.0.6" />
+    <MESSAGE value="DeadCellsMod&#10;version:1.0.6&#10;new two card" />
+    <MESSAGE value="mod职责以完成,待后续填充更多遗物,怪物种类,以及攻击音效动画等" />
+    <MESSAGE value="新增加了两个遗物，修复了部分bug" />
+    <MESSAGE value="不知道更新了什么" />
+    <option name="LAST_COMMIT_MESSAGE" value="不知道更新了什么" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/HattoriSKatana.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1536">
+          <caret line="75" column="30" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../libs/desktop-1.0.jar!/com/megacrit/cardcrawl/vfx/combat/ThrowDaggerEffect.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/EmeraldAmulet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/powers/DepravedPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="50" column="55" lean-forward="true" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/BackPack_sk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1656">
+          <caret line="92" column="67" selection-start-line="92" selection-start-column="67" selection-end-line="92" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/action/VampirismAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/powers/BleedingSpreadPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/powers/BurnsPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/DeadCellsCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="88" column="75" selection-start-line="88" selection-start-column="75" selection-end-line="88" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/PowerOfScroll.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="114" column="73" selection-start-line="114" selection-start-column="73" selection-end-line="114" selection-end-column="73" />
+          <folding>
+            <element signature="e#4097#4098#0" expanded="true" />
+            <element signature="e#4139#4140#0" expanded="true" />
+            <element signature="e#4186#4187#0" expanded="true" />
+            <element signature="e#4266#4267#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../libs/desktop-1.0.jar!/com/megacrit/cardcrawl/rooms/TreasureRoomBoss.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../libs/desktop-1.0.jar!/com/megacrit/cardcrawl/dungeons/AbstractDungeon.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2328">
+          <caret line="216" column="40" selection-start-line="216" selection-start-column="40" selection-end-line="216" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Roll.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="71" column="107" selection-start-line="71" selection-start-column="107" selection-end-line="71" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Strings/deadCells/zhs/character.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Strings/deadCells/zhs/event.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Strings/deadCells/zhs/keywords.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Strings/deadCells/zhs/monsters.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Strings/deadCells/zhs/powers.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/InTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Strings/deadCells/zhs/relics.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../libs/desktop-1.0.jar!/com/megacrit/cardcrawl/core/Settings.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/OpenJDK8U-jdk_x64_windows_openj9_8u275b01_openj9-0.23.0/jdk8u275-b01/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="2861" column="24" lean-forward="true" selection-start-line="2861" selection-start-column="24" selection-end-line="2861" selection-end-column="24" />
+          <folding>
+            <element signature="e#77144#77145#0" expanded="true" />
+            <element signature="e#77190#77191#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/character.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/event.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/keywords.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/monsters.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/powers.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../libs/desktop-1.0.jar!/com/megacrit/cardcrawl/localization/MonsterStrings.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="19" column="50" lean-forward="true" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../libs/desktop-1.0.jar!/com/megacrit/cardcrawl/localization/Keyword.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../libs/desktop-1.0.jar!/com/megacrit/cardcrawl/localization/RelicStrings.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../libs/desktop-1.0.jar!/com/megacrit/cardcrawl/localization/KeywordStrings.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-524">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../libs/desktop-1.0.jar!/com/megacrit/cardcrawl/localization/PowerStrings.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/cards.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4224">
+          <caret line="176" column="35" selection-start-line="176" selection-start-column="35" selection-end-line="176" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/FrontLineShield.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="984">
+          <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Vampirism.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../libs/BaseMod.jar!/basemod/BaseMod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19896">
+          <caret line="842" column="97" selection-start-line="842" selection-start-column="97" selection-end-line="842" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../libs/BaseMod.jar!/basemod/ReflectionHacks.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2328">
+          <caret line="105" column="24" selection-start-line="105" selection-start-column="24" selection-end-line="105" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../libs/desktop-1.0.jar!/com/megacrit/cardcrawl/localization/LocalizedStrings.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/OpenJDK8U-jdk_x64_windows_openj9_8u275b01_openj9-0.23.0/jdk8u275-b01/src.zip!/java/lang/reflect/Type.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/DeadCellsModInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7872">
+          <caret line="330" column="78" selection-start-line="330" selection-start-column="78" selection-end-line="330" selection-end-column="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/SealsRecipe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/CorruptedArtifact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="13" column="71" selection-start-line="13" selection-start-column="71" selection-end-line="13" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/SpirePace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/powers/NocturneAttackedPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2184">
+          <caret line="101" column="11" selection-start-line="101" selection-start-column="11" selection-end-line="101" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/Nocturne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Reckless.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../libs/desktop-1.0.jar!/com/megacrit/cardcrawl/actions/common/ApplyPowerAction.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2088">
+          <caret line="113" column="11" selection-start-line="113" selection-start-column="11" selection-end-line="113" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/relics.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Ruthless.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Strings/deadCells/zhs/cards.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Giantkiller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="65" column="42" lean-forward="true" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>deadCellsMod:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>deadCellsMod</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: junit:junit:4.11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

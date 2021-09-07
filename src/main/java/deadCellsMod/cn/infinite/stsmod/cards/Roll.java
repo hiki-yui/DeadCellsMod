@@ -55,7 +55,7 @@ public class Roll extends CustomCard {
                     //这里照搬了刮削的源码
                     @Override
                     public void update() {
-                        AbstractDungeon.actionManager.addToBottom(new WaitAction(0.4F));//这行不太懂
+                        AbstractDungeon.actionManager.addToBottom(new WaitAction(0.4F));
                         tickDuration();//不太懂
                         //以下全解
                         if (this.isDone){

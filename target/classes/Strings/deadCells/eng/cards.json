@@ -1,0 +1,392 @@
+{
+  "deadCells:GrenadeCard": {
+    "DESCRIPTION": " NL *it *will *be *use *when *trigger *onManual *discard."
+  },
+  "deadCells:Rob": {
+    "NAME": "Pillage",
+    "DESCRIPTION": "Gain !CN! Dexterity. NL At the end of combat, gain !M! additionalgold."
+  },
+  "deadCells:NightLight": {
+    "NAME": "Night Light",
+    "DESCRIPTION": "At the end of combat, gain !M! additional card reward."
+  },
+  "deadCells:Giantkiller": {
+    "NAME": "Giantkiller",
+    "DESCRIPTION": "Deal !D! damage !M! times. NL Effect changes whenever you play it. NLDeal !CN! additional damage to Elites and Bosses."
+  },
+  "deadCells:InTime": {
+    "NAME": "In Time",
+    "DESCRIPTION": "At the start of your turn, if any enemy intends to attack, play !M!random *shield cards.",
+    "UPGRADE_DESCRIPTION": " Innate. NL At the start of your turn, if any enemy intends toattack, play !M! random *shield cards."
+  },
+  "deadCells:ThunderShield": {
+    "NAME": "Thunder Shield",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! temporary Strength."
+  },
+  "deadCells:Punishment": {
+    "NAME": "Punishment",
+    "DESCRIPTION": "Gain !B! Block. NL Play !M! random *Attacks."
+  },
+  "deadCells:HayabusaGauntlets": {
+    "NAME": "Hayabusa Gauntlets",
+    "DESCRIPTION": "Deal !D! damge !M! times. NL If the enemy's HP is less than 40%, deal !HD! additional damage !M! times.  NL Return this card into your hand after playing if itscost is non-0."
+  },
+  "deadCells:FranticSword": {
+    "NAME": "Frantic Sword",
+    "DESCRIPTION": "Deal !D! damage. If you are below 50% HP, deal !HD! damage instead."
+  },
+  "deadCells:Vampirism": {
+    "NAME": "Vampirism",
+    "DESCRIPTION": "Apply !M! Bleeding to ALL enemies. NL Heal HP equal to ALL enemies'Bleeding. NL Exhaust."
+  },
+  "deadCells:Cocoon": {
+    "NAME": "Cocoon",
+    "DESCRIPTION": "Whenever you gain Block, gain !M! additional Block.",
+    "UPGRADE_DESCRIPTION": " Innate. NL Whenever you gain Block, gain !M! additionalBlock."
+  },
+  "deadCells:HayabusaBoots": {
+    "NAME": "Hayabusa Boots",
+    "DESCRIPTION": "Deal !D! damage !M! times, the last hit damages ALL enemies."
+  },
+  "deadCells:FireworksTechnician": {
+    "NAME": "Grenade Master",
+    "DESCRIPTION": " *Grenades deal !M! additional damage."
+  },
+  "deadCells:CursedSword": {
+    "NAME": "Cursed Sword",
+    "DESCRIPTION": "Deal !D! damage. NL At the start of combat, add !M! random curses toyour draw pile."
+  },
+  "deadCells:IronStaff": {
+    "NAME": "Iron Staff",
+    "DESCRIPTION": "Gain !B! Block. At the start of your next turn, deal damage to ALLenemies equal to remaining Block. NL End your turn."
+  },
+  "deadCells:SnakeFangs": {
+    "NAME": "Snake Fangs",
+    "DESCRIPTION": "Deal !D! damage and apply !M! Poison. If the enemy has at least !CN!Poison, deal !HD! damage instead. NL Shuffle this card into your draw pile."
+  },
+  "deadCells:ClusterGrenade": {
+    "NAME": "Cluster Grenade",
+    "DESCRIPTION": "Deal !D! damage. NL Deal !CN! fixed damage to a random enemy !M! times. NL Exhaust."
+  },
+  "deadCells:SmokeBomb": {
+    "NAME": "Smoke Bomb",
+    "DESCRIPTION": "Gain !CN! Invisible. NL Your next Attack deals !M! additional damage.NL Exhaust."
+  },
+  "deadCells:LaceratingAura": {
+    "NAME": "Lacerating Aura",
+    "DESCRIPTION": "Whenever you deal unblocked damage, apply !M! Bleeding."
+  },
+  "deadCells:Reckless": {
+    "NAME": "Reckless",
+    "DESCRIPTION": "Play !M! random Attacks in your draw pile and Exhaust them. NL Exhaust."
+  },
+  "deadCells:CorrosiveCloud": {
+    "NAME": "Corrosive Cloud",
+    "DESCRIPTION": "Whenever you apply 3 or more Bleeding, apply !M! Poison for every 3Bleeding.",
+    "UPGRADE_DESCRIPTION": " Innate. NL Whenever you apply over 3 Bleeding, apply !M! Poison for every 3 Bleeding."
+  },
+  "deadCells:FrontLineShield": {
+    "NAME": "FrontLine Shield",
+    "DESCRIPTION": "Gain !B! Block. NL Put !M! *Attacks from your draw pile into yourhand, add Ethreal and Exhaust."
+  },
+  "deadCells:Hemorrhage": {
+    "NAME": "Hemorrhage",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy has Bleeding, deal !HD! damageinstead. NL Apply !M! Bleeding."
+  },
+  "deadCells:HattoriSKatana": {
+    "NAME": "Hattori's Katana",
+    "DESCRIPTION": "Deal !D! damage !M! times. NL Increase the number of times this cardhits by 1, up to 5 times. NL If this card hits at least 3 times, gain !CN! Dexterity andStrength. NL Return this card into your hand after playing if its cost is non-0."
+  },
+  "deadCells:FerrymanSLanternIII": {
+    "NAME": "Soul Shot",
+    "DESCRIPTION": "Consume all ammo, each deals !D! damage. NL Exhaust."
+  },
+  "deadCells:FerrymanSLanternII": {
+    "NAME": "Soul Gathering",
+    "DESCRIPTION": "Deal !D! damage, gain !AM! ammo. NL Exhaust."
+  },
+  "deadCells:FerrymanSLantern": {
+    "NAME": "Ferryman's Lantern",
+    "DESCRIPTION": "Choose 1 of 2 cards to add into your hand. NL Uncharged: Deal !D! damage, gain !AM! ammo. NL Charged: Consume all ammo, each deals !D! damage. NL !AM! ammo charged."
+  },
+  "deadCells:Calm": {
+    "NAME": "Calm",
+    "DESCRIPTION": "Gain [E] [E]. Discard !M! random *Attacks."
+  },
+  "deadCells:RegularSkill": {
+    "NAME": "Regular Skill",
+    "DESCRIPTION": "At the start of your turn, add a *Roll with Retain and Exhaust into your hand.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, put a *Roll into your hand, add Retain and Exhaust."
+  },
+  "deadCells:FrostBlast": {
+    "NAME": "Frost Blast",
+    "DESCRIPTION": "Gain !B! Block. NL Apply !M! Frost X times to ALL enemies."
+  },
+  "deadCells:FireBlast": {
+    "NAME": "Fire Blast",
+    "DESCRIPTION": "Deal !D! damage and apply !M! Burn X times to ALL enemies."
+  },
+  "deadCells:APlan": {
+    "NAME": "Plan A",
+    "DESCRIPTION": "Discard all Skills in your hand, draw the same number of Attacks from draw pile. NL Gain [E]. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Discard all Skills in your hand, draw the same number of Attacks from draw pile. NL Gain [E]."
+  },
+  "deadCells:ToothpickIIII": {
+    "NAME": "Repair",
+    "DESCRIPTION": "Gain max ammo and !B! Block"
+  },
+  "deadCells:ToothpickIII": {
+    "NAME": "Bludgeon",
+    "DESCRIPTION": "Consume !AM! ammo to deal !D! damage."
+  },
+  "deadCells:ToothpickII": {
+    "NAME": "Broken Tootpick",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "deadCells:Toothpick": {
+    "NAME": "Toothpick",
+    "DESCRIPTION": "Choose 1 of 3 cards to add into your hand. NL Uncharged: Deal !D! damage. NL Charged: Consume !AM! ammo to deal !D! damage. NL Repair: Gain max ammo and !B! Block. NL ( !AM! / !MAM! )"
+  },
+  "deadCells:SwiftSword": {
+    "NAME": "Swift Sword",
+    "DESCRIPTION": "Deal !D! damage, draw !M! additional cards at the first !CN! turns of combat."
+  },
+  "deadCells:OiledSword": {
+    "NAME": "Oiled Sword",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy has Burn, deal !HD! damage instead. NL Apply !M! Oil."
+  },
+  "deadCells:OilGrenade": {
+    "NAME": "Oil Grenade",
+    "DESCRIPTION": "Deal !D! damage and apply !M! Oil to ALL enemies. NL Exhaust."
+  },
+  "deadCells:IceCrossbowIIII": {
+    "NAME": "Charge",
+    "DESCRIPTION": "Gain max ammo and !B! Block. NL Exhaust."
+  },
+  "deadCells:IceCrossbowIII": {
+    "NAME": "Piercing Shot",
+    "DESCRIPTION": "Consume !AM! ammo to deal !D! damage. Damage increased by !M! for every 2 Frost on the enemy. NL Exhaust."
+  },
+  "deadCells:IceCrossbowII": {
+    "NAME": "Freezing Shot",
+    "DESCRIPTION": "Consume !AM! ammo to deal !D! damage and apply !M! Frost. NL Exhaust."
+  },
+  "deadCells:IceCrossbow": {
+    "NAME": "Ice Crossbow",
+    "DESCRIPTION": "Choose 1 of 3 cards to add into your hand. NL Uncharged: Consume !AM! ammo to deal !D! damage and apply !M! Frost. NL Charged: Consume !AM! ammo to deal !D! damage. Damage increased by !M! for every 2 Frost on the enemy. NL Charge: Gain max ammo and !B! Block. NL ( !AM! / !MAM! )"
+  },
+  "deadCells:InsightInto": {
+    "NAME": "Insight",
+    "DESCRIPTION": "Gain a *Proper *Card."
+  },
+  "deadCells:IceArmor": {
+    "NAME": "Ice Armor",
+    "DESCRIPTION": "Gain !B! Block. NL If you have no Block, gain !CN! Block instead. NL  Apply !M! Frost to ALL enemies."
+  },
+  "deadCells:PyrotechnicsIIII": {
+    "NAME": "Mana Recovery",
+    "DESCRIPTION": "Gain !M! ammo and !B! Block NL Exhaust."
+  },
+  "deadCells:PyrotechnicsIII": {
+    "NAME": "Fireball",
+    "DESCRIPTION": "Consume 1 ammo to deal !D! damage and apply !Burns! Burn. NL Exhaust."
+  },
+  "deadCells:PyrotechnicsII": {
+    "NAME": "Fire Scattering",
+    "DESCRIPTION": "Consume up to !M! ammo,  each deals !D! damage. NL Exhaust."
+  },
+  "deadCells:Pyrotechnics": {
+    "NAME": "Pyrotechnics",
+    "DESCRIPTION": "Choose 1 of 3 cards to add into your hand. NL Charged I: Consume up to !M! ammo,  each deals !D! damage. NL Charged Ⅱ: Consume 1 ammo to deal !D! damage and apply !Burns! Burn. NL Charge: Gain !M! ammo and !B! Block NL Exhaust. NL ( !AM! / !MAM! )"
+  },
+  "deadCells:SOTF": {
+    "NAME": "Survival of the Fittest",
+    "DESCRIPTION": "Gain !M! Strength and Dexterity.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Strength and Dexterity. NL *Choose: gain !CN!  Strength or !CN! Dexterity."
+  },
+  "deadCells:Firebrands": {
+    "NAME": "Firebrands",
+    "DESCRIPTION": "Apply !Burns! Burn to a random enemy !M! times."
+  },
+  "deadCells:Torch": {
+    "NAME": "Torch",
+    "DESCRIPTION": "Deal !D! damage, apply !M! Burn. NL If the enemy has Burn, apply !Burns! addtional Burn."
+  },
+  "deadCells:SadistStiletto": {
+    "NAME": "Sadist's Tiletto",
+    "DESCRIPTION": "Deal !D! damage !M! times. Damage and times of hits increased by 1 for every debuff on the enemy."
+  },
+  "deadCells:Backtrack": {
+    "NAME": "Backtrack",
+    "DESCRIPTION": "Discard all other cards in your hand into draw pile, draw the same number of cards from discard pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Discard all other cards in your hand into draw pile, draw the same number of cards from discard pile."
+  },
+  "deadCells:MagneticGrenade": {
+    "NAME": "Magnetic Grenade",
+    "DESCRIPTION": "Deal !D! damage twice. NL Whenever you deal damage this turn, gain !M! Block."
+  },
+  "deadCells:FireGrenade": {
+    "NAME": "Fire Grenade",
+    "DESCRIPTION": "Deal !D! damage and apply !M! Burn to ALL enemies."
+  },
+  "deadCells:RootGrenade": {
+    "NAME": "Root Grenade",
+    "DESCRIPTION": "Deal !D! damage and apply !M! Constricted to ALL enemies. NL Gain !B!  Block."
+  },
+  "deadCells:FillInGrenade": {
+    "NAME": "Grenade Filling",
+    "DESCRIPTION": "Add !M! random *Grenade cards into your hand. NL Exhaust."
+  },
+  "deadCells:IceGrenade": {
+    "NAME": "Ice Grenade",
+    "DESCRIPTION": "Deal !D! damage and apply !M! Frost to ALL enemies."
+  },
+  "deadCells:InASimilar": {
+    "NAME": "Old Trick",
+    "DESCRIPTION": "Play the copy of your last played card this combat.(This card does not count)",
+    "UPGRADE_DESCRIPTION": "Play the copy of your last 2 played cards this combat.(This card does not count)",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Play *",
+      " and *",
+      " )"
+    ]
+  },
+  "UnKnowCard": {
+    "NAME": "@来自境界的少女",
+    "DESCRIPTION": "???"
+  },
+  "deadCells:ThrowingKnife": {
+    "NAME": "Throwing Knife",
+    "DESCRIPTION": "Deal !D! damag and apply !M! Bleeding. NL Exhaust."
+  },
+  "deadCells:AttackDefend": {
+    "NAME": "Attacking while Defending",
+    "DESCRIPTION": "Whenever you play a *Skill and an *Attack alternately, add !M! *Throwing *Knife into your hand."
+  },
+  "deadCells:BloodthirstyShield": {
+    "NAME": "Bloodthirsty Shield",
+    "DESCRIPTION": "Gain !B! Block. NL If you block all damage this turn, apply !M! Bleeding to ALL enemies."
+  },
+  "deadCells:BleedingSpread": {
+    "NAME": "Splattered Blood",
+    "DESCRIPTION": "Bleeding spreads to other enemies. NL Whenever you apply Bleeding, apply !M! more."
+  },
+  "deadCells:KnockBackShield": {
+    "NAME": "Knockback Shield",
+    "DESCRIPTION": "Gain !B! Block. NL Next turn, draw !M! additional cards."
+  },
+  "deadCells:BloodSword": {
+    "NAME": "Blood Sword",
+    "DESCRIPTION": "Deal !D! damage, apply !M! Bleeding."
+  },
+  "deadCells:MagicMissiles": {
+    "NAME": "Magic Missiles",
+    "DESCRIPTION": "Deal !D! damage to a random enemy !M! times. NL Exhaust."
+  },
+  "deadCells:SpeedDown": {
+    "NAME": "Slow",
+    "DESCRIPTION": "Draw a card. NL Exhaust."
+  },
+  "deadCells:StrategyStagnated": {
+    "NAME": "Strategic Stagnation",
+    "DESCRIPTION": "Gain [E] [E]. NL Add a *Slow into your draw pile.",
+    "UPGRADE_DESCRIPTION": "Gain [E] [E] [E]. NL Add a *Slow into draw pile."
+  },
+  "deadCells:ScytheClawII": {
+    "NAME": "Right Scythe Claw",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Stuns enemies dealt with at least !M! unblocked damage. NL Add a *Left *Scythe *Claw into your draw pile. NL Exhaust."
+  },
+  "deadCells:ScytheClaw": {
+    "NAME": "Left Scythe Claw",
+    "DESCRIPTION": "Deal !D! damage and apply !M! Vunerable to ALL enemies. NL Add a *Right *Scythe *Claw into your draw pile. NL Exhaust."
+  },
+  "deadCells:IceShield": {
+    "NAME": "Ice Shield",
+    "DESCRIPTION": "Gain !B! Block. NL Whenever you are attacked this turn, ALL enemies lose !M! Strength temporarily."
+  },
+  "deadCells:Ruthless": {
+    "NAME": "Ruthless",
+    "DESCRIPTION": "Whenever you apply 2 debuffs to an enemy, draw !M! cards."
+  },
+  "deadCells:Rampart": {
+    "NAME": "Rampart",
+    "DESCRIPTION": "Take no *Attack damage until your next turn. NL Discard all Skills in your hand. NL Exhaust."
+  },
+  "deadCells:BalancedBlade": {
+    "NAME": "Balanced Blade",
+    "DESCRIPTION": "Deal !D! damage. NL Increase this card's damage by !M! and this number by 1 this combat."
+  },
+  "deadCells:StunGrenade": {
+    "NAME": "Stun Grenade",
+    "DESCRIPTION": "Stun an enemy. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Stun an enemy. NL Exhaust."
+  },
+  "deadCells:ReflectionSpeedUp": {
+    "NAME": "Clear-headed",
+    "DESCRIPTION": "At the start of your turn, add !M! *Proper *Card into your hand.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, add !M! *Proper *Card into your hand."
+  },
+  "deadCells:DepravedForm": {
+    "NAME": "Depraved Form",
+    "DESCRIPTION": "Gain 6 Strength. NL Deal 25% additional damage of your *Attacks !M! times. NL Gain 1 Vunerable."
+  },
+  "deadCells:Grenade": {
+    "NAME": "Grenade",
+    "DESCRIPTION": "Deal !D! damage. NL Deal !M! damage to other enemies."
+  },
+  "deadCells:Speed": {
+    "NAME": "Speed",
+    "DESCRIPTION": "Your next !M! cards played draw 1 additional card and gain 1 Block."
+  },
+  "deadCells:RoundingKnife": {
+    "NAME": "Knife Dance",
+    "DESCRIPTION": "Apply !M! Weak and 3 Bleeding to ALL enemies."
+  },
+  "deadCells:CrowFeathers": {
+    "NAME": "Wings of the Crow",
+    "DESCRIPTION": "Gain !M! Flying. NL Whenever you are attacked this turn, deal !D! damage back(Treated as Attacks)."
+  },
+  "deadCells:AlchemyCarbine": {
+    "NAME": "Alchemic Carbine",
+    "DESCRIPTION": "Apply !M! Poison to a random enemy. NL Draw 2 cards.",
+    "UPGRADE_DESCRIPTION": "Apply !M! Poison to a random enemy. NL Draw 3 cards."
+  },
+  "deadCells:Piano": {
+    "NAME": "Rhythm n' BouzoukiⅠ",
+    "DESCRIPTION": "Deal !D! damage. NL Add a *Rhythm *n' *Bouzouki *Ⅱ into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add a *Rhythm *n' *Bouzouki *Ⅱ into your hand."
+  },
+  "deadCells:PianoII": {
+    "NAME": "Rhythm n' BouzoukiⅡ",
+    "DESCRIPTION": "Deal !D! damage. NL If your last played card was Rhythm n' BouzoukiⅠ, deal double damage. NL Add a *Rhythm *n' *Bouzouki *Ⅲ into your hand. NL Exhaust."
+  },
+  "deadCells:PianoIII": {
+    "NAME": "Rhythm n' BouzoukiⅢ",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL If your last played card was Rhythm n' BouzoukiⅡ or Ⅲ, deal double damage. NL Exhaust."
+  },
+  "deadCells:Roll": {
+    "NAME": "Roll",
+    "DESCRIPTION": "Gain !B! Block. NL Draw 3 cards, discard all Attacks within."
+  },
+  "deadCells:Saucepan": {
+    "NAME": "Vorpan",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack, deal !D! damage again.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack, deal !D! damage again. NL Apply 1 Weak and 1 Vunerable ."
+  },
+  "deadCells:EmergencyDoor": {
+    "NAME": "Emergency Door",
+    "DESCRIPTION": "Gain !B! Block. NL Gain 2 *Buffer and 2 Weak."
+  },
+  "king:Strike": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "king:Defend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "deadCells:SymmetricalSpear": {
+    "NAME": "Symmetrical Lance",
+    "DESCRIPTION": "Deal !D! damage !M! times to ALL enemies. NL If the first hit hits at least 2 enemies, following hits deal double damage."
+  }
+}

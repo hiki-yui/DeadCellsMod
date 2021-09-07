@@ -106,7 +106,7 @@ public class BackPack_sk extends CustomRelic {
             if (theUseCard.cost==-1){
                 theUseCard.energyOnUse = AbstractDungeon.player.energy.energy;
             }
-            theUseCard.rawDescription += " NL 消耗 。";
+            /*theUseCard.rawDescription += " NL 消耗 。";*/
             theUseCard.isSeen = true;
             theUseCard.initializeDescription();
             AbstractDungeon.actionManager.addToTop(new WaitAction(0.4F));
