@@ -17,8 +17,8 @@ public class HayabusaGauntlets extends DeadCellsCard {
     public HayabusaGauntlets(){
         super(BASE_ID,STRINGS.NAME,"img/card/HayabusaGauntlets.png",1,STRINGS.DESCRIPTION, AbstractCard.CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY);
 
-        this.baseDamage = 4;
-        this.heavyDamage = this.baseHeavyDamage = 7;
+        this.baseDamage = 3;
+        this.heavyDamage = this.baseHeavyDamage = 6;
         this.magicNumber = this.baseMagicNumber = 2;
     }
 

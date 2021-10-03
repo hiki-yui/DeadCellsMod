@@ -16,9 +16,9 @@ public class Firebrands extends DeadCellsCard {
     private static final String IMG = "img/card/Firebrands.png";
 
     public Firebrands(){
-        super(BASE_ID,STRINGS.NAME,IMG,2,STRINGS.DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.ALL_ENEMY);
+        super(BASE_ID,STRINGS.NAME,IMG,2,STRINGS.DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.COMMON,CardTarget.ALL_ENEMY);
 
-        this.burnNumber = this.baseBurnNumber = 5;
+        this.burnNumber = this.baseBurnNumber = 6;
         this.magicNumber = this.baseMagicNumber = 3;
     }
 

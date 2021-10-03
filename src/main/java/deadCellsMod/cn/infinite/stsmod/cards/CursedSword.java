@@ -16,14 +16,14 @@ public class CursedSword extends DeadCellsCard {
     public CursedSword(){
         super(BASE_ID,STRINGS.NAME,"img/card/CursedSword.png",1,STRINGS.DESCRIPTION, CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS, CardRarity.RARE, CardTarget.ENEMY);
 
-        this.baseDamage = 24;
+        this.baseDamage = 21;
         this.magicNumber = this.baseMagicNumber = 1 ;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded){
-            this.upgradeDamage(8);
+            this.upgradeDamage(7);
             this.upgradeName();
         }
     }

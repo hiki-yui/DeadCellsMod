@@ -20,7 +20,7 @@ public class IceArmor extends DeadCellsCard{
     public IceArmor(){
         super(BASE_ID,STRINGS.NAME,IMG,1,STRINGS.DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.COMMON,CardTarget.SELF);
 
-        this.block = this.baseBlock = 6;
+        this.block = this.baseBlock = 5;
         this.changeNum = this.baseChangeNum = 9;
         this.magicNumber = this.baseMagicNumber = 1;
     }

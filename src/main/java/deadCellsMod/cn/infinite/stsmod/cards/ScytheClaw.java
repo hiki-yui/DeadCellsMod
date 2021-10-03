@@ -29,7 +29,7 @@ public class ScytheClaw extends DeadCellsCard {
         this(BASE_ID, STRINGS.NAME, IMG, 3, STRINGS.DESCRIPTION, CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS, CardRarity.RARE, CardTarget.ALL_ENEMY);
 
         this.exhaust = true;
-        this.baseDamage = 16;
+        this.baseDamage = 14;
         this.magicNumber = this.baseMagicNumber = 3;
         if (canPreview)
             this.cardsToPreview = new ScytheClawII(false);

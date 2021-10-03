@@ -16,20 +16,21 @@ public class FireBlast extends DeadCellsCard {
     public FireBlast(){
         super(BASE_ID,STRINGS.NAME,IMG,-1,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.ALL_ENEMY);
 
-        this.baseDamage = 4;
+        this.baseDamage = 3;
         this.magicNumber = this.baseMagicNumber = 2;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded){
-            this.upgradeMagicNumber(3);
+            this.upgradeMagicNumber(2);
             this.upgradeName();
         }
     }
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot(new FireBlastAction(abstractPlayer,this.baseDamage,this.energyOnUse,this.freeToPlayOnce,this.magicNumber));
+        addToBot(new FireBlastAction(abstractPlayer,this.damage,this.energyOnUse,this.freeToPlayOnce,this.magicNumber,this));
     }
+
 }

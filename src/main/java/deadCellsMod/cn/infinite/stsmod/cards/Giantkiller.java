@@ -31,8 +31,10 @@ public class Giantkiller extends DeadCellsCard {
     @Override
     public void upgrade() {
         if (!this.upgraded){
-            this.upgradeChangeNum(2);
-            this.realBaseChangNum += 2;
+            /*this.upgradeDamage(2);
+            this.upgradeHeavyDamage(4);*/
+            this.upgradeChangeNum(3);
+            this.realBaseChangNum += 3;
             this.upgradeName();
         }
     }

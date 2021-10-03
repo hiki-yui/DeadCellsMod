@@ -20,7 +20,7 @@ public class Punishment extends DeadCellsCard{
     public Punishment(){
         super(BASE_ID,STRINGS.NAME,IMG,2,STRINGS.DESCRIPTION, AbstractCard.CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS, AbstractCard.CardRarity.UNCOMMON, CardTarget.SELF);
 
-        this.baseBlock = 12;
+        this.baseBlock = 10;
         this.magicNumber = this.baseMagicNumber = 1;
         this.tags.add(DeadCellsTags.SHIELD);
     }

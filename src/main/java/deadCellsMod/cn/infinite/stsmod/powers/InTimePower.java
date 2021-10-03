@@ -22,9 +22,11 @@ public class InTimePower extends DeadCellsPower {
     public void atStartOfTurnPostDraw() {
         boolean canGive = false;
         for (AbstractMonster m : AbstractDungeon.getMonsters().monsters){
-            if (m.intent == AbstractMonster.Intent.ATTACK || m.intent == AbstractMonster.Intent.ATTACK_DEBUFF ||
-                    m.intent == AbstractMonster.Intent.ATTACK_BUFF || m.intent == AbstractMonster.Intent.ATTACK_DEFEND){
-                canGive = true;
+            if (!m.isDeadOrEscaped()) {
+                if (m.intent == AbstractMonster.Intent.ATTACK || m.intent == AbstractMonster.Intent.ATTACK_DEBUFF ||
+                        m.intent == AbstractMonster.Intent.ATTACK_BUFF || m.intent == AbstractMonster.Intent.ATTACK_DEFEND) {
+                    canGive = true;
+                }
             }
         }
         if (canGive) {

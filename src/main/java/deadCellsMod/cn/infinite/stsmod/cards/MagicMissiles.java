@@ -20,7 +20,7 @@ public class MagicMissiles extends DeadCellsCard{
     public MagicMissiles(){
         super(BASE_ID,STRINGS.NAME,IMG,1,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.ALL_ENEMY);
 
-        this.magicNumber = this.baseMagicNumber = 7;
+        this.magicNumber = this.baseMagicNumber = 6;
         this.baseDamage = 1;
         this.damageType = DamageInfo.DamageType.NORMAL;
         this.exhaust = true;

@@ -216,7 +216,7 @@ public class Toothpick extends DeadCellsCard{
         @Override
         public boolean canUse(AbstractPlayer p, AbstractMonster m) {
             if (this.father!=null && this.ammunitionNumber > this.father.ammunitionNumber){
-                AbstractDungeon.effectList.add(new ThoughtBubble(p.dialogX, p.dialogY, 3.0F, " #b@牙签已损坏", true));
+                /*AbstractDungeon.effectList.add(new ThoughtBubble(p.dialogX, p.dialogY, 3.0F, " #b@牙签已损坏", true));*/
                 return false;
             }
             return super.canUse(p, m);

@@ -63,7 +63,7 @@ public class Zombie extends CustomMonster {
                 case 2:
                     AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new AnimateSlowAttackAction((AbstractCreature)this));
                     addToBot(new DamageAction(AbstractDungeon.player,this.damage.get(1), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-                    addToBot(new ApplyPowerAction(AbstractDungeon.player,this,new WeakPower(AbstractDungeon.player,1,true),1));
+                    addToBot(new ApplyPowerAction(AbstractDungeon.player,this,new WeakPower(AbstractDungeon.player,2,true),1));
                     break;
                     case 3:
                         addToBot(new GainBlockAction(this,BASE_BLOCK));

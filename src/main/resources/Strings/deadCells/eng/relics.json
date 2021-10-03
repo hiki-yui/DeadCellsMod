@@ -13,14 +13,14 @@
     "FLAVOR": "Like a super agent.",
     "DESCRIPTIONS":[
       "Whenever you kill an enemy, gain #b",
-      "  [#c1bdbd]Invisible."
+      " [#c1bdbd]Invisible."
     ]
   },
   "deadCells:OpenWounds": {
     "NAME": "Open Wounds",
     "FLAVOR": "Sharp blades, sharp wounds.",
     "DESCRIPTIONS":[
-      "Whenever you deal unblocked damage，apply #b",
+      "Whenever you deal unblocked damage, apply #b",
       " #yBleeding."
     ]
   },
@@ -28,7 +28,7 @@
     "NAME": "Tactical Scroll",
     "FLAVOR": "Victory on the high ground.",
     "DESCRIPTIONS": [
-      "Upon pickup, remove a card from your deck."
+      "Upon pickup, remove #b1 card from your deck."
     ]
   },
   "deadCells:Alive": {
@@ -36,8 +36,8 @@
     "FLAVOR": "Reach that place...",
     "DESCRIPTIONS": [
       "Upon pickup, gain #b",
-      " max HP. At the start of combat, heal",
-      "HP."
+      " max HP. At the start of combat, heal #b",
+      " HP."
     ]
   },
   "deadCells:Oppressive": {
@@ -53,8 +53,8 @@
     "NAME":"Scroll of Power",
     "FLAVOR": "No pain, no gain.",
     "DESCRIPTIONS": [
-      "Lose",
-      "max HP， NL Choose 1 from 3 #yScrolls #b",
+      "Lose ",
+      " max HP. NL Choose 1 from 3 #yScrolls #b",
       " times."
     ]
   },
@@ -85,29 +85,29 @@
   },
   "deadCells:Nocturne": {
     "NAME": "Nocturne",
-    "FLAVOR": "一把被封印的魔剑，拥有自己独立的意识",
+    "FLAVOR": "A sealed sword with its own consciousness",
     "DESCRIPTIONS": [
       "Whenever you play #b",
-      " Skills，#b",
-      " random enemy takes #y",
+      " Skills, #b",
+      " random enemy takes #b",
       " damage and receives #b",
-      " Nocturned."
+      " #yNocturned."
     ]
   },
   "deadCells:SpirePace": {
     "NAME": "Killing Pace",
     "FLAVOR":"You know your next move without even thinking.",
     "DESCRIPTIONS": [
-      "Whenever you play a different type of card,draw #b",
-      " cards."
+      "Whenever you play a different type of card, draw #b",
+      " card."
     ]
   },
 
   "deadCells:EmeraldAmulet": {
     "NAME": "Emerald Amulet",
-    "FLAVOR":"Unknown amulet，shines when in danger.",
+    "FLAVOR":"Unknown amulet锛宻hines when in danger.",
     "DESCRIPTIONS": [
-      "At the start of combat，add #b",
+      "At the start of combat, add #b",
       " #yRoll with #yRetain and #yExhaust into your hand."
     ]
   },
@@ -116,7 +116,7 @@
     "FLAVOR": "An old backpack which lets you store more weapons.",
     "DESCRIPTIONS": [
       "Upon pickup, at most replace #b",
-      " #yDefend in your deck into #yRoll. Whenever you play a #yRoll, play the copy of a random #yAttack in your draw pile.",
+      " #yDefend in your deck into #yRoll . Whenever you play a #yRoll , play the copy of a random #yAttack in your draw pile.",
       "ROLL,ROLL,ROLL!!!"
     ]
   },

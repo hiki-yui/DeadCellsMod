@@ -18,7 +18,7 @@ public class FillInGrenade extends DeadCellsCard {
     public FillInGrenade(){
         super(BASE_ID,STRINGS.NAME,IMG,0,STRINGS.DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.COMMON,CardTarget.SELF);
 
-        this.magicNumber = this.baseMagicNumber =1;
+        this.magicNumber = this.baseMagicNumber = 2;
         this.exhaust = true;
     }
 
@@ -36,6 +36,7 @@ public class FillInGrenade extends DeadCellsCard {
             AbstractCard card = DeadCellsModInitializer.GRENADE_POOL.get
                     (AbstractDungeon.cardRng.random(DeadCellsModInitializer.GRENADE_POOL.size()-1)).makeCopy();
             addToBot(new AddCardToHandAction(card));
+            /*card.setCostForTurn(0);*/
         }
     }
 }

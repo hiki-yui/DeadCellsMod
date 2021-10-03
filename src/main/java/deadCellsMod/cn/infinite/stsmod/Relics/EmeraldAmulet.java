@@ -33,6 +33,7 @@ public class EmeraldAmulet extends CustomRelic {
     @Override
     public void atBattleStart() {
         CustomCard roll = new Roll();
+        roll.upgrade();
         roll.exhaust = true;
         roll.rawDescription+=" NL 消耗 。 NL 保留 。";
         roll.selfRetain =true;

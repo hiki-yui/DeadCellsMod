@@ -20,16 +20,16 @@ public class OiledSword extends DeadCellsCard {
     public OiledSword(){
         super(BASE_ID,STRINGS.NAME,IMG,1,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.COMMON,CardTarget.ENEMY);
 
-        this.baseDamage = 8;
+        this.baseDamage = 6;
         this.heavyDamage = this.baseHeavyDamage = this.baseDamage * 2;
-        this.magicNumber = this.baseMagicNumber = 2;
+        this.magicNumber = this.baseMagicNumber = 3;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded){
-            this.upgradeDamage(3);
-            this.upgradeHeavyDamage(6);
+            this.upgradeDamage(2);
+            this.upgradeHeavyDamage(4);
             this.upgradeName();
         }
     }

@@ -23,7 +23,7 @@ public class OilGrenade extends GrenadeCard {
         super(BASE_ID,STRINGS.NAME,IMG,1,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.COMMON,CardTarget.ALL_ENEMY);
 
         this.baseDamage = 8;
-        this.magicNumber = this.baseMagicNumber = 1;
+        this.magicNumber = this.baseMagicNumber = 2;
         this.exhaust = true;
     }
 

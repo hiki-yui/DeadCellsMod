@@ -17,15 +17,15 @@ public class Rob extends DeadCellsCard {
     public Rob(){
         super(BASE_ID,STRINGS.NAME,"img/card/Rob.png",1,STRINGS.DESCRIPTION,CardType.POWER, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.RARE,CardTarget.SELF);
 
-        this.magicNumber = this.baseMagicNumber = 12;
+        this.magicNumber = this.baseMagicNumber = 20;
         this.changeNum = this.baseChangeNum = 2;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded){
-            this.upgradeChangeNum(1);
-            this.upgradeMagicNumber(4);
+            this.upgradeChangeNum(2);
+            this.upgradeMagicNumber(5);
             this.upgradeName();
         }
     }

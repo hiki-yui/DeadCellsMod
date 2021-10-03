@@ -14,7 +14,6 @@ E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\powers\Flight
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\utils\ImgUtils.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\Relics\OpenWounds.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\Saucepan.java
-E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\IceCrossbow.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\SadistStiletto.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\Relics\Nocturne.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\HayabusaBoots.java
@@ -74,7 +73,6 @@ E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\powers\Firewo
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\Punishment.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\powers\AttackDefendPower.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\Relics\BackPack_at.java
-E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\Pyrotechnics.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\SmokeBomb.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\powers\BleedingSpreadPower.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\variables\HeavyDamageVariables.java
@@ -145,6 +143,7 @@ E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\Throwin
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\ScytheClawII.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\SnakeFangs.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\BalancedBlade.java
+E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\BeginnerBow.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\character\King.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\action\HayabusaGauntletsAction.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\MagneticGrenade.java

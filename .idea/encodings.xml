@@ -5,11 +5,8 @@
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/cards.json" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/dead cells/cards en.json" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/dead cells/cards en.json.txt" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/dead cells/monsters.json" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/dead cells/powers en.json" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/dead cells/relics en.json" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/monsters.json" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/powers.json" charset="GBK" />
+    <file url="PROJECT" charset="GBK" />
   </component>
 </project>

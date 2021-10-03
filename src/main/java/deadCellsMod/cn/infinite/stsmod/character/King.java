@@ -71,14 +71,12 @@ public class King extends CustomPlayer {
         for (int i = 0; i < 4; i++) {
             deck.add("king:Defend");
         }
-        deck.add("deadCells:Saucepan");
+        deck.add("deadCells:Roll");
         deck.add("deadCells:RoundingKnife");
         /*deck.add("deadCells:Grenade");
         deck.add("deadCells:AlchemyCarbine");
         deck.add("deadCells:SymmetricalSpear");
         deck.add("deadCells:EmergencyDoor");
-
-        deck.add("deadCells:Roll");
         deck.add("deadCells:Piano");
         deck.add("deadCells:CrowFeathers");
         deck.add("deadCells:RoundingKnife");
@@ -118,7 +116,7 @@ public class King extends CustomPlayer {
 
     @Override
     public String getTitle(PlayerClass playerClass) {
-        return "国王";
+        return characterStrings.NAMES[0];
     }
 
     @Override

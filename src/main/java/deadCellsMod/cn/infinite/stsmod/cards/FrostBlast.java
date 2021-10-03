@@ -16,7 +16,7 @@ public class FrostBlast extends DeadCellsCard{
     public FrostBlast(){
         super(BASE_ID,STRINGS.NAME,IMG,-1,STRINGS.DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.ALL_ENEMY);
 
-        this.baseBlock = 5;
+        this.baseBlock = 4;
         this.magicNumber = this.baseMagicNumber = 1;
     }
 

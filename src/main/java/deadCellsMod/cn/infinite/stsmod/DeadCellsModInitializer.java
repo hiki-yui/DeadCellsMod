@@ -208,16 +208,8 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
         addCard(new SadistStiletto());
         addCard(new Torch());
         addCard(new Firebrands());
-        addCard(new Pyrotechnics());
-        addCard(new Pyrotechnics.PyrotechnicsII());
-        addCard(new Pyrotechnics.PyrotechnicsIII());
-        addCard(new Pyrotechnics.PyrotechnicsIIII());
         addCard(new InsightInto());
         addCard(new IceArmor());
-        addCard(new IceCrossbow());
-        addCard(new IceCrossbow.IceCrossbowII());
-        addCard(new IceCrossbow.IceCrossbowIII());
-        addCard(new IceCrossbow.IceCrossbowIIII());
         addCard(new OilGrenade());
         addCard(new OiledSword());
         addCard(new SwiftSword());
@@ -261,6 +253,9 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
         addCard(new Giantkiller());
         addCard(new NightLight());
         addCard(new Rob());
+        addCard(new BeginnerBow());
+        addCard(new MultipleNocksBow());
+        addCard(new IceBow());
        /* File file = new File(Objects.requireNonNull(Thread.currentThread().getContextClassLoader()
                 .getResource("deadCellsMod/cn/infinite/stsmod/cards/")).getFile());*/
         /*try {

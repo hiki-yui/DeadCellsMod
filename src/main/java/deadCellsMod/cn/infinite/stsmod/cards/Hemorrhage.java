@@ -19,8 +19,8 @@ public class Hemorrhage extends DeadCellsCard {
         super(BASE_ID,STRINGS.NAME,"img/card/Hemorrhage.png",2,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.COMMON,CardTarget.ENEMY);
 
         this.baseDamage = 8;
-        this.magicNumber = this.baseMagicNumber = 15;
-        this.heavyDamage = this.baseHeavyDamage = 15;
+        this.magicNumber = this.baseMagicNumber = 12;
+        this.heavyDamage = this.baseHeavyDamage = 12;
     }
 
     @Override

@@ -29,7 +29,7 @@ public class ScytheClawII extends DeadCellsCard {
         super(BASE_ID,STRINGS.NAME,IMG,3,STRINGS.DESCRIPTION,CardType.ATTACK,CardColor.COLORLESS,CardRarity.SPECIAL,CardTarget.ALL_ENEMY);
 
         this.exhaust = true;
-        this.baseDamage = 32;
+        this.baseDamage = 28;
         this.damageType = DamageInfo.DamageType.NORMAL;
         this.magicNumber = this.baseMagicNumber = (int)(this.baseDamage*1.5);
 
@@ -44,8 +44,8 @@ public class ScytheClawII extends DeadCellsCard {
     @Override
     public void upgrade() {
         if (!this.upgraded){
-            this.upgradeDamage(6);
-            this.upgradeMagicNumber(9);
+            this.upgradeDamage(4);
+            this.upgradeMagicNumber(6);
             this.upgradeName();
         }
     }

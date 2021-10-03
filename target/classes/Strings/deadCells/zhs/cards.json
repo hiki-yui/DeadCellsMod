@@ -1,4 +1,19 @@
 {
+  "deadCells:IceBow": {
+    "NAME": "冰之弓箭",
+    "DESCRIPTION": "造成 !D! 点伤害 NL 给予 !M! 层 冻伤 NL 随机丢弃 !CN! 张牌."
+  },
+  "deadCells:MultipleNocksBow": {
+    "NAME": "多头弓",
+    "DESCRIPTION": "随机丢弃 !CN! 张牌 NL 随机对 !M! 名敌人造成 !D! 点伤害"
+  },
+  "deadCells:BeginnerBow": {
+    "NAME": "初学者的弓箭",
+    "DESCRIPTION": "造成 !D! 点伤害 NL 选择最多 !M! 张手牌保留一回合.",
+    "EXTENDED_DESCRIPTION": [
+      "选择~"
+    ]
+  },
   "deadCells:GrenadeCard": {
     "DESCRIPTION": " NL *被丢弃时自动打出."
   },
@@ -12,7 +27,7 @@
   },
   "deadCells:Giantkiller": {
     "NAME": "巨人杀手",
-    "DESCRIPTION": "造成 !D! 点伤害 !M! 次. NL 每次使用都会改变效果. NL 对精英和boss额外造成 !CN! 点伤害."
+    "DESCRIPTION": "造成 !D! 点伤害 !M! 次. NL 每次使用都会改变效果. NL 对精英和boss额外 NL 造成 !CN! 点伤害."
   },
   "deadCells:InTime": {
     "NAME": "及时",

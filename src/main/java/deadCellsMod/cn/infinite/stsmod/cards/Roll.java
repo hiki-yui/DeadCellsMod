@@ -25,11 +25,11 @@ public class Roll extends CustomCard {
     private static final String IMG = "img/card/roll.png";
     private static final int COST = 1;
     private static final int BASE_DRAW_CARD = 3;
-    private static final int BASE_DEFEND = 6;
+    private static final int BASE_DEFEND = 5;
     private static final int UPGRADE_DEFEND = 3;
 
     public Roll(){
-        this(ID,NAME,CardRarity.UNCOMMON, AbstractDeadCellsEnum.DEAD_CELLS);
+        this(ID,NAME,CardRarity.BASIC, AbstractDeadCellsEnum.DEAD_CELLS);
     }
 
     Roll(String id,String name,CardRarity rarity,CardColor cardColor){
@@ -56,7 +56,7 @@ public class Roll extends CustomCard {
                     @Override
                     public void update() {
                         AbstractDungeon.actionManager.addToBottom(new WaitAction(0.4F));
-                        tickDuration();//不太懂
+                        tickDuration();
                         //以下全解
                         if (this.isDone){
                             for (AbstractCard c : DrawCardAction.drawnCards) {

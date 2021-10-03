@@ -15,7 +15,7 @@ public class StrategyStagnated extends DeadCellsCard{
     private static final String IMG = "img/card/StrategyStagnated.png";
 
     public StrategyStagnated(){
-        super(BASE_ID,STRINGS.NAME,IMG,0,STRINGS.DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.COMMON,CardTarget.SELF);
+        super(BASE_ID,STRINGS.NAME,IMG,0,STRINGS.DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.SELF);
 
         this.magicNumber = this.baseMagicNumber = 2;
         this.cardsToPreview = new SpeedDown();

@@ -1,5 +1,6 @@
 package deadCellsMod.cn.infinite.stsmod.powers;
 
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.red.SecondWind;
@@ -108,7 +109,20 @@ public class ReflectionSpeedUpPower extends AbstractPower {
 
     @Override
     public void atStartOfTurnPostDraw() {
-        canGiveCard = true;
+        /*canGiveCard = true;*/
+        addToBot(
+                new AbstractGameAction() {
+                    @Override
+                    public void update() {
+                        Map<String,Integer> map = think();
+                        giveCard(map);
+                        canNotUseCard = 0;
+                        /*canGiveCard = false;
+                        drawCardCounter = 0;*/
+                        isDone = true;
+                    }
+                }
+        );
         super.atStartOfTurn();
     }
 
@@ -334,23 +348,20 @@ public class ReflectionSpeedUpPower extends AbstractPower {
         canNotUseCard = 0;
     }
 
-    @Override
+
+    /*@Override
     public void onCardDraw(AbstractCard theUseCard) {
-        if (canGiveCard) {
+        *//*if (canGiveCard) {
             drawCardCounter++;
             int drawDown = 0;
             if (AbstractDungeon.player.hasPower("Draw Down")){
                 drawDown = AbstractDungeon.player.getPower("Draw Down").amount;
             }
             if (drawCardCounter == (AbstractDungeon.player.gameHandSize-drawDown) || AbstractDungeon.player.hand.group.size() >= 10) {
-                Map<String,Integer> map = think();
-                giveCard(map);
-                canNotUseCard = 0;
-                canGiveCard = false;
-                drawCardCounter = 0;
+
             }
-        }
-    }
+        }*//*
+    }*/
 
     private void increase(Map<String,Integer> map,String name){
         increase(map,name,1);

@@ -19,7 +19,7 @@ public class AlchemyCarbine extends DeadCellsCard {
     private static final String NAME = strings.NAME;
     private static final String DESCRIPTION = strings.DESCRIPTION;
     private static final String IMG = "img/card/AlchemyCarbine.png";
-    private static final int UPGRADE_M = 2;
+    private static final int UPGRADE_M = 3;
     private static final int UPGRADE_DRAM = 1;
 
     public AlchemyCarbine(){
@@ -36,7 +36,7 @@ public class AlchemyCarbine extends DeadCellsCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeMagicNumber(UPGRADE_M);
-            this.baseDraw += UPGRADE_DRAM;
+            /*this.baseDraw += UPGRADE_DRAM;*/
             this.rawDescription = strings.UPGRADE_DESCRIPTION;
             this.upgradeName();
             this.initializeDescription();

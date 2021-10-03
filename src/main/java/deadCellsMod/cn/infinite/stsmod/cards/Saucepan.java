@@ -25,9 +25,9 @@ public class Saucepan extends CustomCard {
 
     public Saucepan(){
         super(ID,NAME,IMG,1,DESCRIPTION,CardType.ATTACK,
-                AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.BASIC,CardTarget.ENEMY);
+                AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.COMMON,CardTarget.ENEMY);
 
-        this.baseDamage = 8;
+        this.baseDamage = 5;
         this.baseMagicNumber = 1;
         this.damageType = DamageInfo.DamageType.NORMAL;
     }
@@ -46,15 +46,14 @@ public class Saucepan extends CustomCard {
         AbstractMonster.Intent intent = abstractMonster.intent;
         AbstractDungeon.actionManager.addToBottom(new DamageAction(abstractMonster,
                 new DamageInfo(abstractPlayer,this.damage), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+        if (this.upgraded){
+            AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(abstractMonster,abstractPlayer,
+                    new VulnerablePower(abstractMonster,this.baseMagicNumber,false)));
+            AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(abstractMonster,abstractPlayer,
+                    new WeakPower(abstractMonster,this.baseMagicNumber,false)));
+            /*addToTop(new WaitAction(0.5F));*/
+        }
         if ( intent == AbstractMonster.Intent.ATTACK  || intent == AbstractMonster.Intent.ATTACK_BUFF || intent == AbstractMonster.Intent.ATTACK_DEBUFF || intent == AbstractMonster.Intent.ATTACK_DEFEND){
-            if (this.upgraded){
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(abstractMonster,abstractPlayer,
-                        new VulnerablePower(abstractMonster,this.baseMagicNumber,false)));
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(abstractMonster,abstractPlayer,
-                        new WeakPower(abstractMonster,this.baseMagicNumber,false)));
-                addToTop(new WaitAction(0.5F));
-            }
-
             AbstractDungeon.actionManager.addToBottom(new DamageAction(abstractMonster,
                     new DamageInfo(abstractPlayer,this.damage), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         }

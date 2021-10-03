@@ -16,15 +16,15 @@ public class FranticSword extends DeadCellsCard {
     public FranticSword(){
         super(BASE_ID,STRINGS.NAME,"img/card/FranticSword.png",1,STRINGS.DESCRIPTION, CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS, CardRarity.COMMON, CardTarget.ENEMY);
 
-        this.baseDamage = 9;
-        this.heavyDamage = this.baseHeavyDamage = 15;
+        this.baseDamage = 8;
+        this.heavyDamage = this.baseHeavyDamage = 14;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded){
-            this.upgradeDamage(3);
-            this.upgradeHeavyDamage(5);
+            this.upgradeDamage(2);
+            this.upgradeHeavyDamage(4);
             this.upgradeName();
         }
     }

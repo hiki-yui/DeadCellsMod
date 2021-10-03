@@ -53,7 +53,7 @@ public class Chopper extends CustomRelic {
     @Override
     public void onPlayerEndTurn() {
         for (AbstractMonster monster : AbstractDungeon.getMonsters().monsters){
-            if (!monster.isDead){
+            if (!monster.isDying && !monster.halfDead){
                 if (monster.currentHealth<=monster.maxHealth*0.15F){
                     this.flash();
                     addToBot(new RelicAboveCreatureAction(monster,this));

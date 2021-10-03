@@ -40,7 +40,7 @@ public class Piano extends DeadCellsCard {
 
     public Piano() {
         super(ID, NAME, IMG, BASE_COST, DESCRIPTION, CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS, CardRarity.RARE, CardTarget.ENEMY);
-        this.baseDamage = BASE_DAMAGE;
+        this.damage = this.baseDamage = BASE_DAMAGE;
         this.cardsToPreview = new PianoII();
         this.exhaust = true;
         this.damageType = DamageInfo.DamageType.NORMAL;
@@ -50,9 +50,9 @@ public class Piano extends DeadCellsCard {
     public void upgrade() {
         if (!this.upgraded){
             this.exhaust = false;
-            this.upgradeName();
             this.rawDescription = strings.UPGRADE_DESCRIPTION;
-            this.initializeDescriptionCN();
+            this.upgradeName();
+            this.initializeDescription();
         }
     }
 

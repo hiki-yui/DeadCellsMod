@@ -14,7 +14,7 @@ public class Vampirism extends DeadCellsCard {
     private static final CardStrings STRINGS = CardCrawlGame.languagePack.getCardStrings(BASE_ID);
 
     public Vampirism(){
-        super(BASE_ID,STRINGS.NAME,"img/card/Vampirism.png",2,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.RARE,CardTarget.ALL_ENEMY);
+        super(BASE_ID,STRINGS.NAME,"img/card/Vampirism.png",2,STRINGS.DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.RARE,CardTarget.ALL_ENEMY);
 
         this.magicNumber = this.baseMagicNumber = 4;
         this.exhaust = true;

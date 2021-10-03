@@ -19,7 +19,7 @@ public class KnockBackShield extends DeadCellsCard {
     public KnockBackShield(){
         super(BASE_ID,STRINGS.NAME,IMG,1,STRINGS.DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.ALL_ENEMY);
 
-        this.baseBlock = 6;
+        this.baseBlock = 5;
         this.magicNumber = this.baseMagicNumber = 3;
         this.tags.add(DeadCellsTags.SHIELD);
     }

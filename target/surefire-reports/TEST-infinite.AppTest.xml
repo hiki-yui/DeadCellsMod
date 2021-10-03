@@ -38,7 +38,7 @@
     <property name="os.version" value="10.0"/>
     <property name="user.home" value="C:\Users\mu"/>
     <property name="user.timezone" value="Asia/Shanghai"/>
-    <property name="file.encoding" value="UTF-8"/>
+    <property name="file.encoding" value="GBK"/>
     <property name="java.specification.version" value="15"/>
     <property name="user.name" value="mu"/>
     <property name="java.class.path" value="E:\myself\ManveResource\FinishMaven\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar"/>

@@ -26,7 +26,7 @@ public class FerrymanSLantern extends DeadCellsCard {
         this(BASE_ID,STRINGS.NAME,"img/card/FerrymanSLantern.png",0,STRINGS.DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.ENEMY);
 
         this.baseDamage = 8;
-        this.heavyDamage = this.baseHeavyDamage= 20;
+        this.heavyDamage = this.baseHeavyDamage= 21;
         this.changeNum = this.baseChangeNum = 1;
         this.ammunitionNumber = 0;
     }
@@ -161,7 +161,7 @@ public class FerrymanSLantern extends DeadCellsCard {
             super(BASE_ID,STRINGS.NAME,"img/card/FerrymanSLanternIII.png",2,STRINGS.DESCRIPTION,CardType.ATTACK,CardColor.COLORLESS,CardRarity.SPECIAL,CardTarget.ENEMY);
             this.father = father;
 
-            this.baseDamage = 20;
+            this.baseDamage = 21;
             this.exhaust = true;
 
             if (father.upgraded){

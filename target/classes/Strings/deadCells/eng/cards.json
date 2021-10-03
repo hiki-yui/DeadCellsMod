@@ -145,7 +145,7 @@
   },
   "deadCells:Toothpick": {
     "NAME": "Toothpick",
-    "DESCRIPTION": "Choose 1 of 3 cards to add into your hand. NL Uncharged: Deal !D! damage. NL Charged: Consume !AM! ammo to deal !D! damage. NL Repair: Gain max ammo and !B! Block. NL ( !AM! / !MAM! )"
+    "DESCRIPTION": "Choose 1 of 3 cards to add into your hand. NL Uncharged: Deal !D! damage. NL Charged: Consume !AM! ammo to deal !HD! damage. NL Repair: Gain max ammo and !B! Block. NL ( !AM! / !MAM! )"
   },
   "deadCells:SwiftSword": {
     "NAME": "Swift Sword",
@@ -252,7 +252,7 @@
     ]
   },
   "UnKnowCard": {
-    "NAME": "@来自境界的少女",
+    "NAME": "@???????????",
     "DESCRIPTION": "???"
   },
   "deadCells:ThrowingKnife": {

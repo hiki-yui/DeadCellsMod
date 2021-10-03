@@ -21,7 +21,7 @@ public class IceShield extends DeadCellsCard{
 
 
         this.baseBlock = 6;
-        this.magicNumber = this.baseMagicNumber = 3;
+        this.magicNumber = this.baseMagicNumber = 2;
         this.tags.add(DeadCellsTags.SHIELD);
     }
 
