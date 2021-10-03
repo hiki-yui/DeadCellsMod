@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="infinite.AppTest" time="0.004" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="infinite.AppTest" time="0.003" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2021.1.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -38,7 +38,7 @@
     <property name="os.version" value="10.0"/>
     <property name="user.home" value="C:\Users\mu"/>
     <property name="user.timezone" value="Asia/Shanghai"/>
-    <property name="file.encoding" value="GBK"/>
+    <property name="file.encoding" value="UTF-8"/>
     <property name="java.specification.version" value="15"/>
     <property name="user.name" value="mu"/>
     <property name="java.class.path" value="E:\myself\ManveResource\FinishMaven\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar"/>
@@ -59,5 +59,5 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="infinite.AppTest" name="shouldAnswerWithTrue" time="0.004"/>
+  <testcase classname="infinite.AppTest" name="shouldAnswerWithTrue" time="0.003"/>
 </testsuite>
