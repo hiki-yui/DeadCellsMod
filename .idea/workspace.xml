@@ -10,21 +10,645 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00662a60-fefe-49d9-afeb-5b823dd0ad22" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/monster/zombie.atlas" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/monster/zombie0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/img/monster/zombie.atlas" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/img/monster/zombie0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/CursedSword.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/FerrymanSLantern$FerrymanSLanternIII.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/FerrymanSLantern.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/FillInGrenade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/FireBlast.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/FireBlastAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/Firebrands.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/FranticSword.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/FrostBlast.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/Giantkiller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/HayabusaGauntlets.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/Hemorrhage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/IceArmor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/IceCrossbow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/IceShield.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/King.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/KnockBackShield.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/LaceratingAura.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/MagicMissiles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/OilGrenade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/OiledSword.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/Piano.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/Punishment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/Pyrotechnics$PyrotechnicsII.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/Pyrotechnics$PyrotechnicsIII.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/Pyrotechnics$PyrotechnicsIIII.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/Pyrotechnics.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/Rob.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/Roll.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/SadistStiletto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/Saucepan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/ScytheClaw.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/ScytheClawII.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/StrategyStagnated.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/SymmetricalSpear.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/dead-cells-mod-1.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/layer6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/layer61.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_1_13_47__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/keywords.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/keywords.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/img/monster/剑圣.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Strings/deadCells/eng/cards.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Strings/deadCells/eng/cards.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Strings/deadCells/eng/keywords.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Strings/deadCells/eng/keywords.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Strings/deadCells/eng/relics.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Strings/deadCells/eng/relics.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/Alive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/Alive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/BackPack_at.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/BackPack_at.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/BackPack_sk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/BackPack_sk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/BleedingSpread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/BleedingSpread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/FrostBlast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/FrostBlast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/HayabusaGauntlets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/HayabusaGauntlets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/IronStaff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/IronStaff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/MagneticGrenade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/MagneticGrenade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/SadistStiletto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/SadistStiletto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Saucepan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Saucepan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/ThrowingKnife.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/ThrowingKnife.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/character/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/character/King.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/powers/BloodthirstyShieldPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/powers/BloodthirstyShieldPower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/powers/FrostbitePower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/powers/FrostbitePower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/powers/ReflectionSpeedUpPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/powers/ReflectionSpeedUpPower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/powers/RuthlessPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/powers/RuthlessPower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/cards.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/cards.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/zhs/cards.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/zhs/cards.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/zhs/relics.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/zhs/relics.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ModTheSpire.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Strings/deadCells/eng/cards.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Strings/deadCells/eng/character.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Strings/deadCells/eng/dead cells/存疑、建议及反馈.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Strings/deadCells/eng/event.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Strings/deadCells/eng/keywords.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Strings/deadCells/eng/monsters.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Strings/deadCells/eng/powers.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Strings/deadCells/eng/relics.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Strings/deadCells/zhs/cards.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Strings/deadCells/zhs/character.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Strings/deadCells/zhs/event.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Strings/deadCells/zhs/keywords.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Strings/deadCells/zhs/monsters.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Strings/deadCells/zhs/powers.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Strings/deadCells/zhs/relics.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/AlchemyCarbine.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/DepravedForm.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/FY 0001.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/FY 0002.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/MagicMissiles.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/Parry.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/Piano.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/PianoII.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/PianoIII.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/Roll.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/RoundingKnife.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/ScytheClaw.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/ScytheClawII.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/Speed.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/SymmetricalSpearI.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/SymmetricalSpearII.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/SymmetricalSpearIII.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/ThrowingKnife.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/boy斧.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/圆舞飞刀.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/寒冰弩已剪.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/寒冰弩已剪_未蓄力.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/寒冰爆破.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/对称长枪III已剪.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/对称长枪II已剪.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/巨人的口哨已剪.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/平底锅II已剪.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/弓.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/手雷以剪.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/招架.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/放置道具.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/极速.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/火焰制造.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/火雷.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/穿刺之剑.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/草鞋未转换.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/钩子.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/铁扇.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/铲子.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/长鞭未转换.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/陨落力量.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/集束手雷.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/sound/飞刀.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/CardReward.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/DeadCellsModInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/Alive.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/BackPack_at.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/BackPack_sk.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/Chopper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/CorruptedArtifact.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/Counterattack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/EmeraldAmulet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/Nocturne.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/OpenWounds.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/Oppressive.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/PowerOfScroll$ScrollType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/PowerOfScroll.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/Predator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/SealsRecipe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/SpirePace.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/Tactical.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/action/AddCardToHandAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/action/FireBlastAction$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/action/FireBlastAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/action/FrostBlastAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/action/GainAllEnemyBleedingPowerAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/action/GainBleedingPowerAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/action/GainBurnsPowerAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/action/HayabusaGauntletsAction$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/action/HayabusaGauntletsAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/action/UseTheSameCardAgainAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/action/VampirismAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/APlan$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/APlan$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/APlan$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/APlan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/AlchemyCarbine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/AttackDefend.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Backtrack$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Backtrack$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Backtrack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/BalancedBlade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/BeginnerBow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/BleedingSpread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/BloodSword.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/BloodthirstyShield.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Calm$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Calm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/ClusterGrenade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Cocoon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/CorrosiveCloud.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/CrowFeathers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/CursedSword.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/DeadCellsCard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Defend_king.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/DepravedForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/EmergencyDoor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/FerrymanSLantern$FerrymanSLanternII.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/FerrymanSLantern$FerrymanSLanternIII.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/FerrymanSLantern.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/FillInGrenade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/FireBlast.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/FireGrenade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Firebrands.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/FireworksTechnician.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/FranticSword.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/FrontLineShield$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/FrontLineShield.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/FrostBlast.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Giantkiller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Grenade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/GrenadeCard$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/GrenadeCard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/HattoriSKatana.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/HayabusaBoots.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/HayabusaGauntlets.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Hemorrhage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/IceArmor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/IceBow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/IceGrenade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/IceShield.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/InASimilar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/InTime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/InsightInto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/IronStaff.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/KnockBackShield.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/LaceratingAura.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/MagicMissiles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/MagneticGrenade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/MultipleNocksBow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/NightLight.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/OilGrenade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/OiledSword.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Piano$RhythmPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Piano.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/PianoII$RhythmPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/PianoII.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/PianoIII$RhythmPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/PianoIII.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Punishment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Rampart$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Rampart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Reckless$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Reckless$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Reckless.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/ReflectionSpeedUp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/RegularSkill.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Rob.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Roll$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Roll.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Roll_ButNot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/RootGrenade$ConstrictedPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/RootGrenade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/RoundingKnife.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Ruthless.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/SOTF$DexterityPowerII.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/SOTF$StrengthPowerII.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/SOTF.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/SadistStiletto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Saucepan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/ScytheClaw.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/ScytheClawII$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/ScytheClawII.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/SmokeBomb.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/SnakeFangs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Speed.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/SpeedDown.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/StrategyStagnated.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Strike_king.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/StunGrenade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/SwiftSword.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/SymmetricalSpear.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/ThrowingKnife.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/ThunderShield.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Toothpick$ToothpickII.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Toothpick$ToothpickIII.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Toothpick$ToothpickIIII.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Toothpick.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Torch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/UnKnowCard$UnKnowAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/UnKnowCard$UnKnowPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/UnKnowCard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Vampirism.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/character/DepravedCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/character/King.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/enums/AbstractDeadCellsEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/enums/DeadCellsCharacterEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/enums/DeadCellsTags.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/enums/LibraryTypeEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/monster/Zombie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/patch/OpenWoundsPatch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/AttackDefendPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/BleedingPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/BleedingSpreadPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/BloodthirstyShieldPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/BurnsPower$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/BurnsPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/CocoonPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/CorrosiveCloudPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/DeadCellsPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/DepravedPower$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/DepravedPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/FireworksTechnicianPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/FlightPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/FrostbitePower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/IceShieldPower$GainStrengthPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/IceShieldPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/InTimePower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/IronStaffPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/LaceratingAuraPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/MagneticPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/NextTurnLoseFlightPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/NightLightPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/NocturneAttackedPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/OilPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/RampartPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/ReflectionSpeedUpPower$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/ReflectionSpeedUpPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/RegularSkillPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/RobPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/RuthlessPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/SmokeBombPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/SpeedPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/utils/CardUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/utils/FileUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/utils/ImgUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/utils/Keywords.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/variables/AmmunitionVariables$MaxAmmunitionVariables.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/variables/AmmunitionVariables.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/variables/BurnsVariable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/variables/ChangeNumVariables.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/variables/HeavyDamageVariables.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/APlan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/APlan_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/AlchemyCarbine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/AlchemyCarbine_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/AttackDefend.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/AttackDefend_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Backtrack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Backtrack_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/BalancedBlade.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/BalancedBlade_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/BeginnerBow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/BeginnerBow_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/BleedingSpread.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/BleedingSpread_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/BloodSword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/BloodSword_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/BloodthirstyShield.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/BloodthirstyShield_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Calm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Calm_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/ClusterGrenade.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/ClusterGrenade_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Cocoon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Cocoon_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/CorrosiveCloud.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/CorrosiveCloud_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/CrowFeathers.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/CrowFeathers_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/CursedSword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/CursedSword_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/FerrymanSLantern.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/FerrymanSLanternIII.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/FerrymanSLanternIII_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/FerrymanSLantern_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/FillInGrenade.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/FillInGrenade_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/FireBlast.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/FireBlast_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/FireGrenade.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/FireGrenade_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Firebrands.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Firebrands_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/FireworksTechnician.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/FireworksTechnician_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/FranticSword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/FranticSword_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/FrontLineShield.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/FrontLineShield_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/FrostBlast.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/FrostBlast_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Giantkiller.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Giantkiller_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Grenade.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Grenade_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/HattoriSKatana.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/HattoriSKatana_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/HayabusaBoots.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/HayabusaBoots_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/HayabusaGauntlets.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/HayabusaGauntlets_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Hemorrhage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Hemorrhage_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/IceArmor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/IceArmor_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/IceBow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/IceBow_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/IceCrossbow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/IceCrossbowIII.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/IceCrossbowIII_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/IceCrossbow_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/IceGrenade.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/IceGrenade_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/IceShield.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/IceShield_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/InASimilar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/InASimilar_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/InTime.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/InTime_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/InsightInto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/InsightInto_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/IronStaff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/IronStaff_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/KnockBackShield.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/KnockBackShield_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/LaceratingAura.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/LaceratingAura_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/MagicMissiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/MagicMissiles_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/MagneticGrenade.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/MagneticGrenade_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/MultipleNocksBow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/MultipleNocksBow_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/NightLight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/NightLight_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/OilGrenade.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/OilGrenade_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/OiledSword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/OiledSword_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Piano.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Piano_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Punishment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Punishment_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Pyrotechnics.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Pyrotechnics_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Rampart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Rampart_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Reckless.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Reckless_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/ReflectionSpeedUp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/ReflectionSpeedUp_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/RegularSkill.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/RegularSkill_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Rob.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Rob_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/RootGrenade.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/RootGrenade_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/RoundingKnife.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/RoundingKnife_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/SOTF.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/SOTF_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/SadistStiletto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/SadistStiletto_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Saucepan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Saucepan_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/ScytheClaw.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/ScytheClawII.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/ScytheClawII_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/ScytheClaw_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/SmokeBomb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/SmokeBomb_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/SnakeFangs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/SnakeFangs_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Speed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/SpeedDown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/SpeedDown_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Speed_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/StrategyStagnated.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/StrategyStagnated_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/StunGrenade.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/StunGrenade_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/SwiftSword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/SwiftSword_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/SymmetricalSpear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/SymmetricalSpear_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/ThrowingKnife.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/ThrowingKnife_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/ThunderShield.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/ThunderShield_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Toothpick.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/ToothpickIII.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/ToothpickIII_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Toothpick_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Torch.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Torch_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Vampirism.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/Vampirism_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/defend.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/defend_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/depraved.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/depraved_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/roll.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/roll_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/sadistic_nature.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/sadistic_nature_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/strike.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/strike_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/theDoor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/theDoor_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/均衡之刃.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/火药大师.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card/绿框.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card_bg/1024/attack_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card_bg/1024/energy_orb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card_bg/1024/power_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card_bg/1024/skill_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card_bg/512/attack_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card_bg/512/energy_orb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card_bg/512/energy_small.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card_bg/512/power_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card_bg/512/skill_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/card_bg/cardBgTemp.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/char_portraits/animation/DeadCells_normal.atlas" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/char_portraits/animation/DeadCells_normal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/char_portraits/animation/DeadCells_normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/char_portraits/animation/DeadCells_normal_1.atlas" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/char_portraits/animation/DeadCells_normal_1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/char_portraits/animation/DeadCells_normal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/char_portraits/kingCorpse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/char_portraits/kingPortrait.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/char_portraits/kingShoulder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/char_portraits/kingShoulder2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/char_portraits/orb/layer1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/char_portraits/orb/layer1d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/char_portraits/orb/layer2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/char_portraits/orb/layer2d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/char_portraits/orb/layer3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/char_portraits/orb/layer3d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/char_portraits/orb/layer4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/char_portraits/orb/layer4d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/char_portraits/orb/layer5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/char_portraits/orb/layer5d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/char_portraits/orb/layer6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/char_portraits/orb/vfx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/char_select/endScene1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/char_select/endScene2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/char_select/endScene3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/char_select/king.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/char_select/portrait.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/NewProject.autosave.autosave.scml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/NewProject.autosave.scml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/body.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/body2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/energy_orb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/eye.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/head.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/head2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/head3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/head4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/kind-.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/kind.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/king.scml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/king_run.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/king_under.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/leftarm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/leftarm_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/leftarm_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/leftarm_I.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/leftarm_II.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/leftarm_III.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/lefthand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/leftleg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/rightarm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/rightleg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/run_body.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/run_head.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/run_left_leg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/run_leftleg_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/run_right_arm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/run_right_leg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/character/run_rightleg_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/monster/Zombie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/monster/zombie.atlas" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/monster/zombie0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/monster/剑圣.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/128/AttackDefendPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/128/BleedingPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/128/BleedingSpreadPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/128/BloodthirstyShieldPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/128/BurnsPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/128/CocoonPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/128/ConstrictedPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/128/CorrosiveCloudPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/128/DepravedPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/128/FireworksTechnicianPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/128/FrostbitePower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/128/IceShieldPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/128/InTimePower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/128/IronStaffPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/128/LaceratingAuraPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/128/MagneticPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/128/NextTurnLoseFlightPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/128/NightLightPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/128/NocturneAttackedPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/128/OilPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/128/RampartPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/128/ReflectionSpeedUpPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/128/RegularSkillPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/128/RhythmPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/128/RhythmPowerII.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/128/RhythmPowerIII.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/128/RobPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/128/RuthlessPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/128/SmokeBombPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/128/SpeedPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/128/UnKnowPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/48/AttackDefendPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/48/BleedingPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/48/BleedingSpreadPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/48/BloodthirstyShieldPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/48/BurnsPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/48/CocoonPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/48/ConstrictedPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/48/CorrosiveCloudPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/48/DepravedPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/48/FireworksTechnicianPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/48/FrostbitePower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/48/IceShieldPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/48/InTimePower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/48/IronStaffPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/48/LaceratingAuraPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/48/MagneticPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/48/NextTurnLoseFlightPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/48/NightLightPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/48/NocturneAttackedPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/48/OilPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/48/RampartPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/48/ReflectionSpeedUpPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/48/RegularSkillPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/48/RhythmPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/48/RhythmPowerII.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/48/RhythmPowerIII.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/48/RobPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/48/RuthlessPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/48/SmokeBombPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/48/SpeedPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/powers/48/UnKnowPower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/relics/Chopper.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/relics/CorruptedArtifact.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/relics/Counterattack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/relics/EmeraldAmulet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/relics/OpenWounds.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/relics/PowerOfScroll.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/relics/Predator.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/relics/SealsRecipe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/relics/SealsRecipe2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/relics/alive.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/relics/backpack_at.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/relics/backpack_sk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/relics/nocturne.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/relics/oppressive.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/relics/spirePace.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/relics/tactical.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/relics/加速.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/relics/未标题-1.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/relics/老婆剑.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/relics/随机应变.psd" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/dead-cells-mod-1.0.6.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/dead-cells-mod-1.0.6.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-infinite.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-infinite.AppTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/infinite.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/infinite.AppTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/infinite/AppTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -389,7 +1013,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1630556852158" />
     <property name="extract.method.default.visibility" value="public" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/img/monster" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -400,7 +1024,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="Console" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
@@ -488,17 +1112,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -677,6 +1290,23 @@
       <workItem from="1633190821129" duration="4655000" />
       <workItem from="1633245991431" duration="4986000" />
       <workItem from="1633251841668" duration="4115000" />
+      <workItem from="1633266298990" duration="769000" />
+      <workItem from="1633267389493" duration="3761000" />
+      <workItem from="1633275664723" duration="2814000" />
+      <workItem from="1633449059028" duration="737000" />
+      <workItem from="1634954267325" duration="953000" />
+      <workItem from="1635582555048" duration="2328000" />
+      <workItem from="1637387309570" duration="2012000" />
+      <workItem from="1639992647704" duration="1300000" />
+      <workItem from="1641001784896" duration="259000" />
+      <workItem from="1641310008724" duration="871000" />
+      <workItem from="1642687946406" duration="116000" />
+      <workItem from="1642688538718" duration="27000" />
+      <workItem from="1642914992793" duration="2695000" />
+      <workItem from="1643868240151" duration="764000" />
+      <workItem from="1659434103547" duration="62000" />
+      <workItem from="1659943494241" duration="140000" />
+      <workItem from="1673681163823" duration="569000" />
     </task>
     <task id="LOCAL-00001" summary="DeadCellsMod">
       <created>1627711209999</created>

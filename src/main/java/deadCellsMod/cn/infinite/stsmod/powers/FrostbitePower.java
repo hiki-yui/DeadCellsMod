@@ -13,7 +13,7 @@ public class FrostbitePower extends AbstractPower {
     public static final String BASE_ID = "deadCells:FrostbitePower";
     private static final PowerStrings STRINGS = CardCrawlGame.languagePack .getPowerStrings(BASE_ID);
     private AbstractCreature source;
-    private static float damageLose = 0.15F;
+    private static float damageLose = 0.10F;
     private static int powerLose = 2;
     private boolean justApply = true;
 
@@ -37,7 +37,7 @@ public class FrostbitePower extends AbstractPower {
 
     @Override
     public void updateDescription() {
-        this.description = STRINGS.DESCRIPTIONS[0] +15+//(damageLose*100)
+        this.description = STRINGS.DESCRIPTIONS[0] +10+//(damageLose*100)
                 STRINGS.DESCRIPTIONS[1] + amount +
                 STRINGS.DESCRIPTIONS[2];
     }

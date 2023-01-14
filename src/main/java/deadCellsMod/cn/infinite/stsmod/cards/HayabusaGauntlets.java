@@ -26,7 +26,7 @@ public class HayabusaGauntlets extends DeadCellsCard {
     public void upgrade() {
         if (!this.upgraded){
             this.upgradeDamage(2);
-            this.upgradeHeavyDamage(4);
+            this.upgradeHeavyDamage(2);
             this.upgradeName();
         }
     }

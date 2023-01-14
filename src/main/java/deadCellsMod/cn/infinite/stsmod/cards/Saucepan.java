@@ -27,7 +27,7 @@ public class Saucepan extends CustomCard {
         super(ID,NAME,IMG,1,DESCRIPTION,CardType.ATTACK,
                 AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.COMMON,CardTarget.ENEMY);
 
-        this.baseDamage = 5;
+        this.baseDamage = 7;
         this.baseMagicNumber = 1;
         this.damageType = DamageInfo.DamageType.NORMAL;
     }

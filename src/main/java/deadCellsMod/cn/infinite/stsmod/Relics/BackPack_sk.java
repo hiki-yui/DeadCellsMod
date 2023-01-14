@@ -34,12 +34,18 @@ public class BackPack_sk extends CustomRelic {
 
     @Override
     public String getUpdatedDescription() {
-        return strings.DESCRIPTIONS[0] + 2 + strings.DESCRIPTIONS[1];
+        return strings.DESCRIPTIONS[0] + 3 + strings.DESCRIPTIONS[1];
+    }
+
+    @Override
+    public void onUnequip() {
+        AbstractDungeon.player.energy.energyMaster++;
     }
 
     @Override
     public void onEquip() {
-        //需求,获取遗物时最大将卡组中的2张打击替换为 翻滚(roll),小于三张则尽可能的替换
+        AbstractDungeon.player.energy.energyMaster--;
+        //需求,获取遗物时最大将卡组中的3张打击替换为 翻滚(roll),小于三张则尽可能的替换
         CardGroup deck = AbstractDungeon.player.masterDeck;
         ArrayList<AbstractCard> cardDeck = deck.group;
         //可以删除的卡
@@ -48,7 +54,7 @@ public class BackPack_sk extends CustomRelic {
         //如果起始打击卡已经有三张了打破循环
         if (cardDeck != null && !cardDeck.isEmpty()) {
             for (AbstractCard card : cardDeck) {
-                if (strikeAmount == 2) {
+                if (strikeAmount == 3) {
                     break;
                 }
                 //判断是否有起始攻击卡

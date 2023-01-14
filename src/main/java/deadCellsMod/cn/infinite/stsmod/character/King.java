@@ -73,6 +73,7 @@ public class King extends CustomPlayer {
         }
         deck.add("deadCells:Roll");
         deck.add("deadCells:RoundingKnife");
+        deck.add("deadCells:BeginnerBow");
         /*deck.add("deadCells:Grenade");
         deck.add("deadCells:AlchemyCarbine");
         deck.add("deadCells:SymmetricalSpear");

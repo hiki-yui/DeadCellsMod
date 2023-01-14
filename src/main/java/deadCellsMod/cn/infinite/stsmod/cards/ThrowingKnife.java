@@ -24,7 +24,7 @@ public class ThrowingKnife extends DeadCellsCard {
 
         this.exhaust = true;
         this.baseDamage = 1;
-        this.magicNumber = this.baseMagicNumber = 3;
+        this.magicNumber = this.baseMagicNumber = 4;
         this.damageType = DamageInfo.DamageType.NORMAL;
     }
 

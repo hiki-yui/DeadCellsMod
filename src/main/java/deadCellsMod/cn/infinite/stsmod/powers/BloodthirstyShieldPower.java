@@ -1,5 +1,6 @@
 package deadCellsMod.cn.infinite.stsmod.powers;
 
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -8,6 +9,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.WeakPower;
 import deadCellsMod.cn.infinite.stsmod.action.GainBleedingPowerAction;
 import deadCellsMod.cn.infinite.stsmod.utils.ImgUtils;
 
@@ -50,9 +52,15 @@ public class BloodthirstyShieldPower extends AbstractPower {
     public int onAttacked(DamageInfo info, int damageAmount) {
         if (info.type == DamageInfo.DamageType.NORMAL&&!this.isOwnerTurn&&this.owner.currentBlock>=0) {
             this.flash();
-            for (AbstractMonster monster : AbstractDungeon.getMonsters().monsters) {
-                addToBot(new GainBleedingPowerAction(this.owner, monster, this.amount));
-            }
+            AbstractCreature abstractPlayer = AbstractDungeon.player;
+            if (!abstractPlayer.hasPower("deadCells:BleedingSpreadPower")) {
+                for (AbstractMonster monster : AbstractDungeon.getMonsters().monsters) {
+                    if (monster != null && !monster.isDying) {
+                        addToBot(new GainBleedingPowerAction(abstractPlayer, monster, this.amount));
+                    }
+                }
+            } else
+                new GainBleedingPowerAction(abstractPlayer, AbstractDungeon.getRandomMonster(), this.amount).update();
         }
         return super.onAttacked(info, damageAmount);
     }

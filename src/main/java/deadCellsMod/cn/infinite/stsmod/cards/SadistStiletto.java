@@ -21,7 +21,7 @@ public class SadistStiletto extends DeadCellsCard {
     public SadistStiletto(){
         super(BASE_ID,STRINGS.NAME,IMG,1,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.RARE,CardTarget.ENEMY);
 
-        this.baseDamage = 4;
+        this.baseDamage = 3;
         this.magicNumber = this.baseMagicNumber = 1;
     }
 

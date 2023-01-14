@@ -18,7 +18,7 @@ public class IronStaff extends DeadCellsCard {
     public IronStaff(){
         super(BASE_ID,STRINGS.NAME,"img/card/IronStaff.png",3,STRINGS.DESCRIPTION, CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS, AbstractCard.CardRarity.UNCOMMON, CardTarget.SELF);
 
-        this.baseBlock = 30;
+        this.baseBlock = 24;
         this.magicNumber = this.baseMagicNumber = 1 ;
     }
 

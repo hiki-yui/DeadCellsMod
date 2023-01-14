@@ -12,8 +12,8 @@ public class Alive extends PowerOfScroll {
     public static final String BASE_ID = "deadCells:Alive";
     private static final RelicStrings STRINGS = CardCrawlGame.languagePack.getRelicStrings(BASE_ID);
     private static final String IMG = "img/relics/alive.png";
-    private static final int HEAL = 4;
-    private static final int INCREASE_MAX_HP = 8;
+    private static final int HEAL = 3;
+    private static final int INCREASE_MAX_HP = 7;
 
     public Alive(){
         super(BASE_ID,new Texture(IMG),RelicTier.SPECIAL,LandingSound.MAGICAL);

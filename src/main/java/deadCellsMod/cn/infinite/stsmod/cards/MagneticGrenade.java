@@ -36,7 +36,7 @@ public class MagneticGrenade extends GrenadeCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        for (int i = 0; i < this.magicNumber; i++) {
+        for (int i = 0; i < 2; i++) {
             addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage), AbstractGameAction.AttackEffect.BLUNT_LIGHT, true));
         }
         for (AbstractMonster monster: AbstractDungeon.getMonsters().monsters){

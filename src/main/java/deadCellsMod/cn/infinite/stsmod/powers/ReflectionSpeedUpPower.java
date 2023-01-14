@@ -65,7 +65,8 @@ public class ReflectionSpeedUpPower extends AbstractPower {
         CAN_NOT_APPEAR.add("Fission");
         CAN_NOT_APPEAR.add("deadCells:NightLight");
         CAN_NOT_APPEAR.add("deadCells:Rob");
-
+        CAN_NOT_APPEAR.add("deadCells:Vampirism");
+        CAN_NOT_APPEAR.add("deadCells:Reckless");
 
 
         IS_SKILL_BUT_ATTACK.add("Tempest");
@@ -87,7 +88,7 @@ public class ReflectionSpeedUpPower extends AbstractPower {
         IS_SKILL_BUT_ATTACK.add("deadCells:FerrymanSLantern");
         IS_SKILL_BUT_ATTACK.add("deadCells:APlan");
         IS_SKILL_BUT_ATTACK.add("deadCells:Toothpick");
-        IS_SKILL_BUT_ATTACK.add("deadCells:Reckless");
+
 
     }
 

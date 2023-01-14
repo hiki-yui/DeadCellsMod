@@ -116,7 +116,8 @@
   },
   "deadCells:FrostBlast": {
     "NAME": "Frost Blast",
-    "DESCRIPTION": "Gain !B! Block. NL Apply !M! Freeze X times to ALL enemies."
+    "DESCRIPTION": "Gain !B! Block. NL Apply !M! Freeze X times to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Apply !M! Freeze X+1 times to ALL enemies."
   },
   "deadCells:FireBlast": {
     "NAME": "Fire Blast",

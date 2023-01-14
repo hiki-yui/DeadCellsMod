@@ -23,13 +23,15 @@ public class FrostBlast extends DeadCellsCard{
     @Override
     public void upgrade() {
         if (!this.upgraded){
-            this.upgradeBlock(2);
+            /*this.upgradeBlock(2);*/
+            this.rawDescription = STRINGS.UPGRADE_DESCRIPTION;
             this.upgradeName();
         }
     }
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot(new FrostBlastAction(abstractPlayer,this.block,this.energyOnUse,this.freeToPlayOnce,this.magicNumber));
+        addToBot(new FrostBlastAction(abstractPlayer,this.block,this.upgraded?this.energyOnUse+1:this.energyOnUse
+                ,this.freeToPlayOnce,this.magicNumber));
     }
 }
