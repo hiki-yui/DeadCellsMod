@@ -12,6 +12,7 @@ deadCellsMod\cn\infinite\stsmod\powers\FrostbitePower.class
 deadCellsMod\cn\infinite\stsmod\cards\IceShield.class
 deadCellsMod\cn\infinite\stsmod\cards\RoundingKnife.class
 deadCellsMod\cn\infinite\stsmod\monster\Zombie.class
+deadCellsMod\cn\infinite\stsmod\Relics\FaceFlask.class
 deadCellsMod\cn\infinite\stsmod\powers\NextTurnLoseFlightPower.class
 deadCellsMod\cn\infinite\stsmod\cards\PianoII$RhythmPower.class
 deadCellsMod\cn\infinite\stsmod\cards\ScytheClawII$1.class
@@ -35,6 +36,7 @@ deadCellsMod\cn\infinite\stsmod\cards\NightLight.class
 deadCellsMod\cn\infinite\stsmod\powers\OilPower.class
 deadCellsMod\cn\infinite\stsmod\cards\ScytheClaw.class
 deadCellsMod\cn\infinite\stsmod\cards\Rampart$1.class
+deadCellsMod\cn\infinite\stsmod\Relics\DeadCellsRelic.class
 deadCellsMod\cn\infinite\stsmod\enums\DeadCellsTags.class
 deadCellsMod\cn\infinite\variables\BurnsVariable.class
 deadCellsMod\cn\infinite\stsmod\powers\RampartPower.class
@@ -55,6 +57,7 @@ deadCellsMod\cn\infinite\stsmod\cards\IceGrenade.class
 deadCellsMod\cn\infinite\stsmod\cards\RegularSkill.class
 deadCellsMod\cn\infinite\stsmod\cards\PianoIII.class
 deadCellsMod\cn\infinite\stsmod\cards\Toothpick.class
+deadCellsMod\cn\infinite\stsmod\Relics\Defender.class
 deadCellsMod\cn\infinite\stsmod\cards\UnKnowCard.class
 deadCellsMod\cn\infinite\stsmod\cards\APlan.class
 deadCellsMod\cn\infinite\stsmod\utils\Keywords.class
@@ -100,6 +103,7 @@ deadCellsMod\cn\infinite\stsmod\cards\LaceratingAura.class
 deadCellsMod\cn\infinite\stsmod\powers\BleedingPower.class
 deadCellsMod\cn\infinite\stsmod\powers\AttackDefendPower.class
 deadCellsMod\cn\infinite\stsmod\cards\IronStaff.class
+deadCellsMod\cn\infinite\stsmod\cards\SonicCarbine.class
 deadCellsMod\cn\infinite\stsmod\cards\InsightInto.class
 deadCellsMod\cn\infinite\stsmod\cards\KnockBackShield.class
 deadCellsMod\cn\infinite\stsmod\cards\FrostBlast.class
@@ -109,6 +113,7 @@ deadCellsMod\cn\infinite\stsmod\cards\BeginnerBow.class
 deadCellsMod\cn\infinite\stsmod\action\AddCardToHandAction.class
 deadCellsMod\cn\infinite\stsmod\cards\GrenadeCard.class
 deadCellsMod\cn\infinite\stsmod\cards\Calm.class
+deadCellsMod\cn\infinite\stsmod\powers\SCbPower.class
 deadCellsMod\cn\infinite\stsmod\cards\Ruthless.class
 deadCellsMod\cn\infinite\stsmod\cards\SwiftSword.class
 deadCellsMod\cn\infinite\stsmod\Relics\Oppressive.class
@@ -132,6 +137,7 @@ deadCellsMod\cn\infinite\stsmod\cards\CursedSword.class
 deadCellsMod\cn\infinite\stsmod\powers\CorrosiveCloudPower.class
 deadCellsMod\cn\infinite\stsmod\utils\CardUtils.class
 deadCellsMod\cn\infinite\stsmod\cards\StrategyStagnated.class
+deadCellsMod\cn\infinite\stsmod\patch\FerrymanSLanternPatch.class
 deadCellsMod\cn\infinite\stsmod\Relics\Chopper.class
 deadCellsMod\cn\infinite\stsmod\utils\ImgUtils.class
 deadCellsMod\cn\infinite\stsmod\cards\HayabusaGauntlets.class
@@ -139,8 +145,10 @@ deadCellsMod\cn\infinite\stsmod\cards\SpeedDown.class
 deadCellsMod\cn\infinite\stsmod\Relics\Predator.class
 deadCellsMod\cn\infinite\stsmod\cards\Vampirism.class
 deadCellsMod\cn\infinite\stsmod\cards\FireworksTechnician.class
+deadCellsMod\cn\infinite\stsmod\powers\GrenadePower.class
 deadCellsMod\cn\infinite\stsmod\cards\RootGrenade.class
 deadCellsMod\cn\infinite\stsmod\cards\SadistStiletto.class
+deadCellsMod\cn\infinite\stsmod\cards\KillingDeck.class
 deadCellsMod\cn\infinite\stsmod\cards\HattoriSKatana.class
 deadCellsMod\cn\infinite\stsmod\Test.class
 deadCellsMod\cn\infinite\stsmod\action\GainAllEnemyBleedingPowerAction.class
@@ -169,6 +177,7 @@ deadCellsMod\cn\infinite\stsmod\cards\OilGrenade.class
 deadCellsMod\cn\infinite\stsmod\cards\Backtrack$1.class
 deadCellsMod\cn\infinite\stsmod\cards\EmergencyDoor.class
 deadCellsMod\cn\infinite\stsmod\cards\Torch.class
+deadCellsMod\cn\infinite\variables\AmNumberVariable.class
 deadCellsMod\cn\infinite\stsmod\powers\IronStaffPower.class
 deadCellsMod\cn\infinite\stsmod\Relics\OpenWounds.class
 deadCellsMod\cn\infinite\variables\ChangeNumVariables.class
@@ -181,6 +190,7 @@ deadCellsMod\cn\infinite\stsmod\action\UseTheSameCardAgainAction.class
 deadCellsMod\cn\infinite\stsmod\cards\APlan$3.class
 deadCellsMod\cn\infinite\stsmod\action\GainBurnsPowerAction.class
 deadCellsMod\cn\infinite\stsmod\powers\RuthlessPower.class
+deadCellsMod\cn\infinite\stsmod\powers\SCbPower$1.class
 deadCellsMod\cn\infinite\stsmod\powers\SpeedPower.class
 deadCellsMod\cn\infinite\stsmod\powers\InTimePower.class
 deadCellsMod\cn\infinite\stsmod\Relics\Nocturne.class

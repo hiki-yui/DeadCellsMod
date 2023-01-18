@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DoubleDamagePower;
 import com.megacrit.cardcrawl.vfx.ThoughtBubble;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.utils.ImgUtils;
 
@@ -40,6 +41,7 @@ public class Piano extends DeadCellsCard {
 
     public Piano() {
         super(ID, NAME, IMG, BASE_COST, DESCRIPTION, CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS, CardRarity.RARE, CardTarget.ENEMY);
+        this.setBackgroundTexture(DeadCellsModInitializer.GREEN_ATTACK_CARD, DeadCellsModInitializer.GREEN_ATTACK_CARD_PORTRAIT);
         this.damage = this.baseDamage = BASE_DAMAGE;
         this.cardsToPreview = new PianoII();
         this.exhaust = true;

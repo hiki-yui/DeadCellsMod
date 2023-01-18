@@ -28,15 +28,12 @@ import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsCharacterEnum;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsTags;
 import deadCellsMod.cn.infinite.stsmod.monster.Zombie;
 import deadCellsMod.cn.infinite.stsmod.utils.Keywords;
-import deadCellsMod.cn.infinite.variables.AmmunitionVariables;
-import deadCellsMod.cn.infinite.variables.BurnsVariable;
-import deadCellsMod.cn.infinite.variables.ChangeNumVariables;
-import deadCellsMod.cn.infinite.variables.HeavyDamageVariables;
+import deadCellsMod.cn.infinite.variables.*;
 
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+
+
 
 
 import static basemod.DevConsole.logger;
@@ -48,6 +45,75 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
         PostBattleSubscriber, PostDungeonInitializeSubscriber,AddAudioSubscriber,
         PostPowerApplySubscriber,OnPowersModifiedSubscriber,PostInitializeSubscriber,OnStartBattleSubscriber
         /*BaseMod.SaveCustomReward*/ {
+
+    public static final String RED_ATTACK_CARD = "img/card_bg/512/bg_red_attack_dc.png";
+    public static final String RED_SKILL_CARD = "img/card_bg/512/bg_red_skill_dc.png";
+    public static final String RED_POWER_CARD = "img/card_bg/512/bg_red_power_dc.png";
+
+    public static final String GREEN_ATTACK_CARD = "img/card_bg/512/bg_green_attack_dc.png";
+    public static final String GREEN_SKILL_CARD = "img/card_bg/512/bg_green_skill_dc.png";
+    public static final String GREEN_POWER_CARD = "img/card_bg/512/bg_green_power_dc.png";
+
+    public static final String PURPLE_ATTACK_CARD = "img/card_bg/512/bg_purple_attack_dc.png";
+    public static final String PURPLE_SKILL_CARD = "img/card_bg/512/bg_purple_skill_dc.png";
+    public static final String PURPLE_POWER_CARD = "img/card_bg/512/bg_purple_power_dc.png";
+
+    public static final String GRAY_ATTACK_CARD = "img/card_bg/512/bg_gray_attack_dc.png";
+    public static final String GRAY_SKILL_CARD = "img/card_bg/512/bg_gray_skill_dc.png";
+    public static final String GRAY_POWER_CARD = "img/card_bg/512/bg_gray_power_dc.png";
+
+    public static final String GOLD_ATTACK_CARD = "img/card_bg/512/bg_gold_attack_dc.png";
+    public static final String GOLD_SKILL_CARD = "img/card_bg/512/bg_gold_skill_dc.png";
+    public static final String GOLD_POWER_CARD = "img/card_bg/512/bg_gold_power_dc.png";
+
+    public static final String RED2_PURPLE2_ATTACK_CARD = "img/card_bg/512/bg_red2_purple2_attack_dc.png";
+    public static final String RED2_PURPLE2_SKILL_CARD = "img/card_bg/512/bg_red2_purple2_skill_dc.png";
+    public static final String RED2_PURPLE2_POWER_CARD = "img/card_bg/512/bg_red2_purple2_power_dc.png";
+
+    public static final String RED2_GREEN2_ATTACK_CARD = "img/card_bg/512/bg_red2_green2_attack_dc.png";
+    public static final String RED2_GREEN2_SKILL_CARD = "img/card_bg/512/bg_red2_green2_skill_dc.png";
+    public static final String RED2_GREEN2_POWER_CARD = "img/card_bg/512/bg_red2_green2_power_dc.png";
+
+    public static final String PURPLE2_GREEN2_ATTACK_CARD = "img/card_bg/512/bg_purple2_green2_attack_dc.png";
+    public static final String PURPLE2_GREEN2_SKILL_CARD = "img/card_bg/512/bg_purple2_green2_skill_dc.png";
+    public static final String PURPLE2_GREEN2_POWER_CARD = "img/card_bg/512/bg_purple2_green2_power_dc.png";
+
+    public static final String energy_orbUrl = "img/card_bg/512/energy_orb.png";
+    public static final String energy_smallUrl = "img/card_bg/512/energy_small.png";
+
+    public static final String RED_ATTACK_CARD_PORTRAIT = "img/card_bg/1024/bg_red_attack_dc_p.png";
+    public static final String RED_SKILL_CARD_PORTRAIT = "img/card_bg/1024/bg_red_skill_dc_p.png";
+    public static final String RED_POWER_CARD_PORTRAIT = "img/card_bg/1024/bg_red_power_dc_p.png";
+
+    public static final String GREEN_ATTACK_CARD_PORTRAIT = "img/card_bg/1024/bg_green_attack_dc_p.png";
+    public static final String GREEN_SKILL_CARD_PORTRAIT = "img/card_bg/1024/bg_green_skill_dc_p.png";
+    public static final String GREEN_POWER_CARD_PORTRAIT = "img/card_bg/1024/bg_green_power_dc_p.png";
+
+    public static final String PURPLE_ATTACK_CARD_PORTRAIT = "img/card_bg/1024/bg_purple_attack_dc_p.png";
+    public static final String PURPLE_SKILL_CARD_PORTRAIT = "img/card_bg/1024/bg_purple_skill_dc_p.png";
+    public static final String PURPLE_POWER_CARD_PORTRAIT = "img/card_bg/1024/bg_purple_power_dc_p.png";
+
+    public static final String GRAY_ATTACK_CARD_PORTRAIT = "img/card_bg/1024/bg_gray_attack_dc_p.png";
+    public static final String GRAY_SKILL_CARD_PORTRAIT = "img/card_bg/1024/bg_gray_skill_dc_p.png";
+    public static final String GRAY_POWER_CARD_PORTRAIT = "img/card_bg/1024/bg_gray_power_dc_p.png";
+
+    public static final String GOLD_ATTACK_CARD_PORTRAIT = "img/card_bg/1024/bg_gold_attack_dc_p.png";
+    public static final String GOLD_SKILL_CARD_PORTRAIT = "img/card_bg/1024/bg_gold_skill_dc_p.png";
+    public static final String GOLD_POWER_CARD_PORTRAIT = "img/card_bg/1024/bg_gold_power_dc_p.png";
+
+    public static final String RED2_PURPLE2_ATTACK_CARD_PORTRAIT = "img/card_bg/1024/bg_red2_purple2_attack_dc_p.png";
+    public static final String RED2_PURPLE2_SKILL_CARD_PORTRAIT= "img/card_bg/1024/bg_red2_purple2_skill_dc_p.png";
+    public static final String RED2_PURPLE2_POWER_CARD_PORTRAIT= "img/card_bg/1024/bg_red2_purple2_power_dc_p.png";
+
+    public static final String RED2_GREEN2_ATTACK_CARD_PORTRAIT = "img/card_bg/1024/bg_red2_green2_attack_dc_p.png";
+    public static final String RED2_GREEN2_SKILL_CARD_PORTRAIT = "img/card_bg/1024/bg_red2_green2_skill_dc_p.png";
+    public static final String RED2_GREEN2_POWER_CARD_PORTRAIT = "img/card_bg/1024/bg_red2_green2_power_dc_p.png";
+
+    public static final String PURPLE2_GREEN2_ATTACK_CARD_PORTRAIT = "img/card_bg/1024/bg_purple2_green2_attack_dc_p.png";
+    public static final String PURPLE2_GREEN2_SKILL_CARD_PORTRAIT = "img/card_bg/1024/bg_purple2_green2_skill_dc_p.png";
+    public static final String PURPLE2_GREEN2_POWER_CARD_PORTRAIT = "img/card_bg/1024/bg_purple2_green2_power_dc_p.png";
+
+    public static final String energy_orbUrl1024 = "img/card_bg/1024/energy_orb.png";
 
 
     public DeadCellsModInitializer() {
@@ -167,6 +233,7 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
         BaseMod.addDynamicVariable(new HeavyDamageVariables());
         BaseMod.addDynamicVariable(new ChangeNumVariables());
         BaseMod.addDynamicVariable(new AmmunitionVariables.MaxAmmunitionVariables());
+        BaseMod.addDynamicVariable(new AmNumberVariable());
         addCard(new SymmetricalSpear());
         addCard(new Strike_king());
         addCard(new Defend_king());
@@ -256,6 +323,8 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
         addCard(new BeginnerBow());
         addCard(new MultipleNocksBow());
         addCard(new IceBow());
+        addCard(new SonicCarbine());
+        addCard(new KillingDeck());
        /* File file = new File(Objects.requireNonNull(Thread.currentThread().getContextClassLoader()
                 .getResource("deadCellsMod/cn/infinite/stsmod/cards/")).getFile());*/
         /*try {
@@ -304,6 +373,7 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
         BaseMod.addRelic(new Tactical(),RelicType.SHARED);
         BaseMod.addRelic(new PowerOfScroll(),RelicType.SHARED);
         BaseMod.addRelic(new CorruptedArtifact(),RelicType.SHARED);
+        BaseMod.addRelic(new Defender(),RelicType.SHARED);
     }
 
     private void addRelics(AbstractRelic relic){

@@ -111,7 +111,7 @@ public class King extends CustomPlayer {
     public CharSelectInfo getLoadout() {
 
         return new CharSelectInfo(this.getLocalizedCharacterName(),
-                characterStrings.TEXT[0], 75, 75, 0, 99, 5, this,
+                characterStrings.TEXT[0], 72, 72, 0, 99, 5, this,
                 getStartingRelics(), getStartingDeck(), false);
     }
 

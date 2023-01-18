@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.utils.CardUtils;
 import deadCellsMod.cn.infinite.stsmod.utils.ImgUtils;
@@ -25,6 +26,7 @@ public class RootGrenade extends GrenadeCard {
 
     public RootGrenade(){
         super(BASE_ID,STRINGS.NAME,IMG,2,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.ALL_ENEMY);
+        this.setBackgroundTexture(DeadCellsModInitializer.GREEN_ATTACK_CARD, DeadCellsModInitializer.GREEN_ATTACK_CARD_PORTRAIT);
 
         this.magicNumber = this.baseMagicNumber = 2;
         this.baseDamage = 5;
@@ -48,6 +50,7 @@ public class RootGrenade extends GrenadeCard {
         for (AbstractMonster monster: AbstractDungeon.getMonsters().monsters){
             addToBot(new ApplyPowerAction(monster,abstractPlayer,new ConstrictedPower(monster,abstractPlayer,this.magicNumber)));
         }
+        super.use(abstractPlayer,abstractMonster);
     }
 
     static class ConstrictedPower extends com.megacrit.cardcrawl.powers.ConstrictedPower{

@@ -15,7 +15,7 @@ import deadCellsMod.cn.infinite.stsmod.cards.Roll;
 import java.util.ArrayList;
 
 
-public class BackPack_at extends CustomRelic {
+public class BackPack_at extends DeadCellsRelic {
     public static final String ID = "deadCells:BackPack_at";
     private static final RelicStrings strings = CardCrawlGame.languagePack.getRelicStrings(ID);
     private static final String IMG = "img/relics/backpack_at.png";
@@ -27,22 +27,22 @@ public class BackPack_at extends CustomRelic {
 
     @Override
     public String getUpdatedDescription() {
-        return strings.DESCRIPTIONS[0]+3+strings.DESCRIPTIONS[1];
+        return strings.DESCRIPTIONS[0]+1+strings.DESCRIPTIONS[1];
     }
 
     @Override
     public void onEquip() {
         AbstractDungeon.player.energy.energyMaster--;
-        //需求,获取遗物时最大将卡组中的3张防御替换为 翻滚(roll),小于三张则尽可能的替换
+        //需求,获取遗物时最大将卡组中的1张防御替换为 翻滚(roll),小于1张则尽可能的替换
         CardGroup deck = AbstractDungeon.player.masterDeck;
         ArrayList<AbstractCard> cardDeck = deck.group;
         //可以删除的卡
         ArrayList<AbstractCard> canRemoveCard = new ArrayList<>();
         int defendAmount = 0;
-        //如果起始防御卡已经有三张了打破循环
+        //如果起始防御卡已经有1张了打破循环
         if (cardDeck != null && !cardDeck.isEmpty()) {
             for (AbstractCard card : cardDeck) {
-                if (defendAmount == 3) {
+                if (defendAmount == 1) {
                     break;
                 }
                 //判断是否有起始防御卡

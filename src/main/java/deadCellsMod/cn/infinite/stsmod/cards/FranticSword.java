@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 public class FranticSword extends DeadCellsCard {
@@ -15,7 +16,7 @@ public class FranticSword extends DeadCellsCard {
 
     public FranticSword(){
         super(BASE_ID,STRINGS.NAME,"img/card/FranticSword.png",1,STRINGS.DESCRIPTION, CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS, CardRarity.COMMON, CardTarget.ENEMY);
-
+        this.setBackgroundTexture(DeadCellsModInitializer.RED_ATTACK_CARD, DeadCellsModInitializer.RED_ATTACK_CARD_PORTRAIT);
         this.baseDamage = 8;
         this.heavyDamage = this.baseHeavyDamage = 14;
     }

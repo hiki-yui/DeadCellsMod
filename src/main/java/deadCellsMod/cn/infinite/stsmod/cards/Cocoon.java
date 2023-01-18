@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.powers.CocoonPower;
 
@@ -15,7 +16,7 @@ public class Cocoon extends DeadCellsCard {
 
     public Cocoon(){
         super(BASE_ID,STRINGS.NAME,"img/card/Cocoon.png",1,STRINGS.DESCRIPTION,CardType.POWER, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.SELF);
-
+        this.setBackgroundTexture(DeadCellsModInitializer.PURPLE2_GREEN2_POWER_CARD, DeadCellsModInitializer.PURPLE2_GREEN2_POWER_CARD_PORTRAIT);
         this.magicNumber = this.baseMagicNumber = 2;
     }
 

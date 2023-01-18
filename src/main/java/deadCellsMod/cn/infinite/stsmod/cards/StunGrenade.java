@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsTags;
 
@@ -17,6 +18,7 @@ public class StunGrenade extends GrenadeCard {
 
     public StunGrenade(){
         super(BASE_ID,STRINGS.NAME,IMG,2,STRINGS.DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.RARE,CardTarget.ENEMY);
+        this.setBackgroundTexture(DeadCellsModInitializer.GREEN_SKILL_CARD, DeadCellsModInitializer.GREEN_SKILL_CARD_PORTRAIT);
 
         this.tags.add(DeadCellsTags.GRENADE);
         this.exhaust = true;
@@ -35,5 +37,6 @@ public class StunGrenade extends GrenadeCard {
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot(new StunMonsterAction(abstractMonster,abstractPlayer));
+        super.use(abstractPlayer,abstractMonster);
     }
 }

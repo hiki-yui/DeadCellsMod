@@ -1,5 +1,6 @@
 package deadCellsMod.cn.infinite.stsmod.cards;
 
+import basemod.patches.com.megacrit.cardcrawl.cards.AbstractCard.MultiCardPreview;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -12,6 +13,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.BloodShotEffect;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.action.AddCardToHandAction;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
@@ -21,14 +23,16 @@ public class FerrymanSLantern extends DeadCellsCard {
 
     public static final String BASE_ID = "deadCells:FerrymanSLantern";
     private static final CardStrings STRINGS = CardCrawlGame.languagePack.getCardStrings(BASE_ID);
+    public static int AmNumber = 0;
 
     public FerrymanSLantern(){
         this(BASE_ID,STRINGS.NAME,"img/card/FerrymanSLantern.png",0,STRINGS.DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.ENEMY);
-
+        this.setBackgroundTexture(DeadCellsModInitializer.RED2_PURPLE2_SKILL_CARD, DeadCellsModInitializer.RED2_PURPLE2_SKILL_CARD_PORTRAIT);
         this.baseDamage = 8;
         this.heavyDamage = this.baseHeavyDamage= 21;
-        this.changeNum = this.baseChangeNum = 1;
+        this.changeNum = this.baseChangeNum = 2;
         this.ammunitionNumber = 0;
+        MultiCardPreview.add(this,new FerrymanSLanternII(this),new FerrymanSLanternIII(this));
     }
 
     public FerrymanSLantern(String id, String name, String img, int cost, String rawDescription, CardType type, CardColor color, CardRarity rarity, CardTarget target) {
@@ -44,6 +48,8 @@ public class FerrymanSLantern extends DeadCellsCard {
         }
     }
 
+
+
     @Override
     public void applyPowers() {
         super.heavyDamageApplyPower();
@@ -54,6 +60,7 @@ public class FerrymanSLantern extends DeadCellsCard {
         super.calculateCardHeavyDamage(mo);
     }
 
+
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         ArrayList<AbstractCard> list = new ArrayList<>();
@@ -63,17 +70,21 @@ public class FerrymanSLantern extends DeadCellsCard {
         addToBot(new ChooseOneAction(list));
     }
 
+    boolean handoff = false;
+    float timeCounter = 0.0f;
 
-
-
-
-
-
-
-
-
-
-
+//    @Override
+//    public void update() {
+//        timeCounter += hoverTimer;
+//        if (timeCounter > 2){
+//            this.cardsToPreview = handoff?new FerrymanSLanternII(this):new FerrymanSLanternIII(this);
+//            this.updateHoverLogic();
+//            handoff = !handoff;
+//            timeCounter = 0f;
+//        }
+//
+//        super.update();
+//    }
 
     public  static class FerrymanSLanternII extends FerrymanSLantern{
         public static final String BASE_ID = "deadCells:FerrymanSLanternII";
@@ -86,7 +97,7 @@ public class FerrymanSLantern extends DeadCellsCard {
 
         public FerrymanSLanternII(DeadCellsCard father){
             super(BASE_ID,STRINGS.NAME,"img/card/FerrymanSLantern.png",1,STRINGS.DESCRIPTION,CardType.ATTACK,CardColor.COLORLESS,CardRarity.SPECIAL,CardTarget.ENEMY);
-
+            this.setBackgroundTexture(DeadCellsModInitializer.RED2_PURPLE2_SKILL_CARD, DeadCellsModInitializer.RED2_PURPLE2_SKILL_CARD_PORTRAIT);
             this.father = father;
             this.exhaust = true;
             this.ammunitionNumber = father.changeNum;
@@ -99,7 +110,7 @@ public class FerrymanSLantern extends DeadCellsCard {
         @Override
         public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
             addToBot(new DamageAction(abstractMonster,new DamageInfo(abstractPlayer,this.damage), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-            father.ammunitionNumber += this.ammunitionNumber;
+            AmNumber += this.ammunitionNumber;
             father.flash();
         }
 
@@ -160,7 +171,7 @@ public class FerrymanSLantern extends DeadCellsCard {
         public FerrymanSLanternIII(DeadCellsCard father){
             super(BASE_ID,STRINGS.NAME,"img/card/FerrymanSLanternIII.png",2,STRINGS.DESCRIPTION,CardType.ATTACK,CardColor.COLORLESS,CardRarity.SPECIAL,CardTarget.ENEMY);
             this.father = father;
-
+            this.setBackgroundTexture(DeadCellsModInitializer.RED2_PURPLE2_SKILL_CARD, DeadCellsModInitializer.RED2_PURPLE2_SKILL_CARD_PORTRAIT);
             this.baseDamage = 21;
             this.exhaust = true;
 
@@ -191,11 +202,11 @@ public class FerrymanSLantern extends DeadCellsCard {
         public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
             AbstractDungeon.actionManager.addToBottom(
                     new VFXAction(new BloodShotEffect(abstractPlayer.hb.cX, abstractPlayer.hb.cY, abstractMonster.hb.cX,
-                            abstractMonster.hb.cY,father.ammunitionNumber), 0.25F));
-            for (int i = 0;i<father.ammunitionNumber;i++) {
+                            abstractMonster.hb.cY,AmNumber), 0.25F));
+            for (int i = 0;i<AmNumber;i++) {
                 addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
             }
-            father.ammunitionNumber -= father.ammunitionNumber;
+            AmNumber = 0;
             father.flash();
         }
 
@@ -206,8 +217,8 @@ public class FerrymanSLantern extends DeadCellsCard {
 
         @Override
         public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-            if (this.father!=null){
-                if (this.father.ammunitionNumber <= 0){
+            if (this.father != null){
+                if (AmNumber <= 0){
                     return false;
                 }
             }

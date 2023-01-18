@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 //翻滚
@@ -35,6 +36,7 @@ public class Roll extends CustomCard {
     Roll(String id,String name,CardRarity rarity,CardColor cardColor){
         super(id,name,IMG,COST,DESCRIPTION,CardType.SKILL,
                 cardColor,rarity,CardTarget.SELF);
+        this.setBackgroundTexture(DeadCellsModInitializer.GOLD_SKILL_CARD, DeadCellsModInitializer.GOLD_SKILL_CARD_PORTRAIT);
 
         this.baseBlock = BASE_DEFEND;
         this.baseDraw = BASE_DRAW_CARD;

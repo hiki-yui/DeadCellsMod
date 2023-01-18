@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.LoseStrengthPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsTags;
 
@@ -20,6 +21,7 @@ public class ThunderShield extends DeadCellsCard {
     public ThunderShield(){
         super(BASE_ID,STRINGS.NAME,IMG,1,STRINGS.DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.SELF);
 
+        this.setBackgroundTexture(DeadCellsModInitializer.PURPLE2_GREEN2_SKILL_CARD, DeadCellsModInitializer.PURPLE2_GREEN2_SKILL_CARD_PORTRAIT);
 
         this.baseBlock = 7;
         this.magicNumber = this.baseMagicNumber = 3;

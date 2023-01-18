@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.powers.IronStaffPower;
 
@@ -17,6 +18,7 @@ public class IronStaff extends DeadCellsCard {
 
     public IronStaff(){
         super(BASE_ID,STRINGS.NAME,"img/card/IronStaff.png",3,STRINGS.DESCRIPTION, CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS, AbstractCard.CardRarity.UNCOMMON, CardTarget.SELF);
+        this.setBackgroundTexture(DeadCellsModInitializer.RED2_GREEN2_SKILL_CARD, DeadCellsModInitializer.RED2_GREEN2_SKILL_CARD_PORTRAIT);
 
         this.baseBlock = 24;
         this.magicNumber = this.baseMagicNumber = 1 ;

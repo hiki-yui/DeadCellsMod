@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.utils.CardUtils;
 
@@ -20,6 +21,7 @@ public class Reckless extends DeadCellsCard {
 
     public Reckless(){
         super(BASE_ID,STRINGS.NAME,"img/card/Reckless.png",1,STRINGS.DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.SELF);
+        this.setBackgroundTexture(DeadCellsModInitializer.GOLD_SKILL_CARD, DeadCellsModInitializer.GOLD_SKILL_CARD_PORTRAIT);
 
         this.magicNumber = this.baseMagicNumber = 2;
         this.exhaust = true;

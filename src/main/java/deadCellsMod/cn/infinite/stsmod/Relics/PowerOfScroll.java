@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import static com.megacrit.cardcrawl.events.AbstractEvent.logMetricCardRemoval;
 import static com.megacrit.cardcrawl.events.AbstractEvent.logMetricCardUpgrade;
 
-public class PowerOfScroll extends CustomRelic {
+public class PowerOfScroll extends DeadCellsRelic {
 
     public static final String BASE_ID = "deadCells:PowerOfScroll";
     private static final RelicStrings STRINGS = CardCrawlGame.languagePack.getRelicStrings(BASE_ID);

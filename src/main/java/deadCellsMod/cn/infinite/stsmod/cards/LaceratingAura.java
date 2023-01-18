@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.powers.LaceratingAuraPower;
 
@@ -16,6 +17,7 @@ public class LaceratingAura extends DeadCellsCard {
 
     public LaceratingAura(){
         super(BASE_ID,STRINGS.NAME,IMG,1,STRINGS.DESCRIPTION,CardType.POWER, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.SELF);
+        this.setBackgroundTexture(DeadCellsModInitializer.RED2_PURPLE2_POWER_CARD, DeadCellsModInitializer.RED2_PURPLE2_POWER_CARD_PORTRAIT);
 
         this.magicNumber = this.baseMagicNumber = 3;
     }
@@ -23,7 +25,7 @@ public class LaceratingAura extends DeadCellsCard {
     @Override
     public void upgrade() {
         if (!this.upgraded){
-            this.upgradeMagicNumber(1);
+            this.upgradeMagicNumber(2);
             this.upgradeName();
         }
     }

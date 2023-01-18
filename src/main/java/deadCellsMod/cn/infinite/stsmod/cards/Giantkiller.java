@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 public class Giantkiller extends DeadCellsCard {
@@ -21,6 +22,7 @@ public class Giantkiller extends DeadCellsCard {
 
     public Giantkiller(){
         super(BASE_ID,STRINGS.NAME,"img/card/Giantkiller.png",1,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.ENEMY);
+        this.setBackgroundTexture(DeadCellsModInitializer.RED2_GREEN2_ATTACK_CARD, DeadCellsModInitializer.RED2_GREEN2_ATTACK_CARD_PORTRAIT);
 
         this.baseDamage = 5;
         this.heavyDamage = this.baseHeavyDamage = 18;

@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.action.GainBurnsPowerAction;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.utils.CardUtils;
@@ -20,6 +21,7 @@ public class FireGrenade extends GrenadeCard {
 
     public FireGrenade(){
         super(BASE_ID,STRINGS.NAME,IMG,1,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.ALL_ENEMY);
+        this.setBackgroundTexture(DeadCellsModInitializer.RED_ATTACK_CARD, DeadCellsModInitializer.RED_ATTACK_CARD_PORTRAIT);
 
         this.magicNumber = this.baseMagicNumber = 6;
         this.baseDamage = 2;
@@ -39,5 +41,7 @@ public class FireGrenade extends GrenadeCard {
         for (AbstractMonster monster : AbstractDungeon.getMonsters().monsters) {
             addToBot(new GainBurnsPowerAction(monster,abstractPlayer,this.magicNumber));
         }
+        super.use(abstractPlayer,abstractMonster);
+
     }
 }

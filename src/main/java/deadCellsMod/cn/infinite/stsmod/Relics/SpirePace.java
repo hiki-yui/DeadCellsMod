@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import java.util.ArrayList;
 
 //杀戮节奏
-public class SpirePace extends CustomRelic {
+public class SpirePace extends DeadCellsRelic {
     public static final String BASE_ID = "deadCells:SpirePace";
     private static final String IMG = "img/relics/spirePace.png";
     private static final RelicStrings STRINGS = CardCrawlGame.languagePack.getRelicStrings(BASE_ID);

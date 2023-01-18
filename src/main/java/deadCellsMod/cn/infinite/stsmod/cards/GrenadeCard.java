@@ -1,6 +1,10 @@
 package deadCellsMod.cn.infinite.stsmod.cards;
 
+import com.badlogic.gdx.scenes.scene2d.actions.RemoveAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.actions.utility.NewQueueCardAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -10,8 +14,10 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.vfx.cardManip.ExhaustCardEffect;
 import deadCellsMod.cn.infinite.stsmod.action.UseTheSameCardAgainAction;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsTags;
+import deadCellsMod.cn.infinite.stsmod.powers.GrenadePower;
 
 import java.util.ArrayList;
 
@@ -38,10 +44,44 @@ public abstract class GrenadeCard extends DeadCellsCard {
 
     }
 
+    public int counter = 0;
+
+    boolean remove = false;
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
+        if (!this.exhaust){
+            this.counter = 1;
+            if (!abstractPlayer.hasPower(GrenadePower.BASE_ID))
+                addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new GrenadePower(abstractPlayer,this)));
+            else{
+                ((GrenadePower)abstractPlayer.getPower(GrenadePower.BASE_ID)).addG(this);
+            }
+            AbstractDungeon.effectsQueue.add(new ExhaustCardEffect(this));
+            remove = true;
+        }
 
     }
+
+    @Override
+    public void onMoveToDiscard() {
+        super.onMoveToDiscard();
+        if (remove){
+            AbstractDungeon.player.discardPile.removeCard(this);
+            remove = false;
+        }
+    }
+
+
+
+    public boolean gTurnStart(AbstractPlayer player){
+        this.counter --;
+        if (counter <= 0){
+            addToBot(new MakeTempCardInDrawPileAction(this,1,true,false,false));
+            return true;
+        }
+        return false;
+    }
+
 
     @Override
     public AbstractCard makeCopy() {
@@ -53,7 +93,7 @@ public abstract class GrenadeCard extends DeadCellsCard {
         /*AbstractDungeon.actionManager.addCardQueueItem(new CardQueueItem(this,
                 true,AbstractDungeon.player.energy.energy,true,true));*/
         AbstractCard thisCard = this;
-        addToBot(new UseTheSameCardAgainAction(this, AbstractDungeon.player, null));
+        addToBot(new NewQueueCardAction(this, AbstractDungeon.getRandomMonster(), true,true));
 
         addToBot(new AbstractGameAction() {
             @Override

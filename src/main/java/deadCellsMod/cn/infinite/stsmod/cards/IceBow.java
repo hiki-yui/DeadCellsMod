@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.powers.FrostbitePower;
 
@@ -19,6 +20,7 @@ public class IceBow extends DeadCellsCard{
 
     public IceBow(){
         super(BASE_ID,STRINGS.NAME,"img/card/IceBow.png",1,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.ENEMY);
+        this.setBackgroundTexture(DeadCellsModInitializer.PURPLE_ATTACK_CARD, DeadCellsModInitializer.PURPLE_ATTACK_CARD_PORTRAIT);
 
         this.magicNumber = this.baseMagicNumber = 4;
         this.baseDamage = 4;

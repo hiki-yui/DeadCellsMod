@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsTags;
 import deadCellsMod.cn.infinite.stsmod.powers.FrostbitePower;
@@ -23,6 +24,7 @@ public class IceGrenade extends GrenadeCard{
 
     public IceGrenade(){
         super(BASE_ID,STRINGS.NAME,IMG,1,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.ALL_ENEMY);
+        this.setBackgroundTexture(DeadCellsModInitializer.RED2_PURPLE2_ATTACK_CARD, DeadCellsModInitializer.RED2_PURPLE2_ATTACK_CARD_PORTRAIT);
 
         this.baseDamage = 3;
         this.magicNumber = this.baseMagicNumber = 3;
@@ -45,6 +47,7 @@ public class IceGrenade extends GrenadeCard{
         for (AbstractMonster monster : AbstractDungeon.getMonsters().monsters){
             addToBot(new ApplyPowerAction(monster,abstractPlayer,new FrostbitePower(monster,abstractPlayer,this.magicNumber),this.magicNumber));
         }
+        super.use(abstractPlayer,abstractMonster);
     }
 
    /* @Override

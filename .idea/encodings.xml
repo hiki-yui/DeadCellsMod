@@ -5,9 +5,58 @@
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/cards.json" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/dead cells/存疑、建议及反馈.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/monsters.json" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/powers.json" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_gold_attack_dc_p.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_gold_power_dc_p.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_gold_skill_dc_p.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_gray_attack_dc_p.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_gray_power_dc_p.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_gray_skill_dc_p.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_green_attack_dc_p.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_green_power_dc_p.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_green_skill_dc_p.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_purple2_green2_attack_dc_p.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_purple2_green2_power_dc_p.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_purple2_green2_skill_dc_p.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_purple_attack_dc_p.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_purple_power_dc_p.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_purple_skill_dc_p.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_red2_green2_attack_dc_p.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_red2_green2_power_dc_p.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_red2_green2_skill_dc_p.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_red2_purple2_attack_dc_p.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_red2_purple2_power_dc_p.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_red2_purple2_skill_dc_p.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_red_attack_dc_p.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_red_power_dc_p.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_red_skill_dc_p.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_gold_attack_dc.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_gold_power_dc.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_gold_skill_dc.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_gray_attack_dc.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_gray_power_dc.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_gray_skill_dc.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_green_attack_dc.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_green_power_dc.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_green_skill_dc.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_purple2_green2_attack_dc.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_purple2_green2_power_dc.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_purple2_green2_skill_dc.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_purple_attack_dc.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_purple_power_dc.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_purple_skill_dc.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_red2_green2_attack_dc.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_red2_green2_power_dc.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_red2_green2_skill_dc.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_red2_purple2_attack_dc.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_red2_purple2_power_dc.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_red2_purple2_skill_dc.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_red_attack_dc.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_red_power_dc.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_red_skill_dc.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources/img/monster/zombie.atlas" charset="ISO-8859-2" />
-    <file url="PROJECT" charset="UTF-8" />
+    <file url="PROJECT" charset="GBK" />
   </component>
 </project>

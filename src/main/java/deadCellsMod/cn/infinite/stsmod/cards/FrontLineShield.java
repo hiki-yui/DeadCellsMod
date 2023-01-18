@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.action.AddCardToHandAction;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsTags;
@@ -19,6 +20,7 @@ public class FrontLineShield extends DeadCellsCard {
 
     public FrontLineShield(){
         super(BASE_ID,STRINGS.NAME,"img/card/FrontLineShield.png",1,STRINGS.DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.COMMON,CardTarget.SELF);
+        this.setBackgroundTexture(DeadCellsModInitializer.RED2_GREEN2_SKILL_CARD, DeadCellsModInitializer.RED2_GREEN2_SKILL_CARD_PORTRAIT);
 
         this.magicNumber = this.baseMagicNumber = 2;
         this.baseBlock = 6;

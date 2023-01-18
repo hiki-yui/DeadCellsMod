@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.powers.watcher.VigorPower;
 
 //反击
-public class Counterattack extends CustomRelic {
+public class Counterattack extends DeadCellsRelic {
 
     public static final String BASE_ID = "deadCells:Counterattack";
     private static final RelicStrings STRINGS = CardCrawlGame.languagePack.getRelicStrings(BASE_ID);

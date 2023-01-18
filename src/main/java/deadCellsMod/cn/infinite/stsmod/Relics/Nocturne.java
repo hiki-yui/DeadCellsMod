@@ -17,7 +17,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import deadCellsMod.cn.infinite.stsmod.powers.NocturneAttackedPower;
 
 //夜歌
-public class Nocturne extends CustomRelic {
+public class Nocturne extends DeadCellsRelic {
     public static final String BASE_ID = "deadCells:Nocturne";
     private static final RelicStrings STRINGS = CardCrawlGame.languagePack.getRelicStrings(BASE_ID);
     private static final String IMG = "img/relics/nocturne.png";

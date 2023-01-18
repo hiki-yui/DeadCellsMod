@@ -19,7 +19,7 @@ import com.megacrit.cardcrawl.vfx.StarBounceEffect;
 import com.megacrit.cardcrawl.vfx.combat.ViolentAttackEffect;
 
 //斩杀者
-public class Chopper extends CustomRelic {
+public class Chopper extends DeadCellsRelic {
     public static final String BASE_ID = "deadCells:Chopper";
     private static final RelicStrings STRINGS = CardCrawlGame.languagePack.getRelicStrings(BASE_ID);
     private static final String IMG = "img/relics/Chopper.png";

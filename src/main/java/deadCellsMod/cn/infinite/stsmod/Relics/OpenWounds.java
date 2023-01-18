@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
-public class OpenWounds extends CustomRelic {
+public class OpenWounds extends DeadCellsRelic {
 
     public static final String BASE_ID = "deadCells:OpenWounds";
     private static final RelicStrings STRINGS = CardCrawlGame.languagePack.getRelicStrings(BASE_ID);

@@ -1,4 +1,11 @@
 {
+  "deadCells:Defender": {
+    "NAME": "防御者",
+    "FLAVOR": "虽然叫防御者,但是你也可以看到ta被其他小怪当做武器.",
+    "DESCRIPTIONS": [
+      "你的第一回合受到的伤害-20%,第二回合收到的伤害减少1点"
+    ]
+  },
   "deadCells:CorruptedArtifact": {
     "NAME": "被诅咒的文物",
     "FLAVOR": "这件文物浑身散发着危险的气息。",
@@ -13,7 +20,7 @@
     "FLAVOR": "好像是特工一样。",
     "DESCRIPTIONS":[
       "当你杀死一名敌人时获得 #b",
-      " 层 [#c1bdbd]隐匿 。"
+      " 层 #g隐匿 。"
     ]
   },
   "deadCells:OpenWounds": {

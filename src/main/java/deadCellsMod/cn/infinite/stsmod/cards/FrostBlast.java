@@ -4,6 +4,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.action.FrostBlastAction;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
@@ -15,6 +16,7 @@ public class FrostBlast extends DeadCellsCard{
 
     public FrostBlast(){
         super(BASE_ID,STRINGS.NAME,IMG,-1,STRINGS.DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.ALL_ENEMY);
+        this.setBackgroundTexture(DeadCellsModInitializer.PURPLE2_GREEN2_SKILL_CARD, DeadCellsModInitializer.PURPLE2_GREEN2_SKILL_CARD_PORTRAIT);
 
         this.baseBlock = 4;
         this.magicNumber = this.baseMagicNumber = 1;
@@ -26,6 +28,7 @@ public class FrostBlast extends DeadCellsCard{
             /*this.upgradeBlock(2);*/
             this.rawDescription = STRINGS.UPGRADE_DESCRIPTION;
             this.upgradeName();
+            this.initializeDescription();
         }
     }
 

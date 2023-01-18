@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.powers.MagneticPower;
 
@@ -20,6 +21,7 @@ public class MagneticGrenade extends GrenadeCard {
 
     public MagneticGrenade(){
         super(BASE_ID,STRINGS.NAME,IMG,1,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.COMMON,CardTarget.ENEMY);
+        this.setBackgroundTexture(DeadCellsModInitializer.PURPLE_ATTACK_CARD, DeadCellsModInitializer.PURPLE_ATTACK_CARD_PORTRAIT);
 
         this.baseDamage = 3;
         this.magicNumber = baseMagicNumber = 2;
@@ -42,5 +44,6 @@ public class MagneticGrenade extends GrenadeCard {
         for (AbstractMonster monster: AbstractDungeon.getMonsters().monsters){
             addToBot(new ApplyPowerAction(monster,abstractPlayer,new MagneticPower(monster,abstractPlayer,this.magicNumber),this.magicNumber));
         }
+        super.use(abstractPlayer,abstractMonster);
     }
 }

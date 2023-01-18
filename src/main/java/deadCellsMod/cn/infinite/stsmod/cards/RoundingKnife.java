@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.WeakPower;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.action.GainBleedingPowerAction;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
@@ -22,6 +23,7 @@ public class RoundingKnife extends CustomCard {
 
     public RoundingKnife(){
         super(ID,strings.NAME,IMG,0,strings.DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.BASIC,CardTarget.ALL_ENEMY);
+        this.setBackgroundTexture(DeadCellsModInitializer.RED2_PURPLE2_SKILL_CARD, DeadCellsModInitializer.RED2_PURPLE2_SKILL_CARD_PORTRAIT);
 
 
         this.magicNumber = this.baseMagicNumber = 1;
@@ -31,8 +33,9 @@ public class RoundingKnife extends CustomCard {
     @Override
     public void upgrade() {
         if (!this.upgraded) {
-            this.upgradeMagicNumber(1);
+            this.rawDescription = strings.UPGRADE_DESCRIPTION;
             this.upgradeName();
+            this.initializeDescription();
         }
     }
 
@@ -46,12 +49,12 @@ public class RoundingKnife extends CustomCard {
                 addToBot(new ApplyPowerAction(monster,abstractPlayer,new WeakPower(monster,
                         this.magicNumber,false),this.magicNumber,true));
                 if (!abstractPlayer.hasPower("deadCells:BleedingSpreadPower")) {
-                    addToBot(new GainBleedingPowerAction(abstractPlayer, monster, 3));
+                    addToBot(new GainBleedingPowerAction(abstractPlayer, monster, this.upgraded?6:3));
                 }
             }
         }
         if (abstractPlayer.hasPower("deadCells:BleedingSpreadPower")) {
-            new GainBleedingPowerAction(abstractPlayer, abstractMonster, 3).update();
+            new GainBleedingPowerAction(abstractPlayer, abstractMonster,  this.upgraded?6:3).update();
         }
     }
 

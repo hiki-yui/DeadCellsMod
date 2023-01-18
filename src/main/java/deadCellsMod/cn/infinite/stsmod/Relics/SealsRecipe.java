@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 //被封印的秘籍
-public class SealsRecipe extends CustomRelic {
+public class SealsRecipe extends DeadCellsRelic {
 
     public static final String BASE_ID = "deadCells:SealsRecipe";
     private static final RelicStrings STRINGS = CardCrawlGame.languagePack.getRelicStrings(BASE_ID);

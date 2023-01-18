@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import deadCellsMod.cn.infinite.stsmod.powers.SmokeBombPower;
 
-public class Predator extends CustomRelic {
+public class Predator extends DeadCellsRelic {
 
     public static final String BASE_ID = "deadCells:Predator";
     private static final RelicStrings STRINGS = CardCrawlGame.languagePack.getRelicStrings(BASE_ID);

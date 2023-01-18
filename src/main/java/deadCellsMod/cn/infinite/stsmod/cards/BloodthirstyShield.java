@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsTags;
 import deadCellsMod.cn.infinite.stsmod.powers.BloodthirstyShieldPower;
@@ -19,7 +20,7 @@ public class BloodthirstyShield extends DeadCellsCard {
 
     public BloodthirstyShield(){
         super(BASE_ID,STRINGS.NAME,IMG,2,STRINGS.DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.SELF);
-
+        this.setBackgroundTexture(DeadCellsModInitializer.RED2_GREEN2_SKILL_CARD, DeadCellsModInitializer.RED2_GREEN2_SKILL_CARD_PORTRAIT);
         this.baseBlock = 12;
         this.magicNumber = this.baseMagicNumber = 4;
         this.tags.add(DeadCellsTags.SHIELD);

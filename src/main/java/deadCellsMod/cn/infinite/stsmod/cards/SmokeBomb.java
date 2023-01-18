@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.watcher.VigorPower;
 import com.megacrit.cardcrawl.vfx.combat.FlameBarrierEffect;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsTags;
 import deadCellsMod.cn.infinite.stsmod.powers.SmokeBombPower;
@@ -19,6 +20,7 @@ public class SmokeBomb extends GrenadeCard {
 
     public SmokeBomb(){
         super(BASE_ID,STRINGS.NAME,"img/card/SmokeBomb.png",1,STRINGS.DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.UNCOMMON,CardTarget.SELF);
+        this.setBackgroundTexture(DeadCellsModInitializer.PURPLE_SKILL_CARD, DeadCellsModInitializer.PURPLE_SKILL_CARD_PORTRAIT);
 
         this.magicNumber = this.baseMagicNumber = 3;
         this.changeNum = this.baseChangeNum = 1;
@@ -39,5 +41,6 @@ public class SmokeBomb extends GrenadeCard {
         addToBot(new VFXAction(p, new FlameBarrierEffect(p.hb.cX, p.hb.cY), 0.1F));
         addToBot(new ApplyPowerAction(p,p,new VigorPower(p,this.magicNumber),this.magicNumber));
         addToBot(new ApplyPowerAction(p,p,new SmokeBombPower(p,this.changeNum),this.changeNum));
+        super.use(p,abstractMonster);
     }
 }

@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 
-public class CorruptedArtifact extends CustomRelic implements CustomSavable<Boolean> {
+public class CorruptedArtifact extends DeadCellsRelic implements CustomSavable<Boolean> {
 
     public static final String BASE_ID = "deadCells:CorruptedArtifact";
     private static final RelicStrings STRINGS = CardCrawlGame.languagePack.getRelicStrings(BASE_ID);

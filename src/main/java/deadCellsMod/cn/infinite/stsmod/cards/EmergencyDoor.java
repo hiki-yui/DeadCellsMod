@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.BufferPower;
 import com.megacrit.cardcrawl.powers.WeakPower;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 
@@ -31,6 +32,7 @@ public class EmergencyDoor extends DeadCellsCard {
         super(ID,NAME,IMG,BASE_COST,DESCRIPTION,CardType.POWER,
                 AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.RARE,CardTarget.SELF);
 
+        this.setBackgroundTexture(DeadCellsModInitializer.PURPLE_POWER_CARD, DeadCellsModInitializer.PURPLE_POWER_CARD_PORTRAIT);
 
         /*this.exhaust=true;*/
         this.baseMagicNumber = BASE_MAGIC_NUMBER;

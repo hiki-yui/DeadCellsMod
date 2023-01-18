@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 public class HattoriSKatana extends DeadCellsCard {
@@ -20,6 +21,8 @@ public class HattoriSKatana extends DeadCellsCard {
 
     public HattoriSKatana(){
         super(BASE_ID,STRINGS.NAME,"img/card/HattoriSKatana.png",1,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.RARE,CardTarget.ENEMY);
+
+        this.setBackgroundTexture(DeadCellsModInitializer.RED_ATTACK_CARD, DeadCellsModInitializer.RED_ATTACK_CARD_PORTRAIT);
 
         this.baseDamage = 4;
         this.magicNumber = this.baseMagicNumber = 1;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="infinite.AppTest" time="0.004" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="infinite.AppTest" time="0.003" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2021.1.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -30,7 +30,7 @@
     <property name="archetypeCatalog" value="internal"/>
     <property name="classworlds.conf" value="E:\myself\ManveResource\FinishMaven\apache-maven-3.3.9\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="GBK"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-15\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;&quot;C:\Program Files\Common Files\Oracle\Java\javapath.;C:\Program Files\Java\OpenJDK8U-jdk_x64_windows_openj9_8u275b01_openj9-0.23.0\jdk8u275-b01\bin;&quot;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;E:\myself;C:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;E:\Git\cmd;C:\Program Files\Java\OpenJDK8U-jdk_x64_windows_openj9_8u275b01_openj9-0.23.0\jdk8u275-b01\bin;E:\myself\springSource\gradle-6.8.3-bin\gradle-6.8.3\bin;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files (x86)\Autodesk\Backburner\;C:\Users\mu\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-15\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;&quot;C:\Program Files\Common Files\Oracle\Java\javapath.;C:\Program Files\Java\OpenJDK8U-jdk_x64_windows_openj9_8u275b01_openj9-0.23.0\jdk8u275-b01\bin;&quot;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;E:\myself;C:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;E:\Git\cmd;C:\Program Files\Java\OpenJDK8U-jdk_x64_windows_openj9_8u275b01_openj9-0.23.0\jdk8u275-b01\bin;E:\myself\springSource\gradle-6.8.3-bin\gradle-6.8.3\bin;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files (x86)\Autodesk\Backburner\;C:\Program Files\dotnet\;C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework;C:\Users\mu\AppData\Local\Microsoft\WindowsApps;D:\PyCharm Community Edition 2021.3.2\bin;;C:\Users\mu\.dotnet\tools;C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework;;C:\Users\mu\AppData\Local\Programs\EmEditor;."/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="59.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -38,7 +38,7 @@
     <property name="os.version" value="10.0"/>
     <property name="user.home" value="C:\Users\mu"/>
     <property name="user.timezone" value="Asia/Shanghai"/>
-    <property name="file.encoding" value="UTF-8"/>
+    <property name="file.encoding" value="GBK"/>
     <property name="java.specification.version" value="15"/>
     <property name="user.name" value="mu"/>
     <property name="java.class.path" value="E:\myself\ManveResource\FinishMaven\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar"/>
@@ -59,5 +59,5 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="infinite.AppTest" name="shouldAnswerWithTrue" time="0.004"/>
+  <testcase classname="infinite.AppTest" name="shouldAnswerWithTrue" time="0.003"/>
 </testsuite>

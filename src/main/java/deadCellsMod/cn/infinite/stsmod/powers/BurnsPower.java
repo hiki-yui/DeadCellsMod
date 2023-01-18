@@ -37,7 +37,7 @@ public class BurnsPower extends AbstractPower {
             public void update() {
                 if (!powerTarget.isDying) {
 
-                    for (int i = 0; i < powerAmount; i++) {
+                    for (int i = 0; i < powerAmount && i < powerTarget.currentHealth; i++) {
                         addToBot(new DamageAction(powerTarget,
                                 new DamageInfo(powerTarget, 1, DamageInfo.DamageType.THORNS),
                                 AbstractGameAction.AttackEffect.FIRE, true));

@@ -1,4 +1,18 @@
 {
+  "deadCells:GrenadePower": {
+    "NAME": "手雷冷却",
+    "DESCRIPTIONS": [
+      "还有 #b",
+      " 回合返回抽牌堆 ."
+    ]
+  },
+  "deadCells:SCbPower": {
+  "NAME": "音速",
+  "DESCRIPTIONS": [
+    "发射你下 #y",
+    " 张抽到的 #r攻击牌 ."
+  ]
+},
   "deadCells:RobPower": {
     "NAME": "掠夺",
     "DESCRIPTIONS": [

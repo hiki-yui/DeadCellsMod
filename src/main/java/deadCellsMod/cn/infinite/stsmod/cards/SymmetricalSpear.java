@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 public class SymmetricalSpear extends CustomCard {
@@ -34,6 +35,7 @@ public class SymmetricalSpear extends CustomCard {
         super(ID,NAME,imgUrl,COST,DESCRIPTION,CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS
         ,CardRarity.RARE,CardTarget.ALL_ENEMY);
 
+        this.setBackgroundTexture(DeadCellsModInitializer.GREEN_ATTACK_CARD, DeadCellsModInitializer.GREEN_ATTACK_CARD_PORTRAIT);
 
 
         this.baseDamage = BASE_DAMAGE;

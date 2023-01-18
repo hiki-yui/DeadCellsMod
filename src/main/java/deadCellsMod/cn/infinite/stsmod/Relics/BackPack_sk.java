@@ -22,7 +22,7 @@ import deadCellsMod.cn.infinite.stsmod.cards.Strike_king;
 import java.util.ArrayList;
 
 
-public class BackPack_sk extends CustomRelic {
+public class BackPack_sk extends DeadCellsRelic {
     public static final String ID = "deadCells:BackPack_sk";
     private static final RelicStrings strings = CardCrawlGame.languagePack.getRelicStrings(ID);
     private static final String IMG = "img/relics/backpack_sk.png";
@@ -34,7 +34,7 @@ public class BackPack_sk extends CustomRelic {
 
     @Override
     public String getUpdatedDescription() {
-        return strings.DESCRIPTIONS[0] + 3 + strings.DESCRIPTIONS[1];
+        return strings.DESCRIPTIONS[0] + 1 + strings.DESCRIPTIONS[1];
     }
 
     @Override
@@ -45,16 +45,16 @@ public class BackPack_sk extends CustomRelic {
     @Override
     public void onEquip() {
         AbstractDungeon.player.energy.energyMaster--;
-        //需求,获取遗物时最大将卡组中的3张打击替换为 翻滚(roll),小于三张则尽可能的替换
+        //需求,获取遗物时最大将卡组中的1张打击替换为 翻滚(roll),小于1张则尽可能的替换
         CardGroup deck = AbstractDungeon.player.masterDeck;
         ArrayList<AbstractCard> cardDeck = deck.group;
         //可以删除的卡
         ArrayList<AbstractCard> canRemoveCard = new ArrayList<>();
         int strikeAmount = 0;
-        //如果起始打击卡已经有三张了打破循环
+        //如果起始打击卡已经有1张了打破循环
         if (cardDeck != null && !cardDeck.isEmpty()) {
             for (AbstractCard card : cardDeck) {
-                if (strikeAmount == 3) {
+                if (strikeAmount == 1) {
                     break;
                 }
                 //判断是否有起始攻击卡

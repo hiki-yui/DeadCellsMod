@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.powers.ReflectionSpeedUpPower;
 
@@ -15,6 +16,7 @@ public class ReflectionSpeedUp extends DeadCellsCard {
 
     public ReflectionSpeedUp() {
         super(BASE_ID, STRINGS.NAME, IMG, /*3*/2, STRINGS.DESCRIPTION, CardType.POWER, AbstractDeadCellsEnum.DEAD_CELLS, CardRarity.RARE, CardTarget.SELF);
+        this.setBackgroundTexture(DeadCellsModInitializer.GOLD_POWER_CARD, DeadCellsModInitializer.GOLD_POWER_CARD_PORTRAIT);
 
         this.baseMagicNumber = 1;
     }

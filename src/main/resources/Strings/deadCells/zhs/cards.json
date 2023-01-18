@@ -1,4 +1,13 @@
 {
+  "deadCells:KillingDeck": {
+    "NAME": "致命卡组",
+    "DESCRIPTION": "造成 !D! 点伤害 NL 从弃牌堆里随机抽取一张技能牌",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害 NL 从弃牌堆里随机抽取一张技能牌 NL 随机抽取一张攻击牌"
+  },
+  "deadCells:SonicCarbine": {
+  "NAME": "音速卡宾枪",
+  "DESCRIPTION": "发射你下 !M! 张抽到的攻击牌."
+},
   "deadCells:IceBow": {
     "NAME": "冰之弓箭",
     "DESCRIPTION": "造成 !D! 点伤害 NL 给予 !M! 层 冻伤 NL 随机丢弃 !CN! 张牌."
@@ -15,7 +24,7 @@
     ]
   },
   "deadCells:GrenadeCard": {
-    "DESCRIPTION": " NL *被丢弃时自动打出."
+    "DESCRIPTION": " NL 手雷."
   },
   "deadCells:Rob": {
     "NAME": "掠夺",
@@ -114,7 +123,7 @@
   },
   "deadCells:FerrymanSLanternIII": {
     "NAME": "灵魂冲击",
-    "DESCRIPTION": "消耗所有 弹药 , NL 每枚 弹药 造成 !D! 点伤害. NL 消耗 ."
+    "DESCRIPTION": "消耗 !AB! 弹药 , NL 每枚 弹药 造成 !D! 点伤害. NL 消耗 ."
   },
   "deadCells:FerrymanSLanternII": {
     "NAME": "深渊汲取",
@@ -122,7 +131,7 @@
   },
   "deadCells:FerrymanSLantern": {
     "NAME": "冥河提灯",
-    "DESCRIPTION": " 选择加入手牌 . NL 未蓄力 :造成 !D! 点伤害,获得 !CN! 枚 弹药 . NL 蓄力 :消耗所有 弹药 ,每枚 弹药 造成 !HD! 点伤害. NL 已有 !AM! 枚 弹药 ."
+    "DESCRIPTION": " 选择加入手牌 . NL 未蓄力 :造成 !D! 点伤害,获得 !CN! 枚 弹药 . NL 蓄力 :消耗所有 弹药 ,每枚 弹药 造成 !HD! 点伤害. NL 已有 !AB! 枚 弹药 ."
   },
   "deadCells:Calm": {
     "NAME": "冷静",
@@ -356,7 +365,8 @@
   },
   "deadCells:RoundingKnife": {
     "NAME": "圆舞飞刀",
-    "DESCRIPTION": "给予所有敌人 !M! 层 虚弱 . NL 给予敌人3层 流血 ."
+    "DESCRIPTION": "给予所有敌人 !M! 层 虚弱 . NL 给予敌人3层 流血 .",
+    "UPGRADE_DESCRIPTION": "给予所有敌人 !M! 层 虚弱 . NL 给予敌人6层 流血 ."
   },
   "deadCells:CrowFeathers": {
     "NAME":"乌鸦之翼",

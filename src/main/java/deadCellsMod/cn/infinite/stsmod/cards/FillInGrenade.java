@@ -17,7 +17,7 @@ public class FillInGrenade extends DeadCellsCard {
 
     public FillInGrenade(){
         super(BASE_ID,STRINGS.NAME,IMG,0,STRINGS.DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.COMMON,CardTarget.SELF);
-
+        this.setBackgroundTexture(DeadCellsModInitializer.GOLD_SKILL_CARD, DeadCellsModInitializer.GOLD_SKILL_CARD_PORTRAIT);
         this.magicNumber = this.baseMagicNumber = 2;
         this.exhaust = true;
     }

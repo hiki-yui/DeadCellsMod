@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 public class MultipleNocksBow extends DeadCellsCard{
@@ -17,6 +18,8 @@ public class MultipleNocksBow extends DeadCellsCard{
 
     public MultipleNocksBow(){
         super(BASE_ID,STRINGS.NAME,"img/card/MultipleNocksBow.png",1,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.COMMON,CardTarget.ALL_ENEMY);
+
+        this.setBackgroundTexture(DeadCellsModInitializer.PURPLE_ATTACK_CARD, DeadCellsModInitializer.PURPLE_ATTACK_CARD_PORTRAIT);
 
         this.damage = this.baseDamage = 6;
         this.magicNumber = this.baseMagicNumber = 2;

@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsTags;
 
@@ -21,7 +22,7 @@ public class Defend_king extends DeadCellsCard {
         super(ID,NAME,IMG,COST,DESCRIPTION,CardType.SKILL,
                /* CardColor.BLUE*/AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.BASIC/*CardRarity.COMMON*/,CardTarget.SELF);
 
-
+        this.setBackgroundTexture(DeadCellsModInitializer.GREEN_SKILL_CARD, DeadCellsModInitializer.GREEN_SKILL_CARD_PORTRAIT);
         this.baseBlock = 5;
         /*this.baseBlock = 996;*/
         this.tags.add(CardTags.STARTER_DEFEND);

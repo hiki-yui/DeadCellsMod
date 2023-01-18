@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 
@@ -27,6 +28,7 @@ public class Strike_king extends CustomCard {
         super(ID,NAME,IMG_URL,BASE_COST,DESCRIPTION,TYPE,
                 AbstractDeadCellsEnum.DEAD_CELLS/*CardColor.BLUE*/,CardRarity.BASIC/*CardRarity.COMMON*/,
                 CardTarget.ENEMY);
+        this.setBackgroundTexture(DeadCellsModInitializer.RED_ATTACK_CARD, DeadCellsModInitializer.RED_ATTACK_CARD_PORTRAIT);
 
         this.baseDamage = 6;
         /*this.baseDamage = 996;*/

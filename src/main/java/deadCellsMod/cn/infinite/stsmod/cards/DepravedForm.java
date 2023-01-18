@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.powers.DepravedPower;
 
@@ -27,6 +28,7 @@ public class DepravedForm extends DeadCellsCard {
     public DepravedForm(){
         super(BASE_ID,STRINGS.NAME,IMG,3,STRINGS.DESCRIPTION,CardType.POWER, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.RARE,CardTarget.SELF);
 
+        this.setBackgroundTexture(DeadCellsModInitializer.RED2_PURPLE2_POWER_CARD, DeadCellsModInitializer.RED2_PURPLE2_POWER_CARD_PORTRAIT);
         this.baseMagicNumber = 1;
     }
 

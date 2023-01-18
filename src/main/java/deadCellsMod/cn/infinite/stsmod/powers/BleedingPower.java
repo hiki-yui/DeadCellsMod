@@ -1,9 +1,13 @@
 package deadCellsMod.cn.infinite.stsmod.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
@@ -35,8 +39,9 @@ public class BleedingPower extends AbstractPower implements CloneablePowerInterf
 
     @Override
     public void onPlayCard(AbstractCard card, AbstractMonster m) {
-        this.flash();
-        addToBot(new LoseHPAction(this.owner,null,this.amount==1?1:this.amount/2));
+        addToBot(new DamageAction(this.owner,
+                new DamageInfo(this.owner,this.amount==1?1:this.amount/2, DamageInfo.DamageType.HP_LOSS),
+                AbstractGameAction.AttackEffect.NONE));
         addToBot(new ReducePowerAction(owner,owner,ID,this.amount==1?1:this.amount/2));
     }
 

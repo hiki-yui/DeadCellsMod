@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsTags;
 
@@ -19,6 +20,7 @@ public class Grenade extends GrenadeCard {
 
     public Grenade(){
         super(BASE_ID,STRINGS.NAME,IMG,0,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.COMMON,CardTarget.ENEMY);
+        this.setBackgroundTexture(DeadCellsModInitializer.RED_ATTACK_CARD, DeadCellsModInitializer.RED_ATTACK_CARD_PORTRAIT);
 
         this.damageType = DamageInfo.DamageType.NORMAL;
         this.damage = this.baseDamage = 6;
@@ -42,7 +44,9 @@ public class Grenade extends GrenadeCard {
             if (!monster.equals(paramAbstractMonster)){
                 addToTop(new DamageAction(monster,new DamageInfo(paramAbstractPlayer,this.damage/2), AbstractGameAction.AttackEffect.FIRE,true));
             }
+
         }
+        super.use(paramAbstractPlayer,paramAbstractMonster);
     }
 
     //对其他敌人造成伤害一半的伤害,需要先计算出原伤害/2后的修正的伤害

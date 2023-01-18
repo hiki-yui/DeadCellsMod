@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.PoisonPower;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 public class AlchemyCarbine extends DeadCellsCard {
@@ -27,7 +28,7 @@ public class AlchemyCarbine extends DeadCellsCard {
         CardRarity.COMMON,CardTarget.SELF);
 
 
-
+        this.setBackgroundTexture(DeadCellsModInitializer.PURPLE_ATTACK_CARD, DeadCellsModInitializer.PURPLE_ATTACK_CARD_PORTRAIT);
         this.baseMagicNumber = 3;
         this.baseDraw = 2;
     }

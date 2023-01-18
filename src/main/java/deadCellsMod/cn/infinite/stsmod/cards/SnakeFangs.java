@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.PoisonPower;
 import com.megacrit.cardcrawl.vfx.combat.ClawEffect;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 public class SnakeFangs extends DeadCellsCard{
@@ -21,6 +22,7 @@ public class SnakeFangs extends DeadCellsCard{
 
     public SnakeFangs(){
         super(BASE_ID,STRINGS.NAME,"img/card/SnakeFangs.png",1,STRINGS.DESCRIPTION, AbstractCard.CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY);
+        this.setBackgroundTexture(DeadCellsModInitializer.RED2_PURPLE2_ATTACK_CARD, DeadCellsModInitializer.RED2_PURPLE2_ATTACK_CARD_PORTRAIT);
 
         this.baseDamage = 5;
         this.magicNumber = this.baseMagicNumber = 4;
