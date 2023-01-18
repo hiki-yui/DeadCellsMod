@@ -10,184 +10,631 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00662a60-fefe-49d9-afeb-5b823dd0ad22" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/DeadCellsRelic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/Defender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/FaceFlask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/KillingDeck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/SonicCarbine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/patch/FerrymanSLanternPatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/powers/GrenadePower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/powers/SCbPower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/variables/AmNumberVariable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/zhs/更新日志" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card/KillingDeck.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card/KillingDeck_p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card/SonicCarbine.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card/SonicCarbine_p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_gold_attack_dc_p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_gold_power_dc_p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_gold_skill_dc_p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_gray_attack_dc_p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_gray_power_dc_p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_gray_skill_dc_p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_green_attack_dc_p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_green_power_dc_p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_green_skill_dc_p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_purple2_green2_attack_dc_p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_purple2_green2_power_dc_p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_purple2_green2_skill_dc_p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_purple_attack_dc_p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_purple_power_dc_p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_purple_skill_dc_p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_red2_green2_attack_dc_p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_red2_green2_power_dc_p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_red2_green2_skill_dc_p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_red2_purple2_attack_dc_p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_red2_purple2_power_dc_p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_red2_purple2_skill_dc_p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_red_attack_dc_p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_red_power_dc_p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/1024/bg_red_skill_dc_p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_gold_attack_dc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_gold_power_dc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_gold_skill_dc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_gray_attack_dc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_gray_power_dc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_gray_skill_dc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_green_attack_dc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_green_power_dc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_green_skill_dc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_purple2_green2_attack_dc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_purple2_green2_power_dc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_purple2_green2_skill_dc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_purple_attack_dc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_purple_power_dc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_purple_skill_dc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_red2_green2_attack_dc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_red2_green2_power_dc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_red2_green2_skill_dc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_red2_purple2_attack_dc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_red2_purple2_power_dc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_red2_purple2_skill_dc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_red_attack_dc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_red_power_dc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_red_skill_dc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/powers/128/GrenadePower.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/powers/128/SCbPower.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/powers/48/GrenadePower.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/powers/48/SCbPower.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/relics/Defender.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/DeadCellsModInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/DeadCellsModInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/BackPack_at.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/BackPack_at.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/BackPack_sk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/BackPack_sk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/Chopper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/Chopper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/CorruptedArtifact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/CorruptedArtifact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/Counterattack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/Counterattack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/EmeraldAmulet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/EmeraldAmulet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/Nocturne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/Nocturne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/OpenWounds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/OpenWounds.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/PowerOfScroll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/PowerOfScroll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/Predator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/Predator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/SealsRecipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/SealsRecipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/SpirePace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/Relics/SpirePace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/APlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/APlan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/AlchemyCarbine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/AlchemyCarbine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/AttackDefend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/AttackDefend.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Backtrack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Backtrack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/BalancedBlade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/BalancedBlade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/BeginnerBow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/BeginnerBow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/BleedingSpread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/BleedingSpread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/BloodSword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/BloodSword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/BloodthirstyShield.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/BloodthirstyShield.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Calm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Calm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/ClusterGrenade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/ClusterGrenade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Cocoon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Cocoon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/CorrosiveCloud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/CorrosiveCloud.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/CrowFeathers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/CrowFeathers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/CursedSword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/CursedSword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Defend_king.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Defend_king.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/DepravedForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/DepravedForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/EmergencyDoor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/EmergencyDoor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/FerrymanSLantern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/FerrymanSLantern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/FillInGrenade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/FillInGrenade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/FireBlast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/FireBlast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/FireGrenade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/FireGrenade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Firebrands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Firebrands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/FireworksTechnician.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/FireworksTechnician.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/FranticSword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/FranticSword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/FrontLineShield.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/FrontLineShield.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/FrostBlast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/FrostBlast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Giantkiller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Giantkiller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Grenade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Grenade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/GrenadeCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/GrenadeCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/HattoriSKatana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/HattoriSKatana.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/HayabusaBoots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/HayabusaBoots.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/HayabusaGauntlets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/HayabusaGauntlets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Hemorrhage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Hemorrhage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/IceArmor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/IceArmor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/IceBow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/IceBow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/IceGrenade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/IceGrenade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/IceShield.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/IceShield.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/InASimilar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/InASimilar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/InTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/InTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/InsightInto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/InsightInto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/IronStaff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/IronStaff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/KnockBackShield.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/KnockBackShield.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/LaceratingAura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/LaceratingAura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/MagicMissiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/MagicMissiles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/MagneticGrenade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/MagneticGrenade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/MultipleNocksBow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/MultipleNocksBow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/NightLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/NightLight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/OilGrenade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/OilGrenade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/OiledSword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/OiledSword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Piano.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Piano.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/PianoII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/PianoII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/PianoIII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/PianoIII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Punishment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Punishment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Rampart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Rampart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Reckless.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Reckless.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/ReflectionSpeedUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/ReflectionSpeedUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/RegularSkill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/RegularSkill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Rob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Rob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Roll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Roll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/RootGrenade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/RootGrenade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/RoundingKnife.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/RoundingKnife.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Ruthless.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Ruthless.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/SOTF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/SOTF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/SadistStiletto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/SadistStiletto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Saucepan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Saucepan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/ScytheClaw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/ScytheClaw.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/ScytheClawII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/ScytheClawII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/SmokeBomb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/SmokeBomb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/SnakeFangs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/SnakeFangs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Speed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Speed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/SpeedDown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/SpeedDown.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/StrategyStagnated.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/StrategyStagnated.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Strike_king.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Strike_king.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/StunGrenade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/StunGrenade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/SwiftSword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/SwiftSword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/SymmetricalSpear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/SymmetricalSpear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/ThrowingKnife.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/ThrowingKnife.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/ThunderShield.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/ThunderShield.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Toothpick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Toothpick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Torch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Torch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Vampirism.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/cards/Vampirism.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/character/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/character/King.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/patch/OpenWoundsPatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/patch/OpenWoundsPatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/powers/BleedingPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/powers/BleedingPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/powers/BurnsPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deadCellsMod/cn/infinite/stsmod/powers/BurnsPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/dead cells/存疑、建议及反馈.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/eng/dead cells/存疑、建议及反馈.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/zhs/cards.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/zhs/cards.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/zhs/keywords.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/zhs/keywords.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/zhs/powers.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/zhs/powers.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/zhs/relics.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Strings/deadCells/zhs/relics.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dead-cells-mod-1.0.6.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/dead-cells-mod-1.0.6.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-infinite.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-infinite.AppTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/infinite.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/infinite.AppTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_3_18_35_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_3_18_35__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023_1_18_15_27_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023_1_18_15_27__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023_1_18_15_34__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]1/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ModTheSpire.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Strings/deadCells/eng/cards.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Strings/deadCells/eng/character.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Strings/deadCells/eng/dead cells/存疑、建议及反馈.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Strings/deadCells/eng/event.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Strings/deadCells/eng/keywords.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Strings/deadCells/eng/monsters.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Strings/deadCells/eng/powers.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Strings/deadCells/eng/relics.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Strings/deadCells/zhs/cards.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Strings/deadCells/zhs/character.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Strings/deadCells/zhs/event.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Strings/deadCells/zhs/keywords.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Strings/deadCells/zhs/monsters.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Strings/deadCells/zhs/powers.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Strings/deadCells/zhs/relics.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/audio/sound/AlchemyCarbine.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/audio/sound/DepravedForm.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/audio/sound/MagicMissiles.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/audio/sound/Parry.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/audio/sound/Piano.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/audio/sound/PianoII.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/audio/sound/PianoIII.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/audio/sound/Roll.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/audio/sound/RoundingKnife.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/audio/sound/ScytheClaw.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/audio/sound/ScytheClawII.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/audio/sound/Speed.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/audio/sound/SymmetricalSpearI.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/audio/sound/SymmetricalSpearII.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/audio/sound/SymmetricalSpearIII.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/audio/sound/ThrowingKnife.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/CardReward.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/DeadCellsModInitializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/Alive.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/BackPack_at.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/BackPack_sk.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/Chopper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/CorruptedArtifact.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/Counterattack.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/DeadCellsRelic.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/Defender.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/EmeraldAmulet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/FaceFlask.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/Nocturne.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/OpenWounds.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/Oppressive.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/PowerOfScroll$ScrollType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/PowerOfScroll.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/Predator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/SealsRecipe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/SpirePace.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Relics/Tactical.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/action/AddCardToHandAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/action/FireBlastAction$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/action/FireBlastAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/action/FrostBlastAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/action/GainAllEnemyBleedingPowerAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/action/GainBleedingPowerAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/action/GainBurnsPowerAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/action/HayabusaGauntletsAction$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/action/HayabusaGauntletsAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/action/UseTheSameCardAgainAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/action/VampirismAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/APlan$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/APlan$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/APlan$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/APlan.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/AlchemyCarbine.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/AttackDefend.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Backtrack$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Backtrack$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Backtrack.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/BalancedBlade.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/BeginnerBow.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/BleedingSpread.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/BloodSword.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/BloodthirstyShield.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Calm$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Calm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/ClusterGrenade.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Cocoon.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/CorrosiveCloud.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/CrowFeathers.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/CursedSword.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/DeadCellsCard.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Defend_king.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/DepravedForm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/EmergencyDoor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/FerrymanSLantern$FerrymanSLanternII.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/FerrymanSLantern$FerrymanSLanternIII.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/FerrymanSLantern.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/FillInGrenade.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/FireBlast.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/FireGrenade.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Firebrands.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/FireworksTechnician.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/FranticSword.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/FrontLineShield$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/FrontLineShield.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/FrostBlast.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Giantkiller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Grenade.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/GrenadeCard$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/GrenadeCard.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/HattoriSKatana.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/HayabusaBoots.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/HayabusaGauntlets.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Hemorrhage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/IceArmor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/IceBow.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/IceGrenade.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/IceShield.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/InASimilar.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/InTime.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/InsightInto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/IronStaff.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/KillingDeck.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/KnockBackShield.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/LaceratingAura.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/MagicMissiles.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/MagneticGrenade.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/MultipleNocksBow.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/NightLight.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/OilGrenade.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/OiledSword.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Piano$RhythmPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Piano.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/PianoII$RhythmPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/PianoII.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/PianoIII$RhythmPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/PianoIII.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Punishment.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Rampart$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Rampart.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Reckless$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Reckless$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Reckless.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/ReflectionSpeedUp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/RegularSkill.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Rob.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Roll$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Roll.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Roll_ButNot.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/RootGrenade$ConstrictedPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/RootGrenade.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/RoundingKnife.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Ruthless.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/SOTF$DexterityPowerII.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/SOTF$StrengthPowerII.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/SOTF.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/SadistStiletto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Saucepan.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/ScytheClaw.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/ScytheClawII$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/ScytheClawII.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/SmokeBomb.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/SnakeFangs.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/SonicCarbine.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Speed.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/SpeedDown.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/StrategyStagnated.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Strike_king.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/StunGrenade.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/SwiftSword.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/SymmetricalSpear.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/ThrowingKnife.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/ThunderShield.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Toothpick$ToothpickII.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Toothpick$ToothpickIII.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Toothpick$ToothpickIIII.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Toothpick.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Torch.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/UnKnowCard$UnKnowAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/UnKnowCard$UnKnowPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/UnKnowCard.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/cards/Vampirism.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/character/DepravedCase.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/character/King.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/enums/AbstractDeadCellsEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/enums/DeadCellsCharacterEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/enums/DeadCellsTags.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/enums/LibraryTypeEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/monster/Zombie.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/patch/FerrymanSLanternPatch.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/patch/OpenWoundsPatch.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/AttackDefendPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/BleedingPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/BleedingSpreadPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/BloodthirstyShieldPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/BurnsPower$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/BurnsPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/CocoonPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/CorrosiveCloudPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/DeadCellsPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/DepravedPower$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/DepravedPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/FireworksTechnicianPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/FlightPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/FrostbitePower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/GrenadePower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/IceShieldPower$GainStrengthPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/IceShieldPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/InTimePower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/IronStaffPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/LaceratingAuraPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/MagneticPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/NextTurnLoseFlightPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/NightLightPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/NocturneAttackedPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/OilPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/RampartPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/ReflectionSpeedUpPower$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/ReflectionSpeedUpPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/RegularSkillPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/RobPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/RuthlessPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/SCbPower$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/SCbPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/SmokeBombPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/powers/SpeedPower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/utils/CardUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/utils/FileUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/utils/ImgUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/stsmod/utils/Keywords.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/variables/AmNumberVariable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/variables/AmmunitionVariables$MaxAmmunitionVariables.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/variables/AmmunitionVariables.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/variables/BurnsVariable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/variables/ChangeNumVariables.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/deadCellsMod/cn/infinite/variables/HeavyDamageVariables.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/APlan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/APlan_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/AlchemyCarbine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/AlchemyCarbine_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/AttackDefend.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/AttackDefend_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Backtrack.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Backtrack_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/BalancedBlade.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/BalancedBlade_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/BeginnerBow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/BeginnerBow_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/BleedingSpread.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/BleedingSpread_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/BloodSword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/BloodSword_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/BloodthirstyShield.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/BloodthirstyShield_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Calm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Calm_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/ClusterGrenade.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/ClusterGrenade_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Cocoon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Cocoon_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/CorrosiveCloud.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/CorrosiveCloud_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/CrowFeathers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/CrowFeathers_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/CursedSword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/CursedSword_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/FerrymanSLantern.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/FerrymanSLanternIII.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/FerrymanSLanternIII_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/FerrymanSLantern_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/FillInGrenade.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/FillInGrenade_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/FireBlast.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/FireBlast_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/FireGrenade.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/FireGrenade_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Firebrands.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Firebrands_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/FireworksTechnician.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/FireworksTechnician_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/FranticSword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/FranticSword_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/FrontLineShield.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/FrontLineShield_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/FrostBlast.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/FrostBlast_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Giantkiller.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Giantkiller_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Grenade.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Grenade_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/HattoriSKatana.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/HattoriSKatana_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/HayabusaBoots.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/HayabusaBoots_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/HayabusaGauntlets.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/HayabusaGauntlets_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Hemorrhage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Hemorrhage_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/IceArmor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/IceArmor_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/IceBow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/IceBow_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/IceCrossbow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/IceCrossbowIII.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/IceCrossbowIII_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/IceCrossbow_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/IceGrenade.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/IceGrenade_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/IceShield.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/IceShield_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/InASimilar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/InASimilar_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/InTime.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/InTime_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/InsightInto.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/InsightInto_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/IronStaff.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/IronStaff_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/KillingDeck.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/KillingDeck_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/KnockBackShield.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/KnockBackShield_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/LaceratingAura.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/LaceratingAura_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/MagicMissiles.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/MagicMissiles_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/MagneticGrenade.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/MagneticGrenade_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/MultipleNocksBow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/MultipleNocksBow_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/NightLight.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/NightLight_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/OilGrenade.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/OilGrenade_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/OiledSword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/OiledSword_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Piano.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Piano_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Punishment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Punishment_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Pyrotechnics.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Pyrotechnics_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Rampart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Rampart_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Reckless.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Reckless_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/ReflectionSpeedUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/ReflectionSpeedUp_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/RegularSkill.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/RegularSkill_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Rob.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Rob_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/RootGrenade.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/RootGrenade_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/RoundingKnife.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/RoundingKnife_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/SOTF.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/SOTF_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/SadistStiletto.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/SadistStiletto_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Saucepan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Saucepan_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/ScytheClaw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/ScytheClawII.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/ScytheClawII_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/ScytheClaw_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/SmokeBomb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/SmokeBomb_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/SnakeFangs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/SnakeFangs_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/SonicCarbine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/SonicCarbine_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Speed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/SpeedDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/SpeedDown_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Speed_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/StrategyStagnated.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/StrategyStagnated_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/StunGrenade.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/StunGrenade_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/SwiftSword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/SwiftSword_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/SymmetricalSpear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/SymmetricalSpear_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/ThrowingKnife.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/ThrowingKnife_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/ThunderShield.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/ThunderShield_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Toothpick.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/ToothpickIII.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/ToothpickIII_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Toothpick_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Torch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Torch_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Vampirism.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/Vampirism_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/defend.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/defend_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/depraved.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/depraved_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/roll.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/roll_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/sadistic_nature.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/sadistic_nature_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/strike.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/strike_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/theDoor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/theDoor_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/均衡之刃.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/火药大师.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card/绿框.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/1024/attack_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/1024/bg_gold_attack_dc_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/1024/bg_gold_power_dc_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/1024/bg_gold_skill_dc_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/1024/bg_gray_attack_dc_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/1024/bg_gray_power_dc_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/1024/bg_gray_skill_dc_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/1024/bg_green_attack_dc_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/1024/bg_green_power_dc_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/1024/bg_green_skill_dc_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/1024/bg_purple2_green2_attack_dc_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/1024/bg_purple2_green2_power_dc_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/1024/bg_purple2_green2_skill_dc_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/1024/bg_purple_attack_dc_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/1024/bg_purple_power_dc_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/1024/bg_purple_skill_dc_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/1024/bg_red2_green2_attack_dc_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/1024/bg_red2_green2_power_dc_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/1024/bg_red2_green2_skill_dc_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/1024/bg_red2_purple2_attack_dc_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/1024/bg_red2_purple2_power_dc_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/1024/bg_red2_purple2_skill_dc_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/1024/bg_red_attack_dc_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/1024/bg_red_power_dc_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/1024/bg_red_skill_dc_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/1024/energy_orb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/1024/power_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/1024/skill_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/512/attack_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/512/bg_gold_attack_dc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/512/bg_gold_power_dc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/512/bg_gold_skill_dc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/512/bg_gray_attack_dc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/512/bg_gray_power_dc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/512/bg_gray_skill_dc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/512/bg_green_attack_dc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/512/bg_green_power_dc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/512/bg_green_skill_dc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/512/bg_purple2_green2_attack_dc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/512/bg_purple2_green2_power_dc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/512/bg_purple2_green2_skill_dc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/512/bg_purple_attack_dc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/512/bg_purple_power_dc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/512/bg_purple_skill_dc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/512/bg_red2_green2_attack_dc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/512/bg_red2_green2_power_dc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/512/bg_red2_green2_skill_dc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/512/bg_red2_purple2_attack_dc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/512/bg_red2_purple2_power_dc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/512/bg_red2_purple2_skill_dc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/512/bg_red_attack_dc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/512/bg_red_power_dc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/512/bg_red_skill_dc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/512/energy_orb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/512/energy_small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/512/power_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/512/skill_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/card_bg/cardBgTemp.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/char_portraits/animation/DeadCells_normal.atlas" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/char_portraits/animation/DeadCells_normal.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/char_portraits/animation/DeadCells_normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/char_portraits/animation/DeadCells_normal_1.atlas" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/char_portraits/animation/DeadCells_normal_1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/char_portraits/animation/DeadCells_normal_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/char_portraits/kingCorpse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/char_portraits/kingPortrait.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/char_portraits/kingShoulder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/char_portraits/kingShoulder2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/char_portraits/orb/layer1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/char_portraits/orb/layer1d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/char_portraits/orb/layer2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/char_portraits/orb/layer2d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/char_portraits/orb/layer3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/char_portraits/orb/layer3d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/char_portraits/orb/layer4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/char_portraits/orb/layer4d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/char_portraits/orb/layer5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/char_portraits/orb/layer5d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/char_portraits/orb/layer6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/char_portraits/orb/vfx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/char_select/endScene1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/char_select/endScene2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/char_select/endScene3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/char_select/king.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/char_select/portrait.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/NewProject.autosave.autosave.scml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/NewProject.autosave.scml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/body.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/body2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/energy_orb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/eye.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/head.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/head2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/head3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/head4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/kind-.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/kind.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/king.scml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/king_run.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/king_under.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/leftarm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/leftarm_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/leftarm_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/leftarm_I.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/leftarm_II.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/leftarm_III.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/lefthand.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/leftleg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/rightarm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/rightleg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/run_body.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/run_head.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/run_left_leg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/run_leftleg_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/run_right_arm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/run_right_leg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/character/run_rightleg_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/monster/Zombie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/monster/zombie.atlas" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/monster/zombie0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/AttackDefendPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/BleedingPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/BleedingSpreadPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/BloodthirstyShieldPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/BurnsPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/CocoonPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/ConstrictedPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/CorrosiveCloudPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/DepravedPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/FireworksTechnicianPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/FrostbitePower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/GrenadePower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/IceShieldPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/InTimePower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/IronStaffPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/LaceratingAuraPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/MagneticPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/NextTurnLoseFlightPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/NightLightPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/NocturneAttackedPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/OilPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/RampartPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/ReflectionSpeedUpPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/RegularSkillPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/RhythmPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/RhythmPowerII.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/RhythmPowerIII.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/RobPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/RuthlessPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/SCbPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/SmokeBombPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/SpeedPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/128/UnKnowPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/AttackDefendPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/BleedingPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/BleedingSpreadPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/BloodthirstyShieldPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/BurnsPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/CocoonPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/ConstrictedPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/CorrosiveCloudPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/DepravedPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/FireworksTechnicianPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/FrostbitePower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/GrenadePower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/IceShieldPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/InTimePower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/IronStaffPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/LaceratingAuraPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/MagneticPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/NextTurnLoseFlightPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/NightLightPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/NocturneAttackedPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/OilPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/RampartPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/ReflectionSpeedUpPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/RegularSkillPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/RhythmPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/RhythmPowerII.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/RhythmPowerIII.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/RobPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/RuthlessPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/SCbPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/SmokeBombPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/SpeedPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/powers/48/UnKnowPower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/relics/Chopper.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/relics/CorruptedArtifact.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/relics/Counterattack.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/relics/Defender.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/relics/Defener.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/relics/EmeraldAmulet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/relics/OpenWounds.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/relics/PowerOfScroll.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/relics/Predator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/relics/SealsRecipe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/relics/SealsRecipe2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/relics/alive.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/relics/backpack_at.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/relics/backpack_sk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/relics/nocturne.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/relics/oppressive.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/relics/spirePace.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/relics/tactical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/relics/加速.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/relics/未标题-1.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/relics/老婆剑.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/relics/随机应变.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/infinite/AppTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -992,7 +1439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673681854794</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="none">
+      <created>1674027292984</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1674027292984</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">

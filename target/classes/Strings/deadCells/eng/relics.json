@@ -1,0 +1,132 @@
+{
+  "deadCells:CorruptedArtifact": {
+    "NAME": "Corrupted Artifact",
+    "FLAVOR": "You can smell the danger emitted from it.",
+    "DESCRIPTIONS": [
+      "Upon pickup, gain",
+      " #yGold. Take double damage in your next combat.",
+      " #rCurse lifted."
+    ]
+  },
+  "deadCells:Predator": {
+    "NAME": "Predator",
+    "FLAVOR": "Like a super agent.",
+    "DESCRIPTIONS":[
+      "Whenever you kill an enemy, gain #b",
+      " [#c1bdbd]Invisible."
+    ]
+  },
+  "deadCells:OpenWounds": {
+    "NAME": "Open Wounds",
+    "FLAVOR": "Sharp blades, sharp wounds.",
+    "DESCRIPTIONS":[
+      "Whenever you deal unblocked damage, apply #b",
+      " #yBleeding."
+    ]
+  },
+  "deadCells:Tactical": {
+    "NAME": "Tactical Scroll",
+    "FLAVOR": "Victory on the high ground.",
+    "DESCRIPTIONS": [
+      "Upon pickup, remove #b1 card from your deck."
+    ]
+  },
+  "deadCells:Alive": {
+    "NAME": "Survival Scroll",
+    "FLAVOR": "Reach that place...",
+    "DESCRIPTIONS": [
+      "Upon pickup, gain #b",
+      " max HP. At the start of combat, heal #b",
+      " HP."
+    ]
+  },
+  "deadCells:Oppressive": {
+    "NAME": "Brutal Scroll",
+    "FLAVOR": "The best defense is offense.",
+    "DESCRIPTIONS": [
+      "Upon pickup, upgrade #b",
+      " card. At the start of combat, gain",
+      " Strength."
+    ]
+  },
+  "deadCells:PowerOfScroll": {
+    "NAME":"Scroll of Power",
+    "FLAVOR": "No pain, no gain.",
+    "DESCRIPTIONS": [
+      "Lose ",
+      " max HP. NL Choose 1 from 3 #yScrolls #b",
+      " times."
+    ]
+  },
+  "deadCells:SealsRecipe": {
+    "NAME": "Sealed Secret",
+    "FLAVOR": "Having strived to open it, you find yourself more agile.",
+    "DESCRIPTIONS": [
+      "Start each combat with #b",
+      " #yDexterity and #b",
+      " #yStrength."
+    ]
+  },
+  "deadCells:Counterattack": {
+    "NAME": "Counterattack",
+    "FLAVOR": "Respond in kind.",
+    "DESCRIPTIONS": [
+      "Your next attack deal #b",
+      " additional damage whenever you block all damage."
+    ]
+  },
+  "deadCells:Chopper": {
+    "NAME": "Slayer",
+    "FLAVOR": "No Mercy.",
+    "DESCRIPTIONS": [
+      "At the end of your turn, execute enemies with less than #b",
+      "% HP."
+    ]
+  },
+  "deadCells:Nocturne": {
+    "NAME": "Nocturne",
+    "FLAVOR": "A sealed sword with its own consciousness",
+    "DESCRIPTIONS": [
+      "Whenever you play #b",
+      " Skills, #b",
+      " random enemy takes #b",
+      " damage and receives #b",
+      " #yNocturned."
+    ]
+  },
+  "deadCells:SpirePace": {
+    "NAME": "Killing Pace",
+    "FLAVOR":"You know your next move without even thinking.",
+    "DESCRIPTIONS": [
+      "Whenever you play a different type of card, draw #b",
+      " card."
+    ]
+  },
+
+  "deadCells:EmeraldAmulet": {
+    "NAME": "Emerald Amulet",
+    "FLAVOR":"Unknown amulet，shines when in danger.",
+    "DESCRIPTIONS": [
+      "At the start of combat, add #b",
+      " #yRoll with #yRetain and #yExhaust into your hand."
+    ]
+  },
+  "deadCells:BackPack_at": {
+    "NAME": "Porcupack",
+    "FLAVOR": "An old backpack which lets you store more weapons.",
+    "DESCRIPTIONS": [
+      "Upon pickup, at most replace #b",
+      " #yDefend in your deck into #yRoll . Whenever you play a #yRoll , play the copy of a random #yAttack in your draw pile.",
+      "ROLL,ROLL,ROLL!!!"
+    ]
+  },
+  "deadCells:BackPack_sk": {
+    "NAME": "Acrobatipack",
+    "FLAVOR": "A delicate backpack full of strange schemes.",
+    "DESCRIPTIONS": [
+      "Upon pickup, at most replace #b",
+      " #yStrike in your deck into #yRoll, Whenever you play a #yRoll, play the copy of a random #ySkill in your draw pile. (Except Roll)",
+      "Roll? Roll!"
+    ]
+  }
+}
