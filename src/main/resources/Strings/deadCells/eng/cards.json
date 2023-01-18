@@ -1,4 +1,15 @@
 {
+  "deadCells:KillingDeck": {
+    "NAME": "Deadly Deck",
+    "DESCRIPTION": "Deal !D! damage. Put a random *Skill from your discard pile into your hand."
+  },
+  "deadCells:SonicCarbine": {
+    "NAME": "Sonic Carbine",
+    "DESCRIPTION": "Shoot the next !M! *Attacks you draw."
+  },
+  "deadCells:GrenadeCard": {
+    "DESCRIPTION": " NL Grenade."
+  }
   "deadCells:Rob": {
     "NAME": "Pillage",
     "DESCRIPTION": "Gain !CN! Dexterity. NL At the end of combat, gain !M! additional Gold."
@@ -95,7 +106,7 @@
   },
   "deadCells:FerrymanSLanternIII": {
     "NAME": "Soul Shot",
-    "DESCRIPTION": "Consume all ammo, each deals !D! damage. NL Exhaust."
+    "DESCRIPTION": "Consume !AB! ammo, each deals !D! damage. NL Exhaust."
   },
   "deadCells:FerrymanSLanternII": {
     "NAME": "Soul Gathering",
@@ -103,7 +114,7 @@
   },
   "deadCells:FerrymanSLantern": {
     "NAME": "Ferryman's Lantern",
-    "DESCRIPTION": "Choose 1 of 2 cards to add into your hand. NL Uncharged: Deal !D! damage, gain !AM! ammo. NL Charged: Consume all ammo, each deals !D! damage. NL !AM! ammo charged."
+    "DESCRIPTION": "Choose 1 of 2 cards to add into your hand. NL Uncharged: Deal !D! damage, gain !CN! ammo. NL Charged: Consume all ammo, each deals !HD! damage. NL !AB! ammo charged."
   },
   "deadCells:Calm": {
     "NAME": "Calm",
@@ -337,7 +348,8 @@
   },
   "deadCells:RoundingKnife": {
     "NAME": "Knife Dance",
-    "DESCRIPTION": "Apply !M! Weak and 3 Bleeding to ALL enemies."
+    "DESCRIPTION": "Apply !M! Weak and 3 Bleeding to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Apply !M! Weak and 6 Bleeding to ALL enemies."
   },
   "deadCells:CrowFeathers": {
     "NAME":"Wings of the Crow",
