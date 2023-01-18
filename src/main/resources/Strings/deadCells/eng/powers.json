@@ -1,4 +1,18 @@
 {
+  "deadCells:GrenadePower": {
+    "NAME": "Grenade ",
+    "DESCRIPTIONS": [
+      "Return to your draw pile in #b",
+      " turn(s)."
+    ]
+  },
+  "deadCells:SCbPower": {
+  "NAME": "Sonic Speed",
+  "DESCRIPTIONS": [
+    "Shoot the next #b",
+    " #yAttacks your draw."
+  ]
+  },
   "deadCells:RobPower": {
     "NAME": "Pillage",
     "DESCRIPTIONS": [
@@ -51,7 +65,7 @@
   "deadCells:LaceratingAuraPower": {
     "NAME": "Lacerating Aura",
     "DESCRIPTIONS": [
-      "Whenever you deal #yUnblocked Damage£¨apply #b",
+      "Whenever you deal #yUnblocked DamageÔºåapply #b",
       " #rBleeding."
     ]
   },
@@ -87,7 +101,7 @@
   "deadCells:MagneticPower": {
     "NAME": "Magnetic Field",
     "DESCRIPTIONS": [
-      "This turn£¨whenever this enemy takes damage, you gain #b",
+      "This turnÔºåwhenever this enemy takes damage, you gain #b",
       " #yBlock."
     ]
   },
@@ -112,11 +126,11 @@
     "DESCRIPTIONS": [
       "Deal #b",
       "% less damage. On the basis of that, damage reduced by #b",
-      "£¨Frost is reduced by 2 at the start of your turn."
+      "ÔºåFrost is reduced by 2 at the start of your turn."
     ]
   },
   "UnKnowPower": {
-    "NAME": "@¿¥◊‘æ≥ΩÁµƒ…Ÿ≈Æ",
+    "NAME": "@Êù•Ëá™Â¢ÉÁïåÁöÑÂ∞ëÂ•≥",
     "DESCRIPTIONS": [
       "???"
     ]
@@ -152,7 +166,7 @@
   "deadCells:RampartPower": {
     "NAME": "Rampart",
     "DESCRIPTIONS": [
-      "Take no #yAttack damage£¨lasts #b",
+      "Take no #yAttack damageÔºålasts #b",
       " turns."
     ]
   },
@@ -182,7 +196,7 @@
     "NAME": "Speed",
     "DESCRIPTIONS": [
       "Whenever you play #b",
-      " card£¨draw #b",
+      " cardÔºådraw #b",
       " card and gain #b",
       " #yBlock. Stack reduced by #b",
       "."
@@ -192,9 +206,9 @@
     "NAME": "Bleeding",
     "DESCRIPTIONS": [
       "Whenever you play #b",
-      " card£¨take #y",
-      " damage£¨stack reduced by #y",
-      " °£"
+      " cardÔºåtake #y",
+      " damageÔºåstack reduced by #y",
+      " „ÄÇ"
     ]
   },
   "deadCells:NextTurnLoseFlightPower": {
