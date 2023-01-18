@@ -115,7 +115,7 @@
     "NAME": "Porcupack",
     "FLAVOR": "An old backpack which lets you store more weapons.",
     "DESCRIPTIONS": [
-      "Upon pickup, at most replace #b",
+      "Starts each turn with #b1 less [E]. NL Upon pickup, at most replace #b",
       " #yDefend in your deck into #yRoll . Whenever you play a #yRoll , play the copy of a random #yAttack in your draw pile.",
       "ROLL,ROLL,ROLL!!!"
     ]
@@ -124,7 +124,7 @@
     "NAME": "Acrobatipack",
     "FLAVOR": "A delicate backpack full of strange schemes.",
     "DESCRIPTIONS": [
-      "Upon pickup, at most replace #b",
+      "Starts each turn with #b1 less [E]. NL Upon pickup, at most replace #b",
       " #yStrike in your deck into #yRoll, Whenever you play a #yRoll, play the copy of a random #ySkill in your draw pile. (Except Roll)",
       "Roll? Roll!"
     ]
