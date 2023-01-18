@@ -1,5 +1,26 @@
 {
   "keywords": [
+        {
+      "NAMES":[
+        "grenade",
+        "grenade."
+      ],
+      "DESCRIPTION": "Also treated as played when discarded. Return to your draw pile next turn."
+    },
+    {
+      "NAMES":[
+        "uncharged",
+        "uncharged."
+      ],
+      "DESCRIPTION": "A choice that is always a 1-cost #yAttack card."
+    },
+    {
+      "NAMES":[
+        "charged",
+        "charged."
+      ],
+      "DESCRIPTION": "A choice that is always a 2-cost #yAttack card.
+    },
     {
       "NAMES": [        "Bleeding",        "Bleeding."      ],
       "DESCRIPTION": "Receive damage for every card played, stack halfed."
@@ -36,5 +57,6 @@
       "NAMES": [        "Invisible",        "Invisible."      ],
       "DESCRIPTION": "Receive #b20% less damage."
     }
+   
   ]
 }
