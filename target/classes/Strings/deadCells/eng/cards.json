@@ -194,7 +194,7 @@
   },
   "deadCells:Pyrotechnics": {
     "NAME": "Pyrotechnics",
-    "DESCRIPTION": "Choose 1 of 3 cards to add into your hand. NL Charged I: Consume up to !M! ammo, each deals !D! damage. NL Charged Ⅱ: Consume 1 ammo to deal !D! damage and apply !Burns! Burning. NL Charge: Gain !M! ammo and !B! Block NL Exhaust. NL ( !AM! / !MAM! )"
+    "DESCRIPTION": "Choose 1 of 3 cards to add into your hand. NL Charged I: Consume up to !M! ammo, each deals !D! damage. NL Charged 垄貌: Consume 1 ammo to deal !D! damage and apply !Burns! Burning. NL Charge: Gain !M! ammo and !B! Block NL Exhaust. NL ( !AM! / !MAM! )"
   },
   "deadCells:SOTF": {
     "NAME": "Survival of the Fittest",
@@ -249,7 +249,7 @@
     ]
   },
   "UnKnowCard": {
-    "NAME": "@来自境界的少女",
+    "NAME": "@脌麓脳脭戮鲁陆莽碌脛脡脵脜庐",
     "DESCRIPTION": "???"
   },
   "deadCells:ThrowingKnife": {
@@ -303,7 +303,7 @@
   },
   "deadCells:Ruthless": {
     "NAME": "Cruel",
-    "DESCRIPTION": "Whenever you apply 2 debuffs to an enemy, draw !M! card."
+    "DESCRIPTION": "Whenever you apply 2 debuffs to an enemy, draw !M! card. NL Can only trigger at most 5 times each turn."
   },
   "deadCells:Rampart": {
     "NAME": "Rampart",
