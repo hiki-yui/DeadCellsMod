@@ -56,6 +56,9 @@
     <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_red_attack_dc.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_red_power_dc.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources/img/card_bg/512/bg_red_skill_dc.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/monster/TheGiant.atlas" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/monster/TheGiant.json" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/img/monster/TheGiant.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources/img/monster/zombie.atlas" charset="ISO-8859-2" />
     <file url="PROJECT" charset="GBK" />
   </component>

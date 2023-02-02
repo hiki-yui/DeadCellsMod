@@ -1,5 +1,6 @@
 package deadCellsMod.cn.infinite.stsmod.powers;
 
+import basemod.abstracts.CustomSavable;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -11,10 +12,21 @@ import deadCellsMod.cn.infinite.stsmod.cards.GrenadeCard;
 import java.util.LinkedList;
 import java.util.List;
 
-public class GrenadePower extends DeadCellsPower {
+public class GrenadePower extends DeadCellsPower implements CustomSavable<Boolean> {
     public static final String BASE_ID = "deadCells:GrenadePower";
     private static final PowerStrings STRINGS = CardCrawlGame.languagePack .getPowerStrings(BASE_ID);
     private static final List<GrenadeCard> gs = new LinkedList<>();
+
+    @Override
+    public Boolean onSave() {
+        gs.clear();
+        return null;
+    }
+
+    @Override
+    public void onLoad(Boolean aBoolean) {
+
+    }
 
     public GrenadePower(AbstractCreature player, GrenadeCard g){
         super(BASE_ID,STRINGS,player,1,PowerType.BUFF,true);
@@ -49,4 +61,6 @@ public class GrenadePower extends DeadCellsPower {
     public void onVictory() {
         gs.clear();
     }
+
+
 }

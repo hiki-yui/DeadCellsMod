@@ -3,12 +3,14 @@ E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\AttackD
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\BloodthirstyShield.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\Torch.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\PianoIII.java
+E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\monster\DeadCellsMonster.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\Hemorrhage.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\FrostBlast.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\Ruthless.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\powers\SmokeBombPower.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\SymmetricalSpear.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\action\FireBlastAction.java
+E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\SonicCarbine.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\action\GainBleedingPowerAction.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\powers\FlightPower.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\utils\ImgUtils.java
@@ -19,6 +21,7 @@ E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\SadistS
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\Relics\Nocturne.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\Relics\Defender.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\HayabusaBoots.java
+E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\patch\MainMenuPatch.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\utils\CardUtils.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\CrowFeathers.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\FireworksTechnician.java
@@ -31,6 +34,7 @@ E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\Hattori
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\StunGrenade.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\powers\LaceratingAuraPower.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\Speed.java
+E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\patch\FerrymanSLanternPatch.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\Reckless.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\powers\BleedingPower.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\utils\Keywords.java
@@ -58,6 +62,7 @@ E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\Relics\Predat
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\ClusterGrenade.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\IceBow.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\powers\RampartPower.java
+E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\variables\AmNumberVariable.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\powers\RobPower.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\Firebrands.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\NightLight.java
@@ -74,12 +79,14 @@ E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\powers\OilPow
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\Toothpick.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\powers\FireworksTechnicianPower.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\Relics\DeadCellsRelic.java
+E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\Relics\FaceFlask.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\Punishment.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\powers\AttackDefendPower.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\Relics\BackPack_at.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\SmokeBomb.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\powers\BleedingSpreadPower.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\variables\HeavyDamageVariables.java
+E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\powers\SCbPower.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\Relics\Oppressive.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\Relics\Chopper.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\Rob.java
@@ -91,6 +98,7 @@ E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\Corrosi
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\FerrymanSLantern.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\BleedingSpread.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\BloodSword.java
+E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\powers\GrenadePower.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\CardReward.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\enums\LibraryTypeEnum.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\Relics\Tactical.java
@@ -132,6 +140,7 @@ E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\OiledSw
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\powers\BurnsPower.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\Test.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\action\AddCardToHandAction.java
+E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\monster\TheGiant.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\FireBlast.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\LaceratingAura.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\RootGrenade.java
@@ -150,6 +159,7 @@ E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\Balance
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\BeginnerBow.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\character\King.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\action\HayabusaGauntletsAction.java
+E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\KillingDeck.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\MagneticGrenade.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\cards\Strike_king.java
 E:\game\deadCellsMod\src\main\java\deadCellsMod\cn\infinite\stsmod\enums\DeadCellsTags.java

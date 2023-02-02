@@ -28,6 +28,7 @@ deadCellsMod\cn\infinite\stsmod\powers\BurnsPower.class
 deadCellsMod\cn\infinite\stsmod\cards\FerrymanSLantern.class
 deadCellsMod\cn\infinite\stsmod\cards\CrowFeathers.class
 deadCellsMod\cn\infinite\stsmod\cards\HayabusaBoots.class
+deadCellsMod\cn\infinite\stsmod\monster\TheGiant.class
 deadCellsMod\cn\infinite\stsmod\cards\SOTF$StrengthPowerII.class
 deadCellsMod\cn\infinite\stsmod\cards\MagneticGrenade.class
 deadCellsMod\cn\infinite\stsmod\cards\FillInGrenade.class
@@ -40,6 +41,7 @@ deadCellsMod\cn\infinite\stsmod\Relics\DeadCellsRelic.class
 deadCellsMod\cn\infinite\stsmod\enums\DeadCellsTags.class
 deadCellsMod\cn\infinite\variables\BurnsVariable.class
 deadCellsMod\cn\infinite\stsmod\powers\RampartPower.class
+deadCellsMod\cn\infinite\stsmod\patch\MainMenuPatch$ArtPatch.class
 deadCellsMod\cn\infinite\stsmod\cards\Backtrack.class
 deadCellsMod\cn\infinite\stsmod\Relics\CorruptedArtifact.class
 deadCellsMod\cn\infinite\stsmod\cards\PianoIII$RhythmPower.class
@@ -77,6 +79,7 @@ deadCellsMod\cn\infinite\stsmod\powers\NocturneAttackedPower.class
 deadCellsMod\cn\infinite\stsmod\powers\LaceratingAuraPower.class
 deadCellsMod\cn\infinite\stsmod\powers\BurnsPower$1.class
 deadCellsMod\cn\infinite\stsmod\utils\FileUtil.class
+deadCellsMod\cn\infinite\stsmod\cards\GrenadeCard$2.class
 deadCellsMod\cn\infinite\stsmod\cards\StunGrenade.class
 deadCellsMod\cn\infinite\stsmod\cards\FireBlast.class
 deadCellsMod\cn\infinite\stsmod\cards\Piano.class
@@ -171,9 +174,11 @@ deadCellsMod\cn\infinite\variables\AmmunitionVariables.class
 deadCellsMod\cn\infinite\stsmod\cards\Hemorrhage.class
 deadCellsMod\cn\infinite\stsmod\cards\FrontLineShield$1.class
 deadCellsMod\cn\infinite\stsmod\character\King.class
+deadCellsMod\cn\infinite\stsmod\monster\DeadCellsMonster.class
 deadCellsMod\cn\infinite\stsmod\cards\Cocoon.class
 deadCellsMod\cn\infinite\stsmod\cards\Toothpick$ToothpickIIII.class
 deadCellsMod\cn\infinite\stsmod\cards\OilGrenade.class
+deadCellsMod\cn\infinite\stsmod\patch\MainMenuPatch.class
 deadCellsMod\cn\infinite\stsmod\cards\Backtrack$1.class
 deadCellsMod\cn\infinite\stsmod\cards\EmergencyDoor.class
 deadCellsMod\cn\infinite\stsmod\cards\Torch.class

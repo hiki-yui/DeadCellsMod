@@ -9,7 +9,7 @@
   },
   "deadCells:GrenadeCard": {
     "DESCRIPTION": " NL Grenade."
-  }
+  },
   "deadCells:Rob": {
     "NAME": "Pillage",
     "DESCRIPTION": "Gain !CN! Dexterity. NL At the end of combat, gain !M! additional Gold."

@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.dungeons.Exordium;
+import com.megacrit.cardcrawl.dungeons.TheBeyond;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.monsters.MonsterInfo;
 import com.megacrit.cardcrawl.powers.AbstractPower;
@@ -26,6 +27,7 @@ import deadCellsMod.cn.infinite.stsmod.character.King;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsCharacterEnum;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsTags;
+import deadCellsMod.cn.infinite.stsmod.monster.TheGiant;
 import deadCellsMod.cn.infinite.stsmod.monster.Zombie;
 import deadCellsMod.cn.infinite.stsmod.utils.Keywords;
 import deadCellsMod.cn.infinite.variables.*;
@@ -205,7 +207,9 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
     @Override
     public void receivePostInitialize() {
         BaseMod.addMonster( "deadCells:Zombie",() -> new Zombie(0.0F, 0.0F));
+        //BaseMod.addMonster("deadCells:TheGiant", TheGiant::new);
         BaseMod.addStrongMonsterEncounter(Exordium.ID,new MonsterInfo("deadCells:Zombie",7));
+        //BaseMod.addBoss(TheBeyond.ID,TheGiant.BASE_ID,"img/monster/guardian_o.png","img/monster/guardian.png");
     }
 
     @Override

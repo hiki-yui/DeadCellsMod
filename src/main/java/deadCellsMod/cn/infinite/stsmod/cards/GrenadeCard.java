@@ -64,11 +64,17 @@ public abstract class GrenadeCard extends DeadCellsCard {
 
     @Override
     public void onMoveToDiscard() {
-        super.onMoveToDiscard();
-        if (remove){
-            AbstractDungeon.player.discardPile.removeCard(this);
-            remove = false;
-        }
+        AbstractCard c = this;
+        addToTop(new AbstractGameAction() {
+            @Override
+            public void update() {
+                if (remove){
+                    AbstractDungeon.player.discardPile.removeCard(c);
+                    remove = false;
+                }
+                isDone = true;
+            }
+        });
     }
 
 
@@ -93,8 +99,8 @@ public abstract class GrenadeCard extends DeadCellsCard {
         /*AbstractDungeon.actionManager.addCardQueueItem(new CardQueueItem(this,
                 true,AbstractDungeon.player.energy.energy,true,true));*/
         AbstractCard thisCard = this;
+        remove = true;
         addToBot(new NewQueueCardAction(this, AbstractDungeon.getRandomMonster(), true,true));
-
         addToBot(new AbstractGameAction() {
             @Override
             public void update() {
@@ -120,9 +126,10 @@ public abstract class GrenadeCard extends DeadCellsCard {
                         /*AbstractDungeon.player.hand.group.remove(thisCard);*/
                         if (thisCard.exhaust) {
                             AbstractDungeon.player.hand.moveToExhaustPile(thisCard);
-                        }else{
-                            AbstractDungeon.player.hand.moveToDiscardPile(thisCard);
                         }
+//                        else{
+//                            AbstractDungeon.player.hand.moveToDiscardPile(thisCard);
+//                        }
                         isDone = true;
                         return;
                     }
@@ -137,9 +144,10 @@ public abstract class GrenadeCard extends DeadCellsCard {
                         /*AbstractDungeon.player.drawPile.group.remove(thisCard);*/
                         if (thisCard.exhaust) {
                             AbstractDungeon.player.drawPile.moveToExhaustPile(thisCard);
-                        }else{
-                            AbstractDungeon.player.drawPile.moveToDiscardPile(thisCard);
                         }
+//                        else{
+//                            AbstractDungeon.player.drawPile.moveToDiscardPile(thisCard);
+//                        }
                         isDone = true;
                         return;
                     }

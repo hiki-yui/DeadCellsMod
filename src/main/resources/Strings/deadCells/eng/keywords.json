@@ -19,30 +19,30 @@
         "charged",
         "charged."
       ],
-      "DESCRIPTION": "A choice that is always a 2-cost #yAttack card.
+      "DESCRIPTION": "A choice that is always a 2-cost #yAttack card."
     },
     {
-      "NAMES": [        "Bleeding",        "Bleeding."      ],
+      "NAMES": [        "bleeding",        "bleeding."      ],
       "DESCRIPTION": "Receive damage for every card played, stack halfed."
     },
     {
-      "NAMES": [        "Nocturned",        "Nocturned."      ],
+      "NAMES": [        "nocturned",        "nocturned."      ],
       "DESCRIPTION": "Receive #yDouble attack damage next time."
     },
     {
-      "NAMES": [        "Proper Card",        "Proper Card."      ],
+      "NAMES": [        "proper card",        "proper card."      ],
       "DESCRIPTION": "Proper to the turn you receive it, cost reduced by #1 because it's proper."
     },
     {
-      "NAMES": [        "Freeze",        "Freeze."      ],
+      "NAMES": [        "freeze",        "freeze."      ],
       "DESCRIPTION": "Deal #b15% less damage, further reduced by its stack, stack reduced by 1 at the end of its turn."
     },
     {
-      "NAMES": [        "Burning",        "Burning."      ],
+      "NAMES": [        "burning",        "burning."      ],
       "DESCRIPTION": "Receive #b15% more damage, further increased by 1/3 of its stack. Receive damage equals to its stack and lose all stack at the end of your turn."
     },
     {
-      "NAMES": [        "Constricted",        "Constricted."      ],
+      "NAMES": [        "constricted",        "constricted."      ],
       "DESCRIPTION": "Receive damage of its stack at the start of your turn."
     },
     {
@@ -50,11 +50,11 @@
       "DESCRIPTION": "You need ammo to play certain cards."
     },
     {
-      "NAMES": [        "Oil",        "Oil."      ],
+      "NAMES": [        "oil",        "oil."      ],
       "DESCRIPTION": "Receive double Burning damage."
     },
     {
-      "NAMES": [        "Invisible",        "Invisible."      ],
+      "NAMES": [        "invisible",        "invisible."      ],
       "DESCRIPTION": "Receive #b20% less damage."
     }
    

@@ -21,7 +21,7 @@ public class Zombie extends CustomMonster {
     public static final String BASE_ID = "deadCells:Zombie";
     public static final MonsterStrings STRINGS = CardCrawlGame.languagePack.getMonsterStrings(BASE_ID);
     private static int BASE_HEAVY_DAMAGE = 14;
-    private static int BASE_DEBUFF_DAMAGE = 6;
+    private static int BASE_DEBUFF_DAMAGE = 9;
     private static int BASE_BLOCK = 8;
     private static int BASE_PLATED = 3;
     private static boolean ascensionLevel17 = false;
@@ -35,9 +35,9 @@ public class Zombie extends CustomMonster {
         super(STRINGS.NAME,BASE_ID,61,-8.0F, 10.0F, 230.0F, 240.0F,"img/monster/Zombie.png",x,y,false);
 
         if (AbstractDungeon.ascensionLevel >= 7){
-            setHp(54,61);
+            setHp(56,62);
         }else{
-            setHp(50,57);
+            setHp(52,59);
         }
         if (AbstractDungeon.ascensionLevel  >= 2 ){
             BASE_HEAVY_DAMAGE += 1;

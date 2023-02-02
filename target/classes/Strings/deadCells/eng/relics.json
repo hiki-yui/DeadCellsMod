@@ -1,4 +1,11 @@
 {
+    "deadCells:Defender": {
+    "NAME": "Defender",
+    "FLAVOR": "Although being called Defender, you could also notice it's used as a weapon by some random minion monsters.",
+    "DESCRIPTIONS": [
+      "Reduce your damage taken by #b20% for the first turn of each combat, reduce each hit by #1 during the second turn. "
+    ]
+  },
   "deadCells:CorruptedArtifact": {
     "NAME": "Corrupted Artifact",
     "FLAVOR": "You can smell the danger emitted from it.",

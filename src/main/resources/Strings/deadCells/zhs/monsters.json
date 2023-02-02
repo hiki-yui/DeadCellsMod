@@ -2,5 +2,9 @@
   "deadCells:Zombie": {
     "NAME": "僵尸",
     "MOVES": []
+  },
+  "deadCells:TheGiant": {
+    "NAME": "巨人",
+    "MOVES": []
   }
 }

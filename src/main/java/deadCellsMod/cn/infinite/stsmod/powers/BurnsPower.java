@@ -43,8 +43,8 @@ public class BurnsPower extends AbstractPower {
                                 AbstractGameAction.AttackEffect.FIRE, true));
                     }
                     addToBot(new ReducePowerAction(powerTarget, powerTarget, BASE_ID, powerAmount));
-                    this.isDone = true;
                 }
+                this.isDone = true;
             }
         });
     }
