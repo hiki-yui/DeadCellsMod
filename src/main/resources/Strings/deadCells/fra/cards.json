@@ -1,0 +1,430 @@
+{
+  "deadCells:KillingDeck": {
+    "NAME": "Deck mortel",
+    "DESCRIPTION": "Infligez !D! dégâts. Ajoutez une *Compétence aléatoire de votre défausse dans votre main.",
+    "UPGRADE_DESCRIPTION": "Infligez !D! dégâts. Ajoutez une *Compétence aléatoire de votre défausse dans votre main. Piochez une carte *Attaque aléatoire."
+  },
+  "deadCells:SonicCarbine": {
+    "NAME": "Carabine sonique",
+    "DESCRIPTION": "Tirez les prochaines !M! *Attaques que vous piochez."
+  },
+  "deadCells:IceBow": {
+    "NAME": "Arc de glace",
+    "DESCRIPTION": "Infligez !D! dégâts. NL Appliquez !M! Gel. NL Défaussez !CN! cartes au hasard."
+  },
+  "deadCells:MultipleNocksBow": {
+    "NAME": "Arc à multiples encoches",
+    "DESCRIPTION": "Défaussez !CN! cartes au hasard. NL Infligez !D! dégâts à !M! ennemis au hasard."
+  },
+  "deadCells:BeginnerBow": {
+    "NAME": "Arc de débutant",
+    "DESCRIPTION": "Infligez !D! dégâts. NL Choisissez !M! cartes à retenir jusqu'au prochain tour.",
+    "EXTENDED_DESCRIPTION": [
+      "Choisissez~"
+    ]
+  },
+  "deadCells:GrenadeCard": {
+    "DESCRIPTION": " NL Grenade."
+  },
+  "deadCells:Rob": {
+    "NAME": "Pillage",
+    "DESCRIPTION": "Gagnez !CN! Dextérité. NL À la fin du combat, gagnez !M! d'Or."
+  },
+  "deadCells:NightLight": {
+    "NAME": "Veilleuse",
+    "DESCRIPTION": "À la fin du combat, gagnez !M! récompense de cartes supplémentaires."
+  },
+  "deadCells:Giantkiller": {
+    "NAME": "Tueuse de géants",
+    "DESCRIPTION": "Infligez !D! dégâts !M! fois. NL L'effet change à chaque fois que vous la jouez. NL Infligez !CN! dégâts additionnels aux élites et aux boss."
+  },
+  "deadCells:InTime": {
+    "NAME": "Juste à temps",
+    "DESCRIPTION": "Au début de votre tour, si un ennemis compte attaquer, Jouez !M! cartes aléatoires de *bouclier.",
+    "UPGRADE_DESCRIPTION": "Inné. NL Au début de votre tour, si un ennemis compte attaquer, Jouez !M! cartes aléatoires de *bouclier."
+  },
+  "deadCells:ThunderShield": {
+    "NAME": "Bouclier de foudre",
+    "DESCRIPTION": "Gagnez !B! d'Armure. NL gagnez !M! de force temporaire."
+  },
+  "deadCells:Punishment": {
+    "NAME": "Punition",
+    "DESCRIPTION": "Gagnez !B! d'Armure. NL Jouez !M! *Attaques aléatoires."
+  },
+  "deadCells:HayabusaGauntlets": {
+    "NAME": "Gantelets de Hayabusa",
+    "DESCRIPTION": "Infligez !D! dégâts !M! fois. NL Si les PV ennemis sont inférieurs à 40%, infligez !HD! dégâts additionnels !M! fois. NL Renvoyez cette carte dans votre main si son coût n'était pas de 0."
+  },
+  "deadCells:FranticSword": {
+    "NAME": "Charognarde",
+    "DESCRIPTION": "Infligez !D! dégâts. Si vous êtes sous 50% PV, infligez !HD! dégâts à la place."
+  },
+  "deadCells:Vampirism": {
+    "NAME": "Vampirisme",
+    "DESCRIPTION": "Appliquez !M! saignements à TOUS les ennemis. NL Gagnez autant de PV qu'il y a de saignements totaux. NL Épuisement."
+  },
+  "deadCells:Cocoon": {
+    "NAME": "Cocon",
+    "DESCRIPTION": "À chaque fois que vous gagnez de l'Armure, gagnez !M! de plus.",
+    "UPGRADE_DESCRIPTION": "Inné. NL À chaque fois que vous gagnez de l'Armure, gagnez !M! de plus."
+  },
+  "deadCells:HayabusaBoots": {
+    "NAME": "Bottes de Hayabusa",
+    "DESCRIPTION": "Infligez !D! dégâts !M! fois, le dernier cojusqu'àuche TOUS les ennemis."
+  },
+  "deadCells:FireworksTechnician": {
+    "NAME": "Maître des grenades",
+    "DESCRIPTION": "Les *Grenades font !M! dégâts supplémentaires."
+  },
+  "deadCells:CursedSword": {
+    "NAME": "Épée maudite",
+    "DESCRIPTION": "Infligez !D! dégâts. NL Au début du combat, ajoutez !M! malédictions aléatoires à votre pioche."
+  },
+  "deadCells:IronStaff": {
+    "NAME": "Bâton de fer",
+    "DESCRIPTION": "Gagnez !B! d'Armure. Au début de votre prochain tour, infligez à TOUS les ennemis autant de dégâts que votre armure. NL Terminez votre tour."
+  },
+  "deadCells:SnakeFangs": {
+    "NAME": "Crocs de serpent",
+    "DESCRIPTION": "Infligez !D! dégâts et appliquez !M! Poison. Si l'ennemis a au moins !CN! Poison, infligez !HD! dégâts à la place. NL Mélangez cette carte dans votre pioche."
+  },
+  "deadCells:ClusterGrenade": {
+    "NAME": "Grappe explosive",
+    "DESCRIPTION": "Infligez !D! dégâts. NL Infligez !CN! dégâts fixes à un ennemis aléatoire !M! fois. NL Épuisement."
+  },
+  "deadCells:SmokeBomb": {
+    "NAME": "Bombe fumigène",
+    "DESCRIPTION": "Gagnez !CN! Invisible. NL Votre prochaine attaque inflige !M! dégâts supplémentaires. NL Épuisement."
+  },
+  "deadCells:LaceratingAura": {
+    "NAME": "Aura de lacération",
+    "DESCRIPTION": "À chaque fois que vous infligez des dégâts non-bloqués, Appliquez !M! Saignements."
+  },
+  "deadCells:Reckless": {
+    "NAME": "Témérité",
+    "DESCRIPTION": "Jouez !M! *Attaques aléatoires de votre pioche puis Épuisez-les. NL Épuisement."
+  },
+  "deadCells:CorrosiveCloud": {
+    "NAME": "Nuage corrosif",
+    "DESCRIPTION": "À chaque fois que vous appliquez 3 Saignements ou plus, Appliquez !M! Poison tous les 3 Saignements.",
+    "UPGRADE_DESCRIPTION": "Inné. NL À chaque fois que vous appliquez 3 Saignements ou plus, Appliquez !M! Poison tous les 3 Saignements."
+  },
+  "deadCells:FrontLineShield": {
+    "NAME": "Bouclier de première ligne",
+    "DESCRIPTION": "Gagnez !B! d'Armure. NL Mettez !M! *Attaques de votre pioche dans votre main, Ajoutez-leur Éthérée et Épuisement."
+  },
+  "deadCells:Hemorrhage": {
+    "NAME": "Hémorragie",
+    "DESCRIPTION": "Infligez !D! dégâts. NL Si l'ennemi a Saignements, infligez !HD! dégâts à la place. NL Appliquez !M! Saignements."
+  },
+  "deadCells:HattoriSKatana": {
+    "NAME": "Katana d'Hattori",
+    "DESCRIPTION": "Infligez !D! dégâts !M! fois. NL Augmente le nombre de coups de 1, jusqu'à 5 . NL Si cette carte frappe au moins 3 fois, gagnez !CN! Dextérité et Force. NL Renvoyez cette carte dans votre main si son coût n'était pas de 0."
+  },
+  "deadCells:FerrymanSLanternIII": {
+    "NAME": "Tir d'âme",
+    "DESCRIPTION": "Consomme !AB! munitions, chacune inflige !D! dégâts. NL Épuisement."
+  },
+  "deadCells:FerrymanSLanternII": {
+    "NAME": "Récolte d'âmes",
+    "DESCRIPTION": "Infligez !D! dégâts, gagnez !AM! munitions. NL Épuisement."
+  },
+  "deadCells:FerrymanSLantern": {
+    "NAME": "Lanterne de passeuse",
+    "DESCRIPTION": "Ajoutez une carte parmis deux à votre main. NL Déchargée: Infligez !D! dégâts, gagnez !CN! munitions. NL Chargée: Consomme toutes les munitions, chacune Inflige !HD! dégâts. NL !AB! munitions chargées."
+  },
+  "deadCells:Calm": {
+    "NAME": "Calme",
+    "DESCRIPTION": "Gagnez [E] [E]. NL Défaussez !M! *Attaques aléatoires."
+  },
+  "deadCells:RegularSkill": {
+    "NAME": "Compétences en chaîne",
+    "DESCRIPTION": "Au début de votre tour, ajoutez une *Roulade avec Retenue et Épuisement dans votre main.",
+    "UPGRADE_DESCRIPTION": "Inné. NL Au début de votre tour, ajoutez une *Roulade avec Retenue et Épuisement dans votre main."
+  },
+  "deadCells:FrostBlast": {
+    "NAME": "Congélation",
+    "DESCRIPTION": "Gagnez !B! d'Armure. NL Appliquez !M! Gel X fois à TOUS les ennemis.",
+    "UPGRADE_DESCRIPTION": "Gagnez !B! d'Armure. NL Appliquez !M! Gel X+1 fois à TOUS les ennemis."
+  },
+  "deadCells:FireBlast": {
+    "NAME": "Lance-flammes",
+    "DESCRIPTION": "Infligez !D! dégâts et Appliquez !M! Brulure X fois à TOUS les ennemis."
+  },
+  "deadCells:APlan": {
+    "NAME":"Plan A",
+    "DESCRIPTION": "Défaussez toutes les *Compétences de votre main, piochez le même nombre d' *Attaques de votre pioche. NL gagnez [E]. NL Épuisement.",
+    "UPGRADE_DESCRIPTION": "Défaussez toutes les *Compétences de votre main, piochez le même nombre d' *Attaques de votre pioche. NL gagnez [E]."
+  },
+  "deadCells:ToothpickIIII": {
+    "NAME": "Réparation",
+    "DESCRIPTION": "Gagnez le maximum de munitions et !B! d'Armure"
+  },
+  "deadCells:ToothpickIII": {
+    "NAME": "Matraque",
+    "DESCRIPTION": "Consomme !AM! munitions et Infligez !D! dégâts."
+  },
+  "deadCells:ToothpickII": {
+    "NAME": "Cure-dent cassé",
+    "DESCRIPTION": "Infligez !D! dégâts."
+  },
+  "deadCells:Toothpick": {
+    "NAME": "Cure-dent",
+    "DESCRIPTION": "Ajoutez à votre main 1 carte parmis 3. NL Déchargée: Infligez !D! dégâts. NL Chargée: Consomme !AM! munitions et Infligez !D! dégâts. NL Réparation: gagnez le maximum de munitions et !B! d'Armure. NL ( !AM! / !MAM! )"
+  },
+  "deadCells:SwiftSword": {
+    "NAME":"Épée de rapidité",
+    "DESCRIPTION": "Infligez !D! dégâts, piochez !M! cartes supplémentaires si jouée dans les !CN! premiers tours du combat."
+  },
+  "deadCells:OiledSword": {
+    "NAME": "Épée huileuse",
+    "DESCRIPTION": "Infligez !D! dégâts. NL Si l'ennemi a Brulure, Infligez !HD! dégâts à la place. NL Appliquez !M! Huile."
+  },
+  "deadCells:OilGrenade": {
+    "NAME": "Grenade huileuse",
+    "DESCRIPTION": "Infligez !D! dégâts et Appliquez !M! Huile à TOUS les ennemis. NL Épuisement."
+  },
+  "deadCells:IceCrossbowIIII": {
+    "NAME": "Charge",
+    "DESCRIPTION": "Gagnez le maximum de munitions et !B! d'Armure. NL Épuisement."
+  },
+  "deadCells:IceCrossbowIII": {
+    "NAME": "Tir perçant",
+    "DESCRIPTION": "Consomme !AM! munitions et Infligez !D! dégâts. dégâts augmenté de !M! tous les 2 Gel sur l'ennemi. NL Épuisement."
+  },
+  "deadCells:IceCrossbowII":{
+    "NAME": "Tir gelant",
+    "DESCRIPTION": "Consomme !AM! munitions et Infligez !D! dégâts et Appliquez !M! Gel. NL Épuisement."
+  },
+  "deadCells:IceCrossbow": {
+    "NAME": "Arbalète de glace",
+    "DESCRIPTION": "Ajoutez à votre main 1 carte parmis 3. NL Déchargée: Consomme !AM! munitions et Infligez !D! dégâts et Appliquez !M! Gel. NL Chargée: Consomme !AM! munitions et Infligez !D! dégâts. dégâts augmentés de !M! tous les 2 Gel sur l'ennemi. NL Charge: gagnez le maximum de munitions et !B! d'Armure. NL ( !AM! / !MAM! )"
+  },
+  "deadCells:InsightInto": {
+    "NAME":"Perspicacité",
+    "DESCRIPTION": "Gagnez une *Carte de *Tempérament."
+  },
+  "deadCells:IceArmor": {
+    "NAME": "Armure de glace",
+    "DESCRIPTION": "Gagnez !B! d'Armure. NL Si vous n'avez pas d'Armure, gagnez !CN! d'Armure à la place. NL Appliquez !M! Gel à TOUS les ennemis."
+  },
+  "deadCells:PyrotechnicsIIII": {
+    "NAME": "Récupération de mana",
+    "DESCRIPTION": "Gagnez !M! munitions et !B! d'Armure NL Épuisement."
+  },
+  "deadCells:PyrotechnicsIII": {
+    "NAME":"Boule de feu",
+    "DESCRIPTION": "Consomme 1 munitions et Infligez !D! dégâts et Appliquez !Burns! Brulures. NL Épuisement."
+  },
+  "deadCells:PyrotechnicsII": {
+    "NAME": "Déluge de feu",
+    "DESCRIPTION": "Consomme jusqu'à !M! munitions, chacune Inflige !D! dégâts. NL Épuisement."
+  },
+  "deadCells:Pyrotechnics": {
+    "NAME": "Pyrotechnie",
+    "DESCRIPTION": "Ajoutez à votre main 1 carte parmis 3. NL Chargée I: Consomme jusqu'à !M! munitions, chacune Inflige !D! dégâts. NL Chargée ¢ò: Consomme 1 munitions et Infligez !D! dégâts et Appliquez !Burns! Brulure. NL Charge: gagnez !M! munitions et !B! d'Armure NL Épuisement. NL ( !AM! / !MAM! )"
+  },
+  "deadCells:SOTF": {
+    "NAME": "Survivance du plus apte",
+    "DESCRIPTION": "Gagnez !M! Force et Dextérité.",
+    "UPGRADE_DESCRIPTION": "Gagnez !M! Force et Dextérité. NL *Choisissez: gagnez !CN! Force ou !CN! Dextérité."
+  },
+  "deadCells:Firebrands": {
+    "NAME": "Torches de lancer",
+    "DESCRIPTION": "Appliquez !Burns! Brulure à un ennemi aléatoire !M! fois."
+  },
+  "deadCells:Torch": {
+    "NAME": "Torche",
+    "DESCRIPTION": "Infligez !D! dégâts, Appliquez !M! Brulure. NL Si l'ennemi a Brulure, Appliquez !Burns! Brulure supplémentaires."
+  },
+  "deadCells:SadistStiletto": {
+    "NAME": "Dague de cultiste",
+    "DESCRIPTION": "Infligez !D! dégâts !M! fois. Les dégâts et le nombre de coups est augmenté de 1 pour chaque malus sur l'ennemi."
+  },
+  "deadCells:Backtrack": {
+    "NAME": "Retour arrière",
+    "DESCRIPTION": "Défaussez toutes vos autres cartes dans votre pioche, piochez le même nombre de cartes de votre Défausse. NL Épuisement.",
+    "UPGRADE_DESCRIPTION": "Défaussez toutes vos autres cartes dans votre pioche, piochez le même nombre de cartes de votre Défausse."
+  },
+  "deadCells:MagneticGrenade": {
+    "NAME": "Grenade magnétique",
+    "DESCRIPTION": "Infligez !D! dégâts 2 fois. NL À chaque fois que vous Infligez des dégâts ce tour, gagnez !M! d'Armure."
+  },
+  "deadCells:FireGrenade": {
+    "NAME": "Grenade incendiaire",
+    "DESCRIPTION": "Infligez !D! dégâts et Appliquez !M! Brulure à TOUS les ennemis."
+  },
+  "deadCells:RootGrenade": {
+    "NAME": "Bombe de lierre",
+    "DESCRIPTION": "Infligez !D! dégâts et Appliquez !M! Enracinement à TOUS les ennemis. NL gagnez !B! d'Armure."
+  },
+  "deadCells:FillInGrenade": {
+    "NAME": "Remplissage de Grenades",
+    "DESCRIPTION": "Ajoutez !M! *Grenade aléatoires dans votre main. NL Épuisement."
+  },
+  "deadCells:IceGrenade": {
+    "NAME": "Grenade givrée",
+    "DESCRIPTION": "Infligez !D! dégâts et Appliquez !M! Gel à TOUS les ennemis."
+  },
+  "deadCells:InASimilar": {
+    "NAME": "Vieux truc",
+    "DESCRIPTION": "Jouez une copie de la dernière carte jouée.(Celle-ci ne compte pas)",
+    "UPGRADE_DESCRIPTION":"Jouez une copie des 2 dernières cartes jouées.(Celle-ci ne compte pas)",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Jouez *",
+      " et *",
+      " )"
+    ]
+  },
+  "UnKnowCard": {
+    "NAME": "Inconnu",
+    "DESCRIPTION": "???"
+  },
+  "deadCells:ThrowingKnife": {
+    "NAME": "Couteaux de lancer",
+    "DESCRIPTION": "Infligez !D! dégâts et Appliquez !M! Saignements. NL Épuisement."
+  },
+  "deadCells:AttackDefend": {
+    "NAME": "Tactique équilibrée",
+    "DESCRIPTION": "À chaque fois que vous jouez une *Compétence et une *Attaque alternativement, Ajoutez !M! *Couteaux *de *lancer dans votre main."
+  },
+  "deadCells:BloodthirstyShield": {
+    "NAME": "Bouclier sanguinaire",
+    "DESCRIPTION": "Gagnez !B! d'Armure. NL Si vous bloquez tous les dégâts ce tour, Appliquez !M! Saignements à TOUS les ennemis."
+  },
+  "deadCells:BleedingSpread": {
+    "NAME": "Sang éclaboussant",
+    "DESCRIPTION": "Les Saignements se répandent aux autres ennemis. NL À chaque fois que vous appliquez Saignements, Appliquez-en !M! de plus."
+  },
+  "deadCells:KnockBackShield":{
+    "NAME": "Bouclier de dégagement",
+    "DESCRIPTION": "Gagnez !B! d'Armure. NL Au prochaine tour, piochez !M! cartes supplémentaires."
+  },
+  "deadCells:BloodSword": {
+    "NAME": "Épée sanglante",
+    "DESCRIPTION": "Infligez !D! dégâts, Appliquez !M! Saignements."
+  },
+  "deadCells:MagicMissiles": {
+    "NAME": "Missiles magiques",
+    "DESCRIPTION": "Infligez !D! dégâts à un ennemi aléatoire !M! fois. NL Épuisement."
+  },
+  "deadCells:SpeedDown": {
+    "NAME": "Ralentissement",
+    "DESCRIPTION": "Piochez une carte. NL Épuisement."
+  },
+  "deadCells:StrategyStagnated":{
+    "NAME": "Stagnation stratégique",
+    "DESCRIPTION": "Gagnez [E] [E]. NL Ajoutez un *Ralentissement à votre pioche.",
+    "UPGRADE_DESCRIPTION": "Gagnez [E] [E] [E]. NL Ajoutez un *Ralentissement à votre pioche."
+  },
+  "deadCells:ScytheClawII": {
+    "NAME": "Griffe de faux droite",
+    "DESCRIPTION": "Infligez !D! dégâts à TOUS les ennemis. NL Étourdissez les ennemis si !M! dégâts non-bloqués sont infligés. NL Ajoute une *Griffe *de *faux *gauche à votre pioche. NL Épuisement."
+  },
+  "deadCells:ScytheClaw": {
+    "NAME": "Griffe de faux gauche",
+    "DESCRIPTION": "Infligez !D! dégâts et Appliquez !M! Vulnerable à TOUS les ennemis. NL Ajoute une *Griffe *de *faux *droite à votre pioche. NL Épuisement."
+  },
+  "deadCells:IceShield": {
+    "NAME": "Bouclier de glace",
+    "DESCRIPTION": "Gagnez !B! d'Armure. NL À chaque fois que vous êtes attaqué ce tour, TOUS les ennemis perdent !M! de Force temporairement."
+  },
+  "deadCells:Ruthless": {
+    "NAME": "Cruauté",
+    "DESCRIPTION": "À chaque fois que vous appliquez 2 malus à un ennemi, piochez !M! carte. NL Ne peut se produite que 5 fois par tour."
+  },
+  "deadCells:Rampart": {
+    "NAME": "Rampart",
+    "DESCRIPTION": "Ne prenez aucun dégât d' *Attaque jusqu'au prochain tour. NL Défaussez toutes les *Compétences de votre main. NL Épuisement."
+  },
+  "deadCells:BalancedBlade": {
+    "NAME":"Épée équilibrée",
+    "DESCRIPTION":"Infligez !D! dégâts. NL Augmente les dégâts de cette carte de !M! et ce nombre de 1 ce combat."
+  },
+  "deadCells:StunGrenade": {
+    "NAME": "Grenade Étourdissante",
+    "DESCRIPTION": "Étourdit un ennemi. NL Épuisement.",
+    "UPGRADE_DESCRIPTION": "Retenue. NL Étourdit un ennemi. NL Épuisement."
+  },
+  "deadCells:ReflectionSpeedUp": {
+    "NAME": "Lucide",
+    "DESCRIPTION": "Au début de votre tour, ajoutez !M! *Cartes *Tempérament dans votre main.",
+    "UPGRADE_DESCRIPTION": "Inné. NL Au début de votre tour, ajoutez !M! *Cartes *Tempérament dans votre main."
+  },
+  "deadCells:DepravedForm": {
+    "NAME": "Forme dépravée",
+    "DESCRIPTION": "Gagnez 6 Force. NL Infligez 25% de dégâts supplémentaires de vos *Attaques !M! fois. NL Gagnez 1 Vulnerable."
+  },
+  "deadCells:Grenade": {
+    "NAME": "Grenade",
+    "DESCRIPTION": "Infligez !D! dégâts. NL Infligez !M! dégâts aux autres ennemis."
+  },
+  "deadCells:Speed": {
+    "NAME": "Vitesse",
+    "DESCRIPTION": "Pour les prochaines !M! cartes jouées, piochez 1 carte et gagnez 1 d'Armure."
+  },
+  "deadCells:RoundingKnife": {
+    "NAME": "Dance des couteaux",
+    "DESCRIPTION": "Appliquez !M! Faiblesse et 3 Saignements à TOUS les ennemis.",
+    "UPGRADE_DESCRIPTION": "Appliquez !M! Faiblesse et 6 Saignements à TOUS les ennemis."
+  },
+  "deadCells:CrowFeathers": {
+    "NAME":"Ailes de corbeau",
+    "DESCRIPTION": "Gagnez !M! Vol. NL À chaque fois que vous êtes attaqués ce tour, Infligez !D! dégâts en retour (Comptés comme des *Attaques)."
+  },
+  "deadCells:AlchemyCarbine": {
+    "NAME": "Carabine d'alchemiste",
+    "DESCRIPTION": "Appliquez !M! Poison à un ennemi aléatoire. NL Piochez 2 cartes.",
+    "UPGRADE_DESCRIPTION": "Appliquez !M! Poison à un ennemi aléatoire. NL Piochez 3 cartes."
+  },
+  "deadCells:Piano": {
+    "NAME": "Rhythm n' Bouzouki I",
+    "DESCRIPTION": "Infligez !D! dégâts. NL Ajoute un *Rhythm *n' *Bouzouki *II dans votre main. NL Épuisement.",
+    "UPGRADE_DESCRIPTION": "Infligez !D! dégâts. NL Ajoute un *Rhythm *n' *Bouzouki *II dans votre main."
+  },
+  "deadCells:PianoII": {
+    "NAME": "Rhythm n' Bouzouki II",
+    "DESCRIPTION": "Infligez !D! dégâts. NL Si votre dernière carte jouée était *Rhythm *n' *Bouzouki *I, Infligez le double de dégâts. NL Ajoute un *Rhythm *n' *Bouzouki *III dans votre main. NL Épuisement."
+  },
+  "deadCells:PianoIII": {
+    "NAME": "Rhythm n' Bouzouki III",
+    "DESCRIPTION": "Infligez !D! dégâts à TOUS les ennemis. NL Si votre dernière carte jouée était *Rhythm *n' *Bouzouki *II or *III, Infligez le double de dégâts. NL Épuisement."
+  },
+  "deadCells:Roll": {
+    "NAME": "Roulade",
+    "DESCRIPTION": "Gagnez !B! d'Armure. NL Piochez 3 cartes, Défaussez toutes les *Attaques ainsi piochées."
+  },
+  "deadCells:Saucepan": {
+    "NAME": "Poele à frire",
+    "DESCRIPTION":"Infligez !D! dégâts. NL Si l'ennemis a l'intention d'attaquer, Infligez !D! dégâts à la place.",
+    "UPGRADE_DESCRIPTION":"Infligez !D! dégâts. NL Si l'ennemis a l'intention d'attaquer, Infligez !D! dégâts à la place. NL Appliquez 1 Faiblesse et 1 Vulnerable."
+  },
+  "deadCells:EmergencyDoor": {
+    "NAME": "Porte d'urgence",
+    "DESCRIPTION":"Gagnez !B! d'Armure. NL gagnez 2 *Tampon et 2 Faiblesse."
+  },
+  "king:Strike": {
+    "NAME": "Frappe",
+    "DESCRIPTION": "Infligez !D! dégâts."
+  },
+  "king:Defend": {
+    "NAME": "Défense",
+    "DESCRIPTION": "Gagnez !B! d'Armure."
+  },
+  "deadCells:SymmetricalSpear":{
+    "NAME": "Lance asymétrique",
+    "DESCRIPTION": "Infligez !D! dégâts !M! fois à TOUS les ennemis. NL Si le premier coup touche au moins 2 ennemis, les suivants infligent des dégâts doublés."
+  },
+  "deadCells:GiantWhistle": {
+    "NAME": "Sifflet du Géant",
+    "DESCRIPTION": "Infligez !D! dégâts."
+  },
+  "deadCells:CrowBar": {
+    "NAME": "Pied de biche",
+    "DESCRIPTION": "Inflige !D! dégâts, si la dernière carte jouée ce tour était une Compétence , infligez le double."
+  },
+  "deadCells:LightningBolt": {
+    "NAME": "Éclairs",
+    "DESCRIPTION": "Inflige !D! dégâts, si la dernière carte jouée ce tour était Éclairs , renvoyez cette carte dans votre main avec dégâts + 7. Si vous avez joué 4 *Éclairs ou plus, subissez !M! dégâts."
+  }
+}

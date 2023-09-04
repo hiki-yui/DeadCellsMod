@@ -5,6 +5,7 @@ import basemod.ReflectionHacks;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.math.MathUtils;
+import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePostfixPatch;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -12,6 +13,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.scenes.TitleBackground;
 import com.megacrit.cardcrawl.scenes.TitleCloud;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 
 import java.util.ArrayList;
 
@@ -20,7 +22,9 @@ public class MainMenuPatch {
     public static class ArtPatch {
         @SpirePostfixPatch
         public static void BackgroundTexturePatch(TitleBackground __instance) {
-            MainMenuPatch.setMainMenuBG(__instance);
+            if(DeadCellsModInitializer.isMainMenuImg) {
+                MainMenuPatch.setMainMenuBG(__instance);
+            }
         }
     }
 

@@ -1,0 +1,222 @@
+{
+  "deadCells:GrenadePower": {
+    "NAME": "Grenade ",
+    "DESCRIPTIONS": [
+      "Retourne dans votre pioche dans #b",
+      " tour(s)."
+    ]
+  },
+  "deadCells:SCbPower": {
+  "NAME": "Vitesse sonique",
+  "DESCRIPTIONS": [
+    "Jouez les #b",
+    " prochaines #yAttaques que vous piochez."
+  ]
+  },
+  "deadCells:RobPower": {
+    "NAME": "Pillage",
+    "DESCRIPTIONS": [
+      "À la fin du combat, gagnez #b",
+      " #yOr supplémentaire."
+    ]
+  },
+  "deadCells:NightLightPower": {
+    "NAME": "Veilleuse",
+    "DESCRIPTIONS": [
+      "À la fin du combat, gagnez #b",
+      " choix de #yCarte supplémentaire."
+    ]
+  },
+  "deadCells:InTimePower": {
+    "NAME": "Juste à temps",
+    "DESCRIPTIONS": [
+      "Au début de votre tour, si un ennemi compte attaquer, jouez #b",
+      " #yBouclier aléatoires."
+    ]
+  },
+  "deadCells:CocoonPower": {
+    "NAME": "Cocon",
+    "DESCRIPTIONS": [
+      "À chaque fois que vous gagnez de l' #bArmure, gagnez #b",
+      " d' #bArmure supplémentaire"
+    ]
+  },
+  "deadCells:FireworksTechnicianPower": {
+    "NAME": "Maître des grenades",
+    "DESCRIPTIONS": [
+      "Vos #yGrenades infligent #b",
+      " dégâts de plus."
+    ]
+  },
+  "deadCells:IronStaffPower": {
+    "NAME": "Bâton de fer",
+    "DESCRIPTIONS": [
+      "Au début de votre tour, infligez autant de dégâts que vous avez d'armure #b",
+      " fois."
+    ]
+  },
+  "deadCells:SmokeBombPower": {
+    "NAME": "Invisible",
+    "DESCRIPTIONS": [
+      "Subissez #b",
+      "% moins de dégâts.Invisible est réduit de 1 chaque tour."
+    ]
+  },
+  "deadCells:LaceratingAuraPower": {
+    "NAME": "Aura de lacération",
+    "DESCRIPTIONS": [
+      " À chaque fois que vous infligez des dégâts #ynon-bloqués, Appliquez #b",
+      " #rSaignement."
+    ]
+  },
+  "deadCells:CorrosiveCloudPower": {
+    "NAME": "Nuage corrosif",
+    "DESCRIPTIONS": [
+      "À chaque fois que vous appliquez 3 #rSaignement ou plus, appliquez #b",
+      " #gPoison tous les 3 #rSaignement."
+    ]
+  },
+  "deadCells:RuthlessPower": {
+    "NAME": "Cruauté",
+    "DESCRIPTIONS": [
+      "À chaque fois que vous appliquez #b",
+      " malus à un ennemi, piochez #b",
+      " cartes."
+    ]
+  },
+  "deadCells:RegularSkillPower": {
+    "NAME": "Compétences en chaîne",
+    "DESCRIPTIONS":[
+      "Au début de votre tour, ajoutez #b",
+      " #yRoulade avec #yRetenue et #yÉpuisement dans votre main."
+    ]
+  },
+  "deadCells:OilPower": {
+    "NAME": "Huile",
+    "DESCRIPTIONS": [
+      "Recevez des dégâts de #ybrulure doublés pour #b",
+      " tours."
+    ]
+  },
+  "deadCells:MagneticPower": {
+    "NAME": "Champs magnétique",
+    "DESCRIPTIONS": [
+      "Ce tour，à chaque fois que cet ennemis subit des dégâts, gagnez #b",
+      " #yArmure."
+    ]
+  },
+  "deadCells:BurnsPower": {
+    "NAME": "Brulure",
+    "DESCRIPTIONS": [
+      "Subissez #r",
+      "% de dégâts en plus. Sur cette base, subissez #r",
+      " dégâts supplémentaires. À la fin de votre tour, subissez #r",
+      " dégâts et perdez tous les cumuls de #yBrulure"
+    ]
+  },
+  "deadCells:ConstrictedPower": {
+    "NAME": "Enracinement",
+    "DESCRIPTIONS": [
+      "Au début de son tour, subit #g",
+      " dégâts."
+    ]
+  },
+  "deadCells:FrostbitePower": {
+    "NAME": "Gel",
+    "DESCRIPTIONS": [
+      "Infligez #b",
+      "% moins de dégâts. Sur cette base, les dégâts infligés sont réduits de #b",
+      "，Gel perd 2 cumuls au début de votre tour."
+    ]
+  },
+  "UnKnowPower": {
+    "NAME": "@Inconnu",
+    "DESCRIPTIONS": [
+      "???"
+    ]
+  },
+  "deadCells:AttackDefendPower": {
+    "NAME": "Attaquer tout en défendant",
+    "DESCRIPTIONS": [
+      "À chaque fois que vous jouez une #yCompétence et une #yAttaque alternativement, ajoutez #b",
+      " #yCouteaux #yde #ylancer dans votre main."
+    ]
+  },
+  "deadCells:BloodthirstyShieldPower": {
+    "NAME": "Soif de sang",
+    "DESCRIPTIONS": [
+      "Si vous bloquez tous les dégâts ce tour, appliquez #b",
+      " #ySaignement à TOUS les ennemis."
+    ]
+  },
+  "deadCells:BleedingSpreadPower": {
+    "NAME": "Sang éclaboussant",
+    "DESCRIPTIONS": [
+      "Les #ySaignements se répandent aux autres ennemis. À chaque fois que vous appliquez #ySaignement, appliquez-en #b",
+      " de plus."
+    ]
+  },
+  "deadCells:IceShieldPower": {
+    "NAME": "Ice Shield",
+    "DESCRIPTIONS": [
+      "À chaque fois que vous êtes attaqué ce tour, TOUS les ennemis perdent #b",
+      " #yForce temporairement."
+    ]
+  },
+  "deadCells:RampartPower": {
+    "NAME": "Rampart",
+    "DESCRIPTIONS": [
+      "Ne prenez aucun dégâts d' #yAttack，dure #b",
+      " tours."
+    ]
+  },
+  "deadCells:ReflectionSpeedUpPower": {
+    "NAME": "Lucide",
+    "DESCRIPTIONS": [
+      "Au début de votre tour, ajoutez #b",
+      " #yCarte #yde #yTempérament dans votre main."
+    ]
+  },
+  "deadCells:NocturneAttackedPower": {
+    "NAME": "Dans les ténèbres",
+    "DESCRIPTIONS": [
+      "Les prochaines #b",
+      " Attaques, cet ennemi subit #y",
+      " fois les dégâts."
+    ]
+  },
+  "deadCells:DepravedPower": {
+    "NAME": "Forme dépravée",
+    "DESCRIPTIONS": [
+      "infligez #b25% dégâts de plus #b",
+      " fois à chaque fois que vous attaquez."
+    ]
+  },
+  "deadCells:SpeedPower": {
+    "NAME": "Vitesse",
+    "DESCRIPTIONS": [
+      "À chaque fois que vous jouez #b",
+      " carte，piochez #b",
+      " carte et gagnez #b",
+      " #yArmure. Cumul réduit de #b",
+      "."
+    ]
+  },
+  "deadCells:BleedingPower":{
+    "NAME": "Saignement",
+    "DESCRIPTIONS": [
+      "À chaque fois que vous jouez #b",
+      " carte，subissez #y",
+      " dégâts. Cumul réduit de #y",
+      " 。"
+    ]
+  },
+  "deadCells:NextTurnLoseFlightPower": {
+    "NAME": "Mana Épuisé",
+    "DESCRIPTIONS": [
+      "Au début de vos prochains #b",
+      " tours, #rPerdez #b",
+      "  #yVol ."
+    ]
+  }
+}

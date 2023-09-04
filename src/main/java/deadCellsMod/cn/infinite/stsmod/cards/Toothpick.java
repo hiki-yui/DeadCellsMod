@@ -95,8 +95,8 @@ public class Toothpick extends DeadCellsCard{
         }
 
         public ToothpickII(DeadCellsCard father){
-            super(BASE_ID,STRINGS.NAME,IMG,1,STRINGS.DESCRIPTION,CardType.ATTACK,CardColor.COLORLESS,CardRarity.SPECIAL,CardTarget.ENEMY);
-
+            super(BASE_ID,STRINGS.NAME,IMG,1,STRINGS.DESCRIPTION,CardType.ATTACK,AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.SPECIAL,CardTarget.ENEMY);
+            this.setBackgroundTexture(DeadCellsModInitializer.GRAY_ATTACK_CARD, DeadCellsModInitializer.GRAY_ATTACK_CARD_PORTRAIT);
             this.father = father;
             this.baseDamage = 9;
             this.exhaust = true;
@@ -163,8 +163,8 @@ public class Toothpick extends DeadCellsCard{
         }
 
         public ToothpickIII(DeadCellsCard father){
-            super(BASE_ID,STRINGS.NAME,"img/card/ToothpickIII.png",2,STRINGS.DESCRIPTION,CardType.ATTACK,CardColor.COLORLESS,CardRarity.SPECIAL,CardTarget.ENEMY);
-
+            super(BASE_ID,STRINGS.NAME,"img/card/ToothpickIII.png",2,STRINGS.DESCRIPTION,CardType.ATTACK,AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.SPECIAL,CardTarget.ENEMY);
+            this.setBackgroundTexture(DeadCellsModInitializer.GRAY_ATTACK_CARD, DeadCellsModInitializer.GRAY_ATTACK_CARD_PORTRAIT);
             this.father = father;
             this.damage = this.baseDamage =  34;
             this.ammunitionNumber = 1;
@@ -259,8 +259,8 @@ public class Toothpick extends DeadCellsCard{
         }
 
         public ToothpickIIII(DeadCellsCard father){
-            super(BASE_ID,STRINGS.NAME,IMG,0,STRINGS.DESCRIPTION,CardType.SKILL,CardColor.COLORLESS,CardRarity.SPECIAL,CardTarget.SELF);
-
+            super(BASE_ID,STRINGS.NAME,IMG,0,STRINGS.DESCRIPTION,CardType.SKILL,AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.SPECIAL,CardTarget.SELF);
+            this.setBackgroundTexture(DeadCellsModInitializer.GRAY_ATTACK_CARD, DeadCellsModInitializer.GRAY_ATTACK_CARD_PORTRAIT);
             this.father = father;
             this.baseBlock = 4;
             this.ammunitionNumber = father.maxAmmunitionNumber;

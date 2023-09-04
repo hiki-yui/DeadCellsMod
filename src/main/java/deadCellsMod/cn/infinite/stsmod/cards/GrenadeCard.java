@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.actions.utility.NewQueueCardAction;
+import com.megacrit.cardcrawl.actions.utility.UnlimboAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardQueueItem;
@@ -14,6 +15,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import com.megacrit.cardcrawl.vfx.cardManip.ExhaustCardEffect;
 import deadCellsMod.cn.infinite.stsmod.action.UseTheSameCardAgainAction;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsTags;
@@ -98,9 +100,12 @@ public abstract class GrenadeCard extends DeadCellsCard {
     public void triggerOnManualDiscard() {
         /*AbstractDungeon.actionManager.addCardQueueItem(new CardQueueItem(this,
                 true,AbstractDungeon.player.energy.energy,true,true));*/
-        AbstractCard thisCard = this;
+        AbstractCard thisCard = this.makeSameInstanceOf();
         remove = true;
-        addToBot(new NewQueueCardAction(this, AbstractDungeon.getRandomMonster(), true,true));
+        AbstractDungeon.player.limbo.addToBottom(thisCard);
+        AbstractDungeon.actionManager.addCardQueueItem(new CardQueueItem(thisCard, AbstractDungeon.getRandomMonster(), EnergyPanel.getCurrentEnergy(), true, true), true);
+        AbstractDungeon.actionManager.addToBottom(new UnlimboAction(thisCard, thisCard.exhaust));
+        //addToBot(new NewQueueCardAction(this, AbstractDungeon.getRandomMonster(), true,true));
         addToBot(new AbstractGameAction() {
             @Override
             public void update() {

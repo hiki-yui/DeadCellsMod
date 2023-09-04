@@ -96,7 +96,7 @@ public class FerrymanSLantern extends DeadCellsCard {
         }
 
         public FerrymanSLanternII(DeadCellsCard father){
-            super(BASE_ID,STRINGS.NAME,"img/card/FerrymanSLantern.png",1,STRINGS.DESCRIPTION,CardType.ATTACK,CardColor.COLORLESS,CardRarity.SPECIAL,CardTarget.ENEMY);
+            super(BASE_ID,STRINGS.NAME,"img/card/FerrymanSLantern.png",1,STRINGS.DESCRIPTION,CardType.ATTACK,AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.SPECIAL,CardTarget.ENEMY);
             this.setBackgroundTexture(DeadCellsModInitializer.RED2_PURPLE2_SKILL_CARD, DeadCellsModInitializer.RED2_PURPLE2_SKILL_CARD_PORTRAIT);
             this.father = father;
             this.exhaust = true;
@@ -169,7 +169,7 @@ public class FerrymanSLantern extends DeadCellsCard {
         }
 
         public FerrymanSLanternIII(DeadCellsCard father){
-            super(BASE_ID,STRINGS.NAME,"img/card/FerrymanSLanternIII.png",2,STRINGS.DESCRIPTION,CardType.ATTACK,CardColor.COLORLESS,CardRarity.SPECIAL,CardTarget.ENEMY);
+            super(BASE_ID,STRINGS.NAME,"img/card/FerrymanSLanternIII.png",2,STRINGS.DESCRIPTION,CardType.ATTACK,AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.SPECIAL,CardTarget.ENEMY);
             this.father = father;
             this.setBackgroundTexture(DeadCellsModInitializer.RED2_PURPLE2_SKILL_CARD, DeadCellsModInitializer.RED2_PURPLE2_SKILL_CARD_PORTRAIT);
             this.baseDamage = 21;

@@ -20,6 +20,7 @@ import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
+import deadCellsMod.cn.infinite.stsmod.cards.FerrymanSLantern;
 import deadCellsMod.cn.infinite.stsmod.cards.RoundingKnife;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsCharacterEnum;
@@ -105,6 +106,12 @@ public class King extends CustomPlayer {
         relics.add("deadCells:EmeraldAmulet");
         /*relics.add("deadCells:BackPack_at");*/
         return relics;
+    }
+
+    @Override
+    public void onVictory() {
+        super.onVictory();
+        FerrymanSLantern.AmNumber = 0;
     }
 
     @Override

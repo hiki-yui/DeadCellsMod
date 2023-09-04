@@ -12,7 +12,9 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import deadCellsMod.cn.infinite.stsmod.action.AddCardToHandAction;
+import deadCellsMod.cn.infinite.stsmod.cards.FerrymanSLantern;
 import deadCellsMod.cn.infinite.stsmod.cards.Roll;
 
 //绿宝石护符
@@ -41,6 +43,18 @@ public class EmeraldAmulet extends DeadCellsRelic {
 
         addToBot(new AddCardToHandAction(roll));
         addToBot(new RelicAboveCreatureAction(AbstractDungeon.player,this));
+    }
+
+    @Override
+    public void onEnterRoom(AbstractRoom room) {
+        super.onEnterRoom(room);
+        FerrymanSLantern.AmNumber = 0;
+    }
+
+    @Override
+    public void onVictory() {
+        super.onVictory();
+        FerrymanSLantern.AmNumber = 0;
     }
 
     @Override

@@ -1,0 +1,62 @@
+{
+  "keywords": [
+        {
+      "NAMES":[
+        "grenade",
+        "grenade."
+      ],
+      "DESCRIPTION": "Compte comme jouée lorsqu'elle est défaussée. Returne dans votre pioche le tour d'après."
+    },
+    {
+      "NAMES":[
+        "déchargée",
+        "déchargée."
+      ],
+      "DESCRIPTION": "Un choix qui est toujours une #yAttaque qui coûte 1."
+    },
+    {
+      "NAMES":[
+        "chargée",
+        "chargée."
+      ],
+      "DESCRIPTION": "Un choix qui est toujours une #yAttaque qui coûte 2."
+    },
+    {
+      "NAMES": [        "Saignement",        "Saignement."      ],
+      "DESCRIPTION": "À chaque carte jouée, recevez autant de dégâts que de cumuls, puis cumuls divisés par deux."
+    },
+    {
+      "NAMES": [        "Dans les ténèbres",        "Dans les ténèbres."      ],
+      "DESCRIPTION": "Recevez #yDouble dégâts la prochaine fois."
+    },
+    {
+      "NAMES": [        "Tempérament",        "Tempérament."      ],
+      "DESCRIPTION": "Propre au tour ou il est reçu, coût réduit de #1 ."
+    },
+    {
+      "NAMES": [        "Gel",        "Gel."      ],
+      "DESCRIPTION": "Infligez #b15% moins de dégâts, augmenté de 1 par cumul, cumul réduit de 1 à la fin du tour."
+    },
+    {
+      "NAMES": [        "Brulure",        "Brulure."      ],
+      "DESCRIPTION": "Recevez #b15% plus de dégâts, augmenté de 1 tous les 3 cumuls. Recevez autant de dégâts que de cumuls et retirez-les à la fin de votre tour."
+    },
+    {
+      "NAMES": [        "Enracinement",        "Enracinement."      ],
+      "DESCRIPTION": "Recevez autant de dégâts que de cumuls au début de votre tour."
+    },
+    {
+      "NAMES": [        "munitions",        "munitions."      ],
+      "DESCRIPTION": "Nécessaire pour jouer certaines cartes."
+    },
+    {
+      "NAMES": [        "huile",        "huile."      ],
+      "DESCRIPTION": "Recevez des dégâts de brulure doublés."
+    },
+    {
+      "NAMES": [        "invisible",        "invisible."      ],
+      "DESCRIPTION": "Recevez #b20% moins de dégâts."
+    }
+   
+  ]
+}

@@ -1,9 +1,9 @@
 {
   "modid": "DeadCells",
   "name": "DeadCells",
-  "author_list": ["hiki","Mamlot","胞胞不行"],
-  "description": "该mod目前只支持中文,\n 感谢Mamlot和胞胞提供的美术资源",
-  "version": "1.0.6",
+  "author_list": ["hiki","Mamlot","CSTG工具寅"],
+  "description": "死亡细胞MOD,\n 感谢Mamlot和胞胞提供的美术资源",
+  "version": "1.2.0",
   "sts_version": "12-22-2020",
   "mts_version": "3.16.0",
   "dependencies": ["basemod","stslib"]

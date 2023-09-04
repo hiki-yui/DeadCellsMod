@@ -135,5 +135,12 @@
       " #yStrike in your deck into #yRoll, Whenever you play a #yRoll, play the copy of a random #ySkill in your draw pile. (Except Roll)",
       "Roll? Roll!"
     ]
+  },
+  "deadCells:RamRune": {
+    "NAME": "Ram Rune",
+    "FLAVOR": "This Martial Art is named Angry Crow Takes Flight! ",
+    "DESCRIPTIONS": [
+      "Whenever you play #b2 or more #yAttack card, shatter an enemy's entire armor or kill a #yminion monster."
+    ]
   }
 }

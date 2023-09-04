@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.ThrowDaggerEffect;
 import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.action.GainBleedingPowerAction;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 public class ThrowingKnife extends DeadCellsCard {
     public static final String BASE_ID = "deadCells:ThrowingKnife";
@@ -20,7 +21,7 @@ public class ThrowingKnife extends DeadCellsCard {
     private static final String IMG = "img/card/ThrowingKnife.png";
 
     public ThrowingKnife(){
-        super(BASE_ID,STRINGS.NAME,IMG,0,STRINGS.DESCRIPTION,CardType.ATTACK,CardColor.COLORLESS,CardRarity.SPECIAL,CardTarget.ENEMY);
+        super(BASE_ID,STRINGS.NAME,IMG,0,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.SPECIAL,CardTarget.ENEMY);
 
         this.setBackgroundTexture(DeadCellsModInitializer.RED2_PURPLE2_ATTACK_CARD, DeadCellsModInitializer.RED2_PURPLE2_ATTACK_CARD_PORTRAIT);
 

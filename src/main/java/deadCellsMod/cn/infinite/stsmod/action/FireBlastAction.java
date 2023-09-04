@@ -22,14 +22,14 @@ public class FireBlastAction extends AbstractGameAction {
     private AbstractPlayer source;
     private boolean freeToPlayOnce;
     private int energyOnUse;
-    private int[] baseDamage = new int[AbstractDungeon.getMonsters().monsters.size()];
+    private int[] baseDamage;
     private int burnNum;
 
-    public FireBlastAction(AbstractPlayer source, int baseDamage, int energyOnUse, boolean freeToPlayOnce, int burnNum, AbstractCard father){
+    public FireBlastAction(AbstractPlayer source, int[] multiDamage, int energyOnUse, boolean freeToPlayOnce, int burnNum, AbstractCard father){
         this.source = source;
         this.energyOnUse = energyOnUse;
         this.freeToPlayOnce = freeToPlayOnce;
-        Arrays.fill(this.baseDamage, baseDamage);
+        this.baseDamage = multiDamage;
         this.burnNum = burnNum;
         this.father = father;
     }
@@ -39,6 +39,7 @@ public class FireBlastAction extends AbstractGameAction {
         int effect = checkX(this.energyOnUse, this.source);
         if (effect > 0) {
             for (int i = 0; i < effect; i++) {
+                /*
                 addToBot(new AbstractGameAction() {
                     @Override
                     public void update() {
@@ -47,6 +48,9 @@ public class FireBlastAction extends AbstractGameAction {
                         isDone = true;
                     }
                 });
+
+                 */
+                addToTop(new DamageAllEnemiesAction(source, baseDamage, DamageInfo.DamageType.NORMAL, AttackEffect.FIRE, true));
                 for (AbstractMonster monster : AbstractDungeon.getMonsters().monsters) {
                     addToBot(new GainBurnsPowerAction(monster, source, burnNum));
                 }
