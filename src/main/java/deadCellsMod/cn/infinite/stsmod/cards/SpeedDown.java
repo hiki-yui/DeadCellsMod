@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 //减速
 public class SpeedDown extends DeadCellsCard {
@@ -15,7 +16,7 @@ public class SpeedDown extends DeadCellsCard {
     private static final String IMG = "img/card/SpeedDown.png";
 
     public SpeedDown(){
-        super(BASE_ID,STRINGS.NAME,IMG,1,STRINGS.DESCRIPTION,CardType.STATUS,CardColor.COLORLESS,CardRarity.SPECIAL,CardTarget.NONE);
+        super(BASE_ID,STRINGS.NAME,IMG,1,STRINGS.DESCRIPTION,CardType.STATUS, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.SPECIAL,CardTarget.NONE);
         this.setBackgroundTexture(DeadCellsModInitializer.GRAY_SKILL_CARD, DeadCellsModInitializer.GRAY_SKILL_CARD_PORTRAIT);
 
         this.magicNumber = this.baseMagicNumber = 1;

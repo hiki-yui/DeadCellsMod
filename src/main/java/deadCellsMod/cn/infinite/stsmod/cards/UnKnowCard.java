@@ -14,7 +14,9 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
 import deadCellsMod.cn.infinite.stsmod.action.AddCardToHandAction;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.utils.ImgUtils;
 
 import java.util.ArrayList;
@@ -27,8 +29,8 @@ public class UnKnowCard extends DeadCellsCard {
     private static final String IMG = "img/card/defend.png";
 
     public UnKnowCard (){
-        super(BASE_ID,STRINGS.NAME,IMG,0,STRINGS.DESCRIPTION,CardType.SKILL,CardColor.COLORLESS,CardRarity.SPECIAL,CardTarget.SELF);
-
+        super(BASE_ID,STRINGS.NAME,IMG,0,STRINGS.DESCRIPTION,CardType.SKILL, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.SPECIAL,CardTarget.SELF);
+        this.setBackgroundTexture(DeadCellsModInitializer.GRAY_ATTACK_CARD, DeadCellsModInitializer.GRAY_ATTACK_CARD_PORTRAIT);
         this.magicNumber = this.baseMagicNumber = 1;
     }
 

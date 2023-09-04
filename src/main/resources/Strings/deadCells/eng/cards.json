@@ -1,11 +1,27 @@
 {
   "deadCells:KillingDeck": {
     "NAME": "Deadly Deck",
-    "DESCRIPTION": "Deal !D! damage. Put a random *Skill from your discard pile into your hand."
+    "DESCRIPTION": "Deal !D! damage. Put a random *Skill from your discard pile into your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Put a random *Skill from your discard pile into your hand. Draw a random *Attack card."
   },
   "deadCells:SonicCarbine": {
     "NAME": "Sonic Carbine",
     "DESCRIPTION": "Shoot the next !M! *Attacks you draw."
+  },
+  "deadCells:IceBow": {
+    "NAME": "Ice Bow",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Freeze. NL Discard random !CN! cards."
+  },
+  "deadCells:MultipleNocksBow": {
+    "NAME": "Multiple Nocks Bow",
+    "DESCRIPTION": "Discard random !CN! cards. NL Deals !D! damage to random !M! enemies."
+  },
+  "deadCells:BeginnerBow": {
+    "NAME": "BeginnerBow",
+    "DESCRIPTION": "Deal !D! damage. NL Choose !M! cards gain Retain until next turn.",
+    "EXTENDED_DESCRIPTION": [
+      "Choose~"
+    ]
   },
   "deadCells:GrenadeCard": {
     "DESCRIPTION": " NL Grenade."
@@ -24,7 +40,8 @@
   },
   "deadCells:InTime": {
     "NAME": "In Time",
-    "DESCRIPTION": "At the start of your turn, if any enemy intends to attack, play !M! random *shield cards."
+    "DESCRIPTION": "At the start of your turn, if any enemy intends to attack, play !M! random *shield cards.",
+    "UPGRADE_DESCRIPTION": " Innate. NL At the start of your turn, if any enemy intends to attack, play !M! random *shield cards."
   },
   "deadCells:ThunderShield": {
     "NAME": "Thunder Shield",
@@ -397,5 +414,17 @@
   "deadCells:SymmetricalSpear":{
     "NAME": "Symmetrical Lance",
     "DESCRIPTION": "Deal !D! damage !M! times to ALL enemies. NL If the first hit hits at least 2 enemies, following hits deal double damage."
+  },
+  "deadCells:GiantWhistle": {
+    "NAME": "Giant Whistle",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "deadCells:CrowBar": {
+    "NAME": "Crowbar",
+    "DESCRIPTION": "Deal !D! damage, if the last card played this combat was a *Skill , deal double attack damage."
+  },
+  "deadCells:LightningBolt": {
+    "NAME": "Lightning Bolt",
+    "DESCRIPTION": "Deal !D! damage, if the last card played this turn was *Lightning *Bolt ，return this card into your hand and damage +7. If you played 4 or more *Lightning *Bolt ，deal !M! damage to yourself."
   }
 }

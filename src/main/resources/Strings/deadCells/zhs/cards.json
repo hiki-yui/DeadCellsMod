@@ -5,9 +5,9 @@
     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害 NL 从弃牌堆里随机抽取一张技能牌 NL 随机抽取一张攻击牌"
   },
   "deadCells:SonicCarbine": {
-  "NAME": "音速卡宾枪",
-  "DESCRIPTION": "发射你下 !M! 张抽到的攻击牌."
-},
+    "NAME": "音速卡宾枪",
+    "DESCRIPTION": "发射你下 !M! 张抽到的攻击牌."
+  },
   "deadCells:IceBow": {
     "NAME": "冰之弓箭",
     "DESCRIPTION": "造成 !D! 点伤害 NL 给予 !M! 层 冻伤 NL 随机丢弃 !CN! 张牌."
@@ -414,5 +414,17 @@
   "deadCells:SymmetricalSpear":{
     "NAME": "对称长枪",
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害 !M! 次. NL 如果第一段击中至少两 NL 名敌人则后续造成两倍 NL 伤害."
+  },
+  "deadCells:GiantWhistle": {
+    "NAME": "巨人口哨",
+    "DESCRIPTION": "造成 !D! 点伤害."
+  },
+  "deadCells:CrowBar": {
+    "NAME": "撬棍",
+    "DESCRIPTION": "造成 !D! 点伤害，如果上一张牌是 *技能牌 ，则造成双倍伤害。"
+  },
+  "deadCells:LightningBolt": {
+  "NAME": "闪电光束",
+  "DESCRIPTION": "造成 !D! 点伤害，如果上一张牌是 *闪电光束 ，打出后回到手中并使伤害+7。如果本回合你打出了4张以上 *闪电光束 ，则回合结束时受到 !M! 点伤害。"
   }
 }

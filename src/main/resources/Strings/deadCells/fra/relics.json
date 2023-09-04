@@ -1,0 +1,146 @@
+{
+    "deadCells:Defender": {
+    "NAME": "Défenseur",
+    "FLAVOR": "Bien qu'appelé Défenseur, on remarque qu'il est aussi utilisé comme arme par certaines créatures.",
+    "DESCRIPTIONS": [
+      "Réduit les dégâts subis de #b20% au premier tour de chaque combat, Réduit chaque coup de #1 durant le second tour. "
+    ]
+  },
+  "deadCells:CorruptedArtifact": {
+    "NAME": "Artefact corrompu",
+    "FLAVOR": "Vous pouvez sentir le danger en émaner.",
+    "DESCRIPTIONS": [
+      "Lorsque vous la ramassez, gagnez",
+      " #yOr. Subissez des dégâts double votre prochain combat.",
+      " #rMalédiction levée."
+    ]
+  },
+  "deadCells:Predator": {
+    "NAME": "Prédateur",
+    "FLAVOR": "T'as pas une gueule de porte-bonheur.",
+    "DESCRIPTIONS":[
+      "À chaque fois que vous tuez un ennemi, Gagnez #b",
+      " [#c1bdbd]Invisible."
+    ]
+  },
+  "deadCells:OpenWounds": {
+    "NAME": "Blessures ouvertes",
+    "FLAVOR": "Désolé de retourner le couteau dans la plaie...",
+    "DESCRIPTIONS":[
+      "À chaque fois que vous infligez des dégâts non bloqués, appliquez #b",
+      " #ySaignement."
+    ]
+  },
+  "deadCells:Tactical": {
+    "NAME": "Parchemin de Tactique",
+    "FLAVOR": "C'est terminé, il n'y a rien à faire, je te domine !",
+    "DESCRIPTIONS": [
+      "Lorsque vous la ramassez, retirez #b1 cartes de votre deck."
+    ]
+  },
+  "deadCells:Alive": {
+    "NAME": "Parchemin de Survie",
+    "FLAVOR": "Tant qu'il y a de la vie, il y a de l'espoir.",
+    "DESCRIPTIONS": [
+      "Lorsque vous la ramassez, Gagnez #b",
+      " maximum PV. Au début du combat, soignez #b",
+      " PV."
+    ]
+  },
+  "deadCells:Oppressive": {
+    "NAME": "Parchemin de Brutalité",
+    "FLAVOR": "La meilleure défense, c'est l'attaque.",
+    "DESCRIPTIONS": [
+      "Lorsque vous la ramassez, améliorez #b",
+      " cartes. Au début du combat, Gagnez",
+      " Force."
+    ]
+  },
+  "deadCells:PowerOfScroll": {
+    "NAME":"Parchemin de Puissance",
+    "FLAVOR": "On a rien sans rien.",
+    "DESCRIPTIONS": [
+      "Perdez ",
+      " maximum PV. NL Choisissez 1 #yParchemin parmis 3, #b",
+      " fois."
+    ]
+  },
+  "deadCells:SealsRecipe": {
+    "NAME": "Sceau secret",
+    "FLAVOR": "À s'être acharné à l'ouvrir, vous êtes devenus plus agile.",
+    "DESCRIPTIONS": [
+      "Commencez chaque combat avec #b",
+      " #yDextérité et #b",
+      " #yForce."
+    ]
+  },
+  "deadCells:Counterattack": {
+    "NAME": "Contre-attaque",
+    "FLAVOR": "Répondre amicalement.",
+    "DESCRIPTIONS": [
+      "Votre prochaine attaque inflige #b",
+      " dégâts supplémentaires à chaque fois que vous bloquez tous les dégâts."
+    ]
+  },
+  "deadCells:Chopper": {
+    "NAME": "Pourfendeur",
+    "FLAVOR": "Pas de pitié.",
+    "DESCRIPTIONS": [
+      "À la fin de votre tour, éxecutez les ennemis avec moins de #b",
+      "% PV."
+    ]
+  },
+  "deadCells:Nocturne": {
+    "NAME": "Nocturne",
+    "FLAVOR": "Une épée scellée avec sa propre conscience.",
+    "DESCRIPTIONS": [
+      "À chaque fois que vous jouez #b",
+      " Compétences, #b",
+      " ennemis aléatoires prennent #b",
+      " Dégâts et reçoivent #b",
+      " #yDans #yles #yténèbres."
+    ]
+  },
+  "deadCells:SpirePace": {
+    "NAME": "Rythme de la mort",
+    "FLAVOR":"Vous sentez venir votre prochaine action sans même réfléchir.",
+    "DESCRIPTIONS": [
+      "À chaque fois que vous jouez un type de carte différent, piochez #b",
+      " cartes."
+    ]
+  },
+
+  "deadCells:EmeraldAmulet": {
+    "NAME": "Amulette d'Émeraude",
+    "FLAVOR":"Cette amulette inconnue brille quand vient le danger.",
+    "DESCRIPTIONS": [
+      "Au début du combat, ajoutez #b",
+      " #yRoulade avec #yRetenue et #yÉpuisement dans votre main."
+    ]
+  },
+  "deadCells:BackPack_at": {
+    "NAME": "Sac à pointes",
+    "FLAVOR": "Vous ressemblez à un hérisson.",
+    "DESCRIPTIONS": [
+      "Commencez chaque tour avec #b1 [E] de moins. NL Lorsque vous la ramassez, remplacez au mieux #b",
+      " #yDéfense de votre deck en #yRoulade . À chaque fois que vous jouez une #yRoulade , jouez une copie d'une #yAttaque aléatoire de votre pioche.",
+      "ROULE, ROULE, ROULE !!!"
+    ]
+  },
+  "deadCells:BackPack_sk": {
+    "NAME": "Sacrobatique",
+    "FLAVOR": "Je rangeais mon arme, et le coup est parti tout seul.",
+    "DESCRIPTIONS": [
+      "Commencez chaque tour avec #b1 [E] de moins. NL Lorsque vous la ramassez, remplacez au mieux #b",
+      " #yFrappe de votre deck en #yRoulade . À chaque fois que vous jouez une #yRoulade, jouez une copie d'une #yCompétence aléatoire de votre pioche. (Excepté #yRoulade)",
+      "J'ai glissé Chef"
+    ]
+  },
+  "deadCells:RamRune": {
+    "NAME": "Rune du bélier",
+    "FLAVOR": "Cet art se nomme 'le corbeau en colère prend son envol !'",
+    "DESCRIPTIONS": [
+      "À chaque fois que vous jouez #b2 cartes #yAttaque ou plus, supprimez toute l'armure d'un ennemi ou tuez un #yminion ."
+    ]
+  }
+}

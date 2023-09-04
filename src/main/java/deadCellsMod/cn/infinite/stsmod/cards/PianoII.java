@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 public class PianoII extends Piano {
     public static final String ID = "deadCells:PianoII";
@@ -22,7 +23,7 @@ public class PianoII extends Piano {
     private static final int BASE_DAMAGE = 16;
 
     public PianoII(){
-        super(ID,NAME,IMG,BASE_COST,DESCRIPTION,CardType.ATTACK,CardColor.COLORLESS,CardRarity.SPECIAL,CardTarget.ENEMY);
+        super(ID,NAME,IMG,BASE_COST,DESCRIPTION,CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.SPECIAL,CardTarget.ENEMY);
         this.setBackgroundTexture(DeadCellsModInitializer.GREEN_ATTACK_CARD, DeadCellsModInitializer.GREEN_ATTACK_CARD_PORTRAIT);
 
         this.damage = this.baseDamage = BASE_DAMAGE;

@@ -5,13 +5,14 @@
 
 <groupId>infinite</groupId>
 <artifactId>dead-cells-mod</artifactId>
-<version>1.0.6</version>
+<version>1.1.0</version>
 
 <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <mod.name>deadCellsMod</mod.name>
+    <Steam.path>E:\steam\steamapps</Steam.path>
 </properties>
 
 <dependencies>
@@ -36,12 +37,18 @@
     </dependency>
 
     <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter</artifactId>
+        <version>2.5.4</version>
+    </dependency>
+
+    <dependency>
         <groupId>basemod</groupId>
         <artifactId>BaseMod</artifactId>
         <version>5.33.1</version>
         <scope>system</scope>
         <!--../${basedir}/src/main/resources/libs/BaseMod.jar-->
-        <systemPath>${pom.basedir}/../libs/BaseMod.jar</systemPath>
+        <systemPath>${Steam.path}/workshop/content/646570/1605833019/BaseMod.jar</systemPath>
     </dependency>
 
     <dependency>
@@ -49,7 +56,7 @@
         <artifactId>desktop</artifactId>
         <version>1.0</version>
         <scope>system</scope>
-        <systemPath>${pom.basedir}/../libs/desktop-1.0.jar</systemPath>
+        <systemPath>${Steam.path}/common/SlayTheSpire/desktop-1.0.jar</systemPath>
     </dependency>
 
     <dependency>
@@ -57,7 +64,7 @@
         <artifactId>mod-uploader</artifactId>
         <version>1.0</version>
         <scope>system</scope>
-        <systemPath>${pom.basedir}/../libs/mod-uploader.jar</systemPath>
+        <systemPath>${Steam.path}/common/SlayTheSpire/mod-uploader.jar</systemPath>
     </dependency>
 
     <dependency>
@@ -65,7 +72,7 @@
         <artifactId>ModTheSpire</artifactId>
         <version>3.16.0</version>
         <scope>system</scope>
-        <systemPath>${pom.basedir}/../libs/ModTheSpire.jar</systemPath>
+        <systemPath>${Steam.path}/workshop/content/646570/1605060445/ModTheSpire.jar</systemPath>
     </dependency>
 
     <dependency>
@@ -73,7 +80,7 @@
         <artifactId>StSLib</artifactId>
         <version>1.23.0</version>
         <scope>system</scope>
-        <systemPath>${pom.basedir}/../libs/StSLib.jar</systemPath>
+        <systemPath>${Steam.path}/workshop/content/646570/1609158507/StSLib.jar</systemPath>
     </dependency>
 
     <dependency>
@@ -81,7 +88,7 @@
         <artifactId>actlikeit</artifactId>
         <version>1.0</version>
         <scope>system</scope>
-        <systemPath>${pom.basedir}/../libs/actlikeit.jar</systemPath>
+        <systemPath>${Steam.path}/workshop/content/646570/1934902042/actlikeit.jar</systemPath>
     </dependency>
 
     <dependency>
@@ -89,19 +96,41 @@
         <artifactId>mts-launcher</artifactId>
         <version>1.0</version>
         <scope>system</scope>
-        <systemPath>${pom.basedir}/../libs/mts-launcher.jar</systemPath>
+        <systemPath>${Steam.path}/common/SlayTheSpire/mts-launcher.jar</systemPath>
     </dependency>
 </dependencies>
 
 
     <build>
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-                <includes>
-                    <include>**/*.*</include>
-                </includes>
-            </resource>
-        </resources>
+        <finalName>dead-cells-mod</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.7.0</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.8</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <configuration>
+                            <target>
+                                <copy file="target/dead-cells-mod.jar" tofile="${Steam.path}/common/SlayTheSpire/mods/dead-cells-mod.jar"/>
+                            </target>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
     </build>
 </project>

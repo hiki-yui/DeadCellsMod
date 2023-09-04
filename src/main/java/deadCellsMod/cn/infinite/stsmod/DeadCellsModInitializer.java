@@ -1,20 +1,27 @@
 package deadCellsMod.cn.infinite.stsmod;
 
 import basemod.BaseMod;
+import basemod.ModLabeledToggleButton;
+import basemod.ModPanel;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.Texture;
+import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.dungeons.Exordium;
 import com.megacrit.cardcrawl.dungeons.TheBeyond;
+import com.megacrit.cardcrawl.helpers.FontHelper;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.monsters.MonsterInfo;
 import com.megacrit.cardcrawl.powers.AbstractPower;
@@ -27,6 +34,8 @@ import deadCellsMod.cn.infinite.stsmod.character.King;
 import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsCharacterEnum;
 import deadCellsMod.cn.infinite.stsmod.enums.DeadCellsTags;
+import deadCellsMod.cn.infinite.stsmod.event.DarkSoulEvent;
+import deadCellsMod.cn.infinite.stsmod.event.HalfLifeEvent;
 import deadCellsMod.cn.infinite.stsmod.monster.TheGiant;
 import deadCellsMod.cn.infinite.stsmod.monster.Zombie;
 import deadCellsMod.cn.infinite.stsmod.utils.Keywords;
@@ -34,8 +43,7 @@ import deadCellsMod.cn.infinite.variables.*;
 
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-
-
+import java.util.Properties;
 
 
 import static basemod.DevConsole.logger;
@@ -117,6 +125,10 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
 
     public static final String energy_orbUrl1024 = "img/card_bg/1024/energy_orb.png";
 
+    public static String MAIN_MENU_CHANGE_TEXT = "Change main menu images ? (Restart to take effect)\n是否修改游戏原主界面？（重启后生效）";
+    public static boolean isMainMenuImg = true;
+    public static Properties MainMenuChanged = new Properties();
+    private static final String MOD_BADGE = "img/badge.png";
 
     public DeadCellsModInitializer() {
         BaseMod.subscribe(this);
@@ -135,6 +147,16 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
                 energy_orbUrl,attack_bgURL1024,skill_bgURL1024,power_bgURL1024,"img/card_bg/1024/energy_orb.png",energy_smallUrl);
         /*//将音频发布到游戏的音频储存区
         BaseMod.publishAddAudio(CardCrawlGame.sound);*/
+
+        MainMenuChanged.setProperty(MAIN_MENU_CHANGE_TEXT, "TRUE");
+        try {
+            SpireConfig config = new SpireConfig("DCMod", "DCModConfig", MainMenuChanged); // ...right here
+            // the "fileName" parameter is the name of the file MTS will create where it will save our setting.
+            config.load(); // Load the setting and set the boolean to equal it
+            isMainMenuImg = config.getBool(MAIN_MENU_CHANGE_TEXT);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
     }
 
@@ -207,9 +229,46 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
     @Override
     public void receivePostInitialize() {
         BaseMod.addMonster( "deadCells:Zombie",() -> new Zombie(0.0F, 0.0F));
-        //BaseMod.addMonster("deadCells:TheGiant", TheGiant::new);
+        //BaseMod.addMonster("deadCells:TheGiant", () -> new TheGiant());
         BaseMod.addStrongMonsterEncounter(Exordium.ID,new MonsterInfo("deadCells:Zombie",7));
         //BaseMod.addBoss(TheBeyond.ID,TheGiant.BASE_ID,"img/monster/guardian_o.png","img/monster/guardian.png");
+
+        BaseMod.addEvent(DarkSoulEvent.ID, DarkSoulEvent.class);
+        BaseMod.addEvent(HalfLifeEvent.ID, HalfLifeEvent.class);
+        //Mod Settings Screen
+        final ModPanel settingsPanel = new ModPanel();
+
+        //修改主界面
+        final ModLabeledToggleButton MainMenuChangeButton =
+                new ModLabeledToggleButton(MAIN_MENU_CHANGE_TEXT,
+                        400,
+                        660,
+                        Settings.CREAM_COLOR,
+                        FontHelper.charDescFont,
+                        isMainMenuImg,
+                        settingsPanel,
+                        (label) -> {},
+                        (button) -> {isMainMenuImg = button.enabled;
+                            try {
+                                // And based on that boolean, set the settings and save them
+                                SpireConfig config = new SpireConfig("DCMod", "DCModConfig", MainMenuChanged );
+                                config.setBool(MAIN_MENU_CHANGE_TEXT, isMainMenuImg);
+                                config.save();
+                            } catch (Exception e) {
+                                e.printStackTrace();
+                            }
+                        }
+                );
+        settingsPanel.addUIElement(MainMenuChangeButton);
+
+        final Texture badge = ImageMaster.loadImage(MOD_BADGE);
+        BaseMod.registerModBadge(
+                badge,
+                "Dead Cells Mod(死亡细胞）",
+                "hiki,Mamlot,CSTG工具寅",
+                "啦啦啦~",
+                settingsPanel
+        );
     }
 
     @Override
@@ -329,6 +388,9 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
         addCard(new IceBow());
         addCard(new SonicCarbine());
         addCard(new KillingDeck());
+        addCard(new GiantWhistle());
+        addCard(new CrowBar());
+        addCard(new LightningBolt());
        /* File file = new File(Objects.requireNonNull(Thread.currentThread().getContextClassLoader()
                 .getResource("deadCellsMod/cn/infinite/stsmod/cards/")).getFile());*/
         /*try {
@@ -378,6 +440,7 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
         BaseMod.addRelic(new PowerOfScroll(),RelicType.SHARED);
         BaseMod.addRelic(new CorruptedArtifact(),RelicType.SHARED);
         BaseMod.addRelic(new Defender(),RelicType.SHARED);
+        BaseMod.addRelic(new RamRune(), RelicType.SHARED);
     }
 
     private void addRelics(AbstractRelic relic){
@@ -398,7 +461,7 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
         BaseMod.loadCustomStringsFile(RelicStrings.class, "Strings/deadCells/"+lang+"/relics.json");
         BaseMod.loadCustomStringsFile(PowerStrings.class, "Strings/deadCells/"+lang+"/powers.json");
         BaseMod.loadCustomStringsFile(MonsterStrings.class, "Strings/deadCells/"+lang+"/monsters.json");
-
+        BaseMod.loadCustomStringsFile(EventStrings.class, "Strings/deadCells/"+lang+"/event.json");
     }
 
     @Override
@@ -437,7 +500,7 @@ public class DeadCellsModInitializer implements EditCardsSubscriber,
 
     public static String checkLanguage(){
         String lang = Settings.language.toString();
-        if(!"ZHS".equals(lang)&&!"ENG".equals(lang)){
+        if(!"ZHS".equals(lang)&&!"ENG".equals(lang)&&!"FRA".equals(lang)){
             lang="ENG";
         }
         return lang.toLowerCase();

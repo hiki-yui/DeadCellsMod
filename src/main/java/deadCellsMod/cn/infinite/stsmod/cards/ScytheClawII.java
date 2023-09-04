@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import deadCellsMod.cn.infinite.stsmod.DeadCellsModInitializer;
+import deadCellsMod.cn.infinite.stsmod.enums.AbstractDeadCellsEnum;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -27,7 +28,7 @@ public class ScytheClawII extends DeadCellsCard {
     private static final String IMG = "img/card/ScytheClawII.png";
 
     public ScytheClawII(boolean canPreview){
-        super(BASE_ID,STRINGS.NAME,IMG,3,STRINGS.DESCRIPTION,CardType.ATTACK,CardColor.COLORLESS,CardRarity.SPECIAL,CardTarget.ALL_ENEMY);
+        super(BASE_ID,STRINGS.NAME,IMG,3,STRINGS.DESCRIPTION,CardType.ATTACK, AbstractDeadCellsEnum.DEAD_CELLS,CardRarity.SPECIAL,CardTarget.ALL_ENEMY);
         this.setBackgroundTexture(DeadCellsModInitializer.GREEN_ATTACK_CARD, DeadCellsModInitializer.GREEN_ATTACK_CARD_PORTRAIT);
 
         this.exhaust = true;

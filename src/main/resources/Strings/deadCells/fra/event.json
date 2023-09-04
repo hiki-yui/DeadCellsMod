@@ -1,0 +1,48 @@
+{
+  "deadCells:DarkSoulEvent": {
+    "NAME": "A Strange Pattern",
+    "DESCRIPTIONS": [
+      "You find a strange entrance in the Spire, it is blocked by a pile of rubble, and #r~a~ #r~strange~ #r~rune~ #r~pattern~ can be seen on the ground.",
+      "Memories flood in, and the pattern on the ground gradually coincides with the pattern in your memory. Come to think of it, you can open it with the #bRam #bRune . Want to go down and have a look?",
+      "The Room With A Bonfire",
+      "The #bRam #bRune emits a burst of light, and you leap with all your might to smash it down. NL After the shock, the pattern disappears and you fall down with the rubble. NL You land to the ground, in a cloud of dust, you see a dark passage with a flickering light at the end, and a room ahead of you.",
+      "At the end of the passage, you see a burning #y@bonfire@ with a sword sticking out of it .And a skeleton in armor lying in the corner, apparently long dead.  You don't know what kind of fuel this bonfire is using, but it never goes out.",
+      "As you approach the #y@bonfire@ , some patterns ~scribbled~ on the wall catch your attention. When you got close to the wall, you could see clearly that someone had carved a sentence on it: NL #r~Git~ #r~Gud~ NL #g\"Seems #gto #gbe #gsome #gincantation.\" ",
+      "#g\"It #gdoesn't #ghurt #gto #gtake #ga #gnap.\" You think . NL You feel something in the #y@bonfire@ attracting you , you sit down by the #y@bonfire@ instinctively, which you've done million times before. NL Soon, #r@the@ #r@whole@ #r@room@ #r@shake@ , but then stop #y@shaking@ . NL #g\"Hum, #gsomething #gseems #gto #ghave #gchanged .\" ",
+      "You take a closer look at the skeleton. NL #g\"A #gguy #gin #garmor, #gdead #ga #glong #gtime.\" NL You rummaged around on the body and finally found some #g@goodies@ .",
+      "You decide to leave..."
+    ],
+    "OPTIONS": [
+      "[Investigate] Where have I seen this pattern before...",
+      "[Lock] Required: #bRam #bRune ",
+      "[Leave] Have no choice but to leave",
+      "[Explore] Smash it, go down and have a look",
+      "[Leave] What if there's any danger",
+      "[Forward] Go inside and have a look",
+      "[Look around] Seems like there's no danger here for a while. Take a look around",
+      "[Look at the bonfire] #gHeal #gto #gfull #ghealth , #rMonsters #rnext #rbattle #radd 15 #rmax #rhealth #rand 2 #rstrength .",
+      "[Look at the skeleton] Find something can be used（Gain #ygold and #ycards ）",
+      "[Continue]",
+      "[Leave]"
+    ]
+  },
+  "deadCells:HalfLifeEvent": {
+    "NAME": "Close Call？",
+    "DESCRIPTIONS": [
+      "You've been in the Spire for a while, and every now and then you'll encounter various creatures or...their #r@bodies@ . A witch on a broomstick with curly blond hair and a big black hat, a white @bug@ with a nail weapon longer than him! NL #g\"That's #gcrazy!\" NL You think so and walk past another #r@body@ . NL #g\"You #glook #glike... #ga #gpretty #gnormal #gdead #gbody.\" NL Suddenly you see his body twitch once and the box beneath him makes a thump.",
+      "You watch carefully this \"man\" , lying on a couple of wooden boxes, apparently dead. NL #g\"How #gstrange...\" NL You think so and looking up, you notice #y@a@ #y@four-legged@ #y@yellow@ #y@crab@ on his head, four legs clinging to his head, with only slight #r@twitching@ indicates that it's still alive. NL #g\"He #gstill #gspasms #ga #gbit, #gas #gif #ghe #gwas #ghalf #galive...\" NL You notice there is a #bCrowbar in the crevices of the case, and there are some unused grenades on the body.",
+      "You take the #bCrowbar and left before the @crab@ noticed you",
+      "You take the #bGrenade and left before the @crab@ noticed you",
+      "You pick the two weapons in your hand, and about to leave.The @crab@ on the #r@body@ seems to have spotted you。Then you finally get a good look at the @crab@ :There's #r@a@ #r@bloody@ #r@mouth@ underneath, you get scared and fall backwards on the ground.That @crab@ come for your head! NL ...... NL By the time you came to your senses, the @crab@ was gone. NL #g\"Oh, #gI #gforgot #gthat #gI #gdon't #ghave #ga #ghead...\" NL You check your things and only lose some money.",
+      "You decide to leave..."
+    ],
+    "OPTIONS": [
+      "[Investigate] Take a closer look",
+      "[Leave] What if there's any danger",
+      "[Take #bCrowbar ] #gRemove #gall Strikes. #gReceive #gsame #gamount Crowbar #gcard .",
+      "[Take #bGrenade ] #gObtain #g1 Grenade #gcard .",
+      "[Take them all] #rLose #r50 #ygold .",
+      "[Leave]"
+    ]
+  }
+}
